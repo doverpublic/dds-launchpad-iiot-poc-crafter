@@ -6,7 +6,7 @@
 	<file-name>index.xml</file-name>
 	<internal-name>Home</internal-name>
 	<orderDefault_f>-1</orderDefault_f>
-	<body>&lt;h1&gt;Welcome to Your Crafter CMS Site.&lt;/h1&gt;
+	<body>&lt;h1&gt;Welcome to DDIOT&lt;/h1&gt;
 &lt;p&gt;This site blueprint is the equivalent of a Hello World. It&amp;#39;s a blank slate on which you can build your own digital experience.&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -26,8 +26,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2017-1-31T19:12:56.000Z</lastModifiedDate>
-	<lastModifiedDate_dt>2017-1-31T19:12:56.000Z</lastModifiedDate_dt>
+	<lastModifiedDate>2018-01-12T16:57:25.847Z</lastModifiedDate>
+	<lastModifiedDate_dt>2018-01-12T16:57:25.847Z</lastModifiedDate_dt>
 	<title>Hello!</title>
 	<disabled>false</disabled>
 </page>
