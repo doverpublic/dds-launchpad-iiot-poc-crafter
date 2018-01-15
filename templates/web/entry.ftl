@@ -216,6 +216,8 @@
         <!-- / FUSE Splash Screen -->
 
         <fuse-root></fuse-root>
+        
+        <script src="/static-assets/dist/main.bundle.js" />
 
 		<@studio.toolSupport/>	
 	</body>
