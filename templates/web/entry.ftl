@@ -216,9 +216,13 @@
         <!-- / FUSE Splash Screen -->
 
         <fuse-root></fuse-root>
-        
-        <script src="/static-assets/dist/main.bundle.js" />
 
+		<script type="text/javascript" src="inline.bundle.js"></script>
+        <script type="text/javascript" src="polyfills.bundle.js"></script>
+        <script type="text/javascript" src="styles.bundle.js"></script>
+        <script type="text/javascript" src="vendor.bundle.js"></script>
+        <script type="text/javascript" src="main.bundle.js"></script>
+        
 		<@studio.toolSupport/>	
 	</body>
 </html>
