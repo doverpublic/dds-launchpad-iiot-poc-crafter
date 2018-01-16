@@ -1,51 +1,46 @@
 webpackJsonp(["components-third-party.module"],{
 
 /***/ "../../../../../src/app/main/content/components-third-party/components-third-party.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseComponentsThirdPartyModule", function() { return FuseComponentsThirdPartyModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__datatable_ngx_datatable_component__ = __webpack_require__("../../../../../src/app/main/content/components-third-party/datatable/ngx-datatable.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__google_maps_google_maps_module__ = __webpack_require__("../../../../../src/app/main/content/components-third-party/google-maps/google-maps.module.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var ngx_datatable_component_1 = __webpack_require__("../../../../../src/app/main/content/components-third-party/datatable/ngx-datatable.component.ts");
+var google_maps_module_1 = __webpack_require__("../../../../../src/app/main/content/components-third-party/google-maps/google-maps.module.ts");
 var routes = [
     {
         path: 'datatables/ngx-datatable',
-        component: __WEBPACK_IMPORTED_MODULE_3__datatable_ngx_datatable_component__["a" /* FuseNgxDatatableComponent */]
+        component: ngx_datatable_component_1.FuseNgxDatatableComponent
     }
 ];
 var FuseComponentsThirdPartyModule = (function () {
     function FuseComponentsThirdPartyModule() {
     }
     FuseComponentsThirdPartyModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_4__google_maps_google_maps_module__["a" /* GoogleMapsModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                google_maps_module_1.GoogleMapsModule
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__datatable_ngx_datatable_component__["a" /* FuseNgxDatatableComponent */]
+                ngx_datatable_component_1.FuseNgxDatatableComponent
             ]
         })
     ], FuseComponentsThirdPartyModule);
     return FuseComponentsThirdPartyModule;
 }());
-
+exports.FuseComponentsThirdPartyModule = FuseComponentsThirdPartyModule;
 
 
 /***/ }),
@@ -76,12 +71,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components-third-party/datatable/ngx-datatable.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNgxDatatableComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -91,8 +84,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
 var FuseNgxDatatableComponent = (function () {
     function FuseNgxDatatableComponent(http) {
         this.http = http;
@@ -108,16 +102,16 @@ var FuseNgxDatatableComponent = (function () {
         });
     };
     FuseNgxDatatableComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-ngx-datatable',
             template: __webpack_require__("../../../../../src/app/main/content/components-third-party/datatable/ngx-datatable.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components-third-party/datatable/ngx-datatable.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], FuseNgxDatatableComponent);
     return FuseNgxDatatableComponent;
 }());
-
+exports.FuseNgxDatatableComponent = FuseNgxDatatableComponent;
 
 
 /***/ }),
@@ -148,11 +142,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components-third-party/google-maps/google-maps.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseGoogleMapsDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -162,14 +155,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseGoogleMapsDocsComponent = (function () {
     function FuseGoogleMapsDocsComponent() {
         this.lat = -34.397;
         this.lng = 150.644;
     }
     FuseGoogleMapsDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-google-maps-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components-third-party/google-maps/google-maps.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components-third-party/google-maps/google-maps.component.scss")]
@@ -178,58 +172,54 @@ var FuseGoogleMapsDocsComponent = (function () {
     ], FuseGoogleMapsDocsComponent);
     return FuseGoogleMapsDocsComponent;
 }());
-
+exports.FuseGoogleMapsDocsComponent = FuseGoogleMapsDocsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components-third-party/google-maps/google-maps.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoogleMapsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__google_maps_component__ = __webpack_require__("../../../../../src/app/main/content/components-third-party/google-maps/google-maps.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var google_maps_component_1 = __webpack_require__("../../../../../src/app/main/content/components-third-party/google-maps/google-maps.component.ts");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var core_2 = __webpack_require__("../../../../@agm/core/index.js");
 var routes = [
     {
         path: 'google-maps',
-        component: __WEBPACK_IMPORTED_MODULE_1__google_maps_component__["a" /* FuseGoogleMapsDocsComponent */]
+        component: google_maps_component_1.FuseGoogleMapsDocsComponent
     }
 ];
 var GoogleMapsModule = (function () {
     function GoogleMapsModule() {
     }
     GoogleMapsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_4__agm_core__["a" /* AgmCoreModule */].forRoot({
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                core_2.AgmCoreModule.forRoot({
                     apiKey: 'AIzaSyD81ecsCj4yYpcXSLFcYU97PvRsE_X8Bx8'
                 })
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_1__google_maps_component__["a" /* FuseGoogleMapsDocsComponent */]
+                google_maps_component_1.FuseGoogleMapsDocsComponent
             ]
         })
     ], GoogleMapsModule);
     return GoogleMapsModule;
 }());
-
+exports.GoogleMapsModule = GoogleMapsModule;
 
 
 /***/ })

@@ -26,13 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseEcommerceDashboardComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dashboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -42,9 +39,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var dashboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseEcommerceDashboardComponent = (function () {
     function FuseEcommerceDashboardComponent(projectsDashboardService) {
         this.projectsDashboardService = projectsDashboardService;
@@ -103,29 +101,27 @@ var FuseEcommerceDashboardComponent = (function () {
     FuseEcommerceDashboardComponent.prototype.ngOnDestroy = function () {
     };
     FuseEcommerceDashboardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-e-commerce-dashboard',
             template: __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__dashboard_service__["a" /* EcommerceDashboardService */]])
+        __metadata("design:paramtypes", [dashboard_service_1.EcommerceDashboardService])
     ], FuseEcommerceDashboardComponent);
     return FuseEcommerceDashboardComponent;
 }());
-
+exports.FuseEcommerceDashboardComponent = FuseEcommerceDashboardComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EcommerceDashboardService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -135,8 +131,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
 var EcommerceDashboardService = (function () {
     function EcommerceDashboardService(http) {
         this.http = http;
@@ -179,102 +176,85 @@ var EcommerceDashboardService = (function () {
         });
     };
     EcommerceDashboardService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], EcommerceDashboardService);
     return EcommerceDashboardService;
 }());
-
+exports.EcommerceDashboardService = EcommerceDashboardService;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/e-commerce.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseEcommerceModule", function() { return FuseEcommerceModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__swimlane_ngx_charts__ = __webpack_require__("../../../../@swimlane/ngx-charts/release/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__swimlane_ngx_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__swimlane_ngx_charts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_components_widget_widget_module__ = __webpack_require__("../../../../../src/app/core/components/widget/widget.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__products_products_component__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__products_products_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__product_product_component__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__product_product_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__orders_orders_component__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__orders_orders_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__order_order_component__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__order_order_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var ngx_charts_1 = __webpack_require__("../../../../@swimlane/ngx-charts/release/index.js");
+var dashboard_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.component.ts");
+var dashboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/dashboard/dashboard.service.ts");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var widget_module_1 = __webpack_require__("../../../../../src/app/core/components/widget/widget.module.ts");
+var products_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.component.ts");
+var products_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.service.ts");
+var product_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.component.ts");
+var product_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.service.ts");
+var orders_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.component.ts");
+var orders_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.service.ts");
+var order_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.component.ts");
+var order_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.service.ts");
+var core_2 = __webpack_require__("../../../../@agm/core/index.js");
 var routes = [
     {
         path: 'dashboard',
-        component: __WEBPACK_IMPORTED_MODULE_3__dashboard_dashboard_component__["a" /* FuseEcommerceDashboardComponent */],
+        component: dashboard_component_1.FuseEcommerceDashboardComponent,
         resolve: {
-            data: __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_service__["a" /* EcommerceDashboardService */]
+            data: dashboard_service_1.EcommerceDashboardService
         }
     },
     {
         path: 'products',
-        component: __WEBPACK_IMPORTED_MODULE_7__products_products_component__["a" /* FuseEcommerceProductsComponent */],
+        component: products_component_1.FuseEcommerceProductsComponent,
         resolve: {
-            data: __WEBPACK_IMPORTED_MODULE_8__products_products_service__["a" /* EcommerceProductsService */]
+            data: products_service_1.EcommerceProductsService
         }
     },
     {
         path: 'products/:id',
-        component: __WEBPACK_IMPORTED_MODULE_9__product_product_component__["a" /* FuseEcommerceProductComponent */],
+        component: product_component_1.FuseEcommerceProductComponent,
         resolve: {
-            data: __WEBPACK_IMPORTED_MODULE_10__product_product_service__["a" /* EcommerceProductService */]
+            data: product_service_1.EcommerceProductService
         }
     },
     {
         path: 'products/:id/:handle',
-        component: __WEBPACK_IMPORTED_MODULE_9__product_product_component__["a" /* FuseEcommerceProductComponent */],
+        component: product_component_1.FuseEcommerceProductComponent,
         resolve: {
-            data: __WEBPACK_IMPORTED_MODULE_10__product_product_service__["a" /* EcommerceProductService */]
+            data: product_service_1.EcommerceProductService
         }
     },
     {
         path: 'orders',
-        component: __WEBPACK_IMPORTED_MODULE_11__orders_orders_component__["a" /* FuseEcommerceOrdersComponent */],
+        component: orders_component_1.FuseEcommerceOrdersComponent,
         resolve: {
-            data: __WEBPACK_IMPORTED_MODULE_12__orders_orders_service__["a" /* EcommerceOrdersService */]
+            data: orders_service_1.EcommerceOrdersService
         }
     },
     {
         path: 'orders/:id',
-        component: __WEBPACK_IMPORTED_MODULE_13__order_order_component__["a" /* FuseEcommerceOrderComponent */],
+        component: order_component_1.FuseEcommerceOrderComponent,
         resolve: {
-            data: __WEBPACK_IMPORTED_MODULE_14__order_order_service__["a" /* EcommerceOrderService */]
+            data: order_service_1.EcommerceOrderService
         }
     }
 ];
@@ -282,45 +262,46 @@ var FuseEcommerceModule = (function () {
     function FuseEcommerceModule() {
     }
     FuseEcommerceModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_5__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_6__core_components_widget_widget_module__["a" /* FuseWidgetModule */],
-                __WEBPACK_IMPORTED_MODULE_2__swimlane_ngx_charts__["NgxChartsModule"],
-                __WEBPACK_IMPORTED_MODULE_15__agm_core__["a" /* AgmCoreModule */].forRoot({
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                widget_module_1.FuseWidgetModule,
+                ngx_charts_1.NgxChartsModule,
+                core_2.AgmCoreModule.forRoot({
                     apiKey: 'AIzaSyD81ecsCj4yYpcXSLFcYU97PvRsE_X8Bx8'
                 })
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__dashboard_dashboard_component__["a" /* FuseEcommerceDashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__products_products_component__["a" /* FuseEcommerceProductsComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__product_product_component__["a" /* FuseEcommerceProductComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__orders_orders_component__["a" /* FuseEcommerceOrdersComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__order_order_component__["a" /* FuseEcommerceOrderComponent */]
+                dashboard_component_1.FuseEcommerceDashboardComponent,
+                products_component_1.FuseEcommerceProductsComponent,
+                product_component_1.FuseEcommerceProductComponent,
+                orders_component_1.FuseEcommerceOrdersComponent,
+                order_component_1.FuseEcommerceOrderComponent
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_service__["a" /* EcommerceDashboardService */],
-                __WEBPACK_IMPORTED_MODULE_8__products_products_service__["a" /* EcommerceProductsService */],
-                __WEBPACK_IMPORTED_MODULE_10__product_product_service__["a" /* EcommerceProductService */],
-                __WEBPACK_IMPORTED_MODULE_12__orders_orders_service__["a" /* EcommerceOrdersService */],
-                __WEBPACK_IMPORTED_MODULE_14__order_order_service__["a" /* EcommerceOrderService */]
+                dashboard_service_1.EcommerceDashboardService,
+                products_service_1.EcommerceProductsService,
+                product_service_1.EcommerceProductService,
+                orders_service_1.EcommerceOrdersService,
+                order_service_1.EcommerceOrderService
             ]
         })
     ], FuseEcommerceModule);
     return FuseEcommerceModule;
 }());
-
+exports.FuseEcommerceModule = FuseEcommerceModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/order/order-statuses.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return orderStatuses; });
-var orderStatuses = [
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.orderStatuses = [
     {
         'id': 1,
         'name': 'Awaiting check payment',
@@ -422,22 +403,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/order/order.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseEcommerceOrderComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__order_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__order_model__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__order_statuses__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order-statuses.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -447,24 +416,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var order_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
+var order_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.model.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var order_statuses_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order-statuses.ts");
 var FuseEcommerceOrderComponent = (function () {
     function FuseEcommerceOrderComponent(orderService, formBuilder) {
         this.orderService = orderService;
         this.formBuilder = formBuilder;
-        this.order = new __WEBPACK_IMPORTED_MODULE_9__order_model__["a" /* Order */]();
-        this.orderStatuses = __WEBPACK_IMPORTED_MODULE_11__order_statuses__["a" /* orderStatuses */];
+        this.order = new order_model_1.Order();
+        this.orderStatuses = order_statuses_1.orderStatuses;
     }
     FuseEcommerceOrderComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -472,7 +442,7 @@ var FuseEcommerceOrderComponent = (function () {
         this.onOrderChanged =
             this.orderService.onOrderChanged
                 .subscribe(function (order) {
-                _this.order = new __WEBPACK_IMPORTED_MODULE_9__order_model__["a" /* Order */](order);
+                _this.order = new order_model_1.Order(order);
             });
         this.statusForm = this.formBuilder.group({
             newStatus: ['']
@@ -493,35 +463,35 @@ var FuseEcommerceOrderComponent = (function () {
         this.onOrderChanged.unsubscribe();
     };
     FuseEcommerceOrderComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-e-commerce-order',
             template: __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/e-commerce/order/order.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__order_service__["a" /* EcommerceOrderService */],
-            __WEBPACK_IMPORTED_MODULE_10__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [order_service_1.EcommerceOrderService,
+            forms_1.FormBuilder])
     ], FuseEcommerceOrderComponent);
     return FuseEcommerceOrderComponent;
 }());
-
+exports.FuseEcommerceOrderComponent = FuseEcommerceOrderComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/order/order.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Order; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var Order = (function () {
     function Order(order) {
         order = order || {};
-        this.id = order.id || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
-        this.reference = order.reference || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+        this.id = order.id || fuseUtils_1.FuseUtils.generateGUID();
+        this.reference = order.reference || fuseUtils_1.FuseUtils.generateGUID();
         this.subtotal = order.subtotal || 0;
         this.tax = order.tax || 0;
         this.discount = order.discount || 0;
@@ -535,19 +505,16 @@ var Order = (function () {
     }
     return Order;
 }());
-
+exports.Order = Order;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/order/order.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EcommerceOrderService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -557,13 +524,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var EcommerceOrderService = (function () {
     function EcommerceOrderService(http) {
         this.http = http;
-        this.onOrderChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onOrderChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -612,12 +580,12 @@ var EcommerceOrderService = (function () {
         });
     };
     EcommerceOrderService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], EcommerceOrderService);
     return EcommerceOrderService;
 }());
-
+exports.EcommerceOrderService = EcommerceOrderService;
 
 
 /***/ }),
@@ -648,25 +616,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/orders/orders.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseEcommerceOrdersComponent; });
-/* unused harmony export FilesDataSource */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__orders_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__ = __webpack_require__("../../../cdk/esm5/collections.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -686,20 +639,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var orders_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.service.ts");
+var collections_1 = __webpack_require__("../../../cdk/esm5/collections.es5.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var FuseEcommerceOrdersComponent = (function () {
     function FuseEcommerceOrdersComponent(ordersService) {
         this.ordersService = ordersService;
@@ -708,7 +662,7 @@ var FuseEcommerceOrdersComponent = (function () {
     FuseEcommerceOrdersComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.dataSource = new FilesDataSource(this.ordersService, this.paginator, this.sort);
-        __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].fromEvent(this.filter.nativeElement, 'keyup')
+        Observable_1.Observable.fromEvent(this.filter.nativeElement, 'keyup')
             .debounceTime(150)
             .distinctUntilChanged()
             .subscribe(function () {
@@ -719,29 +673,29 @@ var FuseEcommerceOrdersComponent = (function () {
         });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_5__angular_material__["z" /* MatPaginator */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__angular_material__["z" /* MatPaginator */])
+        core_1.ViewChild(material_1.MatPaginator),
+        __metadata("design:type", material_1.MatPaginator)
     ], FuseEcommerceOrdersComponent.prototype, "paginator", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('filter'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
+        core_1.ViewChild('filter'),
+        __metadata("design:type", core_1.ElementRef)
     ], FuseEcommerceOrdersComponent.prototype, "filter", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_5__angular_material__["M" /* MatSort */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__angular_material__["M" /* MatSort */])
+        core_1.ViewChild(material_1.MatSort),
+        __metadata("design:type", material_1.MatSort)
     ], FuseEcommerceOrdersComponent.prototype, "sort", void 0);
     FuseEcommerceOrdersComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-e-commerce-orders',
             template: __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/e-commerce/orders/orders.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_4__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__orders_service__["a" /* EcommerceOrdersService */]])
+        __metadata("design:paramtypes", [orders_service_1.EcommerceOrdersService])
     ], FuseEcommerceOrdersComponent);
     return FuseEcommerceOrdersComponent;
 }());
-
+exports.FuseEcommerceOrdersComponent = FuseEcommerceOrdersComponent;
 var FilesDataSource = (function (_super) {
     __extends(FilesDataSource, _super);
     function FilesDataSource(ordersService, _paginator, _sort) {
@@ -749,8 +703,8 @@ var FilesDataSource = (function (_super) {
         _this.ordersService = ordersService;
         _this._paginator = _paginator;
         _this._sort = _sort;
-        _this._filterChange = new __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__["BehaviorSubject"]('');
-        _this._filteredDataChange = new __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__["BehaviorSubject"]('');
+        _this._filterChange = new BehaviorSubject_1.BehaviorSubject('');
+        _this._filteredDataChange = new BehaviorSubject_1.BehaviorSubject('');
         _this.filteredData = _this.ordersService.orders;
         return _this;
     }
@@ -783,7 +737,7 @@ var FilesDataSource = (function (_super) {
             this._filterChange,
             this._sort.sortChange
         ];
-        return __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].merge.apply(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"], displayDataChanges).map(function () {
+        return Observable_1.Observable.merge.apply(Observable_1.Observable, displayDataChanges).map(function () {
             var data = _this.ordersService.orders.slice();
             data = _this.filterData(data);
             _this.filteredData = data.slice();
@@ -797,7 +751,7 @@ var FilesDataSource = (function (_super) {
         if (!this.filter) {
             return data;
         }
-        return __WEBPACK_IMPORTED_MODULE_13__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(data, this.filter);
+        return fuseUtils_1.FuseUtils.filterArrayByString(data, this.filter);
     };
     FilesDataSource.prototype.sortData = function (data) {
         var _this = this;
@@ -839,20 +793,17 @@ var FilesDataSource = (function (_super) {
     FilesDataSource.prototype.disconnect = function () {
     };
     return FilesDataSource;
-}(__WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__["a" /* DataSource */]));
-
+}(collections_1.DataSource));
+exports.FilesDataSource = FilesDataSource;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/orders/orders.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EcommerceOrdersService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -862,13 +813,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var EcommerceOrdersService = (function () {
     function EcommerceOrdersService(http) {
         this.http = http;
-        this.onOrdersChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onOrdersChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -898,12 +850,12 @@ var EcommerceOrdersService = (function () {
         });
     };
     EcommerceOrdersService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], EcommerceOrdersService);
     return EcommerceOrdersService;
 }());
-
+exports.EcommerceOrdersService = EcommerceOrdersService;
 
 
 /***/ }),
@@ -934,24 +886,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/product/product.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseEcommerceProductComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__product_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__product_model__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -961,27 +899,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var product_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
+var product_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.model.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
 var FuseEcommerceProductComponent = (function () {
     function FuseEcommerceProductComponent(productService, formBuilder, snackBar, location) {
         this.productService = productService;
         this.formBuilder = formBuilder;
         this.snackBar = snackBar;
         this.location = location;
-        this.product = new __WEBPACK_IMPORTED_MODULE_9__product_model__["a" /* Product */]();
+        this.product = new product_model_1.Product();
     }
     FuseEcommerceProductComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -990,12 +929,12 @@ var FuseEcommerceProductComponent = (function () {
             this.productService.onProductChanged
                 .subscribe(function (product) {
                 if (product) {
-                    _this.product = new __WEBPACK_IMPORTED_MODULE_9__product_model__["a" /* Product */](product);
+                    _this.product = new product_model_1.Product(product);
                     _this.pageType = 'edit';
                 }
                 else {
                     _this.pageType = 'new';
-                    _this.product = new __WEBPACK_IMPORTED_MODULE_9__product_model__["a" /* Product */]();
+                    _this.product = new product_model_1.Product();
                 }
                 _this.productForm = _this.createProductForm();
             });
@@ -1026,7 +965,7 @@ var FuseEcommerceProductComponent = (function () {
     FuseEcommerceProductComponent.prototype.saveProduct = function () {
         var _this = this;
         var data = this.productForm.getRawValue();
-        data.handle = __WEBPACK_IMPORTED_MODULE_11__core_fuseUtils__["a" /* FuseUtils */].handleize(data.name);
+        data.handle = fuseUtils_1.FuseUtils.handleize(data.name);
         this.productService.saveProduct(data)
             .then(function () {
             // Trigger the subscription with new data
@@ -1041,7 +980,7 @@ var FuseEcommerceProductComponent = (function () {
     FuseEcommerceProductComponent.prototype.addProduct = function () {
         var _this = this;
         var data = this.productForm.getRawValue();
-        data.handle = __WEBPACK_IMPORTED_MODULE_11__core_fuseUtils__["a" /* FuseUtils */].handleize(data.name);
+        data.handle = fuseUtils_1.FuseUtils.handleize(data.name);
         this.productService.addProduct(data)
             .then(function () {
             // Trigger the subscription with new data
@@ -1059,38 +998,38 @@ var FuseEcommerceProductComponent = (function () {
         this.onProductChanged.unsubscribe();
     };
     FuseEcommerceProductComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-e-commerce-product',
             template: __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/e-commerce/product/product.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__product_service__["a" /* EcommerceProductService */],
-            __WEBPACK_IMPORTED_MODULE_10__angular_forms__["b" /* FormBuilder */],
-            __WEBPACK_IMPORTED_MODULE_12__angular_material__["K" /* MatSnackBar */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_common__["Location"]])
+        __metadata("design:paramtypes", [product_service_1.EcommerceProductService,
+            forms_1.FormBuilder,
+            material_1.MatSnackBar,
+            common_1.Location])
     ], FuseEcommerceProductComponent);
     return FuseEcommerceProductComponent;
 }());
-
+exports.FuseEcommerceProductComponent = FuseEcommerceProductComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/product/product.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Product; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var Product = (function () {
     function Product(product) {
         product = product || {};
-        this.id = product.id || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+        this.id = product.id || fuseUtils_1.FuseUtils.generateGUID();
         this.name = product.name || '';
-        this.handle = product.handle || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].handleize(this.name);
+        this.handle = product.handle || fuseUtils_1.FuseUtils.handleize(this.name);
         this.description = product.description || '';
         this.categories = product.categories || [];
         this.tags = product.tags || [];
@@ -1146,19 +1085,16 @@ var Product = (function () {
     };
     return Product;
 }());
-
+exports.Product = Product;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/product/product.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EcommerceProductService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1168,13 +1104,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var EcommerceProductService = (function () {
     function EcommerceProductService(http) {
         this.http = http;
-        this.onProductChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onProductChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -1229,12 +1166,12 @@ var EcommerceProductService = (function () {
         });
     };
     EcommerceProductService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], EcommerceProductService);
     return EcommerceProductService;
 }());
-
+exports.EcommerceProductService = EcommerceProductService;
 
 
 /***/ }),
@@ -1265,25 +1202,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/products/products.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseEcommerceProductsComponent; });
-/* unused harmony export FilesDataSource */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__products_service__ = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__ = __webpack_require__("../../../cdk/esm5/collections.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1303,20 +1225,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var products_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.service.ts");
+var collections_1 = __webpack_require__("../../../cdk/esm5/collections.es5.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/startWith.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/merge.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/fromEvent.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var FuseEcommerceProductsComponent = (function () {
     function FuseEcommerceProductsComponent(productsService) {
         this.productsService = productsService;
@@ -1325,7 +1248,7 @@ var FuseEcommerceProductsComponent = (function () {
     FuseEcommerceProductsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.dataSource = new FilesDataSource(this.productsService, this.paginator, this.sort);
-        __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].fromEvent(this.filter.nativeElement, 'keyup')
+        Observable_1.Observable.fromEvent(this.filter.nativeElement, 'keyup')
             .debounceTime(150)
             .distinctUntilChanged()
             .subscribe(function () {
@@ -1336,29 +1259,29 @@ var FuseEcommerceProductsComponent = (function () {
         });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_5__angular_material__["z" /* MatPaginator */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__angular_material__["z" /* MatPaginator */])
+        core_1.ViewChild(material_1.MatPaginator),
+        __metadata("design:type", material_1.MatPaginator)
     ], FuseEcommerceProductsComponent.prototype, "paginator", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('filter'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
+        core_1.ViewChild('filter'),
+        __metadata("design:type", core_1.ElementRef)
     ], FuseEcommerceProductsComponent.prototype, "filter", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_5__angular_material__["M" /* MatSort */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_5__angular_material__["M" /* MatSort */])
+        core_1.ViewChild(material_1.MatSort),
+        __metadata("design:type", material_1.MatSort)
     ], FuseEcommerceProductsComponent.prototype, "sort", void 0);
     FuseEcommerceProductsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-e-commerce-products',
             template: __webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/e-commerce/products/products.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_4__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__products_service__["a" /* EcommerceProductsService */]])
+        __metadata("design:paramtypes", [products_service_1.EcommerceProductsService])
     ], FuseEcommerceProductsComponent);
     return FuseEcommerceProductsComponent;
 }());
-
+exports.FuseEcommerceProductsComponent = FuseEcommerceProductsComponent;
 var FilesDataSource = (function (_super) {
     __extends(FilesDataSource, _super);
     function FilesDataSource(productsService, _paginator, _sort) {
@@ -1366,8 +1289,8 @@ var FilesDataSource = (function (_super) {
         _this.productsService = productsService;
         _this._paginator = _paginator;
         _this._sort = _sort;
-        _this._filterChange = new __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__["BehaviorSubject"]('');
-        _this._filteredDataChange = new __WEBPACK_IMPORTED_MODULE_6_rxjs_BehaviorSubject__["BehaviorSubject"]('');
+        _this._filterChange = new BehaviorSubject_1.BehaviorSubject('');
+        _this._filteredDataChange = new BehaviorSubject_1.BehaviorSubject('');
         _this.filteredData = _this.productsService.products;
         return _this;
     }
@@ -1400,7 +1323,7 @@ var FilesDataSource = (function (_super) {
             this._filterChange,
             this._sort.sortChange
         ];
-        return __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].merge.apply(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"], displayDataChanges).map(function () {
+        return Observable_1.Observable.merge.apply(Observable_1.Observable, displayDataChanges).map(function () {
             var data = _this.productsService.products.slice();
             data = _this.filterData(data);
             _this.filteredData = data.slice();
@@ -1414,7 +1337,7 @@ var FilesDataSource = (function (_super) {
         if (!this.filter) {
             return data;
         }
-        return __WEBPACK_IMPORTED_MODULE_13__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(data, this.filter);
+        return fuseUtils_1.FuseUtils.filterArrayByString(data, this.filter);
     };
     FilesDataSource.prototype.sortData = function (data) {
         var _this = this;
@@ -1453,20 +1376,17 @@ var FilesDataSource = (function (_super) {
     FilesDataSource.prototype.disconnect = function () {
     };
     return FilesDataSource;
-}(__WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__["a" /* DataSource */]));
-
+}(collections_1.DataSource));
+exports.FilesDataSource = FilesDataSource;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/e-commerce/products/products.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EcommerceProductsService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1476,13 +1396,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var EcommerceProductsService = (function () {
     function EcommerceProductsService(http) {
         this.http = http;
-        this.onProductsChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onProductsChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -1512,12 +1433,12 @@ var EcommerceProductsService = (function () {
         });
     };
     EcommerceProductsService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], EcommerceProductsService);
     return EcommerceProductsService;
 }());
-
+exports.EcommerceProductsService = EcommerceProductsService;
 
 
 /***/ })

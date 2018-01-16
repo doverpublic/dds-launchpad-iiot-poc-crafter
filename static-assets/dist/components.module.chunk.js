@@ -26,13 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/cards/cards.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardsDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_d3_shape__ = __webpack_require__("../../../../d3-shape/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -42,9 +39,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shape = __webpack_require__("../../../../d3-shape/index.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseCardsDocsComponent = (function () {
     function FuseCardsDocsComponent() {
         this.view = 'preview';
@@ -92,7 +90,7 @@ var FuseCardsDocsComponent = (function () {
                     ]
                 }
             ],
-            curve: __WEBPACK_IMPORTED_MODULE_1_d3_shape__["curveBasis"]
+            curve: shape.curveBasis
         };
         // Card 24
         this.card24 = {
@@ -225,7 +223,7 @@ var FuseCardsDocsComponent = (function () {
                     ]
                 }
             ],
-            curve: __WEBPACK_IMPORTED_MODULE_1_d3_shape__["curveBasis"]
+            curve: shape.curveBasis
         };
     }
     FuseCardsDocsComponent.prototype.toggleView = function () {
@@ -237,130 +235,114 @@ var FuseCardsDocsComponent = (function () {
         }
     };
     FuseCardsDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-cards-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/cards/cards.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/cards/cards.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
         __metadata("design:paramtypes", [])
     ], FuseCardsDocsComponent);
     return FuseCardsDocsComponent;
 }());
-
+exports.FuseCardsDocsComponent = FuseCardsDocsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/components.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseComponentsModule", function() { return FuseComponentsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards_cards_component__ = __webpack_require__("../../../../../src/app/main/content/components/cards/cards.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__countdown_countdown_component__ = __webpack_require__("../../../../../src/app/main/content/components/countdown/countdown.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__highlight_highlight_component__ = __webpack_require__("../../../../../src/app/main/content/components/highlight/highlight.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__material_color_picker_material_color_picker_component__ = __webpack_require__("../../../../../src/app/main/content/components/material-color-picker/material-color-picker.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__multi_language_multi_language_component__ = __webpack_require__("../../../../../src/app/main/content/components/multi-language/multi-language.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_navigation_component__ = __webpack_require__("../../../../../src/app/main/content/components/navigation/navigation.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__search_bar_search_bar_component__ = __webpack_require__("../../../../../src/app/main/content/components/search-bar/search-bar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shortcuts_shortcuts_component__ = __webpack_require__("../../../../../src/app/main/content/components/shortcuts/shortcuts.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__widget_widget_component__ = __webpack_require__("../../../../../src/app/main/content/components/widget/widget.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__core_components_widget_widget_module__ = __webpack_require__("../../../../../src/app/core/components/widget/widget.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_material_angular_material_module__ = __webpack_require__("../../../../../src/app/main/content/components/angular-material/angular-material.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__swimlane_ngx_charts__ = __webpack_require__("../../../../@swimlane/ngx-charts/release/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__swimlane_ngx_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__swimlane_ngx_charts__);
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var cards_component_1 = __webpack_require__("../../../../../src/app/main/content/components/cards/cards.component.ts");
+var countdown_component_1 = __webpack_require__("../../../../../src/app/main/content/components/countdown/countdown.component.ts");
+var highlight_component_1 = __webpack_require__("../../../../../src/app/main/content/components/highlight/highlight.component.ts");
+var material_color_picker_component_1 = __webpack_require__("../../../../../src/app/main/content/components/material-color-picker/material-color-picker.component.ts");
+var multi_language_component_1 = __webpack_require__("../../../../../src/app/main/content/components/multi-language/multi-language.component.ts");
+var navigation_component_1 = __webpack_require__("../../../../../src/app/main/content/components/navigation/navigation.component.ts");
+var search_bar_component_1 = __webpack_require__("../../../../../src/app/main/content/components/search-bar/search-bar.component.ts");
+var shortcuts_component_1 = __webpack_require__("../../../../../src/app/main/content/components/shortcuts/shortcuts.component.ts");
+var widget_component_1 = __webpack_require__("../../../../../src/app/main/content/components/widget/widget.component.ts");
+var widget_module_1 = __webpack_require__("../../../../../src/app/core/components/widget/widget.module.ts");
+var angular_material_module_1 = __webpack_require__("../../../../../src/app/main/content/components/angular-material/angular-material.module.ts");
+var ngx_charts_1 = __webpack_require__("../../../../@swimlane/ngx-charts/release/index.js");
 var routes = [
     {
         path: 'cards',
-        component: __WEBPACK_IMPORTED_MODULE_3__cards_cards_component__["a" /* FuseCardsDocsComponent */]
+        component: cards_component_1.FuseCardsDocsComponent
     },
     {
         path: 'countdown',
-        component: __WEBPACK_IMPORTED_MODULE_4__countdown_countdown_component__["a" /* FuseCountdownDocsComponent */]
+        component: countdown_component_1.FuseCountdownDocsComponent
     },
     {
         path: 'highlight',
-        component: __WEBPACK_IMPORTED_MODULE_5__highlight_highlight_component__["a" /* FuseHighlightDocsComponent */]
+        component: highlight_component_1.FuseHighlightDocsComponent
     },
     {
         path: 'material-color-picker',
-        component: __WEBPACK_IMPORTED_MODULE_6__material_color_picker_material_color_picker_component__["a" /* FuseMaterialColorPickerDocsComponent */]
+        component: material_color_picker_component_1.FuseMaterialColorPickerDocsComponent
     },
     {
         path: 'multi-language',
-        component: __WEBPACK_IMPORTED_MODULE_7__multi_language_multi_language_component__["a" /* FuseMultiLanguageDocsComponent */]
+        component: multi_language_component_1.FuseMultiLanguageDocsComponent
     },
     {
         path: 'navigation',
-        component: __WEBPACK_IMPORTED_MODULE_8__navigation_navigation_component__["a" /* FuseNavigationDocsComponent */]
+        component: navigation_component_1.FuseNavigationDocsComponent
     },
     {
         path: 'search-bar',
-        component: __WEBPACK_IMPORTED_MODULE_9__search_bar_search_bar_component__["a" /* FuseSearchBarDocsComponent */]
+        component: search_bar_component_1.FuseSearchBarDocsComponent
     },
     {
         path: 'shortcuts',
-        component: __WEBPACK_IMPORTED_MODULE_10__shortcuts_shortcuts_component__["a" /* FuseShortcutsDocsComponent */]
+        component: shortcuts_component_1.FuseShortcutsDocsComponent
     },
     {
         path: 'widget',
-        component: __WEBPACK_IMPORTED_MODULE_11__widget_widget_component__["a" /* FuseWidgetDocsComponent */]
+        component: widget_component_1.FuseWidgetDocsComponent
     }
 ];
 var FuseComponentsModule = (function () {
     function FuseComponentsModule() {
     }
     FuseComponentsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_12__core_components_widget_widget_module__["a" /* FuseWidgetModule */],
-                __WEBPACK_IMPORTED_MODULE_13__angular_material_angular_material_module__["a" /* FuseAngularMaterialModule */],
-                __WEBPACK_IMPORTED_MODULE_14__swimlane_ngx_charts__["NgxChartsModule"]
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                widget_module_1.FuseWidgetModule,
+                angular_material_module_1.FuseAngularMaterialModule,
+                ngx_charts_1.NgxChartsModule
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__cards_cards_component__["a" /* FuseCardsDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__countdown_countdown_component__["a" /* FuseCountdownDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__highlight_highlight_component__["a" /* FuseHighlightDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__material_color_picker_material_color_picker_component__["a" /* FuseMaterialColorPickerDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__multi_language_multi_language_component__["a" /* FuseMultiLanguageDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__navigation_navigation_component__["a" /* FuseNavigationDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__search_bar_search_bar_component__["a" /* FuseSearchBarDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__shortcuts_shortcuts_component__["a" /* FuseShortcutsDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__widget_widget_component__["a" /* FuseWidgetDocsComponent */]
+                cards_component_1.FuseCardsDocsComponent,
+                countdown_component_1.FuseCountdownDocsComponent,
+                highlight_component_1.FuseHighlightDocsComponent,
+                material_color_picker_component_1.FuseMaterialColorPickerDocsComponent,
+                multi_language_component_1.FuseMultiLanguageDocsComponent,
+                navigation_component_1.FuseNavigationDocsComponent,
+                search_bar_component_1.FuseSearchBarDocsComponent,
+                shortcuts_component_1.FuseShortcutsDocsComponent,
+                widget_component_1.FuseWidgetDocsComponent
             ]
         })
     ], FuseComponentsModule);
     return FuseComponentsModule;
 }());
-
+exports.FuseComponentsModule = FuseComponentsModule;
 
 
 /***/ }),
@@ -391,11 +373,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/countdown/countdown.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCountdownDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -405,12 +386,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCountdownDocsComponent = (function () {
     function FuseCountdownDocsComponent() {
     }
     FuseCountdownDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-countdown-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/countdown/countdown.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/countdown/countdown.component.scss")]
@@ -419,7 +401,7 @@ var FuseCountdownDocsComponent = (function () {
     ], FuseCountdownDocsComponent);
     return FuseCountdownDocsComponent;
 }());
-
+exports.FuseCountdownDocsComponent = FuseCountdownDocsComponent;
 
 
 /***/ }),
@@ -450,11 +432,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/highlight/highlight.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseHighlightDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -464,12 +445,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseHighlightDocsComponent = (function () {
     function FuseHighlightDocsComponent() {
     }
     FuseHighlightDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-highlight-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/highlight/highlight.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/highlight/highlight.component.scss")]
@@ -478,7 +460,7 @@ var FuseHighlightDocsComponent = (function () {
     ], FuseHighlightDocsComponent);
     return FuseHighlightDocsComponent;
 }());
-
+exports.FuseHighlightDocsComponent = FuseHighlightDocsComponent;
 
 
 /***/ }),
@@ -509,11 +491,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/material-color-picker/material-color-picker.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMaterialColorPickerDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -523,12 +504,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseMaterialColorPickerDocsComponent = (function () {
     function FuseMaterialColorPickerDocsComponent() {
     }
     FuseMaterialColorPickerDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-material-color-picker-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/material-color-picker/material-color-picker.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/material-color-picker/material-color-picker.component.scss")]
@@ -537,7 +519,7 @@ var FuseMaterialColorPickerDocsComponent = (function () {
     ], FuseMaterialColorPickerDocsComponent);
     return FuseMaterialColorPickerDocsComponent;
 }());
-
+exports.FuseMaterialColorPickerDocsComponent = FuseMaterialColorPickerDocsComponent;
 
 
 /***/ }),
@@ -568,11 +550,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/multi-language/multi-language.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMultiLanguageDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -582,12 +563,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseMultiLanguageDocsComponent = (function () {
     function FuseMultiLanguageDocsComponent() {
     }
     FuseMultiLanguageDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-multi-language-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/multi-language/multi-language.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/multi-language/multi-language.component.scss")]
@@ -596,7 +578,7 @@ var FuseMultiLanguageDocsComponent = (function () {
     ], FuseMultiLanguageDocsComponent);
     return FuseMultiLanguageDocsComponent;
 }());
-
+exports.FuseMultiLanguageDocsComponent = FuseMultiLanguageDocsComponent;
 
 
 /***/ }),
@@ -627,12 +609,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/navigation/navigation.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavigationDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_components_navigation_navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -642,8 +622,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
 var FuseNavigationDocsComponent = (function () {
     function FuseNavigationDocsComponent(navigationService) {
         this.navigationService = navigationService;
@@ -681,16 +662,16 @@ var FuseNavigationDocsComponent = (function () {
         applicationsNavItem.children.unshift(newNavItem);
     };
     FuseNavigationDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-navigation-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/navigation/navigation.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/navigation/navigation.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_components_navigation_navigation_service__["a" /* FuseNavigationService */]])
+        __metadata("design:paramtypes", [navigation_service_1.FuseNavigationService])
     ], FuseNavigationDocsComponent);
     return FuseNavigationDocsComponent;
 }());
-
+exports.FuseNavigationDocsComponent = FuseNavigationDocsComponent;
 
 
 /***/ }),
@@ -721,11 +702,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/search-bar/search-bar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSearchBarDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -735,12 +715,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSearchBarDocsComponent = (function () {
     function FuseSearchBarDocsComponent() {
     }
     FuseSearchBarDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-search-bar-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/search-bar/search-bar.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/search-bar/search-bar.component.scss")]
@@ -749,7 +730,7 @@ var FuseSearchBarDocsComponent = (function () {
     ], FuseSearchBarDocsComponent);
     return FuseSearchBarDocsComponent;
 }());
-
+exports.FuseSearchBarDocsComponent = FuseSearchBarDocsComponent;
 
 
 /***/ }),
@@ -780,11 +761,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/shortcuts/shortcuts.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseShortcutsDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -794,12 +774,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseShortcutsDocsComponent = (function () {
     function FuseShortcutsDocsComponent() {
     }
     FuseShortcutsDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-shortcuts-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/shortcuts/shortcuts.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/shortcuts/shortcuts.component.scss")]
@@ -808,7 +789,7 @@ var FuseShortcutsDocsComponent = (function () {
     ], FuseShortcutsDocsComponent);
     return FuseShortcutsDocsComponent;
 }());
-
+exports.FuseShortcutsDocsComponent = FuseShortcutsDocsComponent;
 
 
 /***/ }),
@@ -839,11 +820,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/components/widget/widget.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseWidgetDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -853,12 +833,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseWidgetDocsComponent = (function () {
     function FuseWidgetDocsComponent() {
     }
     FuseWidgetDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-widget-docs',
             template: __webpack_require__("../../../../../src/app/main/content/components/widget/widget.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/components/widget/widget.component.scss")]
@@ -867,7 +848,7 @@ var FuseWidgetDocsComponent = (function () {
     ], FuseWidgetDocsComponent);
     return FuseWidgetDocsComponent;
 }());
-
+exports.FuseWidgetDocsComponent = FuseWidgetDocsComponent;
 
 
 /***/ })

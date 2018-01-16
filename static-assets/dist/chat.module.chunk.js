@@ -26,12 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/chat-start/chat-start.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatStartComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,25 +39,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseChatStartComponent = (function () {
     function FuseChatStartComponent() {
     }
     FuseChatStartComponent.prototype.ngOnInit = function () {
     };
     FuseChatStartComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat-start',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/chat-start/chat-start.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/chat-start/chat-start.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_1__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
         __metadata("design:paramtypes", [])
     ], FuseChatStartComponent);
     return FuseChatStartComponent;
 }());
-
+exports.FuseChatStartComponent = FuseChatStartComponent;
 
 
 /***/ }),
@@ -90,14 +89,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/chat-view/chat-view.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatViewComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__ = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -107,10 +102,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var fuse_perfect_scrollbar_directive_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
 var FuseChatViewComponent = (function () {
     function FuseChatViewComponent(chatService) {
         this.chatService = chatService;
@@ -175,28 +171,28 @@ var FuseChatViewComponent = (function () {
         });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_3__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__["a" /* FusePerfectScrollbarDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__["a" /* FusePerfectScrollbarDirective */])
+        core_1.ViewChild(fuse_perfect_scrollbar_directive_1.FusePerfectScrollbarDirective),
+        __metadata("design:type", fuse_perfect_scrollbar_directive_1.FusePerfectScrollbarDirective)
     ], FuseChatViewComponent.prototype, "directiveScroll", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChildren"])('replyInput'),
+        core_1.ViewChildren('replyInput'),
         __metadata("design:type", Object)
     ], FuseChatViewComponent.prototype, "replyInputField", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('replyForm'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__angular_forms__["j" /* NgForm */])
+        core_1.ViewChild('replyForm'),
+        __metadata("design:type", forms_1.NgForm)
     ], FuseChatViewComponent.prototype, "replyForm", void 0);
     FuseChatViewComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat-view',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/chat-view/chat-view.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/chat-view/chat-view.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__chat_service__["a" /* ChatService */]])
+        __metadata("design:paramtypes", [chat_service_1.ChatService])
     ], FuseChatViewComponent);
     return FuseChatViewComponent;
 }());
-
+exports.FuseChatViewComponent = FuseChatViewComponent;
 
 
 /***/ }),
@@ -227,13 +223,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/chat.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -243,9 +236,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseChatComponent = (function () {
     function FuseChatComponent(chatService) {
         this.chatService = chatService;
@@ -258,65 +252,53 @@ var FuseChatComponent = (function () {
         });
     };
     FuseChatComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/chat.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__chat_service__["a" /* ChatService */]])
+        __metadata("design:paramtypes", [chat_service_1.ChatService])
     ], FuseChatComponent);
     return FuseChatComponent;
 }());
-
+exports.FuseChatComponent = FuseChatComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/chat.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseChatModule", function() { return FuseChatModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__chat_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__chat_view_chat_view_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat-view/chat-view.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__chat_start_chat_start_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat-start/chat-start.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__sidenavs_left_chats_chats_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/chats/chats.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__sidenavs_left_user_user_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/user/user.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__sidenavs_left_left_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/left.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__sidenavs_right_right_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/right.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__sidenavs_right_contact_contact_component__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/contact/contact.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var chat_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.component.ts");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+var chat_view_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat-view/chat-view.component.ts");
+var chat_start_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat-start/chat-start.component.ts");
+var chats_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/chats/chats.component.ts");
+var user_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/user/user.component.ts");
+var left_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/left.component.ts");
+var right_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/right.component.ts");
+var contact_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/contact/contact.component.ts");
 var routes = [
     {
         path: '**',
-        component: __WEBPACK_IMPORTED_MODULE_3__chat_component__["a" /* FuseChatComponent */],
+        component: chat_component_1.FuseChatComponent,
         children: [],
         resolve: {
-            chat: __WEBPACK_IMPORTED_MODULE_4__chat_service__["a" /* ChatService */]
+            chat: chat_service_1.ChatService
         }
     }
 ];
@@ -324,43 +306,38 @@ var FuseChatModule = (function () {
     function FuseChatModule() {
     }
     FuseChatModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__chat_component__["a" /* FuseChatComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__chat_view_chat_view_component__["a" /* FuseChatViewComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__chat_start_chat_start_component__["a" /* FuseChatStartComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__sidenavs_left_chats_chats_component__["a" /* FuseChatChatsSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__sidenavs_left_user_user_component__["a" /* FuseChatUserSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__sidenavs_left_left_component__["a" /* FuseChatLeftSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__sidenavs_right_right_component__["a" /* FuseChatRightSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__sidenavs_right_contact_contact_component__["a" /* FuseChatContactSidenavComponent */]
+                chat_component_1.FuseChatComponent,
+                chat_view_component_1.FuseChatViewComponent,
+                chat_start_component_1.FuseChatStartComponent,
+                chats_component_1.FuseChatChatsSidenavComponent,
+                user_component_1.FuseChatUserSidenavComponent,
+                left_component_1.FuseChatLeftSidenavComponent,
+                right_component_1.FuseChatRightSidenavComponent,
+                contact_component_1.FuseChatContactSidenavComponent
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__chat_service__["a" /* ChatService */]
+                chat_service_1.ChatService
             ]
         })
     ], FuseChatModule);
     return FuseChatModule;
 }());
-
+exports.FuseChatModule = FuseChatModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/chat.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChatService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -378,20 +355,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var Subject_1 = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var ChatService = (function () {
     function ChatService(http) {
         this.http = http;
-        this.onChatSelected = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](null);
-        this.onContactSelected = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](null);
-        this.onChatsUpdated = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__["a" /* Subject */]();
-        this.onUserUpdated = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__["a" /* Subject */]();
-        this.onLeftSidenavViewChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__["a" /* Subject */]();
-        this.onRightSidenavViewChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__["a" /* Subject */]();
+        this.onChatSelected = new BehaviorSubject_1.BehaviorSubject(null);
+        this.onContactSelected = new BehaviorSubject_1.BehaviorSubject(null);
+        this.onChatsUpdated = new Subject_1.Subject();
+        this.onUserUpdated = new Subject_1.Subject();
+        this.onLeftSidenavViewChanged = new Subject_1.Subject();
+        this.onRightSidenavViewChanged = new Subject_1.Subject();
     }
     /**
      * Get chat
@@ -439,7 +417,7 @@ var ChatService = (function () {
             var contact = _this.contacts.find(function (item) {
                 return item.id === contactId;
             });
-            var chatId = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+            var chatId = fuseUtils_1.FuseUtils.generateGUID();
             var chat = {
                 id: chatId,
                 dialog: []
@@ -582,12 +560,12 @@ var ChatService = (function () {
         });
     };
     ChatService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], ChatService);
     return ChatService;
 }());
-
+exports.ChatService = ChatService;
 
 
 /***/ }),
@@ -618,15 +596,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/sidenavs/left/chats/chats.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatChatsSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_flex_layout__ = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_service__ = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -636,11 +609,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+var flex_layout_1 = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var fuse_mat_sidenav_helper_service_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.service.ts");
 var FuseChatChatsSidenavComponent = (function () {
     function FuseChatChatsSidenavComponent(chatService, fuseMatSidenavService, media) {
         this.chatService = chatService;
@@ -679,19 +653,19 @@ var FuseChatChatsSidenavComponent = (function () {
         console.log('logout triggered');
     };
     FuseChatChatsSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat-chats-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/chats/chats.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/chats/chats.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__chat_service__["a" /* ChatService */],
-            __WEBPACK_IMPORTED_MODULE_4__core_directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_service__["a" /* FuseMatSidenavHelperService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_flex_layout__["b" /* ObservableMedia */]])
+        __metadata("design:paramtypes", [chat_service_1.ChatService,
+            fuse_mat_sidenav_helper_service_1.FuseMatSidenavHelperService,
+            flex_layout_1.ObservableMedia])
     ], FuseChatChatsSidenavComponent);
     return FuseChatChatsSidenavComponent;
 }());
-
+exports.FuseChatChatsSidenavComponent = FuseChatChatsSidenavComponent;
 
 
 /***/ }),
@@ -722,13 +696,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/sidenavs/left/left.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatLeftSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -738,9 +709,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
 var FuseChatLeftSidenavComponent = (function () {
     function FuseChatLeftSidenavComponent(chatService) {
         this.chatService = chatService;
@@ -753,17 +725,17 @@ var FuseChatLeftSidenavComponent = (function () {
         });
     };
     FuseChatLeftSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat-left-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/left.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/left.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_1__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__chat_service__["a" /* ChatService */]])
+        __metadata("design:paramtypes", [chat_service_1.ChatService])
     ], FuseChatLeftSidenavComponent);
     return FuseChatLeftSidenavComponent;
 }());
-
+exports.FuseChatLeftSidenavComponent = FuseChatLeftSidenavComponent;
 
 
 /***/ }),
@@ -794,14 +766,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/sidenavs/left/user/user.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatUserSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -811,17 +779,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
 var FuseChatUserSidenavComponent = (function () {
     function FuseChatUserSidenavComponent(chatService) {
         this.chatService = chatService;
         this.user = this.chatService.user;
-        this.userForm = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* FormGroup */]({
-            mood: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.user.mood),
-            status: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.user.status)
+        this.userForm = new forms_1.FormGroup({
+            mood: new forms_1.FormControl(this.user.mood),
+            status: new forms_1.FormControl(this.user.status)
         });
     }
     FuseChatUserSidenavComponent.prototype.ngOnInit = function () {
@@ -842,16 +811,16 @@ var FuseChatUserSidenavComponent = (function () {
         this.onFormChange.unsubscribe();
     };
     FuseChatUserSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat-user-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/user/user.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/left/user/user.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__chat_service__["a" /* ChatService */]])
+        __metadata("design:paramtypes", [chat_service_1.ChatService])
     ], FuseChatUserSidenavComponent);
     return FuseChatUserSidenavComponent;
 }());
-
+exports.FuseChatUserSidenavComponent = FuseChatUserSidenavComponent;
 
 
 /***/ }),
@@ -882,12 +851,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/sidenavs/right/contact/contact.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatContactSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -897,8 +864,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
 var FuseChatContactSidenavComponent = (function () {
     function FuseChatContactSidenavComponent(chatService) {
         this.chatService = chatService;
@@ -910,16 +878,16 @@ var FuseChatContactSidenavComponent = (function () {
         });
     };
     FuseChatContactSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat-contact-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/contact/contact.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/contact/contact.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__chat_service__["a" /* ChatService */]])
+        __metadata("design:paramtypes", [chat_service_1.ChatService])
     ], FuseChatContactSidenavComponent);
     return FuseChatContactSidenavComponent;
 }());
-
+exports.FuseChatContactSidenavComponent = FuseChatContactSidenavComponent;
 
 
 /***/ }),
@@ -950,13 +918,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/chat/sidenavs/right/right.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseChatRightSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__chat_service__ = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -966,9 +931,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var chat_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/chat/chat.service.ts");
 var FuseChatRightSidenavComponent = (function () {
     function FuseChatRightSidenavComponent(chatService) {
         this.chatService = chatService;
@@ -981,17 +947,17 @@ var FuseChatRightSidenavComponent = (function () {
         });
     };
     FuseChatRightSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-chat-right-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/right.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/chat/sidenavs/right/right.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_1__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__chat_service__["a" /* ChatService */]])
+        __metadata("design:paramtypes", [chat_service_1.ChatService])
     ], FuseChatRightSidenavComponent);
     return FuseChatRightSidenavComponent;
 }());
-
+exports.FuseChatRightSidenavComponent = FuseChatRightSidenavComponent;
 
 
 /***/ })

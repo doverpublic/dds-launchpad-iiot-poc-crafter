@@ -26,13 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/dialogs/compose/compose.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailNgrxComposeDialogComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -45,9 +42,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
 var FuseMailNgrxComposeDialogComponent = (function () {
     function FuseMailNgrxComposeDialogComponent(dialogRef, data, formBuilder) {
         this.dialogRef = dialogRef;
@@ -71,28 +69,29 @@ var FuseMailNgrxComposeDialogComponent = (function () {
         });
     };
     FuseMailNgrxComposeDialogComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-compose',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/dialogs/compose/compose.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/dialogs/compose/compose.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MAT_DIALOG_DATA */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_material__["o" /* MatDialogRef */], Object, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */]])
+        __param(1, core_1.Inject(material_1.MAT_DIALOG_DATA)),
+        __metadata("design:paramtypes", [material_1.MatDialogRef, Object, forms_1.FormBuilder])
     ], FuseMailNgrxComposeDialogComponent);
     return FuseMailNgrxComposeDialogComponent;
 }());
-
+exports.FuseMailNgrxComposeDialogComponent = FuseMailNgrxComposeDialogComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/i18n/en.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return locale; });
-var locale = {
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.locale = {
     lang: 'en',
     data: {
         'MAIL': {
@@ -111,11 +110,12 @@ var locale = {
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/i18n/tr.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return locale; });
-var locale = {
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.locale = {
     lang: 'tr',
     data: {
         'MAIL': {
@@ -159,15 +159,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/mail-details/mail-details.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailNgrxDetailsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mail_model__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -185,17 +180,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var mail_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.model.ts");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var fromStore = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
 var FuseMailNgrxDetailsComponent = (function () {
     function FuseMailNgrxDetailsComponent(mailService, store) {
         this.mailService = mailService;
         this.store = store;
         this.showDetails = false;
-        this.labels$ = this.store.select(__WEBPACK_IMPORTED_MODULE_3__store__["q" /* getLabelsArr */]);
+        this.labels$ = this.store.select(fromStore.getLabelsArr);
     }
     FuseMailNgrxDetailsComponent.prototype.ngOnInit = function () {
     };
@@ -220,31 +216,31 @@ var FuseMailNgrxDetailsComponent = (function () {
         this.updateMail();
     };
     FuseMailNgrxDetailsComponent.prototype.updateModel = function (data) {
-        this.mail = !data ? null : new __WEBPACK_IMPORTED_MODULE_1__mail_model__["a" /* Mail */](__assign({}, data));
+        this.mail = !data ? null : new mail_model_1.Mail(__assign({}, data));
     };
     FuseMailNgrxDetailsComponent.prototype.updateMail = function () {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_3__store__["m" /* UpdateMail */](this.mail));
+        this.store.dispatch(new fromStore.UpdateMail(this.mail));
         this.updateModel(this.mail);
     };
     FuseMailNgrxDetailsComponent.prototype.ngOnDestroy = function () {
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('mail'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__mail_model__["a" /* Mail */])
+        core_1.Input('mail'),
+        __metadata("design:type", mail_model_1.Mail)
     ], FuseMailNgrxDetailsComponent.prototype, "mailInput", void 0);
     FuseMailNgrxDetailsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-details',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-details/mail-details.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-details/mail-details.component.scss")],
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush
+            changeDetection: core_1.ChangeDetectionStrategy.OnPush
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__mail_service__["a" /* MailNgrxService */],
-            __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["h" /* Store */]])
+        __metadata("design:paramtypes", [mail_service_1.MailNgrxService,
+            store_1.Store])
     ], FuseMailNgrxDetailsComponent);
     return FuseMailNgrxDetailsComponent;
 }());
-
+exports.FuseMailNgrxDetailsComponent = FuseMailNgrxDetailsComponent;
 
 
 /***/ }),
@@ -275,15 +271,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list-item/mail-list-item.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailNgrxListItemComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mail_model__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -293,24 +284,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var mail_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.model.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var fromStore = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
 var FuseMailNgrxListItemComponent = (function () {
     function FuseMailNgrxListItemComponent(mailService, store, cd) {
         this.mailService = mailService;
         this.store = store;
         this.cd = cd;
-        this.labels$ = this.store.select(__WEBPACK_IMPORTED_MODULE_4__store__["q" /* getLabelsArr */]);
-        this.selectedMailIds$ = this.store.select(__WEBPACK_IMPORTED_MODULE_4__store__["t" /* getSelectedMailIds */]);
+        this.labels$ = this.store.select(fromStore.getLabelsArr);
+        this.selectedMailIds$ = this.store.select(fromStore.getSelectedMailIds);
         this.selected = false;
     }
     FuseMailNgrxListItemComponent.prototype.ngOnInit = function () {
         var _this = this;
         // Set the initial values
-        this.mail = new __WEBPACK_IMPORTED_MODULE_1__mail_model__["a" /* Mail */](this.mail);
+        this.mail = new mail_model_1.Mail(this.mail);
         this.unread = !this.mail.read;
         this.selectedMailIds$.subscribe(function (selectedMailIds) {
             _this.selected = selectedMailIds.length > 0 && selectedMailIds.find(function (id) { return id === _this.mail.id; }) !== undefined;
@@ -321,36 +313,36 @@ var FuseMailNgrxListItemComponent = (function () {
         this.cd.markForCheck();
     };
     FuseMailNgrxListItemComponent.prototype.onSelectedChange = function () {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_4__store__["l" /* ToggleInSelectedMails */](this.mail.id));
+        this.store.dispatch(new fromStore.ToggleInSelectedMails(this.mail.id));
     };
     FuseMailNgrxListItemComponent.prototype.ngOnDestroy = function () {
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__mail_model__["a" /* Mail */])
+        core_1.Input(),
+        __metadata("design:type", mail_model_1.Mail)
     ], FuseMailNgrxListItemComponent.prototype, "mail", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.selected'),
+        core_1.HostBinding('class.selected'),
         __metadata("design:type", Boolean)
     ], FuseMailNgrxListItemComponent.prototype, "selected", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.unread'),
+        core_1.HostBinding('class.unread'),
         __metadata("design:type", Boolean)
     ], FuseMailNgrxListItemComponent.prototype, "unread", void 0);
     FuseMailNgrxListItemComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-list-item',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list-item/mail-list-item.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list-item/mail-list-item.component.scss")],
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush
+            changeDetection: core_1.ChangeDetectionStrategy.OnPush
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__mail_service__["a" /* MailNgrxService */],
-            __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["h" /* Store */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"]])
+        __metadata("design:paramtypes", [mail_service_1.MailNgrxService,
+            store_1.Store,
+            core_1.ChangeDetectorRef])
     ], FuseMailNgrxListItemComponent);
     return FuseMailNgrxListItemComponent;
 }());
-
+exports.FuseMailNgrxListItemComponent = FuseMailNgrxListItemComponent;
 
 
 /***/ }),
@@ -381,13 +373,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailNgrxListComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -397,9 +386,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
 var FuseMailNgrxListComponent = (function () {
     function FuseMailNgrxListComponent(route, mailService, router) {
         this.route = route;
@@ -427,27 +417,27 @@ var FuseMailNgrxListComponent = (function () {
     FuseMailNgrxListComponent.prototype.ngOnDestroy = function () {
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Array)
     ], FuseMailNgrxListComponent.prototype, "mails", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Array)
     ], FuseMailNgrxListComponent.prototype, "currentMail", void 0);
     FuseMailNgrxListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-list',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list.component.scss")],
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush
+            changeDetection: core_1.ChangeDetectionStrategy.OnPush
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
-            __WEBPACK_IMPORTED_MODULE_2__mail_service__["a" /* MailNgrxService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["f" /* Router */]])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            mail_service_1.MailNgrxService,
+            router_1.Router])
     ], FuseMailNgrxListComponent);
     return FuseMailNgrxListComponent;
 }());
-
+exports.FuseMailNgrxListComponent = FuseMailNgrxListComponent;
 
 
 /***/ }),
@@ -478,21 +468,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/mail.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailNgrxComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_services_translation_loader_service__ = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_en__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/i18n/en.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__i18n_tr__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/i18n/tr.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__store__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -502,17 +481,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var translation_loader_service_1 = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
+var en_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/i18n/en.ts");
+var tr_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/i18n/tr.ts");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+var fromStore = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
 var FuseMailNgrxComponent = (function () {
     function FuseMailNgrxComponent(configService, mailService, translationLoader, store, cd) {
         this.configService = configService;
@@ -520,14 +500,14 @@ var FuseMailNgrxComponent = (function () {
         this.translationLoader = translationLoader;
         this.store = store;
         this.cd = cd;
-        this.searchInput = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */]('');
-        this.translationLoader.loadTranslations(__WEBPACK_IMPORTED_MODULE_4__i18n_en__["a" /* locale */], __WEBPACK_IMPORTED_MODULE_5__i18n_tr__["a" /* locale */]);
-        this.currentMail$ = this.store.select(__WEBPACK_IMPORTED_MODULE_9__store__["n" /* getCurrentMail */]);
-        this.mails$ = this.store.select(__WEBPACK_IMPORTED_MODULE_9__store__["r" /* getMailsArr */]);
-        this.folders$ = this.store.select(__WEBPACK_IMPORTED_MODULE_9__store__["p" /* getFoldersArr */]);
-        this.labels$ = this.store.select(__WEBPACK_IMPORTED_MODULE_9__store__["q" /* getLabelsArr */]);
-        this.selectedMailIds$ = this.store.select(__WEBPACK_IMPORTED_MODULE_9__store__["t" /* getSelectedMailIds */]);
-        this.searchText$ = this.store.select(__WEBPACK_IMPORTED_MODULE_9__store__["s" /* getSearchText */]);
+        this.searchInput = new forms_1.FormControl('');
+        this.translationLoader.loadTranslations(en_1.locale, tr_1.locale);
+        this.currentMail$ = this.store.select(fromStore.getCurrentMail);
+        this.mails$ = this.store.select(fromStore.getMailsArr);
+        this.folders$ = this.store.select(fromStore.getFoldersArr);
+        this.labels$ = this.store.select(fromStore.getLabelsArr);
+        this.selectedMailIds$ = this.store.select(fromStore.getSelectedMailIds);
+        this.searchText$ = this.store.select(fromStore.getSearchText);
         this.mails = [];
         this.selectedMailIds = [];
         this.configService.setSettings({
@@ -553,7 +533,7 @@ var FuseMailNgrxComponent = (function () {
             .debounceTime(300)
             .distinctUntilChanged()
             .subscribe(function (searchText) {
-            _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_9__store__["k" /* SetSearchText */](searchText));
+            _this.store.dispatch(new fromStore.SetSearchText(searchText));
         });
     };
     FuseMailNgrxComponent.prototype.toggleSelectAll = function (ev) {
@@ -566,25 +546,25 @@ var FuseMailNgrxComponent = (function () {
         }
     };
     FuseMailNgrxComponent.prototype.selectAllMails = function () {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_9__store__["g" /* SelectAllMails */]());
+        this.store.dispatch(new fromStore.SelectAllMails());
     };
     FuseMailNgrxComponent.prototype.deselectAllMails = function () {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_9__store__["b" /* DeselectAllMails */]());
+        this.store.dispatch(new fromStore.DeselectAllMails());
     };
     FuseMailNgrxComponent.prototype.selectMailsByParameter = function (parameter, value) {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_9__store__["h" /* SelectMailsByParameter */]({
+        this.store.dispatch(new fromStore.SelectMailsByParameter({
             parameter: parameter,
             value: value
         }));
     };
     FuseMailNgrxComponent.prototype.toggleLabelOnSelectedMails = function (labelId) {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_9__store__["a" /* AddLabelOnSelectedMails */](labelId));
+        this.store.dispatch(new fromStore.AddLabelOnSelectedMails(labelId));
     };
     FuseMailNgrxComponent.prototype.setFolderOnSelectedMails = function (folderId) {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_9__store__["j" /* SetFolderOnSelectedMails */](folderId));
+        this.store.dispatch(new fromStore.SetFolderOnSelectedMails(folderId));
     };
     FuseMailNgrxComponent.prototype.deSelectCurrentMail = function () {
-        this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_9__store__["i" /* SetCurrentMail */](''));
+        this.store.dispatch(new fromStore.SetCurrentMail(''));
     };
     FuseMailNgrxComponent.prototype.refresh = function () {
         this.cd.markForCheck();
@@ -593,30 +573,31 @@ var FuseMailNgrxComponent = (function () {
         this.cd.detach();
     };
     FuseMailNgrxComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.component.scss")],
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush
+            changeDetection: core_1.ChangeDetectionStrategy.OnPush
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_10__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__mail_service__["a" /* MailNgrxService */],
-            __WEBPACK_IMPORTED_MODULE_3__core_services_translation_loader_service__["a" /* FuseTranslationLoaderService */],
-            __WEBPACK_IMPORTED_MODULE_6__ngrx_store__["h" /* Store */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            mail_service_1.MailNgrxService,
+            translation_loader_service_1.FuseTranslationLoaderService,
+            store_1.Store,
+            core_1.ChangeDetectorRef])
     ], FuseMailNgrxComponent);
     return FuseMailNgrxComponent;
 }());
-
+exports.FuseMailNgrxComponent = FuseMailNgrxComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/mail.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Mail; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var Mail = (function () {
     function Mail(mail) {
         this.id = mail.id;
@@ -647,77 +628,65 @@ var Mail = (function () {
     };
     return Mail;
 }());
-
+exports.Mail = Mail;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/mail.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseMailNgrxModule", function() { return FuseMailNgrxModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mail_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sidenavs_main_main_sidenav_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/sidenavs/main/main-sidenav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mail_list_mail_list_item_mail_list_item_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list-item/mail-list-item.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mail_list_mail_list_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mail_details_mail_details_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-details/mail-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dialogs_compose_compose_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/dialogs/compose/compose.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__store_store_module__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/store.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__store_guards_index__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/guards/index.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var mail_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.component.ts");
+var main_sidenav_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/sidenavs/main/main-sidenav.component.ts");
+var mail_list_item_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list-item/mail-list-item.component.ts");
+var mail_list_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-list/mail-list.component.ts");
+var mail_details_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail-details/mail-details.component.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+var compose_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/dialogs/compose/compose.component.ts");
+var store_module_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/store.module.ts");
+var fromGuards = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/guards/index.ts");
 var routes = [
     {
         path: 'label/:labelHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailNgrxComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_11__store_guards_index__["a" /* ResolveGuard */]]
+        component: mail_component_1.FuseMailNgrxComponent,
+        canActivate: [fromGuards.ResolveGuard]
     },
     {
         path: 'label/:labelHandle/:mailId',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailNgrxComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_11__store_guards_index__["a" /* ResolveGuard */]]
+        component: mail_component_1.FuseMailNgrxComponent,
+        canActivate: [fromGuards.ResolveGuard]
     },
     {
         path: 'filter/:filterHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailNgrxComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_11__store_guards_index__["a" /* ResolveGuard */]]
+        component: mail_component_1.FuseMailNgrxComponent,
+        canActivate: [fromGuards.ResolveGuard]
     },
     {
         path: 'filter/:filterHandle/:mailId',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailNgrxComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_11__store_guards_index__["a" /* ResolveGuard */]]
+        component: mail_component_1.FuseMailNgrxComponent,
+        canActivate: [fromGuards.ResolveGuard]
     },
     {
         path: ':folderHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailNgrxComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_11__store_guards_index__["a" /* ResolveGuard */]]
+        component: mail_component_1.FuseMailNgrxComponent,
+        canActivate: [fromGuards.ResolveGuard]
     },
     {
         path: ':folderHandle/:mailId',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailNgrxComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_11__store_guards_index__["a" /* ResolveGuard */]]
+        component: mail_component_1.FuseMailNgrxComponent,
+        canActivate: [fromGuards.ResolveGuard]
     },
     {
         path: '**',
@@ -728,43 +697,39 @@ var FuseMailNgrxModule = (function () {
     function FuseMailNgrxModule() {
     }
     FuseMailNgrxModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailNgrxComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__mail_list_mail_list_component__["a" /* FuseMailNgrxListComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__mail_list_mail_list_item_mail_list_item_component__["a" /* FuseMailNgrxListItemComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__mail_details_mail_details_component__["a" /* FuseMailNgrxDetailsComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__sidenavs_main_main_sidenav_component__["a" /* FuseMailNgrxMainSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__dialogs_compose_compose_component__["a" /* FuseMailNgrxComposeDialogComponent */]
+                mail_component_1.FuseMailNgrxComponent,
+                mail_list_component_1.FuseMailNgrxListComponent,
+                mail_list_item_component_1.FuseMailNgrxListItemComponent,
+                mail_details_component_1.FuseMailNgrxDetailsComponent,
+                main_sidenav_component_1.FuseMailNgrxMainSidenavComponent,
+                compose_component_1.FuseMailNgrxComposeDialogComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_10__store_store_module__["a" /* MailAppStoreModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                store_module_1.MailAppStoreModule
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailNgrxService */],
-                __WEBPACK_IMPORTED_MODULE_11__store_guards_index__["a" /* ResolveGuard */]
+                mail_service_1.MailNgrxService,
+                fromGuards.ResolveGuard
             ],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_9__dialogs_compose_compose_component__["a" /* FuseMailNgrxComposeDialogComponent */]]
+            entryComponents: [compose_component_1.FuseMailNgrxComposeDialogComponent]
         })
     ], FuseMailNgrxModule);
     return FuseMailNgrxModule;
 }());
-
+exports.FuseMailNgrxModule = FuseMailNgrxModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MailNgrxService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -782,25 +747,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var selectors_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts");
 var MailNgrxService = (function () {
     function MailNgrxService(http, store) {
         var _this = this;
         this.http = http;
         this.store = store;
-        this.store.select(__WEBPACK_IMPORTED_MODULE_3__store_selectors__["d" /* getFoldersArr */]).subscribe(function (folders) {
+        this.store.select(selectors_1.getFoldersArr).subscribe(function (folders) {
             _this.foldersArr = folders;
         });
-        this.store.select(__WEBPACK_IMPORTED_MODULE_3__store_selectors__["b" /* getFiltersArr */]).subscribe(function (filters) {
+        this.store.select(selectors_1.getFiltersArr).subscribe(function (filters) {
             _this.filtersArr = filters;
         });
-        this.store.select(__WEBPACK_IMPORTED_MODULE_3__store_selectors__["f" /* getLabelsArr */]).subscribe(function (labels) {
+        this.store.select(selectors_1.getLabelsArr).subscribe(function (labels) {
             _this.labelsArr = labels;
         });
-        this.store.select(__WEBPACK_IMPORTED_MODULE_3__store_selectors__["h" /* getMailsArr */]).subscribe(function (mails) {
+        this.store.select(selectors_1.getMailsArr).subscribe(function (mails) {
             _this.mails = mails;
         });
         this.selectedMails = [];
@@ -839,13 +805,13 @@ var MailNgrxService = (function () {
         return this.http.post('api/mail-mails/' + mail.id, __assign({}, mail));
     };
     MailNgrxService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */],
-            __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["h" /* Store */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient,
+            store_1.Store])
     ], MailNgrxService);
     return MailNgrxService;
 }());
-
+exports.MailNgrxService = MailNgrxService;
 
 
 /***/ }),
@@ -876,16 +842,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/sidenavs/main/main-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailNgrxMainSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dialogs_compose_compose_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/dialogs/compose/compose.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -895,12 +855,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var compose_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/dialogs/compose/compose.component.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var fromStore = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
 var FuseMailNgrxMainSidenavComponent = (function () {
     function FuseMailNgrxMainSidenavComponent(mailService, dialog, store) {
         this.mailService = mailService;
@@ -912,14 +873,14 @@ var FuseMailNgrxMainSidenavComponent = (function () {
             'withinpixels': 'johndoe@withinpixels.com'
         };
         this.selectedAccount = 'creapond';
-        this.folders$ = this.store.select(__WEBPACK_IMPORTED_MODULE_4__store__["p" /* getFoldersArr */]);
-        this.filters$ = this.store.select(__WEBPACK_IMPORTED_MODULE_4__store__["o" /* getFiltersArr */]);
-        this.labels$ = this.store.select(__WEBPACK_IMPORTED_MODULE_4__store__["q" /* getLabelsArr */]);
+        this.folders$ = this.store.select(fromStore.getFoldersArr);
+        this.filters$ = this.store.select(fromStore.getFiltersArr);
+        this.labels$ = this.store.select(fromStore.getLabelsArr);
     }
     FuseMailNgrxMainSidenavComponent.prototype.ngOnInit = function () {
     };
     FuseMailNgrxMainSidenavComponent.prototype.composeDialog = function () {
-        this.dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_1__dialogs_compose_compose_component__["a" /* FuseMailNgrxComposeDialogComponent */], {
+        this.dialogRef = this.dialog.open(compose_component_1.FuseMailNgrxComposeDialogComponent, {
             panelClass: 'mail-compose-dialog'
         });
         this.dialogRef.afterClosed()
@@ -948,457 +909,392 @@ var FuseMailNgrxMainSidenavComponent = (function () {
     FuseMailNgrxMainSidenavComponent.prototype.ngOnDestroy = function () {
     };
     FuseMailNgrxMainSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-main-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/sidenavs/main/main-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/sidenavs/main/main-sidenav.component.scss")],
-            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush
+            changeDetection: core_1.ChangeDetectionStrategy.OnPush
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__mail_service__["a" /* MailNgrxService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_material__["m" /* MatDialog */],
-            __WEBPACK_IMPORTED_MODULE_3__ngrx_store__["h" /* Store */]])
+        __metadata("design:paramtypes", [mail_service_1.MailNgrxService,
+            material_1.MatDialog,
+            store_1.Store])
     ], FuseMailNgrxMainSidenavComponent);
     return FuseMailNgrxMainSidenavComponent;
 }());
-
+exports.FuseMailNgrxMainSidenavComponent = FuseMailNgrxMainSidenavComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/actions/filters.actions.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GET_FILTERS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return GET_FILTERS_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return GET_FILTERS_FAILED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return GetFilters; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return GetFiltersSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return GetFiltersFailed; });
-var GET_FILTERS = '[FILTERS] GET FILTERS';
-var GET_FILTERS_SUCCESS = '[FILTERS] GET FILTERS SUCCESS';
-var GET_FILTERS_FAILED = '[FILTERS] GET FILTERS FAILED';
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GET_FILTERS = '[FILTERS] GET FILTERS';
+exports.GET_FILTERS_SUCCESS = '[FILTERS] GET FILTERS SUCCESS';
+exports.GET_FILTERS_FAILED = '[FILTERS] GET FILTERS FAILED';
 /**
  * Get Filters
  */
 var GetFilters = (function () {
     function GetFilters(payload) {
         this.payload = payload;
-        this.type = GET_FILTERS;
+        this.type = exports.GET_FILTERS;
     }
     return GetFilters;
 }());
-
+exports.GetFilters = GetFilters;
 /**
  * Get Filters Success
  */
 var GetFiltersSuccess = (function () {
     function GetFiltersSuccess(payload) {
         this.payload = payload;
-        this.type = GET_FILTERS_SUCCESS;
+        this.type = exports.GET_FILTERS_SUCCESS;
     }
     return GetFiltersSuccess;
 }());
-
+exports.GetFiltersSuccess = GetFiltersSuccess;
 /**
  * Get Filters Failed
  */
 var GetFiltersFailed = (function () {
     function GetFiltersFailed(payload) {
         this.payload = payload;
-        this.type = GET_FILTERS_FAILED;
+        this.type = exports.GET_FILTERS_FAILED;
     }
     return GetFiltersFailed;
 }());
-
+exports.GetFiltersFailed = GetFiltersFailed;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/actions/folders.actions.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GET_FOLDERS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return GET_FOLDERS_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return GET_FOLDERS_FAILED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return GetFolders; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return GetFoldersSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return GetFoldersFailed; });
-var GET_FOLDERS = '[FOLDERS] GET FOLDERS';
-var GET_FOLDERS_SUCCESS = '[FOLDERS] GET FOLDERS SUCCESS';
-var GET_FOLDERS_FAILED = '[FOLDERS] GET FOLDERS FAILED';
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GET_FOLDERS = '[FOLDERS] GET FOLDERS';
+exports.GET_FOLDERS_SUCCESS = '[FOLDERS] GET FOLDERS SUCCESS';
+exports.GET_FOLDERS_FAILED = '[FOLDERS] GET FOLDERS FAILED';
 /**
  * Get Folders
  */
 var GetFolders = (function () {
     function GetFolders(payload) {
         this.payload = payload;
-        this.type = GET_FOLDERS;
+        this.type = exports.GET_FOLDERS;
     }
     return GetFolders;
 }());
-
+exports.GetFolders = GetFolders;
 /**
  * Get Folders Success
  */
 var GetFoldersSuccess = (function () {
     function GetFoldersSuccess(payload) {
         this.payload = payload;
-        this.type = GET_FOLDERS_SUCCESS;
+        this.type = exports.GET_FOLDERS_SUCCESS;
     }
     return GetFoldersSuccess;
 }());
-
+exports.GetFoldersSuccess = GetFoldersSuccess;
 /**
  * Get Folders Failed
  */
 var GetFoldersFailed = (function () {
     function GetFoldersFailed(payload) {
         this.payload = payload;
-        this.type = GET_FOLDERS_FAILED;
+        this.type = exports.GET_FOLDERS_FAILED;
     }
     return GetFoldersFailed;
 }());
-
+exports.GetFoldersFailed = GetFoldersFailed;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/actions/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mails_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/mails.actions.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["j"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["s"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["t"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["u"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["w"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["x"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["z"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_actions__["E"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__folders_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/folders.actions.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__folders_actions__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filters_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/filters.actions.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__filters_actions__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__labels_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/labels.actions.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_3__labels_actions__["d"]; });
 
-
-
-
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/mails.actions.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/folders.actions.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/filters.actions.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/labels.actions.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/actions/labels.actions.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GET_LABELS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return GET_LABELS_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return GET_LABELS_FAILED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return GetLabels; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return GetLabelsSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return GetLabelsFailed; });
-var GET_LABELS = '[LABELS] GET LABELS';
-var GET_LABELS_SUCCESS = '[LABELS] GET LABELS SUCCESS';
-var GET_LABELS_FAILED = '[LABELS] GET LABELS FAILED';
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GET_LABELS = '[LABELS] GET LABELS';
+exports.GET_LABELS_SUCCESS = '[LABELS] GET LABELS SUCCESS';
+exports.GET_LABELS_FAILED = '[LABELS] GET LABELS FAILED';
 /**
  * Get Labels
  */
 var GetLabels = (function () {
     function GetLabels(payload) {
         this.payload = payload;
-        this.type = GET_LABELS;
+        this.type = exports.GET_LABELS;
     }
     return GetLabels;
 }());
-
+exports.GetLabels = GetLabels;
 /**
  * Get Labels Success
  */
 var GetLabelsSuccess = (function () {
     function GetLabelsSuccess(payload) {
         this.payload = payload;
-        this.type = GET_LABELS_SUCCESS;
+        this.type = exports.GET_LABELS_SUCCESS;
     }
     return GetLabelsSuccess;
 }());
-
+exports.GetLabelsSuccess = GetLabelsSuccess;
 /**
  * Get Labels Failed
  */
 var GetLabelsFailed = (function () {
     function GetLabelsFailed(payload) {
         this.payload = payload;
-        this.type = GET_LABELS_FAILED;
+        this.type = exports.GET_LABELS_FAILED;
     }
     return GetLabelsFailed;
 }());
-
+exports.GetLabelsFailed = GetLabelsFailed;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/actions/mails.actions.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return GET_MAILS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return GET_MAILS_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return GET_MAILS_FAILED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return SET_CURRENT_MAIL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return SET_CURRENT_MAIL_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CHECK_CURRENT_MAIL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return UPDATE_MAIL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return UPDATE_MAIL_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return UPDATE_MAILS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return UPDATE_MAILS_SUCCESS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return SET_SEARCH_TEXT; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return SELECT_ALL_MAILS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return DESELECT_ALL_MAILS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return TOGGLE_IN_SELECTED_MAILS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return SELECT_MAILS_BY_PARAMETER; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return SET_FOLDER_ON_SELECTED_MAILS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ADD_LABEL_ON_SELECTED_MAILS; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return GetMails; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return GetMailsSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return GetMailsFailed; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return SetCurrentMail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return SetCurrentMailSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CheckCurrentMail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return UpdateMail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return UpdateMailSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return UpdateMails; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return UpdateMailsSuccess; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return SetSearchText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return SelectAllMails; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return DeselectAllMails; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return ToggleInSelectedMails; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return SelectMailsByParameter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return SetFolderOnSelectedMails; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AddLabelOnSelectedMails; });
-var GET_MAILS = '[MAILS] GET MAILS';
-var GET_MAILS_SUCCESS = '[MAILS] GET MAILS SUCCESS';
-var GET_MAILS_FAILED = '[MAILS] GET MAILS FAILED';
-var SET_CURRENT_MAIL = '[MAILS] SET CURRENT MAIL';
-var SET_CURRENT_MAIL_SUCCESS = '[MAILS] SET CURRENT MAIL SUCCESS';
-var CHECK_CURRENT_MAIL = '[MAILS] CHECK CURRENT MAIL';
-var UPDATE_MAIL = '[MAILS] UPDATE MAIL';
-var UPDATE_MAIL_SUCCESS = '[MAILS] UPDATE MAIL SUCCESS';
-var UPDATE_MAILS = '[MAILS] UPDATE MAILS';
-var UPDATE_MAILS_SUCCESS = '[MAILS] UPDATE MAILS SUCCESS';
-var SET_SEARCH_TEXT = '[MAILS] SET SEARCH TEXT';
-var SELECT_ALL_MAILS = '[MAILS] SELECT ALL MAILS';
-var DESELECT_ALL_MAILS = '[MAILS] DESELECT ALL MAILS';
-var TOGGLE_IN_SELECTED_MAILS = '[MAILS] TOGGLE IN SELECTED MAILS';
-var SELECT_MAILS_BY_PARAMETER = '[MAILS] SELECT MAILS BY PARAMETER';
-var SET_FOLDER_ON_SELECTED_MAILS = '[MAILS] SET FOLDER ON SELECTED MAILS';
-var ADD_LABEL_ON_SELECTED_MAILS = '[MAILS] ADD LABEL ON SELECTED MAILS';
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GET_MAILS = '[MAILS] GET MAILS';
+exports.GET_MAILS_SUCCESS = '[MAILS] GET MAILS SUCCESS';
+exports.GET_MAILS_FAILED = '[MAILS] GET MAILS FAILED';
+exports.SET_CURRENT_MAIL = '[MAILS] SET CURRENT MAIL';
+exports.SET_CURRENT_MAIL_SUCCESS = '[MAILS] SET CURRENT MAIL SUCCESS';
+exports.CHECK_CURRENT_MAIL = '[MAILS] CHECK CURRENT MAIL';
+exports.UPDATE_MAIL = '[MAILS] UPDATE MAIL';
+exports.UPDATE_MAIL_SUCCESS = '[MAILS] UPDATE MAIL SUCCESS';
+exports.UPDATE_MAILS = '[MAILS] UPDATE MAILS';
+exports.UPDATE_MAILS_SUCCESS = '[MAILS] UPDATE MAILS SUCCESS';
+exports.SET_SEARCH_TEXT = '[MAILS] SET SEARCH TEXT';
+exports.SELECT_ALL_MAILS = '[MAILS] SELECT ALL MAILS';
+exports.DESELECT_ALL_MAILS = '[MAILS] DESELECT ALL MAILS';
+exports.TOGGLE_IN_SELECTED_MAILS = '[MAILS] TOGGLE IN SELECTED MAILS';
+exports.SELECT_MAILS_BY_PARAMETER = '[MAILS] SELECT MAILS BY PARAMETER';
+exports.SET_FOLDER_ON_SELECTED_MAILS = '[MAILS] SET FOLDER ON SELECTED MAILS';
+exports.ADD_LABEL_ON_SELECTED_MAILS = '[MAILS] ADD LABEL ON SELECTED MAILS';
 /**
  * Get Mails
  */
 var GetMails = (function () {
     function GetMails() {
-        this.type = GET_MAILS;
+        this.type = exports.GET_MAILS;
     }
     return GetMails;
 }());
-
+exports.GetMails = GetMails;
 /**
  * Get Mails Success
  */
 var GetMailsSuccess = (function () {
     function GetMailsSuccess(payload) {
         this.payload = payload;
-        this.type = GET_MAILS_SUCCESS;
+        this.type = exports.GET_MAILS_SUCCESS;
     }
     return GetMailsSuccess;
 }());
-
+exports.GetMailsSuccess = GetMailsSuccess;
 /**
  * Get Mails Failed
  */
 var GetMailsFailed = (function () {
     function GetMailsFailed(payload) {
         this.payload = payload;
-        this.type = GET_MAILS_FAILED;
+        this.type = exports.GET_MAILS_FAILED;
     }
     return GetMailsFailed;
 }());
-
+exports.GetMailsFailed = GetMailsFailed;
 /**
  * Set Current Mail
  */
 var SetCurrentMail = (function () {
     function SetCurrentMail(payload) {
         this.payload = payload;
-        this.type = SET_CURRENT_MAIL;
+        this.type = exports.SET_CURRENT_MAIL;
     }
     return SetCurrentMail;
 }());
-
+exports.SetCurrentMail = SetCurrentMail;
 /**
  * Set Current Mail Success
  */
 var SetCurrentMailSuccess = (function () {
     function SetCurrentMailSuccess(payload) {
         this.payload = payload;
-        this.type = SET_CURRENT_MAIL_SUCCESS;
+        this.type = exports.SET_CURRENT_MAIL_SUCCESS;
     }
     return SetCurrentMailSuccess;
 }());
-
+exports.SetCurrentMailSuccess = SetCurrentMailSuccess;
 /**
  * Check Current Mail
  */
 var CheckCurrentMail = (function () {
     function CheckCurrentMail() {
-        this.type = CHECK_CURRENT_MAIL;
+        this.type = exports.CHECK_CURRENT_MAIL;
     }
     return CheckCurrentMail;
 }());
-
+exports.CheckCurrentMail = CheckCurrentMail;
 /**
  * Update Mail
  */
 var UpdateMail = (function () {
     function UpdateMail(payload) {
         this.payload = payload;
-        this.type = UPDATE_MAIL;
+        this.type = exports.UPDATE_MAIL;
     }
     return UpdateMail;
 }());
-
+exports.UpdateMail = UpdateMail;
 /**
  * Update Mail Success
  */
 var UpdateMailSuccess = (function () {
     function UpdateMailSuccess(payload) {
         this.payload = payload;
-        this.type = UPDATE_MAIL_SUCCESS;
+        this.type = exports.UPDATE_MAIL_SUCCESS;
     }
     return UpdateMailSuccess;
 }());
-
+exports.UpdateMailSuccess = UpdateMailSuccess;
 /**
  * Update Mails
  */
 var UpdateMails = (function () {
     function UpdateMails(payload) {
         this.payload = payload;
-        this.type = UPDATE_MAILS;
+        this.type = exports.UPDATE_MAILS;
     }
     return UpdateMails;
 }());
-
+exports.UpdateMails = UpdateMails;
 /**
  * Update Mails Success
  */
 var UpdateMailsSuccess = (function () {
     function UpdateMailsSuccess() {
-        this.type = UPDATE_MAILS_SUCCESS;
+        this.type = exports.UPDATE_MAILS_SUCCESS;
     }
     return UpdateMailsSuccess;
 }());
-
+exports.UpdateMailsSuccess = UpdateMailsSuccess;
 /**
  * Set Search Text
  */
 var SetSearchText = (function () {
     function SetSearchText(payload) {
         this.payload = payload;
-        this.type = SET_SEARCH_TEXT;
+        this.type = exports.SET_SEARCH_TEXT;
     }
     return SetSearchText;
 }());
-
+exports.SetSearchText = SetSearchText;
 /**
  * Select All Mails
  */
 var SelectAllMails = (function () {
     function SelectAllMails() {
-        this.type = SELECT_ALL_MAILS;
+        this.type = exports.SELECT_ALL_MAILS;
     }
     return SelectAllMails;
 }());
-
+exports.SelectAllMails = SelectAllMails;
 /**
  * Deselect All Mails
  */
 var DeselectAllMails = (function () {
     function DeselectAllMails() {
-        this.type = DESELECT_ALL_MAILS;
+        this.type = exports.DESELECT_ALL_MAILS;
     }
     return DeselectAllMails;
 }());
-
+exports.DeselectAllMails = DeselectAllMails;
 /**
  * Toggle In Selected Mails
  */
 var ToggleInSelectedMails = (function () {
     function ToggleInSelectedMails(payload) {
         this.payload = payload;
-        this.type = TOGGLE_IN_SELECTED_MAILS;
+        this.type = exports.TOGGLE_IN_SELECTED_MAILS;
     }
     return ToggleInSelectedMails;
 }());
-
+exports.ToggleInSelectedMails = ToggleInSelectedMails;
 /**
  * Select Mails by Parameter
  */
 var SelectMailsByParameter = (function () {
     function SelectMailsByParameter(payload) {
         this.payload = payload;
-        this.type = SELECT_MAILS_BY_PARAMETER;
+        this.type = exports.SELECT_MAILS_BY_PARAMETER;
     }
     return SelectMailsByParameter;
 }());
-
+exports.SelectMailsByParameter = SelectMailsByParameter;
 /**
  * Set Folder on Selected Mails
  */
 var SetFolderOnSelectedMails = (function () {
     function SetFolderOnSelectedMails(payload) {
         this.payload = payload;
-        this.type = SET_FOLDER_ON_SELECTED_MAILS;
+        this.type = exports.SET_FOLDER_ON_SELECTED_MAILS;
     }
     return SetFolderOnSelectedMails;
 }());
-
+exports.SetFolderOnSelectedMails = SetFolderOnSelectedMails;
 /**
  * Add label on Selected Mails
  */
 var AddLabelOnSelectedMails = (function () {
     function AddLabelOnSelectedMails(payload) {
         this.payload = payload;
-        this.type = ADD_LABEL_ON_SELECTED_MAILS;
+        this.type = exports.ADD_LABEL_ON_SELECTED_MAILS;
     }
     return AddLabelOnSelectedMails;
 }());
-
+exports.AddLabelOnSelectedMails = AddLabelOnSelectedMails;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/effects/filters.effects.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FiltersEffect; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_effects__ = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_delay__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/delay.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__("../../../../rxjs/_esm5/operators.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__actions_filters_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/filters.actions.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1408,15 +1304,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var effects_1 = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/delay.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+var of_1 = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
+var operators_1 = __webpack_require__("../../../../rxjs/_esm5/operators.js");
+var FiltersActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/filters.actions.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
 var FiltersEffect = (function () {
     function FiltersEffect(actions, mailService) {
         var _this = this;
@@ -1427,44 +1324,35 @@ var FiltersEffect = (function () {
          * @type {Observable<any>}
          */
         this.getFilters = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_7__actions_filters_actions__["a" /* GET_FILTERS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["switchMap"])(function (action) {
+            .ofType(FiltersActions.GET_FILTERS)
+            .pipe(operators_1.switchMap(function (action) {
             return _this.mailService.getFilters()
-                .pipe(Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["map"])(function (filters) {
-                return new __WEBPACK_IMPORTED_MODULE_7__actions_filters_actions__["f" /* GetFiltersSuccess */](filters);
-            }), Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["catchError"])(function (err) { return Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__["a" /* of */])(new __WEBPACK_IMPORTED_MODULE_7__actions_filters_actions__["e" /* GetFiltersFailed */](err)); }));
+                .pipe(operators_1.map(function (filters) {
+                return new FiltersActions.GetFiltersSuccess(filters);
+            }), operators_1.catchError(function (err) { return of_1.of(new FiltersActions.GetFiltersFailed(err)); }));
         }));
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], FiltersEffect.prototype, "getFilters", void 0);
     FiltersEffect = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngrx_effects__["a" /* Actions */],
-            __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailNgrxService */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [effects_1.Actions,
+            mail_service_1.MailNgrxService])
     ], FiltersEffect);
     return FiltersEffect;
 }());
-
+exports.FiltersEffect = FiltersEffect;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/effects/folders.effects.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FoldersEffect; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_effects__ = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_delay__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/delay.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__("../../../../rxjs/_esm5/operators.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__actions_folders_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/folders.actions.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1474,15 +1362,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var effects_1 = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/delay.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+var of_1 = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
+var operators_1 = __webpack_require__("../../../../rxjs/_esm5/operators.js");
+var FoldersActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/folders.actions.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
 var FoldersEffect = (function () {
     function FoldersEffect(actions, mailService) {
         var _this = this;
@@ -1493,75 +1382,62 @@ var FoldersEffect = (function () {
          * @type {Observable<any>}
          */
         this.getFolders = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_7__actions_folders_actions__["a" /* GET_FOLDERS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["switchMap"])(function (action) {
+            .ofType(FoldersActions.GET_FOLDERS)
+            .pipe(operators_1.switchMap(function (action) {
             return _this.mailService.getFolders()
-                .pipe(Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["map"])(function (folders) {
-                return new __WEBPACK_IMPORTED_MODULE_7__actions_folders_actions__["f" /* GetFoldersSuccess */](folders);
-            }), Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["catchError"])(function (err) { return Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__["a" /* of */])(new __WEBPACK_IMPORTED_MODULE_7__actions_folders_actions__["e" /* GetFoldersFailed */](err)); }));
+                .pipe(operators_1.map(function (folders) {
+                return new FoldersActions.GetFoldersSuccess(folders);
+            }), operators_1.catchError(function (err) { return of_1.of(new FoldersActions.GetFoldersFailed(err)); }));
         }));
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], FoldersEffect.prototype, "getFolders", void 0);
     FoldersEffect = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngrx_effects__["a" /* Actions */],
-            __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailNgrxService */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [effects_1.Actions,
+            mail_service_1.MailNgrxService])
     ], FoldersEffect);
     return FoldersEffect;
 }());
-
+exports.FoldersEffect = FoldersEffect;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/effects/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effects; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mails_effects__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/mails.effects.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__folders_effects__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/folders.effects.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filters_effects__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/filters.effects.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__labels_effects__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/labels.effects.ts");
-/* unused harmony namespace reexport */
-/* unused harmony namespace reexport */
-/* unused harmony namespace reexport */
-/* unused harmony namespace reexport */
 
-
-
-
-var effects = [
-    __WEBPACK_IMPORTED_MODULE_0__mails_effects__["a" /* MailsEffect */],
-    __WEBPACK_IMPORTED_MODULE_1__folders_effects__["a" /* FoldersEffect */],
-    __WEBPACK_IMPORTED_MODULE_2__filters_effects__["a" /* FiltersEffect */],
-    __WEBPACK_IMPORTED_MODULE_3__labels_effects__["a" /* LabelsEffect */]
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+var mails_effects_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/mails.effects.ts");
+var folders_effects_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/folders.effects.ts");
+var filters_effects_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/filters.effects.ts");
+var labels_effects_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/labels.effects.ts");
+exports.effects = [
+    mails_effects_1.MailsEffect,
+    folders_effects_1.FoldersEffect,
+    filters_effects_1.FiltersEffect,
+    labels_effects_1.LabelsEffect
 ];
-
-
-
-
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/mails.effects.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/folders.effects.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/filters.effects.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/labels.effects.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/effects/labels.effects.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LabelsEffect; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_effects__ = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_delay__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/delay.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operators__ = __webpack_require__("../../../../rxjs/_esm5/operators.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__actions_labels_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/labels.actions.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1571,15 +1447,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var effects_1 = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/delay.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+var of_1 = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
+var operators_1 = __webpack_require__("../../../../rxjs/_esm5/operators.js");
+var LabelsActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/labels.actions.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
 var LabelsEffect = (function () {
     function LabelsEffect(actions, mailService) {
         var _this = this;
@@ -1590,47 +1467,35 @@ var LabelsEffect = (function () {
          * @type {Observable<any>}
          */
         this.getLabels = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_7__actions_labels_actions__["a" /* GET_LABELS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["switchMap"])(function (action) {
+            .ofType(LabelsActions.GET_LABELS)
+            .pipe(operators_1.switchMap(function (action) {
             return _this.mailService.getLabels()
-                .pipe(Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["map"])(function (labels) {
-                return new __WEBPACK_IMPORTED_MODULE_7__actions_labels_actions__["f" /* GetLabelsSuccess */](labels);
-            }), Object(__WEBPACK_IMPORTED_MODULE_6_rxjs_operators__["catchError"])(function (err) { return Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__["a" /* of */])(new __WEBPACK_IMPORTED_MODULE_7__actions_labels_actions__["e" /* GetLabelsFailed */](err)); }));
+                .pipe(operators_1.map(function (labels) {
+                return new LabelsActions.GetLabelsSuccess(labels);
+            }), operators_1.catchError(function (err) { return of_1.of(new LabelsActions.GetLabelsFailed(err)); }));
         }));
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], LabelsEffect.prototype, "getLabels", void 0);
     LabelsEffect = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngrx_effects__["a" /* Actions */],
-            __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailNgrxService */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [effects_1.Actions,
+            mail_service_1.MailNgrxService])
     ], LabelsEffect);
     return LabelsEffect;
 }());
-
+exports.LabelsEffect = LabelsEffect;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/effects/mails.effects.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MailsEffect; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_effects__ = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators__ = __webpack_require__("../../../../rxjs/_esm5/operators.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__store_reducers__ = __webpack_require__("../../../../../src/app/store/reducers/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/mails.actions.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__store__ = __webpack_require__("../../../../../src/app/store/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -1648,18 +1513,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var effects_1 = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+var of_1 = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
+var operators_1 = __webpack_require__("../../../../rxjs/_esm5/operators.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+var reducers_1 = __webpack_require__("../../../../../src/app/store/reducers/index.ts");
+var selectors_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts");
+var MailsActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/mails.actions.ts");
+var fromRoot = __webpack_require__("../../../../../src/app/store/index.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/mail.service.ts");
 var MailsEffect = (function () {
     function MailsEffect(actions, mailService, store) {
         var _this = this;
@@ -1671,13 +1537,13 @@ var MailsEffect = (function () {
          * @type {Observable<any>}
          */
         this.getMails = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["g" /* GET_MAILS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["exhaustMap"])(function (action) {
+            .ofType(MailsActions.GET_MAILS)
+            .pipe(operators_1.exhaustMap(function (action) {
             var handle = {
                 id: '',
                 value: ''
             };
-            var routeParams = __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].of('labelHandle', 'filterHandle', 'folderHandle');
+            var routeParams = Observable_1.Observable.of('labelHandle', 'filterHandle', 'folderHandle');
             routeParams.subscribe(function (param) {
                 if (_this.routerState.params[param]) {
                     handle = {
@@ -1688,23 +1554,23 @@ var MailsEffect = (function () {
             });
             return _this.mailService.getMails(handle)
                 .map(function (mails) {
-                return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["l" /* GetMailsSuccess */]({
+                return new MailsActions.GetMailsSuccess({
                     loaded: handle,
                     mails: mails
                 });
             })
-                .catch(function (err) { return Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_observable_of__["a" /* of */])(new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["k" /* GetMailsFailed */](err)); });
+                .catch(function (err) { return of_1.of(new MailsActions.GetMailsFailed(err)); });
         }));
         /**
          * Update Mail
          * @type {Observable<any>}
          */
         this.updateMail = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["A" /* UPDATE_MAIL */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["exhaustMap"])(function (action) {
+            .ofType(MailsActions.UPDATE_MAIL)
+            .pipe(operators_1.exhaustMap(function (action) {
             return _this.mailService.updateMail(action.payload)
                 .map(function () {
-                return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["F" /* UpdateMailSuccess */](action.payload);
+                return new MailsActions.UpdateMailSuccess(action.payload);
             });
         }));
         /**
@@ -1712,10 +1578,10 @@ var MailsEffect = (function () {
          * @type {Observable<any>}
          */
         this.updateMails = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["B" /* UPDATE_MAILS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["exhaustMap"])(function (action) {
-            return __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].forkJoin(action.payload.map(function (mail) { return _this.mailService.updateMail(mail); }), function () {
-                return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["H" /* UpdateMailsSuccess */]();
+            .ofType(MailsActions.UPDATE_MAILS)
+            .pipe(operators_1.exhaustMap(function (action) {
+            return Observable_1.Observable.forkJoin(action.payload.map(function (mail) { return _this.mailService.updateMail(mail); }), function () {
+                return new MailsActions.UpdateMailsSuccess();
             });
         }));
         /**
@@ -1723,10 +1589,10 @@ var MailsEffect = (function () {
          * @type {Observable<SetCurrentMailSuccess>}
          */
         this.setCurrentMail = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["o" /* SET_CURRENT_MAIL */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["withLatestFrom"])(this.store.select(__WEBPACK_IMPORTED_MODULE_8__selectors__["j" /* getMailsState */])), Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["map"])(function (_a) {
+            .ofType(MailsActions.SET_CURRENT_MAIL)
+            .pipe(operators_1.withLatestFrom(this.store.select(selectors_1.getMailsState)), operators_1.map(function (_a) {
             var action = _a[0], state = _a[1];
-            return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["v" /* SetCurrentMailSuccess */](state.entities[action.payload]);
+            return new MailsActions.SetCurrentMailSuccess(state.entities[action.payload]);
         }));
         /**
          * Check Current Mail
@@ -1735,23 +1601,23 @@ var MailsEffect = (function () {
          * @type {Observable<any>}
          */
         this.checkCurrentMail = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["c" /* CHECK_CURRENT_MAIL */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["withLatestFrom"])(this.store.select(__WEBPACK_IMPORTED_MODULE_8__selectors__["j" /* getMailsState */])), Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["map"])(function (_a) {
+            .ofType(MailsActions.CHECK_CURRENT_MAIL)
+            .pipe(operators_1.withLatestFrom(this.store.select(selectors_1.getMailsState)), operators_1.map(function (_a) {
             var action = _a[0], state = _a[1];
             if (!state.entities[_this.routerState.params.mailId]) {
-                return new __WEBPACK_IMPORTED_MODULE_10__store__["b" /* Go */]({ path: [_this.routerState.url.replace(_this.routerState.params.mailId, '')] });
+                return new fromRoot.Go({ path: [_this.routerState.url.replace(_this.routerState.params.mailId, '')] });
             }
-            return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["v" /* SetCurrentMailSuccess */](state.entities[_this.routerState.params.mailId]);
+            return new MailsActions.SetCurrentMailSuccess(state.entities[_this.routerState.params.mailId]);
         }));
         /**
          * On Get Mails Success
          * @type {Observable<CheckCurrentMail>}
          */
         this.getMailsSuccess = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["i" /* GET_MAILS_SUCCESS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["mergeMap"])(function () {
+            .ofType(MailsActions.GET_MAILS_SUCCESS)
+            .pipe(operators_1.mergeMap(function () {
             return [
-                new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["d" /* CheckCurrentMail */]()
+                new MailsActions.CheckCurrentMail()
             ];
         }));
         /**
@@ -1759,11 +1625,11 @@ var MailsEffect = (function () {
          * @type {Observable<DeselectAllMails | GetMails>}
          */
         this.updateMailsSuccess = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["C" /* UPDATE_MAILS_SUCCESS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["mergeMap"])(function () {
+            .ofType(MailsActions.UPDATE_MAILS_SUCCESS)
+            .pipe(operators_1.mergeMap(function () {
             return [
-                new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["f" /* DeselectAllMails */](),
-                new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["j" /* GetMails */]()
+                new MailsActions.DeselectAllMails(),
+                new MailsActions.GetMails()
             ];
         }));
         /**
@@ -1771,18 +1637,18 @@ var MailsEffect = (function () {
          * @type {Observable<GetMails>}
          */
         this.updateMailSuccess = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["D" /* UPDATE_MAIL_SUCCESS */])
+            .ofType(MailsActions.UPDATE_MAIL_SUCCESS)
             .debounceTime(500)
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["map"])(function () {
-            return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["j" /* GetMails */]();
+            .pipe(operators_1.map(function () {
+            return new MailsActions.GetMails();
         }));
         /**
          * Set Folder on Selected Mails
          * @type {Observable<UpdateMails>}
          */
         this.setFolderOnSelectedMails = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["q" /* SET_FOLDER_ON_SELECTED_MAILS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["withLatestFrom"])(this.store.select(__WEBPACK_IMPORTED_MODULE_8__selectors__["j" /* getMailsState */])), Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["map"])(function (_a) {
+            .ofType(MailsActions.SET_FOLDER_ON_SELECTED_MAILS)
+            .pipe(operators_1.withLatestFrom(this.store.select(selectors_1.getMailsState)), operators_1.map(function (_a) {
             var action = _a[0], state = _a[1];
             var entities = __assign({}, state.entities);
             var mailsToUpdate = [];
@@ -1792,15 +1658,15 @@ var MailsEffect = (function () {
                     entities[id] = __assign({}, entities[id], { folder: action.payload })
                 ]);
             });
-            return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["G" /* UpdateMails */](mailsToUpdate);
+            return new MailsActions.UpdateMails(mailsToUpdate);
         }));
         /**
          * Add Label on Selected Mails
          * @type {Observable<UpdateMails>}
          */
         this.addLabelOnSelectedMails = this.actions
-            .ofType(__WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["a" /* ADD_LABEL_ON_SELECTED_MAILS */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["withLatestFrom"])(this.store.select(__WEBPACK_IMPORTED_MODULE_8__selectors__["j" /* getMailsState */])), Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["map"])(function (_a) {
+            .ofType(MailsActions.ADD_LABEL_ON_SELECTED_MAILS)
+            .pipe(operators_1.withLatestFrom(this.store.select(selectors_1.getMailsState)), operators_1.map(function (_a) {
             var action = _a[0], state = _a[1];
             var entities = __assign({}, state.entities);
             var mailsToUpdate = [];
@@ -1814,92 +1680,86 @@ var MailsEffect = (function () {
                     entities[id] = __assign({}, entities[id], { labels: labels })
                 ]);
             });
-            return new __WEBPACK_IMPORTED_MODULE_9__actions_mails_actions__["G" /* UpdateMails */](mailsToUpdate);
+            return new MailsActions.UpdateMails(mailsToUpdate);
         }));
-        this.store.select(__WEBPACK_IMPORTED_MODULE_7__store_reducers__["b" /* getRouterState */]).subscribe(function (routerState) {
+        this.store.select(reducers_1.getRouterState).subscribe(function (routerState) {
             if (routerState) {
                 _this.routerState = routerState.state;
             }
         });
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "getMails", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "updateMail", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "updateMails", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "setCurrentMail", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "checkCurrentMail", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "getMailsSuccess", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "updateMailsSuccess", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "updateMailSuccess", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "setFolderOnSelectedMails", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["b" /* Effect */])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"])
+        effects_1.Effect(),
+        __metadata("design:type", Observable_1.Observable)
     ], MailsEffect.prototype, "addLabelOnSelectedMails", void 0);
     MailsEffect = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["a" /* Actions */],
-            __WEBPACK_IMPORTED_MODULE_11__mail_service__["a" /* MailNgrxService */],
-            __WEBPACK_IMPORTED_MODULE_1__ngrx_store__["h" /* Store */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [effects_1.Actions,
+            mail_service_1.MailNgrxService,
+            store_1.Store])
     ], MailsEffect);
     return MailsEffect;
 }());
-
+exports.MailsEffect = MailsEffect;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/guards/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__resolve_guard__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/guards/resolve.guard.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__resolve_guard__["a"]; });
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/guards/resolve.guard.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/guards/resolve.guard.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResolveGuard; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_of__ = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__("../../../../rxjs/_esm5/operators.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/forkJoin.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__index__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__store_reducers__ = __webpack_require__("../../../../../src/app/store/reducers/index.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1909,47 +1769,48 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+var of_1 = __webpack_require__("../../../../rxjs/_esm5/observable/of.js");
+var operators_1 = __webpack_require__("../../../../rxjs/_esm5/operators.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/forkJoin.js");
+var fromStore = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts");
+var selectors_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts");
+var reducers_1 = __webpack_require__("../../../../../src/app/store/reducers/index.ts");
 var ResolveGuard = (function () {
     function ResolveGuard(store) {
         var _this = this;
         this.store = store;
-        this.store.select(__WEBPACK_IMPORTED_MODULE_8__store_reducers__["b" /* getRouterState */]).subscribe(function (routerState) {
+        this.store.select(reducers_1.getRouterState).subscribe(function (routerState) {
             if (routerState) {
                 _this.routerState = routerState.state;
             }
         });
     }
     ResolveGuard.prototype.canActivate = function (route, state) {
-        return this.checkStore().pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["switchMap"])(function () { return Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_of__["a" /* of */])(true); }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["catchError"])(function () { return Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_of__["a" /* of */])(false); }));
+        return this.checkStore().pipe(operators_1.switchMap(function () { return of_1.of(true); }), operators_1.catchError(function () { return of_1.of(false); }));
     };
     ResolveGuard.prototype.checkStore = function () {
         var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"]
+        return Observable_1.Observable
             .forkJoin(this.getFolders(), this.getFilters(), this.getLabels())
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["filter"])(function (_a) {
+            .pipe(operators_1.filter(function (_a) {
             var foldersLoaded = _a[0], filtersLoaded = _a[1], labelsLoaded = _a[2];
             return filtersLoaded && foldersLoaded && labelsLoaded;
-        }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["take"])(1), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["switchMap"])(function () {
+        }), operators_1.take(1), operators_1.switchMap(function () {
             return _this.getMails();
-        }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["take"])(1), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["map"])(function () { return _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_6__index__["i" /* SetCurrentMail */](_this.routerState.params.mailId)); }));
+        }), operators_1.take(1), operators_1.map(function () { return _this.store.dispatch(new fromStore.SetCurrentMail(_this.routerState.params.mailId)); }));
     };
     ResolveGuard.prototype.getFolders = function () {
         var _this = this;
-        return this.store.select(__WEBPACK_IMPORTED_MODULE_7__selectors__["e" /* getFoldersLoaded */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["tap"])(function (loaded) {
+        return this.store.select(selectors_1.getFoldersLoaded)
+            .pipe(operators_1.tap(function (loaded) {
             if (!loaded) {
-                _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_6__index__["d" /* GetFolders */]([]));
+                _this.store.dispatch(new fromStore.GetFolders([]));
             }
-        }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["filter"])(function (loaded) { return loaded; }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["take"])(1));
+        }), operators_1.filter(function (loaded) { return loaded; }), operators_1.take(1));
     };
     /**
      * Get Filters
@@ -1957,12 +1818,12 @@ var ResolveGuard = (function () {
      */
     ResolveGuard.prototype.getFilters = function () {
         var _this = this;
-        return this.store.select(__WEBPACK_IMPORTED_MODULE_7__selectors__["c" /* getFiltersLoaded */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["tap"])(function (loaded) {
+        return this.store.select(selectors_1.getFiltersLoaded)
+            .pipe(operators_1.tap(function (loaded) {
             if (!loaded) {
-                _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_6__index__["c" /* GetFilters */]([]));
+                _this.store.dispatch(new fromStore.GetFilters([]));
             }
-        }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["filter"])(function (loaded) { return loaded; }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["take"])(1));
+        }), operators_1.filter(function (loaded) { return loaded; }), operators_1.take(1));
     };
     /**
      * Get Labels
@@ -1970,12 +1831,12 @@ var ResolveGuard = (function () {
      */
     ResolveGuard.prototype.getLabels = function () {
         var _this = this;
-        return this.store.select(__WEBPACK_IMPORTED_MODULE_7__selectors__["g" /* getLabelsLoaded */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["tap"])(function (loaded) {
+        return this.store.select(selectors_1.getLabelsLoaded)
+            .pipe(operators_1.tap(function (loaded) {
             if (!loaded) {
-                _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_6__index__["e" /* GetLabels */]([]));
+                _this.store.dispatch(new fromStore.GetLabels([]));
             }
-        }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["filter"])(function (loaded) { return loaded; }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["take"])(1));
+        }), operators_1.filter(function (loaded) { return loaded; }), operators_1.take(1));
     };
     /**
      * Get Mails
@@ -1983,73 +1844,50 @@ var ResolveGuard = (function () {
      */
     ResolveGuard.prototype.getMails = function () {
         var _this = this;
-        return this.store.select(__WEBPACK_IMPORTED_MODULE_7__selectors__["i" /* getMailsLoaded */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["tap"])(function (loaded) {
+        return this.store.select(selectors_1.getMailsLoaded)
+            .pipe(operators_1.tap(function (loaded) {
             if (!_this.routerState.params[loaded.id] || _this.routerState.params[loaded.id] !== loaded.value) {
-                _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_6__index__["f" /* GetMails */]());
-                _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_6__index__["k" /* SetSearchText */](''));
-                _this.store.dispatch(new __WEBPACK_IMPORTED_MODULE_6__index__["b" /* DeselectAllMails */]());
+                _this.store.dispatch(new fromStore.GetMails());
+                _this.store.dispatch(new fromStore.SetSearchText(''));
+                _this.store.dispatch(new fromStore.DeselectAllMails());
             }
-        }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["filter"])(function (loaded) {
+        }), operators_1.filter(function (loaded) {
             return _this.routerState.params[loaded.id] && _this.routerState.params[loaded.id] === loaded.value;
-        }), Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["take"])(1));
+        }), operators_1.take(1));
     };
     ResolveGuard = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngrx_store__["h" /* Store */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [store_1.Store])
     ], ResolveGuard);
     return ResolveGuard;
 }());
-
+exports.ResolveGuard = ResolveGuard;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["e"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["g"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["h"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["i"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["j"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["k"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["l"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_0__actions__["m"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducers__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
-/* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "n", function() { return __WEBPACK_IMPORTED_MODULE_2__selectors__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "o", function() { return __WEBPACK_IMPORTED_MODULE_2__selectors__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "p", function() { return __WEBPACK_IMPORTED_MODULE_2__selectors__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_2__selectors__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "r", function() { return __WEBPACK_IMPORTED_MODULE_2__selectors__["h"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "s", function() { return __WEBPACK_IMPORTED_MODULE_2__selectors__["k"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "t", function() { return __WEBPACK_IMPORTED_MODULE_2__selectors__["l"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__effects__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/index.ts");
-/* unused harmony namespace reexport */
 
-
-
-
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/index.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/index.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/filters.reducer.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export FiltersInitialState */
-/* harmony export (immutable) */ __webpack_exports__["a"] = FiltersReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions_filters_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/filters.actions.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -2058,41 +1896,41 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
-
-var FiltersInitialState = {
+Object.defineProperty(exports, "__esModule", { value: true });
+var FiltersActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/filters.actions.ts");
+exports.FiltersInitialState = {
     entities: {},
     loading: false,
     loaded: false
 };
 function FiltersReducer(state, action) {
-    if (state === void 0) { state = FiltersInitialState; }
+    if (state === void 0) { state = exports.FiltersInitialState; }
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_filters_actions__["a" /* GET_FILTERS */]:
+        case FiltersActions.GET_FILTERS:
             return __assign({}, state, { loading: true, loaded: false });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_filters_actions__["c" /* GET_FILTERS_SUCCESS */]:
+        case FiltersActions.GET_FILTERS_SUCCESS:
             var filters = action.payload;
             var entities = filters.reduce(function (_entities, filter) {
                 return __assign({}, _entities, (_a = {}, _a[filter.id] = filter, _a));
                 var _a;
             }, {});
             return __assign({}, state, { loading: false, loaded: true, entities: entities });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_filters_actions__["b" /* GET_FILTERS_FAILED */]:
+        case FiltersActions.GET_FILTERS_FAILED:
             return __assign({}, state, { loading: false, loaded: false });
         default:
             return state;
     }
 }
+exports.FiltersReducer = FiltersReducer;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/folders.reducer.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export FoldersInitialState */
-/* harmony export (immutable) */ __webpack_exports__["a"] = FoldersReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions_folders_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/folders.actions.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -2101,78 +1939,71 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
-
-var FoldersInitialState = {
+Object.defineProperty(exports, "__esModule", { value: true });
+var FoldersActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/folders.actions.ts");
+exports.FoldersInitialState = {
     entities: {},
     loading: false,
     loaded: false
 };
 function FoldersReducer(state, action) {
-    if (state === void 0) { state = FoldersInitialState; }
+    if (state === void 0) { state = exports.FoldersInitialState; }
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_folders_actions__["a" /* GET_FOLDERS */]:
+        case FoldersActions.GET_FOLDERS:
             return __assign({}, state, { loading: true, loaded: false });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_folders_actions__["c" /* GET_FOLDERS_SUCCESS */]:
+        case FoldersActions.GET_FOLDERS_SUCCESS:
             var folders = action.payload;
             var entities = folders.reduce(function (_entities, folder) {
                 return __assign({}, _entities, (_a = {}, _a[folder.id] = folder, _a));
                 var _a;
             }, {});
             return __assign({}, state, { loading: false, loaded: true, entities: entities });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_folders_actions__["b" /* GET_FOLDERS_FAILED */]:
+        case FoldersActions.GET_FOLDERS_FAILED:
             return __assign({}, state, { loading: false, loaded: false });
         default:
             return state;
     }
 }
+exports.FoldersReducer = FoldersReducer;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getMailAppState; });
-/* unused harmony export getAppState */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return reducers; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mails_reducer__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/mails.reducer.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__folders_reducer__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/folders.reducer.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filters_reducer__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/filters.reducer.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__labels_reducer__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/labels.reducer.ts");
-/* unused harmony namespace reexport */
-/* unused harmony namespace reexport */
-/* unused harmony namespace reexport */
-/* unused harmony namespace reexport */
 
-
-
-
-
-var getMailAppState = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["l" /* createFeatureSelector */])('mail-app');
-var getAppState = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getMailAppState, function (state) { return state; });
-var reducers = {
-    mails: __WEBPACK_IMPORTED_MODULE_1__mails_reducer__["a" /* MailsReducer */],
-    folders: __WEBPACK_IMPORTED_MODULE_2__folders_reducer__["a" /* FoldersReducer */],
-    filters: __WEBPACK_IMPORTED_MODULE_3__filters_reducer__["a" /* FiltersReducer */],
-    labels: __WEBPACK_IMPORTED_MODULE_4__labels_reducer__["a" /* LabelsReducer */]
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var mails_reducer_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/mails.reducer.ts");
+var folders_reducer_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/folders.reducer.ts");
+var filters_reducer_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/filters.reducer.ts");
+var labels_reducer_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/labels.reducer.ts");
+exports.getMailAppState = store_1.createFeatureSelector('mail-app');
+exports.getAppState = store_1.createSelector(exports.getMailAppState, function (state) { return state; });
+exports.reducers = {
+    mails: mails_reducer_1.MailsReducer,
+    folders: folders_reducer_1.FoldersReducer,
+    filters: filters_reducer_1.FiltersReducer,
+    labels: labels_reducer_1.LabelsReducer
 };
-
-
-
-
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/mails.reducer.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/folders.reducer.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/filters.reducer.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/labels.reducer.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/labels.reducer.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export LabelsInitialState */
-/* harmony export (immutable) */ __webpack_exports__["a"] = LabelsReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions_labels_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/labels.actions.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -2181,41 +2012,41 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
-
-var LabelsInitialState = {
+Object.defineProperty(exports, "__esModule", { value: true });
+var LabelsActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/labels.actions.ts");
+exports.LabelsInitialState = {
     entities: {},
     loading: false,
     loaded: false
 };
 function LabelsReducer(state, action) {
-    if (state === void 0) { state = LabelsInitialState; }
+    if (state === void 0) { state = exports.LabelsInitialState; }
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_labels_actions__["a" /* GET_LABELS */]:
+        case LabelsActions.GET_LABELS:
             return __assign({}, state, { loading: true, loaded: false });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_labels_actions__["c" /* GET_LABELS_SUCCESS */]:
+        case LabelsActions.GET_LABELS_SUCCESS:
             var labels = action.payload;
             var entities = labels.reduce(function (_entities, label) {
                 return __assign({}, _entities, (_a = {}, _a[label.id] = label, _a));
                 var _a;
             }, {});
             return __assign({}, state, { loading: false, loaded: true, entities: entities });
-        case __WEBPACK_IMPORTED_MODULE_0__actions_labels_actions__["b" /* GET_LABELS_FAILED */]:
+        case LabelsActions.GET_LABELS_FAILED:
             return __assign({}, state, { loading: false, loaded: false });
         default:
             return state;
     }
 }
+exports.LabelsReducer = LabelsReducer;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/mails.reducer.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export MailsInitialState */
-/* harmony export (immutable) */ __webpack_exports__["a"] = MailsReducer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/mails.actions.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -2224,8 +2055,9 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
-
-var MailsInitialState = {
+Object.defineProperty(exports, "__esModule", { value: true });
+var MailsActions = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/actions/mails.actions.ts");
+exports.MailsInitialState = {
     entities: {},
     currentMail: null,
     selectedMailIds: [],
@@ -2234,13 +2066,13 @@ var MailsInitialState = {
     loaded: false
 };
 function MailsReducer(state, action) {
-    if (state === void 0) { state = MailsInitialState; }
+    if (state === void 0) { state = exports.MailsInitialState; }
     switch (action.type) {
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["g" /* GET_MAILS */]:
+        case MailsActions.GET_MAILS:
             {
                 return __assign({}, state, { loading: true });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["i" /* GET_MAILS_SUCCESS */]:
+        case MailsActions.GET_MAILS_SUCCESS:
             {
                 var mails = action.payload.mails;
                 var loaded = action.payload.loaded;
@@ -2250,23 +2082,23 @@ function MailsReducer(state, action) {
                 }, {});
                 return __assign({}, state, { entities: entities, loading: false, loaded: loaded });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["h" /* GET_MAILS_FAILED */]:
+        case MailsActions.GET_MAILS_FAILED:
             {
                 return __assign({}, state, { loading: false, loaded: false });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["p" /* SET_CURRENT_MAIL_SUCCESS */]:
+        case MailsActions.SET_CURRENT_MAIL_SUCCESS:
             {
                 return __assign({}, state, { currentMail: action.payload });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["D" /* UPDATE_MAIL_SUCCESS */]:
+        case MailsActions.UPDATE_MAIL_SUCCESS:
             {
                 return __assign({}, state, { entities: __assign({}, state.entities, (_a = {}, _a[action.payload.id] = action.payload, _a)) });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["r" /* SET_SEARCH_TEXT */]:
+        case MailsActions.SET_SEARCH_TEXT:
             {
                 return __assign({}, state, { searchText: action.payload });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["y" /* TOGGLE_IN_SELECTED_MAILS */]:
+        case MailsActions.TOGGLE_IN_SELECTED_MAILS:
             {
                 var mailId_1 = action.payload;
                 var selectedMailIds = state.selectedMailIds.slice();
@@ -2278,17 +2110,17 @@ function MailsReducer(state, action) {
                 }
                 return __assign({}, state, { selectedMailIds: selectedMailIds });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["m" /* SELECT_ALL_MAILS */]:
+        case MailsActions.SELECT_ALL_MAILS:
             {
                 var arr = Object.keys(state.entities).map(function (k) { return state.entities[k]; });
                 var selectedMailIds = arr.map(function (mail) { return mail.id; });
                 return __assign({}, state, { selectedMailIds: selectedMailIds });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["e" /* DESELECT_ALL_MAILS */]:
+        case MailsActions.DESELECT_ALL_MAILS:
             {
                 return __assign({}, state, { selectedMailIds: [] });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["n" /* SELECT_MAILS_BY_PARAMETER */]:
+        case MailsActions.SELECT_MAILS_BY_PARAMETER:
             {
                 var filter_1 = action.payload;
                 var arr = Object.keys(state.entities).map(function (k) { return state.entities[k]; });
@@ -2296,7 +2128,7 @@ function MailsReducer(state, action) {
                     .map(function (mail) { return mail.id; });
                 return __assign({}, state, { selectedMailIds: selectedMailIds });
             }
-        case __WEBPACK_IMPORTED_MODULE_0__actions_mails_actions__["q" /* SET_FOLDER_ON_SELECTED_MAILS */]:
+        case MailsActions.SET_FOLDER_ON_SELECTED_MAILS:
             {
                 var entities_1 = __assign({}, state.entities);
                 state.selectedMailIds.map(function (id) {
@@ -2309,165 +2141,131 @@ function MailsReducer(state, action) {
     }
     var _a;
 }
+exports.MailsReducer = MailsReducer;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/filters.selectors.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export getFiltersState */
-/* unused harmony export getFilters */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getFiltersLoaded; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getFiltersArr; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducers__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
 
-
-var getFiltersState = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(__WEBPACK_IMPORTED_MODULE_1__reducers__["a" /* getMailAppState */], function (state) { return state.filters; });
-var getFilters = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getFiltersState, function (state) { return state.entities; });
-var getFiltersLoaded = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getFiltersState, function (state) { return state.loaded; });
-var getFiltersArr = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getFilters, function (entities) { return Object.keys(entities).map(function (id) { return entities[id]; }); });
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var reducers_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
+exports.getFiltersState = store_1.createSelector(reducers_1.getMailAppState, function (state) { return state.filters; });
+exports.getFilters = store_1.createSelector(exports.getFiltersState, function (state) { return state.entities; });
+exports.getFiltersLoaded = store_1.createSelector(exports.getFiltersState, function (state) { return state.loaded; });
+exports.getFiltersArr = store_1.createSelector(exports.getFilters, function (entities) { return Object.keys(entities).map(function (id) { return entities[id]; }); });
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/folders.selectors.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export getFoldersState */
-/* unused harmony export getFolders */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getFoldersLoaded; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getFoldersArr; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducers__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
 
-
-var getFoldersState = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(__WEBPACK_IMPORTED_MODULE_1__reducers__["a" /* getMailAppState */], function (state) { return state.folders; });
-var getFolders = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getFoldersState, function (state) { return state.entities; });
-var getFoldersLoaded = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getFoldersState, function (state) { return state.loaded; });
-var getFoldersArr = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getFolders, function (entities) { return Object.keys(entities).map(function (id) { return entities[id]; }); });
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var reducers_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
+exports.getFoldersState = store_1.createSelector(reducers_1.getMailAppState, function (state) { return state.folders; });
+exports.getFolders = store_1.createSelector(exports.getFoldersState, function (state) { return state.entities; });
+exports.getFoldersLoaded = store_1.createSelector(exports.getFoldersState, function (state) { return state.loaded; });
+exports.getFoldersArr = store_1.createSelector(exports.getFolders, function (entities) { return Object.keys(entities).map(function (id) { return entities[id]; }); });
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mails_selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/mails.selectors.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_selectors__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_selectors__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_selectors__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "j", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_selectors__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_selectors__["e"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "l", function() { return __WEBPACK_IMPORTED_MODULE_0__mails_selectors__["f"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__folders_selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/folders.selectors.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__folders_selectors__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__folders_selectors__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__filters_selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/filters.selectors.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__filters_selectors__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__filters_selectors__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__labels_selectors__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/labels.selectors.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__labels_selectors__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_3__labels_selectors__["b"]; });
 
-
-
-
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/mails.selectors.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/folders.selectors.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/filters.selectors.ts"));
+__export(__webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/labels.selectors.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/labels.selectors.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export getLabelsState */
-/* unused harmony export getLabels */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getLabelsLoaded; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getLabelsArr; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducers__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
 
-
-var getLabelsState = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(__WEBPACK_IMPORTED_MODULE_1__reducers__["a" /* getMailAppState */], function (state) { return state.labels; });
-var getLabels = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getLabelsState, function (state) { return state.entities; });
-var getLabelsLoaded = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getLabelsState, function (state) { return state.loaded; });
-var getLabelsArr = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getLabels, function (entities) { return Object.keys(entities).map(function (id) { return entities[id]; }); });
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var reducers_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
+exports.getLabelsState = store_1.createSelector(reducers_1.getMailAppState, function (state) { return state.labels; });
+exports.getLabels = store_1.createSelector(exports.getLabelsState, function (state) { return state.entities; });
+exports.getLabelsLoaded = store_1.createSelector(exports.getLabelsState, function (state) { return state.loaded; });
+exports.getLabelsArr = store_1.createSelector(exports.getLabels, function (entities) { return Object.keys(entities).map(function (id) { return entities[id]; }); });
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/selectors/mails.selectors.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getMailsState; });
-/* unused harmony export getMails */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getMailsLoaded; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return getSearchText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getMailsArr; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getCurrentMail; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return getSelectedMailIds; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reducers__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 
-
-
-var getMailsState = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(__WEBPACK_IMPORTED_MODULE_1__reducers__["a" /* getMailAppState */], function (state) { return state.mails; });
-var getMails = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getMailsState, function (state) { return state.entities; });
-var getMailsLoaded = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getMailsState, function (state) { return state.loaded; });
-var getSearchText = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getMailsState, function (state) { return state.searchText; });
-var getMailsArr = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getMails, getSearchText, function (entities, searchText) {
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var reducers_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+exports.getMailsState = store_1.createSelector(reducers_1.getMailAppState, function (state) { return state.mails; });
+exports.getMails = store_1.createSelector(exports.getMailsState, function (state) { return state.entities; });
+exports.getMailsLoaded = store_1.createSelector(exports.getMailsState, function (state) { return state.loaded; });
+exports.getSearchText = store_1.createSelector(exports.getMailsState, function (state) { return state.searchText; });
+exports.getMailsArr = store_1.createSelector(exports.getMails, exports.getSearchText, function (entities, searchText) {
     var arr = Object.keys(entities).map(function (id) { return entities[id]; });
-    return __WEBPACK_IMPORTED_MODULE_2__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(arr, searchText);
+    return fuseUtils_1.FuseUtils.filterArrayByString(arr, searchText);
 });
-var getCurrentMail = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getMailsState, function (state) { return state.currentMail; });
-var getSelectedMailIds = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["m" /* createSelector */])(getMailsState, function (state) { return state.selectedMailIds; });
+exports.getCurrentMail = store_1.createSelector(exports.getMailsState, function (state) { return state.currentMail; });
+exports.getSelectedMailIds = store_1.createSelector(exports.getMailsState, function (state) { return state.selectedMailIds; });
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail-ngrx/store/store.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MailAppStoreModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_effects__ = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reducers__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__effects__ = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/index.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var effects_1 = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
+var reducers_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/reducers/index.ts");
+var effects_2 = __webpack_require__("../../../../../src/app/main/content/apps/mail-ngrx/store/effects/index.ts");
 var MailAppStoreModule = (function () {
     function MailAppStoreModule() {
     }
     MailAppStoreModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__ngrx_store__["i" /* StoreModule */].forFeature('mail-app', __WEBPACK_IMPORTED_MODULE_3__reducers__["b" /* reducers */]),
-                __WEBPACK_IMPORTED_MODULE_2__ngrx_effects__["c" /* EffectsModule */].forFeature(__WEBPACK_IMPORTED_MODULE_4__effects__["a" /* effects */])
+                store_1.StoreModule.forFeature('mail-app', reducers_1.reducers),
+                effects_1.EffectsModule.forFeature(effects_2.effects)
             ],
             providers: []
         })
     ], MailAppStoreModule);
     return MailAppStoreModule;
 }());
-
+exports.MailAppStoreModule = MailAppStoreModule;
 
 
 /***/ }),
@@ -2476,6 +2274,7 @@ var MailAppStoreModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__observable_forkJoin__ = __webpack_require__("../../../../rxjs/_esm5/observable/forkJoin.js");
 /** PURE_IMPORTS_START .._.._Observable,.._.._observable_forkJoin PURE_IMPORTS_END */
@@ -2491,6 +2290,7 @@ __WEBPACK_IMPORTED_MODULE_0__Observable__["Observable"].forkJoin = __WEBPACK_IMP
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__operator_delay__ = __webpack_require__("../../../../rxjs/_esm5/operator/delay.js");
 /** PURE_IMPORTS_START .._.._Observable,.._.._operator_delay PURE_IMPORTS_END */

@@ -1,12 +1,12 @@
 webpackJsonp(["scrumboard.module"],{
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Board; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var sampleLabels = [
     {
         'id': '56027e4119ad3a5dc28b36cd',
@@ -50,7 +50,7 @@ var Board = (function () {
     function Board(board) {
         this.name = board.name || 'Untitled Board';
         this.uri = board.uri || 'untitled-board';
-        this.id = board.id || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+        this.id = board.id || fuseUtils_1.FuseUtils.generateGUID();
         this.settings = board.settings || {
             color: '',
             subscribed: true,
@@ -63,7 +63,7 @@ var Board = (function () {
     }
     return Board;
 }());
-
+exports.Board = Board;
 
 
 /***/ }),
@@ -94,12 +94,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/add-list/add-list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardAddListComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -109,13 +107,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
 var FuseScrumboardBoardAddListComponent = (function () {
     function FuseScrumboardBoardAddListComponent(formBuilder) {
         this.formBuilder = formBuilder;
         this.formActive = false;
-        this.onlistAdd = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onlistAdd = new core_1.EventEmitter();
     }
     FuseScrumboardBoardAddListComponent.prototype.ngOnInit = function () {
     };
@@ -142,24 +141,24 @@ var FuseScrumboardBoardAddListComponent = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardAddListComponent.prototype, "onlistAdd", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('nameInput'),
+        core_1.ViewChild('nameInput'),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardAddListComponent.prototype, "nameInputField", void 0);
     FuseScrumboardBoardAddListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-add-list',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/add-list/add-list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/add-list/add-list.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [forms_1.FormBuilder])
     ], FuseScrumboardBoardAddListComponent);
     return FuseScrumboardBoardAddListComponent;
 }());
-
+exports.FuseScrumboardBoardAddListComponent = FuseScrumboardBoardAddListComponent;
 
 
 /***/ }),
@@ -190,16 +189,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/board.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_model__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/list.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -209,12 +202,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
+var list_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/list.model.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseScrumboardBoardComponent = (function () {
     function FuseScrumboardBoardComponent(route, location, scrumboardService) {
         this.route = route;
@@ -233,7 +227,7 @@ var FuseScrumboardBoardComponent = (function () {
         if (newListName === '') {
             return;
         }
-        this.scrumboardService.addList(new __WEBPACK_IMPORTED_MODULE_4__list_model__["a" /* List */]({ name: newListName }));
+        this.scrumboardService.addList(new list_model_1.List({ name: newListName }));
     };
     FuseScrumboardBoardComponent.prototype.onBoardNameChanged = function (newName) {
         this.scrumboardService.updateBoard();
@@ -246,19 +240,19 @@ var FuseScrumboardBoardComponent = (function () {
         this.onBoardChanged.unsubscribe();
     };
     FuseScrumboardBoardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/board.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/board.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_5__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_common__["Location"],
-            __WEBPACK_IMPORTED_MODULE_2__scrumboard_service__["b" /* ScrumboardService */]])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            common_1.Location,
+            scrumboard_service_1.ScrumboardService])
     ], FuseScrumboardBoardComponent);
     return FuseScrumboardBoardComponent;
 }());
-
+exports.FuseScrumboardBoardComponent = FuseScrumboardBoardComponent;
 
 
 /***/ }),
@@ -289,15 +283,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/card.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardCardDialogComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -310,18 +299,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+var confirm_dialog_component_1 = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
 var FuseScrumboardCardDialogComponent = (function () {
     function FuseScrumboardCardDialogComponent(dialogRef, data, dialog, scrumboardService) {
         this.dialogRef = dialogRef;
         this.data = data;
         this.dialog = dialog;
         this.scrumboardService = scrumboardService;
-        this.toggleInArray = __WEBPACK_IMPORTED_MODULE_3__core_fuseUtils__["a" /* FuseUtils */].toggleInArray;
+        this.toggleInArray = fuseUtils_1.FuseUtils.toggleInArray;
     }
     FuseScrumboardCardDialogComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -443,7 +433,7 @@ var FuseScrumboardCardDialogComponent = (function () {
      */
     FuseScrumboardCardDialogComponent.prototype.addChecklist = function (form) {
         this.card.checklists.push({
-            id: __WEBPACK_IMPORTED_MODULE_3__core_fuseUtils__["a" /* FuseUtils */].generateGUID(),
+            id: fuseUtils_1.FuseUtils.generateGUID(),
             name: form.value.checklistTitle,
             checkItemsChecked: 0,
             checkItems: []
@@ -482,7 +472,7 @@ var FuseScrumboardCardDialogComponent = (function () {
      */
     FuseScrumboardCardDialogComponent.prototype.removeCard = function () {
         var _this = this;
-        this.confirmDialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__core_components_confirm_dialog_confirm_dialog_component__["a" /* FuseConfirmDialogComponent */], {
+        this.confirmDialogRef = this.dialog.open(confirm_dialog_component_1.FuseConfirmDialogComponent, {
             disableClose: false
         });
         this.confirmDialogRef.componentInstance.confirmMessage = 'Are you sure you want to delete the card?';
@@ -503,27 +493,27 @@ var FuseScrumboardCardDialogComponent = (function () {
         this.onBoardChanged.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('checklistMenuTrigger'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__angular_material__["x" /* MatMenuTrigger */])
+        core_1.ViewChild('checklistMenuTrigger'),
+        __metadata("design:type", material_1.MatMenuTrigger)
     ], FuseScrumboardCardDialogComponent.prototype, "checklistMenu", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('newCheckListTitleField'),
+        core_1.ViewChild('newCheckListTitleField'),
         __metadata("design:type", Object)
     ], FuseScrumboardCardDialogComponent.prototype, "newCheckListTitleField", void 0);
     FuseScrumboardCardDialogComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-card-dialog',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/card.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/card.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MAT_DIALOG_DATA */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_material__["o" /* MatDialogRef */], Object, __WEBPACK_IMPORTED_MODULE_1__angular_material__["m" /* MatDialog */],
-            __WEBPACK_IMPORTED_MODULE_2__scrumboard_service__["b" /* ScrumboardService */]])
+        __param(1, core_1.Inject(material_1.MAT_DIALOG_DATA)),
+        __metadata("design:paramtypes", [material_1.MatDialogRef, Object, material_1.MatDialog,
+            scrumboard_service_1.ScrumboardService])
     ], FuseScrumboardCardDialogComponent);
     return FuseScrumboardCardDialogComponent;
 }());
-
+exports.FuseScrumboardCardDialogComponent = FuseScrumboardCardDialogComponent;
 
 
 /***/ }),
@@ -554,14 +544,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/label-selector/label-selector.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardLabelSelectorComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -571,21 +557,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseScrumboardLabelSelectorComponent = (function () {
     function FuseScrumboardLabelSelectorComponent(scrumboardService) {
         this.scrumboardService = scrumboardService;
-        this.onCardLabelsChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onCardLabelsChange = new core_1.EventEmitter();
         this.labelsMenuView = 'labels';
         this.newLabel = {
             'id': '',
             'name': '',
             'color': 'mat-blue-400-bg'
         };
-        this.toggleInArray = __WEBPACK_IMPORTED_MODULE_2__core_fuseUtils__["a" /* FuseUtils */].toggleInArray;
+        this.toggleInArray = fuseUtils_1.FuseUtils.toggleInArray;
     }
     FuseScrumboardLabelSelectorComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -602,7 +589,7 @@ var FuseScrumboardLabelSelectorComponent = (function () {
         this.scrumboardService.updateBoard();
     };
     FuseScrumboardLabelSelectorComponent.prototype.addNewLabel = function () {
-        this.newLabel.id = __WEBPACK_IMPORTED_MODULE_2__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+        this.newLabel.id = fuseUtils_1.FuseUtils.generateGUID();
         this.board.labels.push(Object.assign({}, this.newLabel));
         this.newLabel.name = '';
         this.labelsMenuView = 'labels';
@@ -611,26 +598,26 @@ var FuseScrumboardLabelSelectorComponent = (function () {
         this.onBoardChanged.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('card'),
+        core_1.Input('card'),
         __metadata("design:type", Object)
     ], FuseScrumboardLabelSelectorComponent.prototype, "card", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseScrumboardLabelSelectorComponent.prototype, "onCardLabelsChange", void 0);
     FuseScrumboardLabelSelectorComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-label-selector',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/label-selector/label-selector.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/label-selector/label-selector.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__scrumboard_service__["b" /* ScrumboardService */]])
+        __metadata("design:paramtypes", [scrumboard_service_1.ScrumboardService])
     ], FuseScrumboardLabelSelectorComponent);
     return FuseScrumboardLabelSelectorComponent;
 }());
-
+exports.FuseScrumboardLabelSelectorComponent = FuseScrumboardLabelSelectorComponent;
 
 
 /***/ }),
@@ -661,12 +648,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/edit-board-name/edit-board-name.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardEditBoardNameComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -676,13 +661,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
 var FuseScrumboardEditBoardNameComponent = (function () {
     function FuseScrumboardEditBoardNameComponent(formBuilder) {
         this.formBuilder = formBuilder;
         this.formActive = false;
-        this.onNameChanged = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onNameChanged = new core_1.EventEmitter();
     }
     FuseScrumboardEditBoardNameComponent.prototype.ngOnInit = function () {
     };
@@ -711,28 +697,28 @@ var FuseScrumboardEditBoardNameComponent = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseScrumboardEditBoardNameComponent.prototype, "board", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseScrumboardEditBoardNameComponent.prototype, "onNameChanged", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('nameInput'),
+        core_1.ViewChild('nameInput'),
         __metadata("design:type", Object)
     ], FuseScrumboardEditBoardNameComponent.prototype, "nameInputField", void 0);
     FuseScrumboardEditBoardNameComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-edit-board-name',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/edit-board-name/edit-board-name.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/edit-board-name/edit-board-name.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [forms_1.FormBuilder])
     ], FuseScrumboardEditBoardNameComponent);
     return FuseScrumboardEditBoardNameComponent;
 }());
-
+exports.FuseScrumboardEditBoardNameComponent = FuseScrumboardEditBoardNameComponent;
 
 
 /***/ }),
@@ -763,12 +749,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/list/add-card/add-card.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardAddCardComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -778,13 +762,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
 var FuseScrumboardBoardAddCardComponent = (function () {
     function FuseScrumboardBoardAddCardComponent(formBuilder) {
         this.formBuilder = formBuilder;
         this.formActive = false;
-        this.onCardAdd = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onCardAdd = new core_1.EventEmitter();
     }
     FuseScrumboardBoardAddCardComponent.prototype.ngOnInit = function () {
     };
@@ -812,24 +797,24 @@ var FuseScrumboardBoardAddCardComponent = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardAddCardComponent.prototype, "onCardAdd", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('nameInput'),
+        core_1.ViewChild('nameInput'),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardAddCardComponent.prototype, "nameInputField", void 0);
     FuseScrumboardBoardAddCardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-add-card',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/add-card/add-card.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/add-card/add-card.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [forms_1.FormBuilder])
     ], FuseScrumboardBoardAddCardComponent);
     return FuseScrumboardBoardAddCardComponent;
 }());
-
+exports.FuseScrumboardBoardAddCardComponent = FuseScrumboardBoardAddCardComponent;
 
 
 /***/ }),
@@ -860,15 +845,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/list/card/card.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardCardComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment__ = __webpack_require__("../../../../moment/moment.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_moment__);
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -878,10 +858,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var moment = __webpack_require__("../../../../moment/moment.js");
 var FuseScrumboardBoardCardComponent = (function () {
     function FuseScrumboardBoardCardComponent(route, scrumboardService) {
         this.route = route;
@@ -901,25 +882,25 @@ var FuseScrumboardBoardCardComponent = (function () {
      * @returns {boolean}
      */
     FuseScrumboardBoardCardComponent.prototype.isOverdue = function (cardDate) {
-        return __WEBPACK_IMPORTED_MODULE_3_moment__() > __WEBPACK_IMPORTED_MODULE_3_moment__(new Date(cardDate));
+        return moment() > moment(new Date(cardDate));
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardCardComponent.prototype, "cardId", void 0);
     FuseScrumboardBoardCardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-card',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/card/card.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/card/card.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
-            __WEBPACK_IMPORTED_MODULE_2__scrumboard_service__["b" /* ScrumboardService */]])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            scrumboard_service_1.ScrumboardService])
     ], FuseScrumboardBoardCardComponent);
     return FuseScrumboardBoardCardComponent;
 }());
-
+exports.FuseScrumboardBoardCardComponent = FuseScrumboardBoardCardComponent;
 
 
 /***/ }),
@@ -950,12 +931,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/list/edit-list-name/edit-list-name.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardEditListNameComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -965,13 +944,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
 var FuseScrumboardBoardEditListNameComponent = (function () {
     function FuseScrumboardBoardEditListNameComponent(formBuilder) {
         this.formBuilder = formBuilder;
         this.formActive = false;
-        this.onNameChanged = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onNameChanged = new core_1.EventEmitter();
     }
     FuseScrumboardBoardEditListNameComponent.prototype.ngOnInit = function () {
     };
@@ -999,28 +979,28 @@ var FuseScrumboardBoardEditListNameComponent = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardEditListNameComponent.prototype, "list", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardEditListNameComponent.prototype, "onNameChanged", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('nameInput'),
+        core_1.ViewChild('nameInput'),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardEditListNameComponent.prototype, "nameInputField", void 0);
     FuseScrumboardBoardEditListNameComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-edit-list-name',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/edit-list-name/edit-list-name.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/edit-list-name/edit-list-name.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [forms_1.FormBuilder])
     ], FuseScrumboardBoardEditListNameComponent);
     return FuseScrumboardBoardEditListNameComponent;
 }());
-
+exports.FuseScrumboardBoardEditListNameComponent = FuseScrumboardBoardEditListNameComponent;
 
 
 /***/ }),
@@ -1051,18 +1031,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/list/list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardListComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dialogs_card_card_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/card.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__card_model__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/card.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__ = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1072,14 +1044,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var card_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/card.component.ts");
+var confirm_dialog_component_1 = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var card_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/card.model.ts");
+var fuse_perfect_scrollbar_directive_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
 var FuseScrumboardBoardListComponent = (function () {
     function FuseScrumboardBoardListComponent(route, scrumboardService, dialog) {
         this.route = route;
@@ -1102,14 +1075,14 @@ var FuseScrumboardBoardListComponent = (function () {
         if (newCardName === '') {
             return;
         }
-        this.scrumboardService.addCard(this.list.id, new __WEBPACK_IMPORTED_MODULE_6__card_model__["a" /* Card */]({ name: newCardName }));
+        this.scrumboardService.addCard(this.list.id, new card_model_1.Card({ name: newCardName }));
         setTimeout(function () {
             _this.listScroll.scrollToBottom(0, 400);
         });
     };
     FuseScrumboardBoardListComponent.prototype.removeList = function (listId) {
         var _this = this;
-        this.confirmDialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__core_components_confirm_dialog_confirm_dialog_component__["a" /* FuseConfirmDialogComponent */], {
+        this.confirmDialogRef = this.dialog.open(confirm_dialog_component_1.FuseConfirmDialogComponent, {
             disableClose: false
         });
         this.confirmDialogRef.componentInstance.confirmMessage = 'Are you sure you want to delete the list and it\'s all cards?';
@@ -1120,7 +1093,7 @@ var FuseScrumboardBoardListComponent = (function () {
         });
     };
     FuseScrumboardBoardListComponent.prototype.openCardDialog = function (cardId) {
-        this.dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_3__dialogs_card_card_component__["a" /* FuseScrumboardCardDialogComponent */], {
+        this.dialogRef = this.dialog.open(card_component_1.FuseScrumboardCardDialogComponent, {
             panelClass: 'scrumboard-card-dialog',
             data: {
                 cardId: cardId,
@@ -1138,27 +1111,27 @@ var FuseScrumboardBoardListComponent = (function () {
         this.onBoardChanged.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseScrumboardBoardListComponent.prototype, "list", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_7__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__["a" /* FusePerfectScrollbarDirective */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_7__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__["a" /* FusePerfectScrollbarDirective */])
+        core_1.ViewChild(fuse_perfect_scrollbar_directive_1.FusePerfectScrollbarDirective),
+        __metadata("design:type", fuse_perfect_scrollbar_directive_1.FusePerfectScrollbarDirective)
     ], FuseScrumboardBoardListComponent.prototype, "listScroll", void 0);
     FuseScrumboardBoardListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-list',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/list.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
-            __WEBPACK_IMPORTED_MODULE_5__scrumboard_service__["b" /* ScrumboardService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_material__["m" /* MatDialog */]])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            scrumboard_service_1.ScrumboardService,
+            material_1.MatDialog])
     ], FuseScrumboardBoardListComponent);
     return FuseScrumboardBoardListComponent;
 }());
-
+exports.FuseScrumboardBoardListComponent = FuseScrumboardBoardListComponent;
 
 
 /***/ }),
@@ -1189,13 +1162,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/board-color-selector/board-color-selector.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardColorSelectorComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_matColors__ = __webpack_require__("../../../../../src/app/core/matColors.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1205,13 +1175,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var matColors_1 = __webpack_require__("../../../../../src/app/core/matColors.ts");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
 var FuseScrumboardBoardColorSelectorComponent = (function () {
     function FuseScrumboardBoardColorSelectorComponent(scrumboardService) {
         this.scrumboardService = scrumboardService;
-        this.colors = __WEBPACK_IMPORTED_MODULE_1__core_matColors__["a" /* MatColors */].all;
+        this.colors = matColors_1.MatColors.all;
     }
     FuseScrumboardBoardColorSelectorComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1229,16 +1200,16 @@ var FuseScrumboardBoardColorSelectorComponent = (function () {
         this.onBoardChanged.unsubscribe();
     };
     FuseScrumboardBoardColorSelectorComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-color-selector',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/board-color-selector/board-color-selector.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/board-color-selector/board-color-selector.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__scrumboard_service__["b" /* ScrumboardService */]])
+        __metadata("design:paramtypes", [scrumboard_service_1.ScrumboardService])
     ], FuseScrumboardBoardColorSelectorComponent);
     return FuseScrumboardBoardColorSelectorComponent;
 }());
-
+exports.FuseScrumboardBoardColorSelectorComponent = FuseScrumboardBoardColorSelectorComponent;
 
 
 /***/ }),
@@ -1269,13 +1240,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/settings.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardBoardSettingsSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1285,9 +1253,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseScrumboardBoardSettingsSidenavComponent = (function () {
     function FuseScrumboardBoardSettingsSidenavComponent(scrumboardService) {
         this.scrumboardService = scrumboardService;
@@ -1313,31 +1282,31 @@ var FuseScrumboardBoardSettingsSidenavComponent = (function () {
         this.onBoardChanged.unsubscribe();
     };
     FuseScrumboardBoardSettingsSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard-board-settings',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/settings.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/settings.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__scrumboard_service__["b" /* ScrumboardService */]])
+        __metadata("design:paramtypes", [scrumboard_service_1.ScrumboardService])
     ], FuseScrumboardBoardSettingsSidenavComponent);
     return FuseScrumboardBoardSettingsSidenavComponent;
 }());
-
+exports.FuseScrumboardBoardSettingsSidenavComponent = FuseScrumboardBoardSettingsSidenavComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/card.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Card; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var Card = (function () {
     function Card(card) {
-        this.id = card.id || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+        this.id = card.id || fuseUtils_1.FuseUtils.generateGUID();
         this.name = card.name || '';
         this.description = card.description || '';
         this.idAttachmentCover = card.idAttachmentCover || '';
@@ -1354,27 +1323,27 @@ var Card = (function () {
     }
     return Card;
 }());
-
+exports.Card = Card;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/list.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return List; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var List = (function () {
     function List(list) {
-        this.id = list.id || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+        this.id = list.id || fuseUtils_1.FuseUtils.generateGUID();
         this.name = list.name || '';
         this.idCards = [];
     }
     return List;
 }());
-
+exports.List = List;
 
 
 /***/ }),
@@ -1405,15 +1374,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/scrumboard.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseScrumboardComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__board_model__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1423,11 +1387,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var board_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board.model.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseScrumboardComponent = (function () {
     function FuseScrumboardComponent(router, scrumboardService) {
         this.router = router;
@@ -1443,7 +1408,7 @@ var FuseScrumboardComponent = (function () {
     };
     FuseScrumboardComponent.prototype.newBoard = function () {
         var _this = this;
-        var newBoard = new __WEBPACK_IMPORTED_MODULE_3__board_model__["a" /* Board */]({});
+        var newBoard = new board_model_1.Board({});
         this.scrumboardService.createNewBoard(newBoard).then(function () {
             _this.router.navigate(['/apps/scrumboard/boards/' + newBoard.id + '/' + newBoard.uri]);
         });
@@ -1452,79 +1417,63 @@ var FuseScrumboardComponent = (function () {
         this.onBoardsChanged.unsubscribe();
     };
     FuseScrumboardComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-scrumboard',
             template: __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_4__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["f" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_1__scrumboard_service__["b" /* ScrumboardService */]])
+        __metadata("design:paramtypes", [router_1.Router,
+            scrumboard_service_1.ScrumboardService])
     ], FuseScrumboardComponent);
     return FuseScrumboardComponent;
 }());
-
+exports.FuseScrumboardComponent = FuseScrumboardComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/scrumboard.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseScrumboardModule", function() { return FuseScrumboardModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scrumboard_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scrumboard_service__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__board_board_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/board.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__board_list_list_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__board_list_card_card_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/card/card.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__board_list_edit_list_name_edit_list_name_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/edit-list-name/edit-list-name.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__board_list_add_card_add_card_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/add-card/add-card.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__board_add_list_add_list_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/add-list/add-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__board_dialogs_card_card_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/card.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__board_dialogs_card_label_selector_label_selector_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/label-selector/label-selector.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__board_edit_board_name_edit_board_name_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/edit-board-name/edit-board-name.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__board_sidenavs_settings_settings_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/settings.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__board_sidenavs_settings_board_color_selector_board_color_selector_component__ = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/board-color-selector/board-color-selector.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var scrumboard_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.component.ts");
+var scrumboard_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts");
+var board_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/board.component.ts");
+var list_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/list.component.ts");
+var card_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/card/card.component.ts");
+var edit_list_name_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/edit-list-name/edit-list-name.component.ts");
+var add_card_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/list/add-card/add-card.component.ts");
+var add_list_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/add-list/add-list.component.ts");
+var card_component_2 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/card.component.ts");
+var label_selector_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/dialogs/card/label-selector/label-selector.component.ts");
+var edit_board_name_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/edit-board-name/edit-board-name.component.ts");
+var settings_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/settings.component.ts");
+var board_color_selector_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/scrumboard/board/sidenavs/settings/board-color-selector/board-color-selector.component.ts");
 var routes = [
     {
         path: 'boards',
-        component: __WEBPACK_IMPORTED_MODULE_3__scrumboard_component__["a" /* FuseScrumboardComponent */],
+        component: scrumboard_component_1.FuseScrumboardComponent,
         resolve: {
-            scrumboard: __WEBPACK_IMPORTED_MODULE_4__scrumboard_service__["b" /* ScrumboardService */]
+            scrumboard: scrumboard_service_1.ScrumboardService
         }
     },
     {
         path: 'boards/:boardId/:boardUri',
-        component: __WEBPACK_IMPORTED_MODULE_5__board_board_component__["a" /* FuseScrumboardBoardComponent */],
+        component: board_component_1.FuseScrumboardBoardComponent,
         resolve: {
-            board: __WEBPACK_IMPORTED_MODULE_4__scrumboard_service__["a" /* BoardResolve */]
+            board: scrumboard_service_1.BoardResolve
         }
     },
     {
@@ -1536,48 +1485,44 @@ var FuseScrumboardModule = (function () {
     function FuseScrumboardModule() {
     }
     FuseScrumboardModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__scrumboard_component__["a" /* FuseScrumboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__board_board_component__["a" /* FuseScrumboardBoardComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__board_list_list_component__["a" /* FuseScrumboardBoardListComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__board_list_card_card_component__["a" /* FuseScrumboardBoardCardComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__board_list_edit_list_name_edit_list_name_component__["a" /* FuseScrumboardBoardEditListNameComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__board_list_add_card_add_card_component__["a" /* FuseScrumboardBoardAddCardComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__board_add_list_add_list_component__["a" /* FuseScrumboardBoardAddListComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__board_dialogs_card_card_component__["a" /* FuseScrumboardCardDialogComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__board_dialogs_card_label_selector_label_selector_component__["a" /* FuseScrumboardLabelSelectorComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__board_edit_board_name_edit_board_name_component__["a" /* FuseScrumboardEditBoardNameComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__board_sidenavs_settings_settings_component__["a" /* FuseScrumboardBoardSettingsSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__board_sidenavs_settings_board_color_selector_board_color_selector_component__["a" /* FuseScrumboardBoardColorSelectorComponent */]
+                scrumboard_component_1.FuseScrumboardComponent,
+                board_component_1.FuseScrumboardBoardComponent,
+                list_component_1.FuseScrumboardBoardListComponent,
+                card_component_1.FuseScrumboardBoardCardComponent,
+                edit_list_name_component_1.FuseScrumboardBoardEditListNameComponent,
+                add_card_component_1.FuseScrumboardBoardAddCardComponent,
+                add_list_component_1.FuseScrumboardBoardAddListComponent,
+                card_component_2.FuseScrumboardCardDialogComponent,
+                label_selector_component_1.FuseScrumboardLabelSelectorComponent,
+                edit_board_name_component_1.FuseScrumboardEditBoardNameComponent,
+                settings_component_1.FuseScrumboardBoardSettingsSidenavComponent,
+                board_color_selector_component_1.FuseScrumboardBoardColorSelectorComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__scrumboard_service__["b" /* ScrumboardService */],
-                __WEBPACK_IMPORTED_MODULE_4__scrumboard_service__["a" /* BoardResolve */]
+                scrumboard_service_1.ScrumboardService,
+                scrumboard_service_1.BoardResolve
             ],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_11__board_dialogs_card_card_component__["a" /* FuseScrumboardCardDialogComponent */]]
+            entryComponents: [card_component_2.FuseScrumboardCardDialogComponent]
         })
     ], FuseScrumboardModule);
     return FuseScrumboardModule;
 }());
-
+exports.FuseScrumboardModule = FuseScrumboardModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/scrumboard/scrumboard.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ScrumboardService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BoardResolve; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1587,14 +1532,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var ScrumboardService = (function () {
     function ScrumboardService(http) {
         this.http = http;
-        this.onBoardsChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onBoardChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
+        this.onBoardsChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onBoardChanged = new BehaviorSubject_1.BehaviorSubject([]);
     }
     /**
      * Resolve
@@ -1701,12 +1647,12 @@ var ScrumboardService = (function () {
         });
     };
     ScrumboardService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], ScrumboardService);
     return ScrumboardService;
 }());
-
+exports.ScrumboardService = ScrumboardService;
 var BoardResolve = (function () {
     function BoardResolve(scrumboardService) {
         this.scrumboardService = scrumboardService;
@@ -1715,12 +1661,12 @@ var BoardResolve = (function () {
         return this.scrumboardService.getBoard(route.paramMap.get('boardId'));
     };
     BoardResolve = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        core_1.Injectable(),
         __metadata("design:paramtypes", [ScrumboardService])
     ], BoardResolve);
     return BoardResolve;
 }());
-
+exports.BoardResolve = BoardResolve;
 
 
 /***/ })

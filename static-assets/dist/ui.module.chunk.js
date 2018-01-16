@@ -26,11 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/demo/demo-content/demo-content.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseDemoContentComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -40,12 +39,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseDemoContentComponent = (function () {
     function FuseDemoContentComponent() {
     }
     FuseDemoContentComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-demo-content',
             template: __webpack_require__("../../../../../src/app/core/components/demo/demo-content/demo-content.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/demo/demo-content/demo-content.component.scss")]
@@ -54,7 +54,7 @@ var FuseDemoContentComponent = (function () {
     ], FuseDemoContentComponent);
     return FuseDemoContentComponent;
 }());
-
+exports.FuseDemoContentComponent = FuseDemoContentComponent;
 
 
 /***/ }),
@@ -85,11 +85,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/demo/demo-sidenav/demo-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseDemoSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -99,12 +98,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseDemoSidenavComponent = (function () {
     function FuseDemoSidenavComponent() {
     }
     FuseDemoSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-demo-sidenav',
             template: __webpack_require__("../../../../../src/app/core/components/demo/demo-sidenav/demo-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/demo/demo-sidenav/demo-sidenav.component.scss")]
@@ -113,54 +113,50 @@ var FuseDemoSidenavComponent = (function () {
     ], FuseDemoSidenavComponent);
     return FuseDemoSidenavComponent;
 }());
-
+exports.FuseDemoSidenavComponent = FuseDemoSidenavComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/demo/demo.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseDemoModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__demo_content_demo_content_component__ = __webpack_require__("../../../../../src/app/core/components/demo/demo-content/demo-content.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__demo_sidenav_demo_sidenav_component__ = __webpack_require__("../../../../../src/app/core/components/demo/demo-sidenav/demo-sidenav.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var demo_content_component_1 = __webpack_require__("../../../../../src/app/core/components/demo/demo-content/demo-content.component.ts");
+var demo_sidenav_component_1 = __webpack_require__("../../../../../src/app/core/components/demo/demo-sidenav/demo-sidenav.component.ts");
 var FuseDemoModule = (function () {
     function FuseDemoModule() {
     }
     FuseDemoModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__demo_content_demo_content_component__["a" /* FuseDemoContentComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__demo_sidenav_demo_sidenav_component__["a" /* FuseDemoSidenavComponent */]
+                demo_content_component_1.FuseDemoContentComponent,
+                demo_sidenav_component_1.FuseDemoSidenavComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__demo_content_demo_content_component__["a" /* FuseDemoContentComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__demo_sidenav_demo_sidenav_component__["a" /* FuseDemoSidenavComponent */]
+                demo_content_component_1.FuseDemoContentComponent,
+                demo_sidenav_component_1.FuseDemoSidenavComponent
             ]
         })
     ], FuseDemoModule);
     return FuseDemoModule;
 }());
-
+exports.FuseDemoModule = FuseDemoModule;
 
 
 /***/ }),
@@ -191,12 +187,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/colors/colors.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseColorsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_matColors__ = __webpack_require__("../../../../../src/app/core/matColors.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -206,11 +200,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var matColors_1 = __webpack_require__("../../../../../src/app/core/matColors.ts");
 var FuseColorsComponent = (function () {
     function FuseColorsComponent() {
-        this.colors = __WEBPACK_IMPORTED_MODULE_1__core_matColors__["a" /* MatColors */].all;
+        this.colors = matColors_1.MatColors.all;
         this.updateSelectedColor('primary');
     }
     FuseColorsComponent.prototype.ngOnInit = function () {
@@ -220,10 +215,10 @@ var FuseColorsComponent = (function () {
     };
     FuseColorsComponent.prototype.updateSelectedColor = function (colorName) {
         this.selectedColor = colorName;
-        this.selectedColorDefaultValue = __WEBPACK_IMPORTED_MODULE_1__core_matColors__["a" /* MatColors */].getColor(this.selectedColor)[500];
+        this.selectedColorDefaultValue = matColors_1.MatColors.getColor(this.selectedColor)[500];
     };
     FuseColorsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-colors',
             template: __webpack_require__("../../../../../src/app/main/content/ui/colors/colors.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/colors/colors.component.scss")]
@@ -232,56 +227,52 @@ var FuseColorsComponent = (function () {
     ], FuseColorsComponent);
     return FuseColorsComponent;
 }());
-
+exports.FuseColorsComponent = FuseColorsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/colors/colors.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIColorsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_components_demo_demo_module__ = __webpack_require__("../../../../../src/app/core/components/demo/demo.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__colors_component__ = __webpack_require__("../../../../../src/app/main/content/ui/colors/colors.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var demo_module_1 = __webpack_require__("../../../../../src/app/core/components/demo/demo.module.ts");
+var colors_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/colors/colors.component.ts");
 var routes = [
     {
         path: 'colors',
-        component: __WEBPACK_IMPORTED_MODULE_4__colors_component__["a" /* FuseColorsComponent */]
+        component: colors_component_1.FuseColorsComponent
     }
 ];
 var UIColorsModule = (function () {
     function UIColorsModule() {
     }
     UIColorsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_3__core_components_demo_demo_module__["a" /* FuseDemoModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                demo_module_1.FuseDemoModule
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__colors_component__["a" /* FuseColorsComponent */]
+                colors_component_1.FuseColorsComponent
             ]
         })
     ], UIColorsModule);
     return UIColorsModule;
 }());
-
+exports.UIColorsModule = UIColorsModule;
 
 
 /***/ }),
@@ -312,12 +303,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/forms/forms.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFormsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -327,8 +316,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
 var FuseFormsComponent = (function () {
     function FuseFormsComponent(formBuilder) {
         this.formBuilder = formBuilder;
@@ -379,32 +369,32 @@ var FuseFormsComponent = (function () {
                 {
                     value: 'Google',
                     disabled: true
-                }, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required
+                }, forms_1.Validators.required
             ],
-            firstName: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            lastName: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            address: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            address2: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            city: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            state: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            postalCode: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].maxLength(5)]],
-            country: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            firstName: ['', forms_1.Validators.required],
+            lastName: ['', forms_1.Validators.required],
+            address: ['', forms_1.Validators.required],
+            address2: ['', forms_1.Validators.required],
+            city: ['', forms_1.Validators.required],
+            state: ['', forms_1.Validators.required],
+            postalCode: ['', [forms_1.Validators.required, forms_1.Validators.maxLength(5)]],
+            country: ['', forms_1.Validators.required]
         });
         this.form.valueChanges.subscribe(function () {
             _this.onFormValuesChanged();
         });
         // Horizontal Stepper form steps
         this.horizontalStepperStep1 = this.formBuilder.group({
-            firstName: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            lastName: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            firstName: ['', forms_1.Validators.required],
+            lastName: ['', forms_1.Validators.required]
         });
         this.horizontalStepperStep2 = this.formBuilder.group({
-            address: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            address: ['', forms_1.Validators.required]
         });
         this.horizontalStepperStep3 = this.formBuilder.group({
-            city: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            state: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            postalCode: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].maxLength(5)]]
+            city: ['', forms_1.Validators.required],
+            state: ['', forms_1.Validators.required],
+            postalCode: ['', [forms_1.Validators.required, forms_1.Validators.maxLength(5)]]
         });
         this.horizontalStepperStep1.valueChanges.subscribe(function () {
             _this.onFormValuesChanged();
@@ -417,16 +407,16 @@ var FuseFormsComponent = (function () {
         });
         // Vertical Stepper form stepper
         this.verticalStepperStep1 = this.formBuilder.group({
-            firstName: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            lastName: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            firstName: ['', forms_1.Validators.required],
+            lastName: ['', forms_1.Validators.required]
         });
         this.verticalStepperStep2 = this.formBuilder.group({
-            address: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            address: ['', forms_1.Validators.required]
         });
         this.verticalStepperStep3 = this.formBuilder.group({
-            city: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            state: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            postalCode: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].maxLength(5)]]
+            city: ['', forms_1.Validators.required],
+            state: ['', forms_1.Validators.required],
+            postalCode: ['', [forms_1.Validators.required, forms_1.Validators.maxLength(5)]]
         });
         this.verticalStepperStep1.valueChanges.subscribe(function () {
             _this.onFormValuesChanged();
@@ -459,62 +449,59 @@ var FuseFormsComponent = (function () {
         alert('You have finished the vertical stepper!');
     };
     FuseFormsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-forms',
             template: __webpack_require__("../../../../../src/app/main/content/ui/forms/forms.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/forms/forms.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [forms_1.FormBuilder])
     ], FuseFormsComponent);
     return FuseFormsComponent;
 }());
-
+exports.FuseFormsComponent = FuseFormsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/forms/forms.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIFormsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forms_component__ = __webpack_require__("../../../../../src/app/main/content/ui/forms/forms.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var forms_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/forms/forms.component.ts");
 var routes = [
     {
         path: 'forms',
-        component: __WEBPACK_IMPORTED_MODULE_3__forms_component__["a" /* FuseFormsComponent */]
+        component: forms_component_1.FuseFormsComponent
     }
 ];
 var UIFormsModule = (function () {
     function UIFormsModule() {
     }
     UIFormsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__forms_component__["a" /* FuseFormsComponent */]
+                forms_component_1.FuseFormsComponent
             ]
         })
     ], UIFormsModule);
     return UIFormsModule;
 }());
-
+exports.UIFormsModule = UIFormsModule;
 
 
 /***/ }),
@@ -545,11 +532,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/helper-classes/helper-classes.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseHelperClassesComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -559,12 +545,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseHelperClassesComponent = (function () {
     function FuseHelperClassesComponent() {
     }
     FuseHelperClassesComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-helper-classes',
             template: __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/helper-classes.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/helper-classes/helper-classes.component.scss")]
@@ -573,59 +560,54 @@ var FuseHelperClassesComponent = (function () {
     ], FuseHelperClassesComponent);
     return FuseHelperClassesComponent;
 }());
-
+exports.FuseHelperClassesComponent = FuseHelperClassesComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/helper-classes/helper-classes.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIHelperClassesModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__helper_classes_component__ = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/helper-classes.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_padding_margin_padding_margin_component__ = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/padding-margin/padding-margin.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_width_height_width_height_component__ = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/width-height/width-height.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var helper_classes_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/helper-classes.component.ts");
+var padding_margin_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/padding-margin/padding-margin.component.ts");
+var width_height_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/width-height/width-height.component.ts");
 var routes = [
     {
         path: 'helper-classes',
-        component: __WEBPACK_IMPORTED_MODULE_3__helper_classes_component__["a" /* FuseHelperClassesComponent */]
+        component: helper_classes_component_1.FuseHelperClassesComponent
     }
 ];
 var UIHelperClassesModule = (function () {
     function UIHelperClassesModule() {
     }
     UIHelperClassesModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__helper_classes_component__["a" /* FuseHelperClassesComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__tabs_padding_margin_padding_margin_component__["a" /* FuseHelperClassesPaddingMarginComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__tabs_width_height_width_height_component__["a" /* FuseHelperClassesWidthHeightComponent */]
+                helper_classes_component_1.FuseHelperClassesComponent,
+                padding_margin_component_1.FuseHelperClassesPaddingMarginComponent,
+                width_height_component_1.FuseHelperClassesWidthHeightComponent
             ]
         })
     ], UIHelperClassesModule);
     return UIHelperClassesModule;
 }());
-
+exports.UIHelperClassesModule = UIHelperClassesModule;
 
 
 /***/ }),
@@ -656,11 +638,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/helper-classes/tabs/padding-margin/padding-margin.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseHelperClassesPaddingMarginComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -670,12 +651,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseHelperClassesPaddingMarginComponent = (function () {
     function FuseHelperClassesPaddingMarginComponent() {
     }
     FuseHelperClassesPaddingMarginComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-helper-classes-padding-margin',
             template: __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/padding-margin/padding-margin.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/padding-margin/padding-margin.component.scss")]
@@ -684,7 +666,7 @@ var FuseHelperClassesPaddingMarginComponent = (function () {
     ], FuseHelperClassesPaddingMarginComponent);
     return FuseHelperClassesPaddingMarginComponent;
 }());
-
+exports.FuseHelperClassesPaddingMarginComponent = FuseHelperClassesPaddingMarginComponent;
 
 
 /***/ }),
@@ -715,11 +697,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/helper-classes/tabs/width-height/width-height.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseHelperClassesWidthHeightComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -729,12 +710,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseHelperClassesWidthHeightComponent = (function () {
     function FuseHelperClassesWidthHeightComponent() {
     }
     FuseHelperClassesWidthHeightComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-helper-classes-width-height',
             template: __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/width-height/width-height.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/helper-classes/tabs/width-height/width-height.component.scss")]
@@ -743,7 +725,7 @@ var FuseHelperClassesWidthHeightComponent = (function () {
     ], FuseHelperClassesWidthHeightComponent);
     return FuseHelperClassesWidthHeightComponent;
 }());
-
+exports.FuseHelperClassesWidthHeightComponent = FuseHelperClassesWidthHeightComponent;
 
 
 /***/ }),
@@ -774,12 +756,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/icons/icons.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseIconsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -789,8 +769,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
 var FuseIconsComponent = (function () {
     function FuseIconsComponent(http) {
         this.http = http;
@@ -812,62 +793,59 @@ var FuseIconsComponent = (function () {
         });
     };
     FuseIconsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-icons',
             template: __webpack_require__("../../../../../src/app/main/content/ui/icons/icons.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/icons/icons.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], FuseIconsComponent);
     return FuseIconsComponent;
 }());
-
+exports.FuseIconsComponent = FuseIconsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/icons/icons.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIIconsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_component__ = __webpack_require__("../../../../../src/app/main/content/ui/icons/icons.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var icons_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/icons/icons.component.ts");
 var routes = [
     {
         path: 'icons',
-        component: __WEBPACK_IMPORTED_MODULE_3__icons_component__["a" /* FuseIconsComponent */]
+        component: icons_component_1.FuseIconsComponent
     }
 ];
 var UIIconsModule = (function () {
     function UIIconsModule() {
     }
     UIIconsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__icons_component__["a" /* FuseIconsComponent */]
+                icons_component_1.FuseIconsComponent
             ]
         })
     ], UIIconsModule);
     return UIIconsModule;
 }());
-
+exports.UIIconsModule = UIIconsModule;
 
 
 /***/ }),
@@ -898,11 +876,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/blank/blank.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseBlankComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -912,12 +889,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseBlankComponent = (function () {
     function FuseBlankComponent() {
     }
     FuseBlankComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-blank',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/blank/blank.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/blank/blank.component.scss")]
@@ -926,7 +904,7 @@ var FuseBlankComponent = (function () {
     ], FuseBlankComponent);
     return FuseBlankComponent;
 }());
-
+exports.FuseBlankComponent = FuseBlankComponent;
 
 
 /***/ }),
@@ -957,11 +935,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth-2/fullwidth-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedFullWidth2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -971,12 +948,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedFullWidth2Component = (function () {
     function FuseCardedFullWidth2Component() {
     }
     FuseCardedFullWidth2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-fullwidth-2',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth-2/fullwidth-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth-2/fullwidth-2.component.scss")]
@@ -985,7 +963,7 @@ var FuseCardedFullWidth2Component = (function () {
     ], FuseCardedFullWidth2Component);
     return FuseCardedFullWidth2Component;
 }());
-
+exports.FuseCardedFullWidth2Component = FuseCardedFullWidth2Component;
 
 
 /***/ }),
@@ -1016,11 +994,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth/fullwidth.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedFullWidthComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1030,12 +1007,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedFullWidthComponent = (function () {
     function FuseCardedFullWidthComponent() {
     }
     FuseCardedFullWidthComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-fullwidth',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth/fullwidth.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth/fullwidth.component.scss")]
@@ -1044,7 +1022,7 @@ var FuseCardedFullWidthComponent = (function () {
     ], FuseCardedFullWidthComponent);
     return FuseCardedFullWidthComponent;
 }());
-
+exports.FuseCardedFullWidthComponent = FuseCardedFullWidthComponent;
 
 
 /***/ }),
@@ -1075,11 +1053,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2-tabbed/left-sidenav-2-tabbed.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedLeftSidenav2TabbedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1089,12 +1066,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedLeftSidenav2TabbedComponent = (function () {
     function FuseCardedLeftSidenav2TabbedComponent() {
     }
     FuseCardedLeftSidenav2TabbedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-left-sidenav-2-tabbed',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2-tabbed/left-sidenav-2-tabbed.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2-tabbed/left-sidenav-2-tabbed.component.scss")]
@@ -1103,7 +1081,7 @@ var FuseCardedLeftSidenav2TabbedComponent = (function () {
     ], FuseCardedLeftSidenav2TabbedComponent);
     return FuseCardedLeftSidenav2TabbedComponent;
 }());
-
+exports.FuseCardedLeftSidenav2TabbedComponent = FuseCardedLeftSidenav2TabbedComponent;
 
 
 /***/ }),
@@ -1134,11 +1112,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2/left-sidenav-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedLeftSidenav2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1148,12 +1125,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedLeftSidenav2Component = (function () {
     function FuseCardedLeftSidenav2Component() {
     }
     FuseCardedLeftSidenav2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-left-sidenav-2',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2/left-sidenav-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2/left-sidenav-2.component.scss")]
@@ -1162,7 +1140,7 @@ var FuseCardedLeftSidenav2Component = (function () {
     ], FuseCardedLeftSidenav2Component);
     return FuseCardedLeftSidenav2Component;
 }());
-
+exports.FuseCardedLeftSidenav2Component = FuseCardedLeftSidenav2Component;
 
 
 /***/ }),
@@ -1193,11 +1171,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-tabbed/left-sidenav-tabbed.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedLeftSidenavTabbedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1207,12 +1184,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedLeftSidenavTabbedComponent = (function () {
     function FuseCardedLeftSidenavTabbedComponent() {
     }
     FuseCardedLeftSidenavTabbedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-left-sidenav-tabbed',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-tabbed/left-sidenav-tabbed.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-tabbed/left-sidenav-tabbed.component.scss")]
@@ -1221,7 +1199,7 @@ var FuseCardedLeftSidenavTabbedComponent = (function () {
     ], FuseCardedLeftSidenavTabbedComponent);
     return FuseCardedLeftSidenavTabbedComponent;
 }());
-
+exports.FuseCardedLeftSidenavTabbedComponent = FuseCardedLeftSidenavTabbedComponent;
 
 
 /***/ }),
@@ -1252,11 +1230,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav/left-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedLeftSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1266,12 +1243,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedLeftSidenavComponent = (function () {
     function FuseCardedLeftSidenavComponent() {
     }
     FuseCardedLeftSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-left-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav/left-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav/left-sidenav.component.scss")]
@@ -1280,7 +1258,7 @@ var FuseCardedLeftSidenavComponent = (function () {
     ], FuseCardedLeftSidenavComponent);
     return FuseCardedLeftSidenavComponent;
 }());
-
+exports.FuseCardedLeftSidenavComponent = FuseCardedLeftSidenavComponent;
 
 
 /***/ }),
@@ -1311,11 +1289,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2-tabbed/right-sidenav-2-tabbed.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedRightSidenav2TabbedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1325,12 +1302,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedRightSidenav2TabbedComponent = (function () {
     function FuseCardedRightSidenav2TabbedComponent() {
     }
     FuseCardedRightSidenav2TabbedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-right-sidenav-2-tabbed',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2-tabbed/right-sidenav-2-tabbed.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2-tabbed/right-sidenav-2-tabbed.component.scss")]
@@ -1339,7 +1317,7 @@ var FuseCardedRightSidenav2TabbedComponent = (function () {
     ], FuseCardedRightSidenav2TabbedComponent);
     return FuseCardedRightSidenav2TabbedComponent;
 }());
-
+exports.FuseCardedRightSidenav2TabbedComponent = FuseCardedRightSidenav2TabbedComponent;
 
 
 /***/ }),
@@ -1370,11 +1348,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2/right-sidenav-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedRightSidenav2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1384,12 +1361,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedRightSidenav2Component = (function () {
     function FuseCardedRightSidenav2Component() {
     }
     FuseCardedRightSidenav2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-right-sidenav-2',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2/right-sidenav-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2/right-sidenav-2.component.scss")]
@@ -1398,7 +1376,7 @@ var FuseCardedRightSidenav2Component = (function () {
     ], FuseCardedRightSidenav2Component);
     return FuseCardedRightSidenav2Component;
 }());
-
+exports.FuseCardedRightSidenav2Component = FuseCardedRightSidenav2Component;
 
 
 /***/ }),
@@ -1429,11 +1407,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-tabbed/right-sidenav-tabbed.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedRightSidenavTabbedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1443,12 +1420,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedRightSidenavTabbedComponent = (function () {
     function FuseCardedRightSidenavTabbedComponent() {
     }
     FuseCardedRightSidenavTabbedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-right-sidenav-tabbed',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-tabbed/right-sidenav-tabbed.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-tabbed/right-sidenav-tabbed.component.scss")]
@@ -1457,7 +1435,7 @@ var FuseCardedRightSidenavTabbedComponent = (function () {
     ], FuseCardedRightSidenavTabbedComponent);
     return FuseCardedRightSidenavTabbedComponent;
 }());
-
+exports.FuseCardedRightSidenavTabbedComponent = FuseCardedRightSidenavTabbedComponent;
 
 
 /***/ }),
@@ -1488,11 +1466,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav/right-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCardedRightSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1502,12 +1479,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseCardedRightSidenavComponent = (function () {
     function FuseCardedRightSidenavComponent() {
     }
     FuseCardedRightSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-carded-right-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav/right-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav/right-sidenav.component.scss")]
@@ -1516,182 +1494,160 @@ var FuseCardedRightSidenavComponent = (function () {
     ], FuseCardedRightSidenavComponent);
     return FuseCardedRightSidenavComponent;
 }());
-
+exports.FuseCardedRightSidenavComponent = FuseCardedRightSidenavComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/page-layouts.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UIPageLayoutsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_components_demo_demo_module__ = __webpack_require__("../../../../../src/app/core/components/demo/demo.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__carded_fullwidth_fullwidth_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth/fullwidth.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__carded_fullwidth_2_fullwidth_2_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth-2/fullwidth-2.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__carded_left_sidenav_left_sidenav_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav/left-sidenav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__carded_left_sidenav_tabbed_left_sidenav_tabbed_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-tabbed/left-sidenav-tabbed.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carded_left_sidenav_2_left_sidenav_2_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2/left-sidenav-2.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__carded_left_sidenav_2_tabbed_left_sidenav_2_tabbed_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2-tabbed/left-sidenav-2-tabbed.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__carded_right_sidenav_right_sidenav_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav/right-sidenav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__carded_right_sidenav_tabbed_right_sidenav_tabbed_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-tabbed/right-sidenav-tabbed.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__carded_right_sidenav_2_right_sidenav_2_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2/right-sidenav-2.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__carded_right_sidenav_2_tabbed_right_sidenav_2_tabbed_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2-tabbed/right-sidenav-2-tabbed.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__simple_fullwidth_fullwidth_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/fullwidth/fullwidth.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__simple_left_sidenav_left_sidenav_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav/left-sidenav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__simple_left_sidenav_2_left_sidenav_2_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-2/left-sidenav-2.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__simple_left_sidenav_3_left_sidenav_3_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-3/left-sidenav-3.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__simple_right_sidenav_right_sidenav_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav/right-sidenav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__simple_right_sidenav_2_right_sidenav_2_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-2/right-sidenav-2.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__simple_right_sidenav_3_right_sidenav_3_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-3/right-sidenav-3.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__simple_tabbed_tabbed_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/tabbed/tabbed.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__blank_blank_component__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/blank/blank.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var demo_module_1 = __webpack_require__("../../../../../src/app/core/components/demo/demo.module.ts");
+var fullwidth_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth/fullwidth.component.ts");
+var fullwidth_2_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/fullwidth-2/fullwidth-2.component.ts");
+var left_sidenav_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav/left-sidenav.component.ts");
+var left_sidenav_tabbed_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-tabbed/left-sidenav-tabbed.component.ts");
+var left_sidenav_2_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2/left-sidenav-2.component.ts");
+var left_sidenav_2_tabbed_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/left-sidenav-2-tabbed/left-sidenav-2-tabbed.component.ts");
+var right_sidenav_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav/right-sidenav.component.ts");
+var right_sidenav_tabbed_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-tabbed/right-sidenav-tabbed.component.ts");
+var right_sidenav_2_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2/right-sidenav-2.component.ts");
+var right_sidenav_2_tabbed_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/carded/right-sidenav-2-tabbed/right-sidenav-2-tabbed.component.ts");
+var fullwidth_component_2 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/fullwidth/fullwidth.component.ts");
+var left_sidenav_component_2 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav/left-sidenav.component.ts");
+var left_sidenav_2_component_2 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-2/left-sidenav-2.component.ts");
+var left_sidenav_3_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-3/left-sidenav-3.component.ts");
+var right_sidenav_component_2 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav/right-sidenav.component.ts");
+var right_sidenav_2_component_2 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-2/right-sidenav-2.component.ts");
+var right_sidenav_3_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-3/right-sidenav-3.component.ts");
+var tabbed_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/tabbed/tabbed.component.ts");
+var blank_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/blank/blank.component.ts");
 var routes = [
     {
         path: 'page-layouts/carded/full-width',
-        component: __WEBPACK_IMPORTED_MODULE_4__carded_fullwidth_fullwidth_component__["a" /* FuseCardedFullWidthComponent */]
+        component: fullwidth_component_1.FuseCardedFullWidthComponent
     },
     {
         path: 'page-layouts/carded/full-width-2',
-        component: __WEBPACK_IMPORTED_MODULE_5__carded_fullwidth_2_fullwidth_2_component__["a" /* FuseCardedFullWidth2Component */]
+        component: fullwidth_2_component_1.FuseCardedFullWidth2Component
     },
     {
         path: 'page-layouts/carded/left-sidenav',
-        component: __WEBPACK_IMPORTED_MODULE_6__carded_left_sidenav_left_sidenav_component__["a" /* FuseCardedLeftSidenavComponent */]
+        component: left_sidenav_component_1.FuseCardedLeftSidenavComponent
     },
     {
         path: 'page-layouts/carded/left-sidenav-tabbed',
-        component: __WEBPACK_IMPORTED_MODULE_7__carded_left_sidenav_tabbed_left_sidenav_tabbed_component__["a" /* FuseCardedLeftSidenavTabbedComponent */]
+        component: left_sidenav_tabbed_component_1.FuseCardedLeftSidenavTabbedComponent
     },
     {
         path: 'page-layouts/carded/left-sidenav-2',
-        component: __WEBPACK_IMPORTED_MODULE_8__carded_left_sidenav_2_left_sidenav_2_component__["a" /* FuseCardedLeftSidenav2Component */]
+        component: left_sidenav_2_component_1.FuseCardedLeftSidenav2Component
     },
     {
         path: 'page-layouts/carded/left-sidenav-2-tabbed',
-        component: __WEBPACK_IMPORTED_MODULE_9__carded_left_sidenav_2_tabbed_left_sidenav_2_tabbed_component__["a" /* FuseCardedLeftSidenav2TabbedComponent */]
+        component: left_sidenav_2_tabbed_component_1.FuseCardedLeftSidenav2TabbedComponent
     },
     {
         path: 'page-layouts/carded/right-sidenav',
-        component: __WEBPACK_IMPORTED_MODULE_10__carded_right_sidenav_right_sidenav_component__["a" /* FuseCardedRightSidenavComponent */]
+        component: right_sidenav_component_1.FuseCardedRightSidenavComponent
     },
     {
         path: 'page-layouts/carded/right-sidenav-tabbed',
-        component: __WEBPACK_IMPORTED_MODULE_11__carded_right_sidenav_tabbed_right_sidenav_tabbed_component__["a" /* FuseCardedRightSidenavTabbedComponent */]
+        component: right_sidenav_tabbed_component_1.FuseCardedRightSidenavTabbedComponent
     },
     {
         path: 'page-layouts/carded/right-sidenav-2',
-        component: __WEBPACK_IMPORTED_MODULE_12__carded_right_sidenav_2_right_sidenav_2_component__["a" /* FuseCardedRightSidenav2Component */]
+        component: right_sidenav_2_component_1.FuseCardedRightSidenav2Component
     },
     {
         path: 'page-layouts/carded/right-sidenav-2-tabbed',
-        component: __WEBPACK_IMPORTED_MODULE_13__carded_right_sidenav_2_tabbed_right_sidenav_2_tabbed_component__["a" /* FuseCardedRightSidenav2TabbedComponent */]
+        component: right_sidenav_2_tabbed_component_1.FuseCardedRightSidenav2TabbedComponent
     },
     {
         path: 'page-layouts/simple/full-width',
-        component: __WEBPACK_IMPORTED_MODULE_14__simple_fullwidth_fullwidth_component__["a" /* FuseSimpleFullWidthComponent */]
+        component: fullwidth_component_2.FuseSimpleFullWidthComponent
     },
     {
         path: 'page-layouts/simple/left-sidenav',
-        component: __WEBPACK_IMPORTED_MODULE_15__simple_left_sidenav_left_sidenav_component__["a" /* FuseSimpleLeftSidenavComponent */]
+        component: left_sidenav_component_2.FuseSimpleLeftSidenavComponent
     },
     {
         path: 'page-layouts/simple/left-sidenav-2',
-        component: __WEBPACK_IMPORTED_MODULE_16__simple_left_sidenav_2_left_sidenav_2_component__["a" /* FuseSimpleLeftSidenav2Component */]
+        component: left_sidenav_2_component_2.FuseSimpleLeftSidenav2Component
     },
     {
         path: 'page-layouts/simple/left-sidenav-3',
-        component: __WEBPACK_IMPORTED_MODULE_17__simple_left_sidenav_3_left_sidenav_3_component__["a" /* FuseSimpleLeftSidenav3Component */]
+        component: left_sidenav_3_component_1.FuseSimpleLeftSidenav3Component
     },
     {
         path: 'page-layouts/simple/right-sidenav',
-        component: __WEBPACK_IMPORTED_MODULE_18__simple_right_sidenav_right_sidenav_component__["a" /* FuseSimpleRightSidenavComponent */]
+        component: right_sidenav_component_2.FuseSimpleRightSidenavComponent
     },
     {
         path: 'page-layouts/simple/right-sidenav-2',
-        component: __WEBPACK_IMPORTED_MODULE_19__simple_right_sidenav_2_right_sidenav_2_component__["a" /* FuseSimpleRightSidenav2Component */]
+        component: right_sidenav_2_component_2.FuseSimpleRightSidenav2Component
     },
     {
         path: 'page-layouts/simple/right-sidenav-3',
-        component: __WEBPACK_IMPORTED_MODULE_20__simple_right_sidenav_3_right_sidenav_3_component__["a" /* FuseSimpleRightSidenav3Component */]
+        component: right_sidenav_3_component_1.FuseSimpleRightSidenav3Component
     },
     {
         path: 'page-layouts/simple/tabbed',
-        component: __WEBPACK_IMPORTED_MODULE_21__simple_tabbed_tabbed_component__["a" /* FuseTabbedComponent */]
+        component: tabbed_component_1.FuseTabbedComponent
     },
     {
         path: 'page-layouts/blank',
-        component: __WEBPACK_IMPORTED_MODULE_22__blank_blank_component__["a" /* FuseBlankComponent */]
+        component: blank_component_1.FuseBlankComponent
     }
 ];
 var UIPageLayoutsModule = (function () {
     function UIPageLayoutsModule() {
     }
     UIPageLayoutsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_3__core_components_demo_demo_module__["a" /* FuseDemoModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                demo_module_1.FuseDemoModule
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__carded_fullwidth_fullwidth_component__["a" /* FuseCardedFullWidthComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__carded_fullwidth_2_fullwidth_2_component__["a" /* FuseCardedFullWidth2Component */],
-                __WEBPACK_IMPORTED_MODULE_6__carded_left_sidenav_left_sidenav_component__["a" /* FuseCardedLeftSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__carded_left_sidenav_tabbed_left_sidenav_tabbed_component__["a" /* FuseCardedLeftSidenavTabbedComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__carded_left_sidenav_2_left_sidenav_2_component__["a" /* FuseCardedLeftSidenav2Component */],
-                __WEBPACK_IMPORTED_MODULE_9__carded_left_sidenav_2_tabbed_left_sidenav_2_tabbed_component__["a" /* FuseCardedLeftSidenav2TabbedComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__carded_right_sidenav_right_sidenav_component__["a" /* FuseCardedRightSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__carded_right_sidenav_tabbed_right_sidenav_tabbed_component__["a" /* FuseCardedRightSidenavTabbedComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__carded_right_sidenav_2_right_sidenav_2_component__["a" /* FuseCardedRightSidenav2Component */],
-                __WEBPACK_IMPORTED_MODULE_13__carded_right_sidenav_2_tabbed_right_sidenav_2_tabbed_component__["a" /* FuseCardedRightSidenav2TabbedComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__simple_fullwidth_fullwidth_component__["a" /* FuseSimpleFullWidthComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__simple_left_sidenav_left_sidenav_component__["a" /* FuseSimpleLeftSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__simple_left_sidenav_2_left_sidenav_2_component__["a" /* FuseSimpleLeftSidenav2Component */],
-                __WEBPACK_IMPORTED_MODULE_17__simple_left_sidenav_3_left_sidenav_3_component__["a" /* FuseSimpleLeftSidenav3Component */],
-                __WEBPACK_IMPORTED_MODULE_18__simple_right_sidenav_right_sidenav_component__["a" /* FuseSimpleRightSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__simple_right_sidenav_2_right_sidenav_2_component__["a" /* FuseSimpleRightSidenav2Component */],
-                __WEBPACK_IMPORTED_MODULE_20__simple_right_sidenav_3_right_sidenav_3_component__["a" /* FuseSimpleRightSidenav3Component */],
-                __WEBPACK_IMPORTED_MODULE_21__simple_tabbed_tabbed_component__["a" /* FuseTabbedComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__blank_blank_component__["a" /* FuseBlankComponent */]
+                fullwidth_component_1.FuseCardedFullWidthComponent,
+                fullwidth_2_component_1.FuseCardedFullWidth2Component,
+                left_sidenav_component_1.FuseCardedLeftSidenavComponent,
+                left_sidenav_tabbed_component_1.FuseCardedLeftSidenavTabbedComponent,
+                left_sidenav_2_component_1.FuseCardedLeftSidenav2Component,
+                left_sidenav_2_tabbed_component_1.FuseCardedLeftSidenav2TabbedComponent,
+                right_sidenav_component_1.FuseCardedRightSidenavComponent,
+                right_sidenav_tabbed_component_1.FuseCardedRightSidenavTabbedComponent,
+                right_sidenav_2_component_1.FuseCardedRightSidenav2Component,
+                right_sidenav_2_tabbed_component_1.FuseCardedRightSidenav2TabbedComponent,
+                fullwidth_component_2.FuseSimpleFullWidthComponent,
+                left_sidenav_component_2.FuseSimpleLeftSidenavComponent,
+                left_sidenav_2_component_2.FuseSimpleLeftSidenav2Component,
+                left_sidenav_3_component_1.FuseSimpleLeftSidenav3Component,
+                right_sidenav_component_2.FuseSimpleRightSidenavComponent,
+                right_sidenav_2_component_2.FuseSimpleRightSidenav2Component,
+                right_sidenav_3_component_1.FuseSimpleRightSidenav3Component,
+                tabbed_component_1.FuseTabbedComponent,
+                blank_component_1.FuseBlankComponent
             ]
         })
     ], UIPageLayoutsModule);
     return UIPageLayoutsModule;
 }());
-
+exports.UIPageLayoutsModule = UIPageLayoutsModule;
 
 
 /***/ }),
@@ -1722,11 +1678,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/fullwidth/fullwidth.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSimpleFullWidthComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1736,12 +1691,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSimpleFullWidthComponent = (function () {
     function FuseSimpleFullWidthComponent() {
     }
     FuseSimpleFullWidthComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-simple-fullwidth',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/fullwidth/fullwidth.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/fullwidth/fullwidth.component.scss")]
@@ -1750,7 +1706,7 @@ var FuseSimpleFullWidthComponent = (function () {
     ], FuseSimpleFullWidthComponent);
     return FuseSimpleFullWidthComponent;
 }());
-
+exports.FuseSimpleFullWidthComponent = FuseSimpleFullWidthComponent;
 
 
 /***/ }),
@@ -1781,11 +1737,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-2/left-sidenav-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSimpleLeftSidenav2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1795,12 +1750,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSimpleLeftSidenav2Component = (function () {
     function FuseSimpleLeftSidenav2Component() {
     }
     FuseSimpleLeftSidenav2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-simple-left-sidenav-2',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-2/left-sidenav-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-2/left-sidenav-2.component.scss")]
@@ -1809,7 +1765,7 @@ var FuseSimpleLeftSidenav2Component = (function () {
     ], FuseSimpleLeftSidenav2Component);
     return FuseSimpleLeftSidenav2Component;
 }());
-
+exports.FuseSimpleLeftSidenav2Component = FuseSimpleLeftSidenav2Component;
 
 
 /***/ }),
@@ -1840,11 +1796,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-3/left-sidenav-3.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSimpleLeftSidenav3Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1854,12 +1809,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSimpleLeftSidenav3Component = (function () {
     function FuseSimpleLeftSidenav3Component() {
     }
     FuseSimpleLeftSidenav3Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-simple-left-sidenav-3',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-3/left-sidenav-3.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav-3/left-sidenav-3.component.scss")]
@@ -1868,7 +1824,7 @@ var FuseSimpleLeftSidenav3Component = (function () {
     ], FuseSimpleLeftSidenav3Component);
     return FuseSimpleLeftSidenav3Component;
 }());
-
+exports.FuseSimpleLeftSidenav3Component = FuseSimpleLeftSidenav3Component;
 
 
 /***/ }),
@@ -1899,11 +1855,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav/left-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSimpleLeftSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1913,12 +1868,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSimpleLeftSidenavComponent = (function () {
     function FuseSimpleLeftSidenavComponent() {
     }
     FuseSimpleLeftSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-simple-left-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav/left-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/left-sidenav/left-sidenav.component.scss")]
@@ -1927,7 +1883,7 @@ var FuseSimpleLeftSidenavComponent = (function () {
     ], FuseSimpleLeftSidenavComponent);
     return FuseSimpleLeftSidenavComponent;
 }());
-
+exports.FuseSimpleLeftSidenavComponent = FuseSimpleLeftSidenavComponent;
 
 
 /***/ }),
@@ -1958,11 +1914,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-2/right-sidenav-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSimpleRightSidenav2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1972,12 +1927,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSimpleRightSidenav2Component = (function () {
     function FuseSimpleRightSidenav2Component() {
     }
     FuseSimpleRightSidenav2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-simple-right-sidenav-2',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-2/right-sidenav-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-2/right-sidenav-2.component.scss")]
@@ -1986,7 +1942,7 @@ var FuseSimpleRightSidenav2Component = (function () {
     ], FuseSimpleRightSidenav2Component);
     return FuseSimpleRightSidenav2Component;
 }());
-
+exports.FuseSimpleRightSidenav2Component = FuseSimpleRightSidenav2Component;
 
 
 /***/ }),
@@ -2017,11 +1973,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-3/right-sidenav-3.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSimpleRightSidenav3Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2031,12 +1986,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSimpleRightSidenav3Component = (function () {
     function FuseSimpleRightSidenav3Component() {
     }
     FuseSimpleRightSidenav3Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-simple-right-sidenav-3',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-3/right-sidenav-3.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav-3/right-sidenav-3.component.scss")]
@@ -2045,7 +2001,7 @@ var FuseSimpleRightSidenav3Component = (function () {
     ], FuseSimpleRightSidenav3Component);
     return FuseSimpleRightSidenav3Component;
 }());
-
+exports.FuseSimpleRightSidenav3Component = FuseSimpleRightSidenav3Component;
 
 
 /***/ }),
@@ -2076,11 +2032,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav/right-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSimpleRightSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2090,12 +2045,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSimpleRightSidenavComponent = (function () {
     function FuseSimpleRightSidenavComponent() {
     }
     FuseSimpleRightSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-simple-right-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav/right-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/right-sidenav/right-sidenav.component.scss")]
@@ -2104,7 +2060,7 @@ var FuseSimpleRightSidenavComponent = (function () {
     ], FuseSimpleRightSidenavComponent);
     return FuseSimpleRightSidenavComponent;
 }());
-
+exports.FuseSimpleRightSidenavComponent = FuseSimpleRightSidenavComponent;
 
 
 /***/ }),
@@ -2135,11 +2091,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/page-layouts/simple/tabbed/tabbed.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTabbedComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2149,12 +2104,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseTabbedComponent = (function () {
     function FuseTabbedComponent() {
     }
     FuseTabbedComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-tabbed',
             template: __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/tabbed/tabbed.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/page-layouts/simple/tabbed/tabbed.component.scss")]
@@ -2163,7 +2119,7 @@ var FuseTabbedComponent = (function () {
     ], FuseTabbedComponent);
     return FuseTabbedComponent;
 }());
-
+exports.FuseTabbedComponent = FuseTabbedComponent;
 
 
 /***/ }),
@@ -2194,11 +2150,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTypographyBlockquotesListsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2208,12 +2163,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseTypographyBlockquotesListsComponent = (function () {
     function FuseTypographyBlockquotesListsComponent() {
     }
     FuseTypographyBlockquotesListsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-typography-blockquotes-lists',
             template: __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.scss")]
@@ -2222,7 +2178,7 @@ var FuseTypographyBlockquotesListsComponent = (function () {
     ], FuseTypographyBlockquotesListsComponent);
     return FuseTypographyBlockquotesListsComponent;
 }());
-
+exports.FuseTypographyBlockquotesListsComponent = FuseTypographyBlockquotesListsComponent;
 
 
 /***/ }),
@@ -2253,11 +2209,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/typography/tabs/headings/headings.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTypographyHeadingsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2267,12 +2222,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseTypographyHeadingsComponent = (function () {
     function FuseTypographyHeadingsComponent() {
     }
     FuseTypographyHeadingsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-typography-headings',
             template: __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/headings/headings.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/headings/headings.component.scss")]
@@ -2281,7 +2237,7 @@ var FuseTypographyHeadingsComponent = (function () {
     ], FuseTypographyHeadingsComponent);
     return FuseTypographyHeadingsComponent;
 }());
-
+exports.FuseTypographyHeadingsComponent = FuseTypographyHeadingsComponent;
 
 
 /***/ }),
@@ -2312,11 +2268,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/typography/tabs/helpers/helpers.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTypographyHelpersComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2326,12 +2281,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseTypographyHelpersComponent = (function () {
     function FuseTypographyHelpersComponent() {
     }
     FuseTypographyHelpersComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-typography-helpers',
             template: __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/helpers/helpers.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/helpers/helpers.component.scss")]
@@ -2340,7 +2296,7 @@ var FuseTypographyHelpersComponent = (function () {
     ], FuseTypographyHelpersComponent);
     return FuseTypographyHelpersComponent;
 }());
-
+exports.FuseTypographyHelpersComponent = FuseTypographyHelpersComponent;
 
 
 /***/ }),
@@ -2371,11 +2327,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/typography/tabs/inline-text-elements/inline-text-elements.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTypographyInlineTextElementsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2385,12 +2340,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseTypographyInlineTextElementsComponent = (function () {
     function FuseTypographyInlineTextElementsComponent() {
     }
     FuseTypographyInlineTextElementsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-typography-inline-text-elements',
             template: __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/inline-text-elements/inline-text-elements.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/inline-text-elements/inline-text-elements.component.scss")]
@@ -2399,7 +2355,7 @@ var FuseTypographyInlineTextElementsComponent = (function () {
     ], FuseTypographyInlineTextElementsComponent);
     return FuseTypographyInlineTextElementsComponent;
 }());
-
+exports.FuseTypographyInlineTextElementsComponent = FuseTypographyInlineTextElementsComponent;
 
 
 /***/ }),
@@ -2430,11 +2386,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/typography/typography.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTypographyComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2444,14 +2399,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseTypographyComponent = (function () {
     function FuseTypographyComponent() {
     }
     FuseTypographyComponent.prototype.ngOnInit = function () {
     };
     FuseTypographyComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-typography',
             template: __webpack_require__("../../../../../src/app/main/content/ui/typography/typography.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/ui/typography/typography.component.scss")]
@@ -2460,113 +2416,99 @@ var FuseTypographyComponent = (function () {
     ], FuseTypographyComponent);
     return FuseTypographyComponent;
 }());
-
+exports.FuseTypographyComponent = FuseTypographyComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/typography/typography.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UITypographyModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__typography_component__ = __webpack_require__("../../../../../src/app/main/content/ui/typography/typography.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_headings_headings_component__ = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/headings/headings.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_inline_text_elements_inline_text_elements_component__ = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/inline-text-elements/inline-text-elements.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_blockquotes_lists_blockquotes_lists_component__ = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__tabs_helpers_helpers_component__ = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/helpers/helpers.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var typography_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/typography/typography.component.ts");
+var headings_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/headings/headings.component.ts");
+var inline_text_elements_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/inline-text-elements/inline-text-elements.component.ts");
+var blockquotes_lists_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/blockquotes-lists/blockquotes-lists.component.ts");
+var helpers_component_1 = __webpack_require__("../../../../../src/app/main/content/ui/typography/tabs/helpers/helpers.component.ts");
 var routes = [
     {
         path: 'typography',
-        component: __WEBPACK_IMPORTED_MODULE_3__typography_component__["a" /* FuseTypographyComponent */]
+        component: typography_component_1.FuseTypographyComponent
     }
 ];
 var UITypographyModule = (function () {
     function UITypographyModule() {
     }
     UITypographyModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__typography_component__["a" /* FuseTypographyComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__tabs_headings_headings_component__["a" /* FuseTypographyHeadingsComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__tabs_inline_text_elements_inline_text_elements_component__["a" /* FuseTypographyInlineTextElementsComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__tabs_blockquotes_lists_blockquotes_lists_component__["a" /* FuseTypographyBlockquotesListsComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__tabs_helpers_helpers_component__["a" /* FuseTypographyHelpersComponent */]
+                typography_component_1.FuseTypographyComponent,
+                headings_component_1.FuseTypographyHeadingsComponent,
+                inline_text_elements_component_1.FuseTypographyInlineTextElementsComponent,
+                blockquotes_lists_component_1.FuseTypographyBlockquotesListsComponent,
+                helpers_component_1.FuseTypographyHelpersComponent
             ]
         })
     ], UITypographyModule);
     return UITypographyModule;
 }());
-
+exports.UITypographyModule = UITypographyModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/ui/ui.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseUIModule", function() { return FuseUIModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__forms_forms_module__ = __webpack_require__("../../../../../src/app/main/content/ui/forms/forms.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__icons_icons_module__ = __webpack_require__("../../../../../src/app/main/content/ui/icons/icons.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__typography_typography_module__ = __webpack_require__("../../../../../src/app/main/content/ui/typography/typography.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helper_classes_helper_classes_module__ = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/helper-classes.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__page_layouts_page_layouts_module__ = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/page-layouts.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__colors_colors_module__ = __webpack_require__("../../../../../src/app/main/content/ui/colors/colors.module.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_module_1 = __webpack_require__("../../../../../src/app/main/content/ui/forms/forms.module.ts");
+var icons_module_1 = __webpack_require__("../../../../../src/app/main/content/ui/icons/icons.module.ts");
+var typography_module_1 = __webpack_require__("../../../../../src/app/main/content/ui/typography/typography.module.ts");
+var helper_classes_module_1 = __webpack_require__("../../../../../src/app/main/content/ui/helper-classes/helper-classes.module.ts");
+var page_layouts_module_1 = __webpack_require__("../../../../../src/app/main/content/ui/page-layouts/page-layouts.module.ts");
+var colors_module_1 = __webpack_require__("../../../../../src/app/main/content/ui/colors/colors.module.ts");
 var FuseUIModule = (function () {
     function FuseUIModule() {
     }
     FuseUIModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__forms_forms_module__["a" /* UIFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_2__icons_icons_module__["a" /* UIIconsModule */],
-                __WEBPACK_IMPORTED_MODULE_3__typography_typography_module__["a" /* UITypographyModule */],
-                __WEBPACK_IMPORTED_MODULE_4__helper_classes_helper_classes_module__["a" /* UIHelperClassesModule */],
-                __WEBPACK_IMPORTED_MODULE_5__page_layouts_page_layouts_module__["a" /* UIPageLayoutsModule */],
-                __WEBPACK_IMPORTED_MODULE_6__colors_colors_module__["a" /* UIColorsModule */]
+                forms_module_1.UIFormsModule,
+                icons_module_1.UIIconsModule,
+                typography_module_1.UITypographyModule,
+                helper_classes_module_1.UIHelperClassesModule,
+                page_layouts_module_1.UIPageLayoutsModule,
+                colors_module_1.UIColorsModule
             ]
         })
     ], FuseUIModule);
     return FuseUIModule;
 }());
-
+exports.FuseUIModule = FuseUIModule;
 
 
 /***/ })

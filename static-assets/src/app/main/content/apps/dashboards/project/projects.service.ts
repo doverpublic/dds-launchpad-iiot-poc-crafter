@@ -41,7 +41,7 @@ export class ProjectsDashboardService implements Resolve<any>
     getProjects(): Promise<any>
     {
         return new Promise((resolve, reject) => {
-            this.http.get('api/projects-dashboard-projects')
+            this.http.get('/api/app/projects-dashboard-projects.json')
                 .subscribe((response: any) => {
                     this.projects = response;
                     resolve(response);
@@ -52,7 +52,7 @@ export class ProjectsDashboardService implements Resolve<any>
     getWidgets(): Promise<any>
     {
         return new Promise((resolve, reject) => {
-            this.http.get('api/projects-dashboard-widgets')
+            this.http.get('/api/app/projects-dashboard-widgets.json')
                 .subscribe((response: any) => {
                     this.widgets = response;
                     resolve(response);

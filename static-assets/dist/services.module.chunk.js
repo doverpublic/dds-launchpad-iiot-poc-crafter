@@ -26,11 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/services/config/config.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseConfigServiceDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -40,12 +39,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseConfigServiceDocsComponent = (function () {
     function FuseConfigServiceDocsComponent() {
     }
     FuseConfigServiceDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-config-service-docs',
             template: __webpack_require__("../../../../../src/app/main/content/services/config/config.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/services/config/config.component.scss")]
@@ -54,61 +54,56 @@ var FuseConfigServiceDocsComponent = (function () {
     ], FuseConfigServiceDocsComponent);
     return FuseConfigServiceDocsComponent;
 }());
-
+exports.FuseConfigServiceDocsComponent = FuseConfigServiceDocsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/services/services.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseServicesModule", function() { return FuseServicesModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_config_component__ = __webpack_require__("../../../../../src/app/main/content/services/config/config.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__splash_screen_splash_screen_component__ = __webpack_require__("../../../../../src/app/main/content/services/splash-screen/splash-screen.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var config_component_1 = __webpack_require__("../../../../../src/app/main/content/services/config/config.component.ts");
+var splash_screen_component_1 = __webpack_require__("../../../../../src/app/main/content/services/splash-screen/splash-screen.component.ts");
 var routes = [
     {
         path: 'config',
-        component: __WEBPACK_IMPORTED_MODULE_3__config_config_component__["a" /* FuseConfigServiceDocsComponent */]
+        component: config_component_1.FuseConfigServiceDocsComponent
     },
     {
         path: 'splash-screen',
-        component: __WEBPACK_IMPORTED_MODULE_4__splash_screen_splash_screen_component__["a" /* FuseSplashScreenServiceDocsComponent */]
+        component: splash_screen_component_1.FuseSplashScreenServiceDocsComponent
     }
 ];
 var FuseServicesModule = (function () {
     function FuseServicesModule() {
     }
     FuseServicesModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__config_config_component__["a" /* FuseConfigServiceDocsComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__splash_screen_splash_screen_component__["a" /* FuseSplashScreenServiceDocsComponent */]
+                config_component_1.FuseConfigServiceDocsComponent,
+                splash_screen_component_1.FuseSplashScreenServiceDocsComponent
             ]
         })
     ], FuseServicesModule);
     return FuseServicesModule;
 }());
-
+exports.FuseServicesModule = FuseServicesModule;
 
 
 /***/ }),
@@ -139,11 +134,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/services/splash-screen/splash-screen.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSplashScreenServiceDocsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -153,12 +147,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSplashScreenServiceDocsComponent = (function () {
     function FuseSplashScreenServiceDocsComponent() {
     }
     FuseSplashScreenServiceDocsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-splash-screen-service-docs',
             template: __webpack_require__("../../../../../src/app/main/content/services/splash-screen/splash-screen.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/services/splash-screen/splash-screen.component.scss")]
@@ -167,7 +162,7 @@ var FuseSplashScreenServiceDocsComponent = (function () {
     ], FuseSplashScreenServiceDocsComponent);
     return FuseSplashScreenServiceDocsComponent;
 }());
-
+exports.FuseSplashScreenServiceDocsComponent = FuseSplashScreenServiceDocsComponent;
 
 
 /***/ })

@@ -26,20 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/calendar/calendar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCalendarComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns__ = __webpack_require__("../../../../date-fns/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_date_fns__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__event_form_event_form_component__ = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event-form/event-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__event_model__ = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__calendar_service__ = __webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__core_components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -49,25 +39,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var date_fns_1 = __webpack_require__("../../../../date-fns/index.js");
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var Subject_1 = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var event_form_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event-form/event-form.component.ts");
+var event_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event.model.ts");
+var calendar_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.service.ts");
+var confirm_dialog_component_1 = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseCalendarComponent = (function () {
     function FuseCalendarComponent(dialog, calendarService) {
         var _this = this;
         this.dialog = dialog;
         this.calendarService = calendarService;
-        this.refresh = new __WEBPACK_IMPORTED_MODULE_2_rxjs_Subject__["a" /* Subject */]();
+        this.refresh = new Subject_1.Subject();
         this.view = 'month';
         this.viewDate = new Date();
         this.activeDayIsOpen = true;
-        this.selectedDay = { date: Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["startOfDay"])(new Date()) };
+        this.selectedDay = { date: date_fns_1.startOfDay(new Date()) };
         this.actions = [
             {
                 label: '<i class="material-icons s-16">edit</i>',
@@ -110,7 +101,7 @@ var FuseCalendarComponent = (function () {
         var _this = this;
         this.events = this.calendarService.events.map(function (item) {
             item.actions = _this.actions;
-            return new __WEBPACK_IMPORTED_MODULE_5__event_model__["a" /* CalendarEventModel */](item);
+            return new event_model_1.CalendarEventModel(item);
         });
     };
     /**
@@ -143,8 +134,8 @@ var FuseCalendarComponent = (function () {
     FuseCalendarComponent.prototype.dayClicked = function (day) {
         var date = day.date;
         var events = day.events;
-        if (Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["isSameMonth"])(date, this.viewDate)) {
-            if ((Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["isSameDay"])(this.viewDate, date) && this.activeDayIsOpen === true) || events.length === 0) {
+        if (date_fns_1.isSameMonth(date, this.viewDate)) {
+            if ((date_fns_1.isSameDay(this.viewDate, date) && this.activeDayIsOpen === true) || events.length === 0) {
                 this.activeDayIsOpen = false;
             }
             else {
@@ -175,7 +166,7 @@ var FuseCalendarComponent = (function () {
      */
     FuseCalendarComponent.prototype.deleteEvent = function (event) {
         var _this = this;
-        this.confirmDialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_7__core_components_confirm_dialog_confirm_dialog_component__["a" /* FuseConfirmDialogComponent */], {
+        this.confirmDialogRef = this.dialog.open(confirm_dialog_component_1.FuseConfirmDialogComponent, {
             disableClose: false
         });
         this.confirmDialogRef.componentInstance.confirmMessage = 'Are you sure you want to delete?';
@@ -196,7 +187,7 @@ var FuseCalendarComponent = (function () {
     FuseCalendarComponent.prototype.editEvent = function (action, event) {
         var _this = this;
         var eventIndex = this.events.indexOf(event);
-        this.dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__event_form_event_form_component__["a" /* FuseCalendarEventFormDialogComponent */], {
+        this.dialogRef = this.dialog.open(event_form_component_1.FuseCalendarEventFormDialogComponent, {
             panelClass: 'event-form-dialog',
             data: {
                 event: event,
@@ -232,7 +223,7 @@ var FuseCalendarComponent = (function () {
      */
     FuseCalendarComponent.prototype.addEvent = function () {
         var _this = this;
-        this.dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__event_form_event_form_component__["a" /* FuseCalendarEventFormDialogComponent */], {
+        this.dialogRef = this.dialog.open(event_form_component_1.FuseCalendarEventFormDialogComponent, {
             panelClass: 'event-form-dialog',
             data: {
                 action: 'new',
@@ -251,56 +242,49 @@ var FuseCalendarComponent = (function () {
         });
     };
     FuseCalendarComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-calendar',
             template: __webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_8__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_material__["m" /* MatDialog */],
-            __WEBPACK_IMPORTED_MODULE_6__calendar_service__["a" /* CalendarService */]])
+        __metadata("design:paramtypes", [material_1.MatDialog,
+            calendar_service_1.CalendarService])
     ], FuseCalendarComponent);
     return FuseCalendarComponent;
 }());
-
+exports.FuseCalendarComponent = FuseCalendarComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/calendar/calendar.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseCalendarModule", function() { return FuseCalendarModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__calendar_component__ = __webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calendar_service__ = __webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_calendar__ = __webpack_require__("../../../../angular-calendar/esm5/angular-calendar.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__event_form_event_form_component__ = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event-form/event-form.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var calendar_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.component.ts");
+var calendar_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/calendar/calendar.service.ts");
+var angular_calendar_1 = __webpack_require__("../../../../angular-calendar/esm5/angular-calendar.js");
+var event_form_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event-form/event-form.component.ts");
 var routes = [
     {
         path: '**',
-        component: __WEBPACK_IMPORTED_MODULE_3__calendar_component__["a" /* FuseCalendarComponent */],
+        component: calendar_component_1.FuseCalendarComponent,
         children: [],
         resolve: {
-            chat: __WEBPACK_IMPORTED_MODULE_4__calendar_service__["a" /* CalendarService */]
+            chat: calendar_service_1.CalendarService
         }
     }
 ];
@@ -308,37 +292,34 @@ var FuseCalendarModule = (function () {
     function FuseCalendarModule() {
     }
     FuseCalendarModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes),
-                __WEBPACK_IMPORTED_MODULE_5_angular_calendar__["a" /* CalendarModule */].forRoot()
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes),
+                angular_calendar_1.CalendarModule.forRoot()
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__calendar_component__["a" /* FuseCalendarComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__event_form_event_form_component__["a" /* FuseCalendarEventFormDialogComponent */]
+                calendar_component_1.FuseCalendarComponent,
+                event_form_component_1.FuseCalendarEventFormDialogComponent
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__calendar_service__["a" /* CalendarService */]
+                calendar_service_1.CalendarService
             ],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_6__event_form_event_form_component__["a" /* FuseCalendarEventFormDialogComponent */]]
+            entryComponents: [event_form_component_1.FuseCalendarEventFormDialogComponent]
         })
     ], FuseCalendarModule);
     return FuseCalendarModule;
 }());
-
+exports.FuseCalendarModule = FuseCalendarModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/calendar/calendar.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -348,13 +329,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var Subject_1 = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
 var CalendarService = (function () {
     function CalendarService(http) {
         this.http = http;
-        this.onEventsUpdated = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.onEventsUpdated = new Subject_1.Subject();
     }
     CalendarService.prototype.resolve = function (route, state) {
         var _this = this;
@@ -391,12 +373,12 @@ var CalendarService = (function () {
         });
     };
     CalendarService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], CalendarService);
     return CalendarService;
 }());
-
+exports.CalendarService = CalendarService;
 
 
 /***/ }),
@@ -427,15 +409,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/calendar/event-form/event-form.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCalendarEventFormDialogComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__event_model__ = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_matColors__ = __webpack_require__("../../../../../src/app/core/matColors.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -448,17 +425,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var event_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/calendar/event.model.ts");
+var matColors_1 = __webpack_require__("../../../../../src/app/core/matColors.ts");
 var FuseCalendarEventFormDialogComponent = (function () {
     function FuseCalendarEventFormDialogComponent(dialogRef, data, formBuilder) {
         this.dialogRef = dialogRef;
         this.data = data;
         this.formBuilder = formBuilder;
-        this.presetColors = __WEBPACK_IMPORTED_MODULE_4__core_matColors__["a" /* MatColors */].presets;
+        this.presetColors = matColors_1.MatColors.presets;
         this.event = data.event;
         this.action = data.action;
         if (this.action === 'edit') {
@@ -466,7 +444,7 @@ var FuseCalendarEventFormDialogComponent = (function () {
         }
         else {
             this.dialogTitle = 'New Event';
-            this.event = new __WEBPACK_IMPORTED_MODULE_3__event_model__["a" /* CalendarEventModel */]({
+            this.event = new event_model_1.CalendarEventModel({
                 start: data.date,
                 end: data.date
             });
@@ -476,46 +454,45 @@ var FuseCalendarEventFormDialogComponent = (function () {
     FuseCalendarEventFormDialogComponent.prototype.ngOnInit = function () {
     };
     FuseCalendarEventFormDialogComponent.prototype.createEventForm = function () {
-        return new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* FormGroup */]({
-            title: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.title),
-            start: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.start),
-            end: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.end),
-            allDay: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.allDay),
+        return new forms_1.FormGroup({
+            title: new forms_1.FormControl(this.event.title),
+            start: new forms_1.FormControl(this.event.start),
+            end: new forms_1.FormControl(this.event.end),
+            allDay: new forms_1.FormControl(this.event.allDay),
             color: this.formBuilder.group({
-                primary: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.color.primary),
-                secondary: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.color.secondary)
+                primary: new forms_1.FormControl(this.event.color.primary),
+                secondary: new forms_1.FormControl(this.event.color.secondary)
             }),
             meta: this.formBuilder.group({
-                location: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.meta.location),
-                notes: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](this.event.meta.notes)
+                location: new forms_1.FormControl(this.event.meta.location),
+                notes: new forms_1.FormControl(this.event.meta.notes)
             })
         });
     };
     FuseCalendarEventFormDialogComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-calendar-event-form-dialog',
             template: __webpack_require__("../../../../../src/app/main/content/apps/calendar/event-form/event-form.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/calendar/event-form/event-form.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MAT_DIALOG_DATA */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_material__["o" /* MatDialogRef */], Object, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */]])
+        __param(1, core_1.Inject(material_1.MAT_DIALOG_DATA)),
+        __metadata("design:paramtypes", [material_1.MatDialogRef, Object, forms_1.FormBuilder])
     ], FuseCalendarEventFormDialogComponent);
     return FuseCalendarEventFormDialogComponent;
 }());
-
+exports.FuseCalendarEventFormDialogComponent = FuseCalendarEventFormDialogComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/calendar/event.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarEventModel; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns__ = __webpack_require__("../../../../date-fns/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_date_fns__);
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var date_fns_1 = __webpack_require__("../../../../date-fns/index.js");
 // import { CalendarEvent } from 'calendar-utils/dist/calendar-utils';
 /*
 export interface EventAction
@@ -530,8 +507,8 @@ export interface EventAction
 var CalendarEventModel = (function () {
     function CalendarEventModel(data) {
         data = data || {};
-        this.start = new Date(data.start) || Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["startOfDay"])(new Date());
-        this.end = new Date(data.end) || Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["endOfDay"])(new Date());
+        this.start = new Date(data.start) || date_fns_1.startOfDay(new Date());
+        this.end = new Date(data.end) || date_fns_1.endOfDay(new Date());
         this.title = data.title || '';
         this.color = {
             primary: data.color && data.color.primary || '#1e90ff',
@@ -552,7 +529,7 @@ var CalendarEventModel = (function () {
     }
     return CalendarEventModel;
 }());
-
+exports.CalendarEventModel = CalendarEventModel;
 
 
 /***/ }),
@@ -561,39 +538,40 @@ var CalendarEventModel = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarModule; });
-/* unused harmony export CalendarCommonModule */
-/* unused harmony export CalendarEventTitleFormatter */
-/* unused harmony export MOMENT */
-/* unused harmony export CalendarMomentDateFormatter */
-/* unused harmony export CalendarNativeDateFormatter */
-/* unused harmony export CalendarAngularDateFormatter */
-/* unused harmony export CalendarDateFormatter */
-/* unused harmony export CalendarUtils */
-/* unused harmony export CalendarMonthViewComponent */
-/* unused harmony export CalendarMonthModule */
-/* unused harmony export CalendarWeekViewComponent */
-/* unused harmony export CalendarWeekModule */
-/* unused harmony export CalendarDayViewComponent */
-/* unused harmony export CalendarDayModule */
-/* unused harmony export ɵh */
-/* unused harmony export ɵa */
-/* unused harmony export ɵb */
-/* unused harmony export ɵi */
-/* unused harmony export ɵf */
-/* unused harmony export ɵe */
-/* unused harmony export ɵg */
-/* unused harmony export ɵd */
-/* unused harmony export ɵc */
-/* unused harmony export ɵj */
-/* unused harmony export ɵp */
-/* unused harmony export ɵr */
-/* unused harmony export ɵq */
-/* unused harmony export ɵk */
-/* unused harmony export ɵm */
-/* unused harmony export ɵl */
-/* unused harmony export ɵo */
-/* unused harmony export ɵn */
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarModule", function() { return CalendarModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarCommonModule", function() { return CalendarCommonModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarEventTitleFormatter", function() { return CalendarEventTitleFormatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MOMENT", function() { return MOMENT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarMomentDateFormatter", function() { return CalendarMomentDateFormatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarNativeDateFormatter", function() { return CalendarNativeDateFormatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarAngularDateFormatter", function() { return CalendarAngularDateFormatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarDateFormatter", function() { return CalendarDateFormatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarUtils", function() { return CalendarUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarMonthViewComponent", function() { return CalendarMonthViewComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarMonthModule", function() { return CalendarMonthModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarWeekViewComponent", function() { return CalendarWeekViewComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarWeekModule", function() { return CalendarWeekModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarDayViewComponent", function() { return CalendarDayViewComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarDayModule", function() { return CalendarDayModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵh", function() { return CalendarDatePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return CalendarEventActionsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return CalendarEventTitleComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵi", function() { return CalendarEventTitlePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵf", function() { return CalendarNextViewDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵe", function() { return CalendarPreviousViewDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵg", function() { return CalendarTodayDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵd", function() { return CalendarTooltipDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵc", function() { return CalendarTooltipWindowComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵj", function() { return ClickDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵp", function() { return CalendarAllDayEventComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵr", function() { return CalendarDayViewEventComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵq", function() { return CalendarDayViewHourSegmentComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵk", function() { return CalendarMonthCellComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵm", function() { return CalendarMonthViewHeaderComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵl", function() { return CalendarOpenDayEventsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵo", function() { return CalendarWeekViewEventComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵn", function() { return CalendarWeekViewHeaderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angular_draggable_droppable__ = __webpack_require__("../../../../angular-draggable-droppable/esm5/angular-draggable-droppable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
@@ -638,7 +616,7 @@ var CalendarEventModel = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24_angular_resizable_element__ = __webpack_require__("../../../../angular-resizable-element/esm5/angular-resizable-element.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_date_fns_add_minutes_index__ = __webpack_require__("../../../../date-fns/add_minutes/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_date_fns_add_minutes_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_25_date_fns_add_minutes_index__);
-/* unused harmony reexport DAYS_OF_WEEK */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "DAYS_OF_WEEK", function() { return __WEBPACK_IMPORTED_MODULE_12_calendar_utils__["a"]; });
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1318,35 +1296,35 @@ var CalendarUtils = /** @class */ (function () {
      * @return {?}
      */
     CalendarUtils.prototype.getMonthView = function (args) {
-        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["c" /* getMonthView */])(args);
+        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["d" /* getMonthView */])(args);
     };
     /**
      * @param {?} args
      * @return {?}
      */
     CalendarUtils.prototype.getWeekViewHeader = function (args) {
-        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["e" /* getWeekViewHeader */])(args);
+        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["f" /* getWeekViewHeader */])(args);
     };
     /**
      * @param {?} args
      * @return {?}
      */
     CalendarUtils.prototype.getWeekView = function (args) {
-        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["d" /* getWeekView */])(args);
+        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["e" /* getWeekView */])(args);
     };
     /**
      * @param {?} args
      * @return {?}
      */
     CalendarUtils.prototype.getDayView = function (args) {
-        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["a" /* getDayView */])(args);
+        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["b" /* getDayView */])(args);
     };
     /**
      * @param {?} args
      * @return {?}
      */
     CalendarUtils.prototype.getDayViewHourGrid = function (args) {
-        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["b" /* getDayViewHourGrid */])(args);
+        return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["c" /* getDayViewHourGrid */])(args);
     };
     return CalendarUtils;
 }());
@@ -1668,7 +1646,7 @@ var validateEvents$1 = function (events) {
         }
         return console.warn.apply(console, ['angular-calendar'].concat(args));
     };
-    return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["f" /* validateEvents */])(events, warn);
+    return Object(__WEBPACK_IMPORTED_MODULE_12_calendar_utils__["g" /* validateEvents */])(events, warn);
 };
 /**
  * @param {?} outer
@@ -3100,7 +3078,7 @@ CalendarModule.ctorParameters = function () { return []; };
  */
 var DraggableHelper = /** @class */ (function () {
     function DraggableHelper() {
-        this.currentDrag = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.currentDrag = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
     }
     return DraggableHelper;
 }());
@@ -3170,15 +3148,15 @@ var DraggableDirective = /** @class */ (function () {
         /**
          * @hidden
          */
-        this.pointerDown = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.pointerDown = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
         /**
          * @hidden
          */
-        this.pointerMove = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.pointerMove = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
         /**
          * @hidden
          */
-        this.pointerUp = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.pointerUp = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
         this.eventListenerSubscriptions = {};
     }
     /**
@@ -3190,7 +3168,7 @@ var DraggableDirective = /** @class */ (function () {
         var /** @type {?} */ pointerDrag = this.pointerDown
             .pipe(Object(__WEBPACK_IMPORTED_MODULE_10_rxjs_operators_filter__["a" /* filter */])(function () { return _this.canDrag(); }))
             .pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators_mergeMap__["a" /* mergeMap */])(function (pointerDownEvent) {
-            var /** @type {?} */ currentDrag = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+            var /** @type {?} */ currentDrag = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
             _this.zone.run(function () {
                 _this.dragPointerDown.next({ x: 0, y: 0 });
             });
@@ -3960,15 +3938,15 @@ var ResizableDirective = /** @class */ (function () {
         /**
          * @hidden
          */
-        this.mouseup = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.mouseup = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
         /**
          * @hidden
          */
-        this.mousedown = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.mousedown = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
         /**
          * @hidden
          */
-        this.mousemove = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["a" /* Subject */]();
+        this.mousemove = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
         this.pointerEventListenerSubscriptions = {};
         this.pointerEventListeners = PointerEventListeners.getInstance(renderer, zone);
     }
@@ -4543,18 +4521,18 @@ ResizableModule.ctorParameters = function () { return []; };
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export DAYS_OF_WEEK */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DAYS_OF_WEEK; });
 /* unused harmony export SECONDS_IN_DAY */
 /* unused harmony export SECONDS_IN_WEEK */
 /* unused harmony export getWeekViewEventOffset */
 /* unused harmony export getEventsInPeriod */
-/* harmony export (immutable) */ __webpack_exports__["e"] = getWeekViewHeader;
-/* harmony export (immutable) */ __webpack_exports__["d"] = getWeekView;
-/* harmony export (immutable) */ __webpack_exports__["c"] = getMonthView;
-/* harmony export (immutable) */ __webpack_exports__["a"] = getDayView;
-/* harmony export (immutable) */ __webpack_exports__["b"] = getDayViewHourGrid;
+/* harmony export (immutable) */ __webpack_exports__["f"] = getWeekViewHeader;
+/* harmony export (immutable) */ __webpack_exports__["e"] = getWeekView;
+/* harmony export (immutable) */ __webpack_exports__["d"] = getMonthView;
+/* harmony export (immutable) */ __webpack_exports__["b"] = getDayView;
+/* harmony export (immutable) */ __webpack_exports__["c"] = getDayViewHourGrid;
 /* unused harmony export EventValidationErrorMessage */
-/* harmony export (immutable) */ __webpack_exports__["f"] = validateEvents;
+/* harmony export (immutable) */ __webpack_exports__["g"] = validateEvents;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns_add_days__ = __webpack_require__("../../../../date-fns/add_days/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns_add_days___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_date_fns_add_days__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_date_fns_add_hours__ = __webpack_require__("../../../../date-fns/add_hours/index.js");

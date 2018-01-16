@@ -26,14 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/sidenavs/main/main-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTodoMainSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__todo_service__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -43,10 +39,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var todo_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseTodoMainSidenavComponent = (function () {
     function FuseTodoMainSidenavComponent(todoService, router) {
         this.todoService = todoService;
@@ -84,17 +81,17 @@ var FuseTodoMainSidenavComponent = (function () {
         });
     };
     FuseTodoMainSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-todo-main-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/todo/sidenavs/main/main-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/todo/sidenavs/main/main-sidenav.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__todo_service__["a" /* TodoService */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["f" /* Router */]])
+        __metadata("design:paramtypes", [todo_service_1.TodoService, router_1.Router])
     ], FuseTodoMainSidenavComponent);
     return FuseTodoMainSidenavComponent;
 }());
-
+exports.FuseTodoMainSidenavComponent = FuseTodoMainSidenavComponent;
 
 
 /***/ }),
@@ -125,17 +122,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/todo-details/todo-details.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTodoDetailsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__todo_service__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_model__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -145,13 +135,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var todo_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
+var todo_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.model.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
 var FuseTodoDetailsComponent = (function () {
     function FuseTodoDetailsComponent(todoService, formBuilder) {
         this.todoService = todoService;
@@ -187,8 +178,8 @@ var FuseTodoDetailsComponent = (function () {
         this.onNewTodoClicked =
             this.todoService.onNewTodoClicked
                 .subscribe(function () {
-                _this.todo = new __WEBPACK_IMPORTED_MODULE_2__todo_model__["a" /* Todo */]({});
-                _this.todo.id = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+                _this.todo = new todo_model_1.Todo({});
+                _this.todo.id = fuseUtils_1.FuseUtils.generateGUID();
                 _this.formType = 'new';
                 _this.todoForm = _this.createTodoForm();
                 _this.focusTitleField();
@@ -257,22 +248,22 @@ var FuseTodoDetailsComponent = (function () {
         this.onNewTodoClicked.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('titleInput'),
+        core_1.ViewChild('titleInput'),
         __metadata("design:type", Object)
     ], FuseTodoDetailsComponent.prototype, "titleInputField", void 0);
     FuseTodoDetailsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-todo-details',
             template: __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-details/todo-details.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/todo/todo-details/todo-details.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_5__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__todo_service__["a" /* TodoService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [todo_service_1.TodoService,
+            forms_1.FormBuilder])
     ], FuseTodoDetailsComponent);
     return FuseTodoDetailsComponent;
 }());
-
+exports.FuseTodoDetailsComponent = FuseTodoDetailsComponent;
 
 
 /***/ }),
@@ -303,14 +294,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/todo-list/todo-list-item/todo-list-item.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTodoListItemComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__todo_model__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_service__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -320,10 +307,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var todo_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.model.ts");
+var todo_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
 var FuseTodoListItemComponent = (function () {
     function FuseTodoListItemComponent(todoService, route) {
         this.todoService = todoService;
@@ -336,7 +324,7 @@ var FuseTodoListItemComponent = (function () {
     FuseTodoListItemComponent.prototype.ngOnInit = function () {
         var _this = this;
         // Set the initial values
-        this.todo = new __WEBPACK_IMPORTED_MODULE_1__todo_model__["a" /* Todo */](this.todo);
+        this.todo = new todo_model_1.Todo(this.todo);
         this.completed = this.todo.completed;
         // Subscribe to update on selected todo change
         this.onSelectedTodosChanged =
@@ -391,34 +379,34 @@ var FuseTodoListItemComponent = (function () {
         this.todoService.updateTodo(this.todo);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__todo_model__["a" /* Todo */])
+        core_1.Input(),
+        __metadata("design:type", todo_model_1.Todo)
     ], FuseTodoListItemComponent.prototype, "todo", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.selected'),
+        core_1.HostBinding('class.selected'),
         __metadata("design:type", Boolean)
     ], FuseTodoListItemComponent.prototype, "selected", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.completed'),
+        core_1.HostBinding('class.completed'),
         __metadata("design:type", Boolean)
     ], FuseTodoListItemComponent.prototype, "completed", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.move-disabled'),
+        core_1.HostBinding('class.move-disabled'),
         __metadata("design:type", Boolean)
     ], FuseTodoListItemComponent.prototype, "moveDisabled", void 0);
     FuseTodoListItemComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-todo-list-item',
             template: __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list-item/todo-list-item.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list-item/todo-list-item.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__todo_service__["a" /* TodoService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* ActivatedRoute */]])
+        __metadata("design:paramtypes", [todo_service_1.TodoService,
+            router_1.ActivatedRoute])
     ], FuseTodoListItemComponent);
     return FuseTodoListItemComponent;
 }());
-
+exports.FuseTodoListItemComponent = FuseTodoListItemComponent;
 
 
 /***/ }),
@@ -449,15 +437,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/todo-list/todo-list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTodoListComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_service__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -467,11 +450,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var todo_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseTodoListComponent = (function () {
     function FuseTodoListComponent(route, todoService, location) {
         this.route = route;
@@ -526,19 +510,19 @@ var FuseTodoListComponent = (function () {
         this.todoService.updateTodos(this.todos);
     };
     FuseTodoListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-todo-list',
             template: __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_4__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
-            __WEBPACK_IMPORTED_MODULE_2__todo_service__["a" /* TodoService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_common__["Location"]])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            todo_service_1.TodoService,
+            common_1.Location])
     ], FuseTodoListComponent);
     return FuseTodoListComponent;
 }());
-
+exports.FuseTodoListComponent = FuseTodoListComponent;
 
 
 /***/ }),
@@ -569,15 +553,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/todo.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTodoComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__todo_service__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -587,15 +566,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var todo_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
 var FuseTodoComponent = (function () {
     function FuseTodoComponent(todoService) {
         this.todoService = todoService;
-        this.searchInput = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */]('');
+        this.searchInput = new forms_1.FormControl('');
     }
     FuseTodoComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -657,26 +637,27 @@ var FuseTodoComponent = (function () {
         this.todoService.toggleTagOnSelectedTodos(tagId);
     };
     FuseTodoComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-todo',
             template: __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/todo/todo.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__todo_service__["a" /* TodoService */]])
+        __metadata("design:paramtypes", [todo_service_1.TodoService])
     ], FuseTodoComponent);
     return FuseTodoComponent;
 }());
-
+exports.FuseTodoComponent = FuseTodoComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/todo.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Todo; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var Todo = (function () {
     function Todo(todo) {
         {
@@ -706,82 +687,73 @@ var Todo = (function () {
     };
     return Todo;
 }());
-
+exports.Todo = Todo;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/todo.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseTodoModule", function() { return FuseTodoModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__todo_component__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__todo_service__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sidenavs_main_main_sidenav_component__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/sidenavs/main/main-sidenav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__todo_list_todo_list_item_todo_list_item_component__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list-item/todo-list-item.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__todo_list_todo_list_component__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__todo_details_todo_details_component__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-details/todo-details.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var todo_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.component.ts");
+var todo_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.service.ts");
+var main_sidenav_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/sidenavs/main/main-sidenav.component.ts");
+var todo_list_item_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list-item/todo-list-item.component.ts");
+var todo_list_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-list/todo-list.component.ts");
+var todo_details_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo-details/todo-details.component.ts");
 var routes = [
     {
         path: 'all',
-        component: __WEBPACK_IMPORTED_MODULE_3__todo_component__["a" /* FuseTodoComponent */],
+        component: todo_component_1.FuseTodoComponent,
         resolve: {
-            todo: __WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]
+            todo: todo_service_1.TodoService
         }
     },
     {
         path: 'all/:todoId',
-        component: __WEBPACK_IMPORTED_MODULE_3__todo_component__["a" /* FuseTodoComponent */],
+        component: todo_component_1.FuseTodoComponent,
         resolve: {
-            todo: __WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]
+            todo: todo_service_1.TodoService
         }
     },
     {
         path: 'tag/:tagHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__todo_component__["a" /* FuseTodoComponent */],
+        component: todo_component_1.FuseTodoComponent,
         resolve: {
-            todo: __WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]
+            todo: todo_service_1.TodoService
         }
     },
     {
         path: 'tag/:tagHandle/:todoId',
-        component: __WEBPACK_IMPORTED_MODULE_3__todo_component__["a" /* FuseTodoComponent */],
+        component: todo_component_1.FuseTodoComponent,
         resolve: {
-            todo: __WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]
+            todo: todo_service_1.TodoService
         }
     },
     {
         path: 'filter/:filterHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__todo_component__["a" /* FuseTodoComponent */],
+        component: todo_component_1.FuseTodoComponent,
         resolve: {
-            todo: __WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]
+            todo: todo_service_1.TodoService
         }
     },
     {
         path: 'filter/:filterHandle/:todoId',
-        component: __WEBPACK_IMPORTED_MODULE_3__todo_component__["a" /* FuseTodoComponent */],
+        component: todo_component_1.FuseTodoComponent,
         resolve: {
-            todo: __WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]
+            todo: todo_service_1.TodoService
         }
     },
     {
@@ -793,42 +765,35 @@ var FuseTodoModule = (function () {
     function FuseTodoModule() {
     }
     FuseTodoModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__todo_component__["a" /* FuseTodoComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__sidenavs_main_main_sidenav_component__["a" /* FuseTodoMainSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__todo_list_todo_list_item_todo_list_item_component__["a" /* FuseTodoListItemComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__todo_list_todo_list_component__["a" /* FuseTodoListComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__todo_details_todo_details_component__["a" /* FuseTodoDetailsComponent */]
+                todo_component_1.FuseTodoComponent,
+                main_sidenav_component_1.FuseTodoMainSidenavComponent,
+                todo_list_item_component_1.FuseTodoListItemComponent,
+                todo_list_component_1.FuseTodoListComponent,
+                todo_details_component_1.FuseTodoDetailsComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__todo_service__["a" /* TodoService */]
+                todo_service_1.TodoService
             ]
         })
     ], FuseTodoModule);
     return FuseTodoModule;
 }());
-
+exports.FuseTodoModule = FuseTodoModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/todo/todo.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_model__ = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -846,26 +811,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var todo_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/todo/todo.model.ts");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+var Subject_1 = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
 var TodoService = (function () {
     function TodoService(http, location // Set current todo
     ) {
         this.http = http;
         this.location = location; // Set current todo
         this.searchText = '';
-        this.onTodosChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onSelectedTodosChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onCurrentTodoChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onFiltersChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onTagsChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onSearchTextChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]('');
-        this.onNewTodoClicked = new __WEBPACK_IMPORTED_MODULE_5_rxjs_Subject__["a" /* Subject */]();
+        this.onTodosChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onSelectedTodosChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onCurrentTodoChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onFiltersChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onTagsChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onSearchTextChanged = new BehaviorSubject_1.BehaviorSubject('');
+        this.onNewTodoClicked = new Subject_1.Subject();
         this.selectedTodos = [];
     }
     /**
@@ -957,9 +923,9 @@ var TodoService = (function () {
             _this.http.get('api/todo-todos')
                 .subscribe(function (todos) {
                 _this.todos = todos.map(function (todo) {
-                    return new __WEBPACK_IMPORTED_MODULE_2__todo_model__["a" /* Todo */](todo);
+                    return new todo_model_1.Todo(todo);
                 });
-                _this.todos = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.todos, _this.searchText);
+                _this.todos = fuseUtils_1.FuseUtils.filterArrayByString(_this.todos, _this.searchText);
                 _this.onTodosChanged.next(_this.todos);
                 resolve(_this.todos);
             });
@@ -980,9 +946,9 @@ var TodoService = (function () {
             _this.http.get('api/todo-todos?' + param)
                 .subscribe(function (todos) {
                 _this.todos = todos.map(function (todo) {
-                    return new __WEBPACK_IMPORTED_MODULE_2__todo_model__["a" /* Todo */](todo);
+                    return new todo_model_1.Todo(todo);
                 });
-                _this.todos = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.todos, _this.searchText);
+                _this.todos = fuseUtils_1.FuseUtils.filterArrayByString(_this.todos, _this.searchText);
                 _this.onTodosChanged.next(_this.todos);
                 resolve(_this.todos);
             }, reject);
@@ -1002,9 +968,9 @@ var TodoService = (function () {
                 _this.http.get('api/todo-todos?tags=' + tagId)
                     .subscribe(function (todos) {
                     _this.todos = todos.map(function (todo) {
-                        return new __WEBPACK_IMPORTED_MODULE_2__todo_model__["a" /* Todo */](todo);
+                        return new todo_model_1.Todo(todo);
                     });
-                    _this.todos = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.todos, _this.searchText);
+                    _this.todos = fuseUtils_1.FuseUtils.filterArrayByString(_this.todos, _this.searchText);
                     _this.onTodosChanged.next(_this.todos);
                     resolve(_this.todos);
                 }, reject);
@@ -1147,14 +1113,14 @@ var TodoService = (function () {
           });*/
     };
     TodoService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */],
-            __WEBPACK_IMPORTED_MODULE_6__angular_common__["Location"] // Set current todo
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient,
+            common_1.Location // Set current todo
         ])
     ], TodoService);
     return TodoService;
 }());
-
+exports.TodoService = TodoService;
 
 
 /***/ })

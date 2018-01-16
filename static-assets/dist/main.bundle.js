@@ -126,18 +126,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/app.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_splash_screen_service__ = __webpack_require__("../../../../../src/app/core/services/splash-screen.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_services_translation_loader_service__ = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_components_navigation_navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__navigation_navigation_model__ = __webpack_require__("../../../../../src/app/navigation/navigation.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navigation_i18n_en__ = __webpack_require__("../../../../../src/app/navigation/i18n/en.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_i18n_tr__ = __webpack_require__("../../../../../src/app/navigation/i18n/tr.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -147,14 +139,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var splash_screen_service_1 = __webpack_require__("../../../../../src/app/core/services/splash-screen.service.ts");
+var core_2 = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
+var translation_loader_service_1 = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+var navigation_model_1 = __webpack_require__("../../../../../src/app/navigation/navigation.model.ts");
+var en_1 = __webpack_require__("../../../../../src/app/navigation/i18n/en.ts");
+var tr_1 = __webpack_require__("../../../../../src/app/navigation/i18n/tr.ts");
 var AppComponent = (function () {
     function AppComponent(fuseNavigationService, fuseSplashScreen, translate, translationLoader) {
         this.fuseNavigationService = fuseNavigationService;
@@ -168,72 +161,56 @@ var AppComponent = (function () {
         // Use a language
         this.translate.use('en');
         // Set the navigation model
-        this.fuseNavigationService.setNavigationModel(new __WEBPACK_IMPORTED_MODULE_5__navigation_navigation_model__["a" /* FuseNavigationModel */]());
+        this.fuseNavigationService.setNavigationModel(new navigation_model_1.FuseNavigationModel());
         // Set the navigation translations
-        this.translationLoader.loadTranslations(__WEBPACK_IMPORTED_MODULE_6__navigation_i18n_en__["a" /* locale */], __WEBPACK_IMPORTED_MODULE_7__navigation_i18n_tr__["a" /* locale */]);
+        this.translationLoader.loadTranslations(en_1.locale, tr_1.locale);
     }
     AppComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__core_components_navigation_navigation_service__["a" /* FuseNavigationService */],
-            __WEBPACK_IMPORTED_MODULE_1__core_services_splash_screen_service__["a" /* FuseSplashScreenService */],
-            __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["b" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_3__core_services_translation_loader_service__["a" /* FuseTranslationLoaderService */]])
+        __metadata("design:paramtypes", [navigation_service_1.FuseNavigationService,
+            splash_screen_service_1.FuseSplashScreenService,
+            core_2.TranslateService,
+            translation_loader_service_1.FuseTranslationLoaderService])
     ], AppComponent);
     return AppComponent;
 }());
-
+exports.AppComponent = AppComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/app.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular_in_memory_web_api__ = __webpack_require__("../../../../angular-in-memory-web-api/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_hammerjs__ = __webpack_require__("../../../../hammerjs/hammer.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_hammerjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__fuse_fake_db_fuse_fake_db_service__ = __webpack_require__("../../../../../src/app/fuse-fake-db/fuse-fake-db.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__main_main_module__ = __webpack_require__("../../../../../src/app/main/main.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__core_services_splash_screen_service__ = __webpack_require__("../../../../../src/app/core/services/splash-screen.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_components_navigation_navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ngx_translate_core__ = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__store_store_module__ = __webpack_require__("../../../../../src/app/store/store.module.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var platform_browser_1 = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var animations_1 = __webpack_require__("../../../platform-browser/esm5/animations.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var angular_in_memory_web_api_1 = __webpack_require__("../../../../angular-in-memory-web-api/index.js");
+__webpack_require__("../../../../hammerjs/hammer.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var app_component_1 = __webpack_require__("../../../../../src/app/app.component.ts");
+var fuse_fake_db_service_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/fuse-fake-db.service.ts");
+var main_module_1 = __webpack_require__("../../../../../src/app/main/main.module.ts");
+var splash_screen_service_1 = __webpack_require__("../../../../../src/app/core/services/splash-screen.service.ts");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+var core_2 = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
+var store_module_1 = __webpack_require__("../../../../../src/app/store/store.module.ts");
 var appRoutes = [
     {
         path: 'apps',
@@ -268,54 +245,54 @@ var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]
+                app_component_1.AppComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["BrowserModule"],
-                __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["c" /* HttpClientModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_router__["g" /* RouterModule */].forRoot(appRoutes),
-                __WEBPACK_IMPORTED_MODULE_7__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_14__ngx_translate_core__["a" /* TranslateModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_angular_in_memory_web_api__["a" /* InMemoryWebApiModule */].forRoot(__WEBPACK_IMPORTED_MODULE_9__fuse_fake_db_fuse_fake_db_service__["a" /* FuseFakeDbService */], {
+                platform_browser_1.BrowserModule,
+                http_1.HttpClientModule,
+                animations_1.BrowserAnimationsModule,
+                router_1.RouterModule.forRoot(appRoutes),
+                shared_module_1.SharedModule,
+                core_2.TranslateModule.forRoot(),
+                angular_in_memory_web_api_1.InMemoryWebApiModule.forRoot(fuse_fake_db_service_1.FuseFakeDbService, {
                     delay: 0,
                     passThruUnknownUrl: true
                 }),
-                __WEBPACK_IMPORTED_MODULE_15__store_store_module__["a" /* AppStoreModule */],
-                __WEBPACK_IMPORTED_MODULE_10__main_main_module__["a" /* FuseMainModule */]
+                store_module_1.AppStoreModule,
+                main_module_1.FuseMainModule
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_11__core_services_splash_screen_service__["a" /* FuseSplashScreenService */],
-                __WEBPACK_IMPORTED_MODULE_12__core_services_config_service__["a" /* FuseConfigService */],
-                __WEBPACK_IMPORTED_MODULE_13__core_components_navigation_navigation_service__["a" /* FuseNavigationService */]
+                splash_screen_service_1.FuseSplashScreenService,
+                config_service_1.FuseConfigService,
+                navigation_service_1.FuseNavigationService
             ],
             bootstrap: [
-                __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]
+                app_component_1.AppComponent
             ]
         })
     ], AppModule);
     return AppModule;
 }());
-
+exports.AppModule = AppModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/animations.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return fuseAnimations; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__("../../../animations/esm5/animations.js");
 
-var customAnimation = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animation"])([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+Object.defineProperty(exports, "__esModule", { value: true });
+var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
+var customAnimation = animations_1.animation([
+    animations_1.style({
         opacity: '{{opacity}}',
         transform: 'scale({{scale}}) translate3d({{x}}, {{y}}, {{z}})'
     }),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('{{duration}} {{delay}} cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])('*'))
+    animations_1.animate('{{duration}} {{delay}} cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style('*'))
 ], {
     params: {
         duration: '200ms',
@@ -327,148 +304,148 @@ var customAnimation = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["
         z: '0'
     }
 });
-var fuseAnimations = [
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('animate', [Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => *', [Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["useAnimation"])(customAnimation)])]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('animateStagger', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('50', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])('*')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('100', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])('*')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('200', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])('*')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => 50', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('@*', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["stagger"])('50ms', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])()
+exports.fuseAnimations = [
+    animations_1.trigger('animate', [animations_1.transition('void => *', [animations_1.useAnimation(customAnimation)])]),
+    animations_1.trigger('animateStagger', [
+        animations_1.state('50', animations_1.style('*')),
+        animations_1.state('100', animations_1.style('*')),
+        animations_1.state('200', animations_1.style('*')),
+        animations_1.transition('void => 50', animations_1.query('@*', [
+            animations_1.stagger('50ms', [
+                animations_1.animateChild()
             ])
         ], { optional: true })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => 100', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('@*', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["stagger"])('100ms', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])()
+        animations_1.transition('void => 100', animations_1.query('@*', [
+            animations_1.stagger('100ms', [
+                animations_1.animateChild()
             ])
         ], { optional: true })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => 200', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('@*', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["stagger"])('200ms', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])()
+        animations_1.transition('void => 200', animations_1.query('@*', [
+            animations_1.stagger('200ms', [
+                animations_1.animateChild()
             ])
         ], { optional: true }))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('fadeInOut', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('fadeInOut', [
+        animations_1.state('0', animations_1.style({
             display: 'none',
             opacity: 0
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.state('1', animations_1.style({
             display: 'block',
             opacity: 1
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('1 => 0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-out')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('0 => 1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-in'))
+        animations_1.transition('1 => 0', animations_1.animate('300ms ease-out')),
+        animations_1.transition('0 => 1', animations_1.animate('300ms ease-in'))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('slideInOut', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('slideInOut', [
+        animations_1.state('0', animations_1.style({
             height: '0px',
             display: 'none'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.state('1', animations_1.style({
             height: '*',
             display: 'block'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('1 => 0', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-out')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('0 => 1', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-in'))
+        animations_1.transition('1 => 0', animations_1.animate('300ms ease-out')),
+        animations_1.transition('0 => 1', animations_1.animate('300ms ease-in'))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('slideIn', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => left', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('slideIn', [
+        animations_1.transition('void => left', [
+            animations_1.style({
                 transform: 'translateX(100%)'
             }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-in', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.animate('300ms ease-in', animations_1.style({
                 transform: 'translateX(0)'
             }))
         ]),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('left => void', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.transition('left => void', [
+            animations_1.style({
                 transform: 'translateX(0)'
             }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-in', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.animate('300ms ease-in', animations_1.style({
                 transform: 'translateX(-100%)'
             }))
         ]),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => right', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.transition('void => right', [
+            animations_1.style({
                 transform: 'translateX(-100%)'
             }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-in', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.animate('300ms ease-in', animations_1.style({
                 transform: 'translateX(0)'
             }))
         ]),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('right => void', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.transition('right => void', [
+            animations_1.style({
                 transform: 'translateX(0)'
             }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-in', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.animate('300ms ease-in', animations_1.style({
                 transform: 'translateX(100%)'
             }))
         ]),
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('slideInLeft', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('slideInLeft', [
+        animations_1.state('void', animations_1.style({
             transform: 'translateX(-100%)',
             display: 'none'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('*', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.state('*', animations_1.style({
             transform: 'translateX(0)',
             display: 'flex'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms'))
+        animations_1.transition('void => *', animations_1.animate('300ms')),
+        animations_1.transition('* => void', animations_1.animate('300ms'))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('slideInRight', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('slideInRight', [
+        animations_1.state('void', animations_1.style({
             transform: 'translateX(100%)',
             display: 'none'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('*', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.state('*', animations_1.style({
             transform: 'translateX(0)',
             display: 'flex'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms'))
+        animations_1.transition('void => *', animations_1.animate('300ms')),
+        animations_1.transition('* => void', animations_1.animate('300ms'))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('slideInTop', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('slideInTop', [
+        animations_1.state('void', animations_1.style({
             transform: 'translateY(-100%)',
             display: 'none'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('*', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.state('*', animations_1.style({
             transform: 'translateY(0)',
             display: 'flex'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms'))
+        animations_1.transition('void => *', animations_1.animate('300ms')),
+        animations_1.transition('* => void', animations_1.animate('300ms'))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('slideInBottom', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('slideInBottom', [
+        animations_1.state('void', animations_1.style({
             transform: 'translateY(100%)',
             display: 'none'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('*', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.state('*', animations_1.style({
             transform: 'translateY(0)',
             display: 'flex'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms'))
+        animations_1.transition('void => *', animations_1.animate('300ms')),
+        animations_1.transition('* => void', animations_1.animate('300ms'))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('expandCollapse', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('expandCollapse', [
+        animations_1.state('void', animations_1.style({
             height: '0px'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('*', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+        animations_1.state('*', animations_1.style({
             height: '*'
         })),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('void => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-out')),
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms ease-in'))
+        animations_1.transition('void => *', animations_1.animate('300ms ease-out')),
+        animations_1.transition('* => void', animations_1.animate('300ms ease-in'))
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('routerTransitionLeft', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => *', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter, fuse-content > :leave', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('routerTransitionLeft', [
+        animations_1.transition('* => *', [
+            animations_1.query('fuse-content > :enter, fuse-content > :leave', [
+                animations_1.style({
                     position: 'absolute',
                     top: 0,
                     bottom: 0,
@@ -476,41 +453,41 @@ var fuseAnimations = [
                     right: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.query('fuse-content > :enter', [
+                animations_1.style({
                     transform: 'translateX(100%)',
                     opacity: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["sequence"])([
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["group"])([
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', [
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.sequence([
+                animations_1.group([
+                    animations_1.query('fuse-content > :leave', [
+                        animations_1.style({
                             transform: 'translateX(0)',
                             opacity: 1
                         }),
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                        animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                             transform: 'translateX(-100%)',
                             opacity: 0
                         }))
                     ], { optional: true }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({ transform: 'translateX(100%)' }),
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                    animations_1.query('fuse-content > :enter', [
+                        animations_1.style({ transform: 'translateX(100%)' }),
+                        animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                             transform: 'translateX(0%)',
                             opacity: 1
                         }))
                     ], { optional: true })
                 ]),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true }),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true })
+                animations_1.query('fuse-content > :leave', animations_1.animateChild(), { optional: true }),
+                animations_1.query('fuse-content > :enter', animations_1.animateChild(), { optional: true })
             ])
         ])
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('routerTransitionRight', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => *', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter, fuse-content > :leave', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('routerTransitionRight', [
+        animations_1.transition('* => *', [
+            animations_1.query('fuse-content > :enter, fuse-content > :leave', [
+                animations_1.style({
                     position: 'absolute',
                     top: 0,
                     bottom: 0,
@@ -518,41 +495,41 @@ var fuseAnimations = [
                     right: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.query('fuse-content > :enter', [
+                animations_1.style({
                     transform: 'translateX(-100%)',
                     opacity: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["sequence"])([
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["group"])([
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', [
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.sequence([
+                animations_1.group([
+                    animations_1.query('fuse-content > :leave', [
+                        animations_1.style({
                             transform: 'translateX(0)',
                             opacity: 1
                         }),
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                        animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                             transform: 'translateX(100%)',
                             opacity: 0
                         }))
                     ], { optional: true }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({ transform: 'translateX(-100%)' }),
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                    animations_1.query('fuse-content > :enter', [
+                        animations_1.style({ transform: 'translateX(-100%)' }),
+                        animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                             transform: 'translateX(0%)',
                             opacity: 1
                         }))
                     ], { optional: true })
                 ]),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true }),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true })
+                animations_1.query('fuse-content > :leave', animations_1.animateChild(), { optional: true }),
+                animations_1.query('fuse-content > :enter', animations_1.animateChild(), { optional: true })
             ])
         ])
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('routerTransitionUp', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => *', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter, fuse-content > :leave', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('routerTransitionUp', [
+        animations_1.transition('* => *', [
+            animations_1.query('fuse-content > :enter, fuse-content > :leave', [
+                animations_1.style({
                     position: 'absolute',
                     top: 0,
                     bottom: 0,
@@ -560,39 +537,39 @@ var fuseAnimations = [
                     right: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.query('fuse-content > :enter', [
+                animations_1.style({
                     transform: 'translateY(100%)',
                     opacity: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["group"])([
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', [
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.group([
+                animations_1.query('fuse-content > :leave', [
+                    animations_1.style({
                         transform: 'translateY(0)',
                         opacity: 1
                     }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                    animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                         transform: 'translateY(-100%)',
                         opacity: 0
                     }))
                 ], { optional: true }),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({ transform: 'translateY(100%)' }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                animations_1.query('fuse-content > :enter', [
+                    animations_1.style({ transform: 'translateY(100%)' }),
+                    animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                         transform: 'translateY(0%)',
                         opacity: 1
                     }))
                 ], { optional: true })
             ]),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true })
+            animations_1.query('fuse-content > :leave', animations_1.animateChild(), { optional: true }),
+            animations_1.query('fuse-content > :enter', animations_1.animateChild(), { optional: true })
         ])
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('routerTransitionDown', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => *', [
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter, fuse-content > :leave', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('routerTransitionDown', [
+        animations_1.transition('* => *', [
+            animations_1.query('fuse-content > :enter, fuse-content > :leave', [
+                animations_1.style({
                     position: 'absolute',
                     top: 0,
                     bottom: 0,
@@ -600,41 +577,41 @@ var fuseAnimations = [
                     right: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.query('fuse-content > :enter', [
+                animations_1.style({
                     transform: 'translateY(-100%)',
                     opacity: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["sequence"])([
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["group"])([
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', [
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.sequence([
+                animations_1.group([
+                    animations_1.query('fuse-content > :leave', [
+                        animations_1.style({
                             transform: 'translateY(0)',
                             opacity: 1
                         }),
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                        animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                             transform: 'translateY(100%)',
                             opacity: 0
                         }))
                     ], { optional: true }),
-                    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({ transform: 'translateY(-100%)' }),
-                        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                    animations_1.query('fuse-content > :enter', [
+                        animations_1.style({ transform: 'translateY(-100%)' }),
+                        animations_1.animate('600ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                             transform: 'translateY(0%)',
                             opacity: 1
                         }))
                     ], { optional: true })
                 ]),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true }),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true })
+                animations_1.query('fuse-content > :leave', animations_1.animateChild(), { optional: true }),
+                animations_1.query('fuse-content > :enter', animations_1.animateChild(), { optional: true })
             ])
         ])
     ]),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('routerTransitionFade', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('* => *', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["group"])([
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter, fuse-content > :leave ', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+    animations_1.trigger('routerTransitionFade', [
+        animations_1.transition('* => *', animations_1.group([
+            animations_1.query('fuse-content > :enter, fuse-content > :leave ', [
+                animations_1.style({
                     position: 'absolute',
                     top: 0,
                     bottom: 0,
@@ -642,29 +619,29 @@ var fuseAnimations = [
                     right: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.query('fuse-content > :enter', [
+                animations_1.style({
                     opacity: 0
                 })
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.query('fuse-content > :leave', [
+                animations_1.style({
                     opacity: 1
                 }),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                animations_1.animate('300ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                     opacity: 0
                 }))
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', [
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+            animations_1.query('fuse-content > :enter', [
+                animations_1.style({
                     opacity: 0
                 }),
-                Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('300ms cubic-bezier(0.0, 0.0, 0.2, 1)', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
+                animations_1.animate('300ms cubic-bezier(0.0, 0.0, 0.2, 1)', animations_1.style({
                     opacity: 1
                 }))
             ], { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :enter', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true }),
-            Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["query"])('fuse-content > :leave', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animateChild"])(), { optional: true })
+            animations_1.query('fuse-content > :enter', animations_1.animateChild(), { optional: true }),
+            animations_1.query('fuse-content > :leave', animations_1.animateChild(), { optional: true })
         ]))
     ])
 ];
@@ -698,12 +675,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseConfirmDialogComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -713,8 +688,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
 var FuseConfirmDialogComponent = (function () {
     function FuseConfirmDialogComponent(dialogRef) {
         this.dialogRef = dialogRef;
@@ -722,16 +698,16 @@ var FuseConfirmDialogComponent = (function () {
     FuseConfirmDialogComponent.prototype.ngOnInit = function () {
     };
     FuseConfirmDialogComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-confirm-dialog',
             template: __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_material__["o" /* MatDialogRef */]])
+        __metadata("design:paramtypes", [material_1.MatDialogRef])
     ], FuseConfirmDialogComponent);
     return FuseConfirmDialogComponent;
 }());
-
+exports.FuseConfirmDialogComponent = FuseConfirmDialogComponent;
 
 
 /***/ }),
@@ -762,15 +738,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/countdown/countdown.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseCountdownComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__("../../../../moment/moment.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_interval__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/interval.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -780,10 +751,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var moment = __webpack_require__("../../../../moment/moment.js");
+var Observable_1 = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+__webpack_require__("../../../../rxjs/_esm5/add/observable/interval.js");
 var FuseCountdownComponent = (function () {
     function FuseCountdownComponent() {
         this.countdown = {
@@ -795,16 +767,16 @@ var FuseCountdownComponent = (function () {
     }
     FuseCountdownComponent.prototype.ngOnInit = function () {
         var _this = this;
-        var currDate = __WEBPACK_IMPORTED_MODULE_1_moment__();
-        var eventDate = __WEBPACK_IMPORTED_MODULE_1_moment__(this.eventDate);
+        var currDate = moment();
+        var eventDate = moment(this.eventDate);
         var diff = eventDate.diff(currDate, 'seconds');
-        var countDown = __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"]
+        var countDown = Observable_1.Observable
             .interval(1000)
             .map(function (value) {
             return diff = diff - 1;
         })
             .map(function (value) {
-            var timeLeft = __WEBPACK_IMPORTED_MODULE_1_moment__["duration"](value, 'seconds');
+            var timeLeft = moment.duration(value, 'seconds');
             return {
                 days: timeLeft.asDays().toFixed(0),
                 hours: timeLeft.hours(),
@@ -817,11 +789,11 @@ var FuseCountdownComponent = (function () {
         });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('eventDate'),
+        core_1.Input('eventDate'),
         __metadata("design:type", Object)
     ], FuseCountdownComponent.prototype, "eventDate", void 0);
     FuseCountdownComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-countdown',
             template: __webpack_require__("../../../../../src/app/core/components/countdown/countdown.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/countdown/countdown.component.scss")]
@@ -830,7 +802,7 @@ var FuseCountdownComponent = (function () {
     ], FuseCountdownComponent);
     return FuseCountdownComponent;
 }());
-
+exports.FuseCountdownComponent = FuseCountdownComponent;
 
 
 /***/ }),
@@ -854,15 +826,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/highlight/highlight.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseHighlightComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prismjs_prism__ = __webpack_require__("../../../../prismjs/prism.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prismjs_prism___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prismjs_prism__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prism_languages__ = __webpack_require__("../../../../../src/app/core/components/highlight/prism-languages.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -872,10 +839,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var Prism = __webpack_require__("../../../../prismjs/prism.js");
+__webpack_require__("../../../../../src/app/core/components/highlight/prism-languages.ts");
 var FuseHighlightComponent = (function () {
     function FuseHighlightComponent(elementRef, http) {
         this.elementRef = elementRef;
@@ -931,91 +899,61 @@ var FuseHighlightComponent = (function () {
             }
         });
         // Generate the highlighted code
-        var highlightedCode = __WEBPACK_IMPORTED_MODULE_2_prismjs_prism__["highlight"](source, __WEBPACK_IMPORTED_MODULE_2_prismjs_prism__["languages"][this.lang]);
+        var highlightedCode = Prism.highlight(source, Prism.languages[this.lang]);
         // Replace the innerHTML of the component with the highlighted code
         this.elementRef.nativeElement.innerHTML =
             '<pre><code class="highlight language-' + this.lang + '">' + highlightedCode + '</code></pre>';
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ContentChild"])('source'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
+        core_1.ContentChild('source'),
+        __metadata("design:type", core_1.ElementRef)
     ], FuseHighlightComponent.prototype, "source", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('lang'),
+        core_1.Input('lang'),
         __metadata("design:type", String)
     ], FuseHighlightComponent.prototype, "lang", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('path'),
+        core_1.Input('path'),
         __metadata("design:type", String)
     ], FuseHighlightComponent.prototype, "path", void 0);
     FuseHighlightComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-highlight',
             template: ' ',
             styles: [__webpack_require__("../../../../../src/app/core/components/highlight/highlight.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"],
-            __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        __metadata("design:paramtypes", [core_1.ElementRef,
+            http_1.HttpClient])
     ], FuseHighlightComponent);
     return FuseHighlightComponent;
 }());
-
+exports.FuseHighlightComponent = FuseHighlightComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/highlight/prism-languages.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prismjs_prism__ = __webpack_require__("../../../../prismjs/prism.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prismjs_prism___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prismjs_prism__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prismjs_components_prism_c__ = __webpack_require__("../../../../prismjs/components/prism-c.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prismjs_components_prism_c___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prismjs_components_prism_c__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prismjs_components_prism_cpp__ = __webpack_require__("../../../../prismjs/components/prism-cpp.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prismjs_components_prism_cpp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prismjs_components_prism_cpp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prismjs_components_prism_csharp__ = __webpack_require__("../../../../prismjs/components/prism-csharp.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prismjs_components_prism_csharp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prismjs_components_prism_csharp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prismjs_components_prism_css__ = __webpack_require__("../../../../prismjs/components/prism-css.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prismjs_components_prism_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_prismjs_components_prism_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_prismjs_components_prism_diff__ = __webpack_require__("../../../../prismjs/components/prism-diff.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_prismjs_components_prism_diff___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_prismjs_components_prism_diff__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_prismjs_components_prism_markup__ = __webpack_require__("../../../../prismjs/components/prism-markup.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_prismjs_components_prism_markup___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_prismjs_components_prism_markup__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_prismjs_components_prism_java__ = __webpack_require__("../../../../prismjs/components/prism-java.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_prismjs_components_prism_java___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_prismjs_components_prism_java__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_prismjs_components_prism_javascript__ = __webpack_require__("../../../../prismjs/components/prism-javascript.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_prismjs_components_prism_javascript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_prismjs_components_prism_javascript__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_prismjs_components_prism_json__ = __webpack_require__("../../../../prismjs/components/prism-json.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_prismjs_components_prism_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_prismjs_components_prism_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_prismjs_components_prism_perl__ = __webpack_require__("../../../../prismjs/components/prism-perl.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_prismjs_components_prism_perl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_prismjs_components_prism_perl__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_prismjs_components_prism_php__ = __webpack_require__("../../../../prismjs/components/prism-php.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_prismjs_components_prism_php___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_prismjs_components_prism_php__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_prismjs_components_prism_python__ = __webpack_require__("../../../../prismjs/components/prism-python.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_prismjs_components_prism_python___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_prismjs_components_prism_python__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_prismjs_components_prism_sass__ = __webpack_require__("../../../../prismjs/components/prism-sass.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_prismjs_components_prism_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_prismjs_components_prism_sass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_prismjs_components_prism_scss__ = __webpack_require__("../../../../prismjs/components/prism-scss.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_prismjs_components_prism_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_prismjs_components_prism_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_prismjs_components_prism_typescript__ = __webpack_require__("../../../../prismjs/components/prism-typescript.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_prismjs_components_prism_typescript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_prismjs_components_prism_typescript__);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+__webpack_require__("../../../../prismjs/prism.js");
+__webpack_require__("../../../../prismjs/components/prism-c.js");
+__webpack_require__("../../../../prismjs/components/prism-cpp.js");
+__webpack_require__("../../../../prismjs/components/prism-csharp.js");
+__webpack_require__("../../../../prismjs/components/prism-css.js");
+__webpack_require__("../../../../prismjs/components/prism-diff.js");
+__webpack_require__("../../../../prismjs/components/prism-markup.js");
+__webpack_require__("../../../../prismjs/components/prism-java.js");
+__webpack_require__("../../../../prismjs/components/prism-javascript.js");
+__webpack_require__("../../../../prismjs/components/prism-json.js");
+__webpack_require__("../../../../prismjs/components/prism-perl.js");
+__webpack_require__("../../../../prismjs/components/prism-php.js");
+__webpack_require__("../../../../prismjs/components/prism-python.js");
+__webpack_require__("../../../../prismjs/components/prism-sass.js");
+__webpack_require__("../../../../prismjs/components/prism-scss.js");
+__webpack_require__("../../../../prismjs/components/prism-typescript.js");
 
 
 /***/ }),
@@ -1046,13 +984,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/material-color-picker/material-color-picker.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMaterialColorPickerComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__matColors__ = __webpack_require__("../../../../../src/app/core/matColors.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1062,24 +997,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var matColors_1 = __webpack_require__("../../../../../src/app/core/matColors.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseMaterialColorPickerComponent = (function () {
     function FuseMaterialColorPickerComponent() {
         this.view = 'palettes';
         this.selectedPalette = '';
         this.selectedHue = '';
         this.selectedFg = '';
-        this.onValueChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.selectedPaletteChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.selectedHueChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.selectedClassChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.selectedBgChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.selectedFgChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onValueChange = new core_1.EventEmitter();
+        this.selectedPaletteChange = new core_1.EventEmitter();
+        this.selectedHueChange = new core_1.EventEmitter();
+        this.selectedClassChange = new core_1.EventEmitter();
+        this.selectedBgChange = new core_1.EventEmitter();
+        this.selectedFgChange = new core_1.EventEmitter();
         this._selectedClass = '';
         this._selectedBg = '';
-        this.colors = __WEBPACK_IMPORTED_MODULE_1__matColors__["a" /* MatColors */].all;
+        this.colors = matColors_1.MatColors.all;
         this.hues = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', 'A100', 'A200', 'A400', 'A700'];
     }
     Object.defineProperty(FuseMaterialColorPickerComponent.prototype, "selectedClass", {
@@ -1151,8 +1087,8 @@ var FuseMaterialColorPickerComponent = (function () {
                 return;
             }
             if (_this.selectedPalette !== '' && _this.selectedHue !== '') {
-                _this.selectedBg = __WEBPACK_IMPORTED_MODULE_1__matColors__["a" /* MatColors */].getColor(_this.selectedPalette)[_this.selectedHue];
-                _this.selectedFg = __WEBPACK_IMPORTED_MODULE_1__matColors__["a" /* MatColors */].getColor(_this.selectedPalette).contrast[_this.selectedHue];
+                _this.selectedBg = matColors_1.MatColors.getColor(_this.selectedPalette)[_this.selectedHue];
+                _this.selectedFg = matColors_1.MatColors.getColor(_this.selectedPalette).contrast[_this.selectedHue];
                 _this.selectedClass = 'mat-' + _this.selectedPalette + '-' + _this.selectedHue + '-bg';
             }
             else {
@@ -1198,68 +1134,68 @@ var FuseMaterialColorPickerComponent = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedPalette", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedHue", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedFg", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "value", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "onValueChange", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedPaletteChange", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedHueChange", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedClassChange", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedBgChange", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        core_1.Output(),
         __metadata("design:type", Object)
     ], FuseMaterialColorPickerComponent.prototype, "selectedFgChange", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object),
         __metadata("design:paramtypes", [Object])
     ], FuseMaterialColorPickerComponent.prototype, "selectedClass", null);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object),
         __metadata("design:paramtypes", [Object])
     ], FuseMaterialColorPickerComponent.prototype, "selectedBg", null);
     FuseMaterialColorPickerComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-material-color-picker',
             template: __webpack_require__("../../../../../src/app/core/components/material-color-picker/material-color-picker.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/material-color-picker/material-color-picker.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__animations__["a" /* fuseAnimations */],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            animations: animations_1.fuseAnimations,
+            encapsulation: core_1.ViewEncapsulation.None
         }),
         __metadata("design:paramtypes", [])
     ], FuseMaterialColorPickerComponent);
     return FuseMaterialColorPickerComponent;
 }());
-
+exports.FuseMaterialColorPickerComponent = FuseMaterialColorPickerComponent;
 
 
 /***/ }),
@@ -1290,13 +1226,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/horizontal/nav-collapse/nav-horizontal-collapse.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavHorizontalCollapseComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1306,9 +1239,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
 var FuseNavHorizontalCollapseComponent = (function () {
     function FuseNavHorizontalCollapseComponent(fuseConfig) {
         var _this = this;
@@ -1331,37 +1265,37 @@ var FuseNavHorizontalCollapseComponent = (function () {
         this.onSettingsChanged.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class'),
+        core_1.HostBinding('class'),
         __metadata("design:type", Object)
     ], FuseNavHorizontalCollapseComponent.prototype, "classes", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseNavHorizontalCollapseComponent.prototype, "item", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseenter'),
+        core_1.HostListener('mouseenter'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], FuseNavHorizontalCollapseComponent.prototype, "open", null);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseleave'),
+        core_1.HostListener('mouseleave'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], FuseNavHorizontalCollapseComponent.prototype, "close", null);
     FuseNavHorizontalCollapseComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-nav-horizontal-collapse',
             template: __webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-collapse/nav-horizontal-collapse.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-collapse/nav-horizontal-collapse.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_1__animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_config_service__["a" /* FuseConfigService */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService])
     ], FuseNavHorizontalCollapseComponent);
     return FuseNavHorizontalCollapseComponent;
 }());
-
+exports.FuseNavHorizontalCollapseComponent = FuseNavHorizontalCollapseComponent;
 
 
 /***/ }),
@@ -1392,11 +1326,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/horizontal/nav-item/nav-horizontal-item.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavHorizontalItemComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1406,21 +1339,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseNavHorizontalItemComponent = (function () {
     function FuseNavHorizontalItemComponent() {
         this.classes = 'nav-item';
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class'),
+        core_1.HostBinding('class'),
         __metadata("design:type", Object)
     ], FuseNavHorizontalItemComponent.prototype, "classes", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseNavHorizontalItemComponent.prototype, "item", void 0);
     FuseNavHorizontalItemComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-nav-horizontal-item',
             template: __webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-item/nav-horizontal-item.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-item/nav-horizontal-item.component.scss")]
@@ -1428,7 +1362,7 @@ var FuseNavHorizontalItemComponent = (function () {
     ], FuseNavHorizontalItemComponent);
     return FuseNavHorizontalItemComponent;
 }());
-
+exports.FuseNavHorizontalItemComponent = FuseNavHorizontalItemComponent;
 
 
 /***/ }),
@@ -1459,12 +1393,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/navigation.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavigationComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1474,8 +1406,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
 var FuseNavigationComponent = (function () {
     function FuseNavigationComponent(fuseNavigationService) {
         var _this = this;
@@ -1491,90 +1424,80 @@ var FuseNavigationComponent = (function () {
         this.navigationModelChangeSubscription.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('layout'),
+        core_1.Input('layout'),
         __metadata("design:type", Object)
     ], FuseNavigationComponent.prototype, "layout", void 0);
     FuseNavigationComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-navigation',
             template: __webpack_require__("../../../../../src/app/core/components/navigation/navigation.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/navigation/navigation.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__navigation_service__["a" /* FuseNavigationService */]])
+        __metadata("design:paramtypes", [navigation_service_1.FuseNavigationService])
     ], FuseNavigationComponent);
     return FuseNavigationComponent;
 }());
-
+exports.FuseNavigationComponent = FuseNavigationComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/navigation.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavigationModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navigation_component__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__vertical_nav_item_nav_vertical_item_component__ = __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-item/nav-vertical-item.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__vertical_nav_collapse_nav_vertical_collapse_component__ = __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-collapse/nav-vertical-collapse.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vertical_nav_group_nav_vertical_group_component__ = __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-group/nav-vertical-group.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__horizontal_nav_item_nav_horizontal_item_component__ = __webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-item/nav-horizontal-item.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__horizontal_nav_collapse_nav_horizontal_collapse_component__ = __webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-collapse/nav-horizontal-collapse.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var navigation_component_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.component.ts");
+var nav_vertical_item_component_1 = __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-item/nav-vertical-item.component.ts");
+var nav_vertical_collapse_component_1 = __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-collapse/nav-vertical-collapse.component.ts");
+var nav_vertical_group_component_1 = __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-group/nav-vertical-group.component.ts");
+var nav_horizontal_item_component_1 = __webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-item/nav-horizontal-item.component.ts");
+var nav_horizontal_collapse_component_1 = __webpack_require__("../../../../../src/app/core/components/navigation/horizontal/nav-collapse/nav-horizontal-collapse.component.ts");
 var FuseNavigationModule = (function () {
     function FuseNavigationModule() {
     }
     FuseNavigationModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__navigation_component__["a" /* FuseNavigationComponent */]
+                navigation_component_1.FuseNavigationComponent
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__navigation_component__["a" /* FuseNavigationComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__vertical_nav_group_nav_vertical_group_component__["a" /* FuseNavVerticalGroupComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__vertical_nav_item_nav_vertical_item_component__["a" /* FuseNavVerticalItemComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__vertical_nav_collapse_nav_vertical_collapse_component__["a" /* FuseNavVerticalCollapseComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__horizontal_nav_item_nav_horizontal_item_component__["a" /* FuseNavHorizontalItemComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__horizontal_nav_collapse_nav_horizontal_collapse_component__["a" /* FuseNavHorizontalCollapseComponent */]
+                navigation_component_1.FuseNavigationComponent,
+                nav_vertical_group_component_1.FuseNavVerticalGroupComponent,
+                nav_vertical_item_component_1.FuseNavVerticalItemComponent,
+                nav_vertical_collapse_component_1.FuseNavVerticalCollapseComponent,
+                nav_horizontal_item_component_1.FuseNavHorizontalItemComponent,
+                nav_horizontal_collapse_component_1.FuseNavHorizontalCollapseComponent
             ]
         })
     ], FuseNavigationModule);
     return FuseNavigationModule;
 }());
-
+exports.FuseNavigationModule = FuseNavigationModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/navigation.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavigationService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1584,13 +1507,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var FuseNavigationService = (function () {
     function FuseNavigationService() {
-        this.onNavCollapseToggle = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.onNavCollapseToggled = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this.onNavigationModelChange = new __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onNavCollapseToggle = new core_1.EventEmitter();
+        this.onNavCollapseToggled = new core_1.EventEmitter();
+        this.onNavigationModelChange = new BehaviorSubject_1.BehaviorSubject({});
         this.flatNavigation = [];
     }
     /**
@@ -1725,12 +1649,12 @@ var FuseNavigationService = (function () {
         return this.flatNavigation;
     };
     FuseNavigationService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        core_1.Injectable(),
         __metadata("design:paramtypes", [])
     ], FuseNavigationService);
     return FuseNavigationService;
 }());
-
+exports.FuseNavigationService = FuseNavigationService;
 
 
 /***/ }),
@@ -1761,14 +1685,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/vertical/nav-collapse/nav-vertical-collapse.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavVerticalCollapseComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1778,10 +1698,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseNavVerticalCollapseComponent = (function () {
     function FuseNavVerticalCollapseComponent(navigationService, router) {
         var _this = this;
@@ -1791,7 +1712,7 @@ var FuseNavVerticalCollapseComponent = (function () {
         this.isOpen = false;
         // Listen for route changes
         router.events.subscribe(function (event) {
-            if (event instanceof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* NavigationEnd */]) {
+            if (event instanceof router_1.NavigationEnd) {
                 // Check if the url can be found in
                 // one of the children of this item
                 if (_this.isUrlInChildren(_this.item, event.urlAfterRedirects)) {
@@ -1912,30 +1833,30 @@ var FuseNavVerticalCollapseComponent = (function () {
         return false;
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseNavVerticalCollapseComponent.prototype, "item", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class'),
+        core_1.HostBinding('class'),
         __metadata("design:type", Object)
     ], FuseNavVerticalCollapseComponent.prototype, "classes", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.open'),
+        core_1.HostBinding('class.open'),
         __metadata("design:type", Object)
     ], FuseNavVerticalCollapseComponent.prototype, "isOpen", void 0);
     FuseNavVerticalCollapseComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-nav-vertical-collapse',
             template: __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-collapse/nav-vertical-collapse.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-collapse/nav-vertical-collapse.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__navigation_service__["a" /* FuseNavigationService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["f" /* Router */]])
+        __metadata("design:paramtypes", [navigation_service_1.FuseNavigationService,
+            router_1.Router])
     ], FuseNavVerticalCollapseComponent);
     return FuseNavVerticalCollapseComponent;
 }());
-
+exports.FuseNavVerticalCollapseComponent = FuseNavVerticalCollapseComponent;
 
 
 /***/ }),
@@ -1966,11 +1887,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/vertical/nav-group/nav-vertical-group.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavVerticalGroupComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1980,7 +1900,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseNavVerticalGroupComponent = (function () {
     function FuseNavVerticalGroupComponent() {
         this.classes = 'nav-group nav-item';
@@ -1988,15 +1909,15 @@ var FuseNavVerticalGroupComponent = (function () {
     FuseNavVerticalGroupComponent.prototype.ngOnInit = function () {
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class'),
+        core_1.HostBinding('class'),
         __metadata("design:type", Object)
     ], FuseNavVerticalGroupComponent.prototype, "classes", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseNavVerticalGroupComponent.prototype, "item", void 0);
     FuseNavVerticalGroupComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-nav-vertical-group',
             template: __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-group/nav-vertical-group.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-group/nav-vertical-group.component.scss")]
@@ -2005,7 +1926,7 @@ var FuseNavVerticalGroupComponent = (function () {
     ], FuseNavVerticalGroupComponent);
     return FuseNavVerticalGroupComponent;
 }());
-
+exports.FuseNavVerticalGroupComponent = FuseNavVerticalGroupComponent;
 
 
 /***/ }),
@@ -2036,11 +1957,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/navigation/vertical/nav-item/nav-vertical-item.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavVerticalItemComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2050,7 +1970,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseNavVerticalItemComponent = (function () {
     function FuseNavVerticalItemComponent() {
         this.classes = 'nav-item';
@@ -2058,15 +1979,15 @@ var FuseNavVerticalItemComponent = (function () {
     FuseNavVerticalItemComponent.prototype.ngOnInit = function () {
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class'),
+        core_1.HostBinding('class'),
         __metadata("design:type", Object)
     ], FuseNavVerticalItemComponent.prototype, "classes", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Object)
     ], FuseNavVerticalItemComponent.prototype, "item", void 0);
     FuseNavVerticalItemComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-nav-vertical-item',
             template: __webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-item/nav-vertical-item.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/navigation/vertical/nav-item/nav-vertical-item.component.scss")]
@@ -2075,7 +1996,7 @@ var FuseNavVerticalItemComponent = (function () {
     ], FuseNavVerticalItemComponent);
     return FuseNavVerticalItemComponent;
 }());
-
+exports.FuseNavVerticalItemComponent = FuseNavVerticalItemComponent;
 
 
 /***/ }),
@@ -2106,12 +2027,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/search-bar/search-bar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSearchBarComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2121,13 +2040,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
 var FuseSearchBarComponent = (function () {
     function FuseSearchBarComponent(fuseConfig) {
         var _this = this;
         this.fuseConfig = fuseConfig;
-        this.onInput = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.onInput = new core_1.EventEmitter();
         this.collapsed = true;
         this.onSettingsChanged =
             this.fuseConfig.onSettingsChanged
@@ -2148,63 +2068,60 @@ var FuseSearchBarComponent = (function () {
         this.onInput.emit(value);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"])
+        core_1.Output(),
+        __metadata("design:type", core_1.EventEmitter)
     ], FuseSearchBarComponent.prototype, "onInput", void 0);
     FuseSearchBarComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-search-bar',
             template: __webpack_require__("../../../../../src/app/core/components/search-bar/search-bar.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/search-bar/search-bar.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_config_service__["a" /* FuseConfigService */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService])
     ], FuseSearchBarComponent);
     return FuseSearchBarComponent;
 }());
-
+exports.FuseSearchBarComponent = FuseSearchBarComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/search-bar/search-bar.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSearchBarModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__search_bar_component__ = __webpack_require__("../../../../../src/app/core/components/search-bar/search-bar.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var search_bar_component_1 = __webpack_require__("../../../../../src/app/core/components/search-bar/search-bar.component.ts");
 var FuseSearchBarModule = (function () {
     function FuseSearchBarModule() {
     }
     FuseSearchBarModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__search_bar_component__["a" /* FuseSearchBarComponent */]
+                search_bar_component_1.FuseSearchBarComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2__modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["g" /* RouterModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__search_bar_component__["a" /* FuseSearchBarComponent */]
+                search_bar_component_1.FuseSearchBarComponent
             ]
         })
     ], FuseSearchBarModule);
     return FuseSearchBarModule;
 }());
-
+exports.FuseSearchBarModule = FuseSearchBarModule;
 
 
 /***/ }),
@@ -2235,16 +2152,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/shortcuts/shortcuts.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseShortcutsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navigation_navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_flex_layout__ = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_match_media_service__ = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_cookie_service__ = __webpack_require__("../../../../ngx-cookie-service/index.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2254,12 +2165,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+var flex_layout_1 = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
+var match_media_service_1 = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var ngx_cookie_service_1 = __webpack_require__("../../../../ngx-cookie-service/index.js");
 var FuseShortcutsComponent = (function () {
     function FuseShortcutsComponent(renderer, observableMedia, fuseMatchMedia, fuseNavigationService, fuseConfig, cookieService) {
         var _this = this;
@@ -2370,72 +2282,69 @@ var FuseShortcutsComponent = (function () {
         this.renderer.removeClass(this.shortcutsEl.nativeElement, 'show-mobile-panel');
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('searchInput'),
+        core_1.ViewChild('searchInput'),
         __metadata("design:type", Object)
     ], FuseShortcutsComponent.prototype, "searchInputField", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('shortcuts'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
+        core_1.ViewChild('shortcuts'),
+        __metadata("design:type", core_1.ElementRef)
     ], FuseShortcutsComponent.prototype, "shortcutsEl", void 0);
     FuseShortcutsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-shortcuts',
             template: __webpack_require__("../../../../../src/app/core/components/shortcuts/shortcuts.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/shortcuts/shortcuts.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"],
-            __WEBPACK_IMPORTED_MODULE_2__angular_flex_layout__["b" /* ObservableMedia */],
-            __WEBPACK_IMPORTED_MODULE_3__services_match_media_service__["a" /* FuseMatchMedia */],
-            __WEBPACK_IMPORTED_MODULE_1__navigation_navigation_service__["a" /* FuseNavigationService */],
-            __WEBPACK_IMPORTED_MODULE_4__services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_5_ngx_cookie_service__["a" /* CookieService */]])
+        __metadata("design:paramtypes", [core_1.Renderer2,
+            flex_layout_1.ObservableMedia,
+            match_media_service_1.FuseMatchMedia,
+            navigation_service_1.FuseNavigationService,
+            config_service_1.FuseConfigService,
+            ngx_cookie_service_1.CookieService])
     ], FuseShortcutsComponent);
     return FuseShortcutsComponent;
 }());
-
+exports.FuseShortcutsComponent = FuseShortcutsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/shortcuts/shortcuts.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseShortcutsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shortcuts_component__ = __webpack_require__("../../../../../src/app/core/components/shortcuts/shortcuts.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var shortcuts_component_1 = __webpack_require__("../../../../../src/app/core/components/shortcuts/shortcuts.component.ts");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
 var FuseShortcutsModule = (function () {
     function FuseShortcutsModule() {
     }
     FuseShortcutsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__shortcuts_component__["a" /* FuseShortcutsComponent */]
+                shortcuts_component_1.FuseShortcutsComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_3__modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["g" /* RouterModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_2__shortcuts_component__["a" /* FuseShortcutsComponent */]
+                shortcuts_component_1.FuseShortcutsComponent
             ]
         })
     ], FuseShortcutsModule);
     return FuseShortcutsModule;
 }());
-
+exports.FuseShortcutsModule = FuseShortcutsModule;
 
 
 /***/ }),
@@ -2466,15 +2375,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/core/components/theme-options/theme-options.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseThemeOptionsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("../../../animations/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigation_navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2484,11 +2388,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_2 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
 var FuseThemeOptionsComponent = (function () {
     function FuseThemeOptionsComponent(animationBuilder, fuseConfig, navigationService, renderer) {
         var _this = this;
@@ -2536,8 +2441,8 @@ var FuseThemeOptionsComponent = (function () {
         this.player =
             this.animationBuilder
                 .build([
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ transform: 'translate3d(0,0,0)' }),
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ transform: 'translate3d(100%,0,0)' }))
+                animations_1.style({ transform: 'translate3d(0,0,0)' }),
+                animations_1.animate('400ms ease', animations_1.style({ transform: 'translate3d(100%,0,0)' }))
             ]).create(this.panel.nativeElement);
         this.player.play();
         this.player.onDone(function () {
@@ -2549,8 +2454,8 @@ var FuseThemeOptionsComponent = (function () {
         this.player =
             this.animationBuilder
                 .build([
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ transform: 'translate3d(100%,0,0)' }),
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ transform: 'translate3d(0,0,0)' }))
+                animations_1.style({ transform: 'translate3d(100%,0,0)' }),
+                animations_1.animate('400ms ease', animations_1.style({ transform: 'translate3d(0,0,0)' }))
             ]).create(this.panel.nativeElement);
         this.player.play();
     };
@@ -2558,46 +2463,45 @@ var FuseThemeOptionsComponent = (function () {
         this.onSettingsChanged.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('openButton'),
+        core_1.ViewChild('openButton'),
         __metadata("design:type", Object)
     ], FuseThemeOptionsComponent.prototype, "openButton", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('panel'),
+        core_1.ViewChild('panel'),
         __metadata("design:type", Object)
     ], FuseThemeOptionsComponent.prototype, "panel", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('overlay'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
+        core_1.ViewChild('overlay'),
+        __metadata("design:type", core_1.ElementRef)
     ], FuseThemeOptionsComponent.prototype, "overlay", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.bar-closed'),
+        core_1.HostBinding('class.bar-closed'),
         __metadata("design:type", Boolean)
     ], FuseThemeOptionsComponent.prototype, "barClosed", void 0);
     FuseThemeOptionsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-theme-options',
             template: __webpack_require__("../../../../../src/app/core/components/theme-options/theme-options.component.html"),
             styles: [__webpack_require__("../../../../../src/app/core/components/theme-options/theme-options.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__animations__["a" /* fuseAnimations */]
+            animations: animations_2.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_animations__["AnimationBuilder"],
-            __WEBPACK_IMPORTED_MODULE_2__services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_4__navigation_navigation_service__["a" /* FuseNavigationService */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"]])
+        __metadata("design:paramtypes", [animations_1.AnimationBuilder,
+            config_service_1.FuseConfigService,
+            navigation_service_1.FuseNavigationService,
+            core_1.Renderer2])
     ], FuseThemeOptionsComponent);
     return FuseThemeOptionsComponent;
 }());
-
+exports.FuseThemeOptionsComponent = FuseThemeOptionsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/directives/fuse-if-on-dom/fuse-if-on-dom.directive.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseIfOnDomDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2607,7 +2511,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseIfOnDomDirective = (function () {
     function FuseIfOnDomDirective(templateRef, viewContainer, element) {
         this.templateRef = templateRef;
@@ -2629,31 +2534,25 @@ var FuseIfOnDomDirective = (function () {
         }
     };
     FuseIfOnDomDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        core_1.Directive({
             selector: '[fuseIfOnDom]'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]])
+        __metadata("design:paramtypes", [core_1.TemplateRef,
+            core_1.ViewContainerRef,
+            core_1.ElementRef])
     ], FuseIfOnDomDirective);
     return FuseIfOnDomDirective;
 }());
-
+exports.FuseIfOnDomDirective = FuseIfOnDomDirective;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.directive.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMatSidenavHelperDirective; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FuseMatSidenavTogglerDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_flex_layout__ = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_match_media_service__ = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fuse_mat_sidenav_helper_service__ = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2663,11 +2562,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var flex_layout_1 = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
+var match_media_service_1 = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
+var fuse_mat_sidenav_helper_service_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.service.ts");
 var FuseMatSidenavHelperDirective = (function () {
     function FuseMatSidenavHelperDirective(fuseMatSidenavService, fuseMatchMedia, observableMedia, matSidenav) {
         this.fuseMatSidenavService = fuseMatSidenavService;
@@ -2706,29 +2606,29 @@ var FuseMatSidenavHelperDirective = (function () {
         this.matchMediaSubscription.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.mat-is-locked-open'),
+        core_1.HostBinding('class.mat-is-locked-open'),
         __metadata("design:type", Object)
     ], FuseMatSidenavHelperDirective.prototype, "isLockedOpen", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('fuseMatSidenavHelper'),
+        core_1.Input('fuseMatSidenavHelper'),
         __metadata("design:type", String)
     ], FuseMatSidenavHelperDirective.prototype, "id", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('mat-is-locked-open'),
+        core_1.Input('mat-is-locked-open'),
         __metadata("design:type", String)
     ], FuseMatSidenavHelperDirective.prototype, "matIsLockedOpenBreakpoint", void 0);
     FuseMatSidenavHelperDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        core_1.Directive({
             selector: '[fuseMatSidenavHelper]'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__fuse_mat_sidenav_helper_service__["a" /* FuseMatSidenavHelperService */],
-            __WEBPACK_IMPORTED_MODULE_3__services_match_media_service__["a" /* FuseMatchMedia */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_flex_layout__["b" /* ObservableMedia */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_material__["G" /* MatSidenav */]])
+        __metadata("design:paramtypes", [fuse_mat_sidenav_helper_service_1.FuseMatSidenavHelperService,
+            match_media_service_1.FuseMatchMedia,
+            flex_layout_1.ObservableMedia,
+            material_1.MatSidenav])
     ], FuseMatSidenavHelperDirective);
     return FuseMatSidenavHelperDirective;
 }());
-
+exports.FuseMatSidenavHelperDirective = FuseMatSidenavHelperDirective;
 var FuseMatSidenavTogglerDirective = (function () {
     function FuseMatSidenavTogglerDirective(fuseMatSidenavService) {
         this.fuseMatSidenavService = fuseMatSidenavService;
@@ -2737,34 +2637,33 @@ var FuseMatSidenavTogglerDirective = (function () {
         this.fuseMatSidenavService.getSidenav(this.id).toggle();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('fuseMatSidenavToggler'),
+        core_1.Input('fuseMatSidenavToggler'),
         __metadata("design:type", Object)
     ], FuseMatSidenavTogglerDirective.prototype, "id", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('click'),
+        core_1.HostListener('click'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], FuseMatSidenavTogglerDirective.prototype, "onClick", null);
     FuseMatSidenavTogglerDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        core_1.Directive({
             selector: '[fuseMatSidenavToggler]'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__fuse_mat_sidenav_helper_service__["a" /* FuseMatSidenavHelperService */]])
+        __metadata("design:paramtypes", [fuse_mat_sidenav_helper_service_1.FuseMatSidenavHelperService])
     ], FuseMatSidenavTogglerDirective);
     return FuseMatSidenavTogglerDirective;
 }());
-
+exports.FuseMatSidenavTogglerDirective = FuseMatSidenavTogglerDirective;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMatSidenavHelperService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2774,7 +2673,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseMatSidenavHelperService = (function () {
     function FuseMatSidenavHelperService() {
         this.sidenavInstances = [];
@@ -2786,25 +2686,21 @@ var FuseMatSidenavHelperService = (function () {
         return this.sidenavInstances[id];
     };
     FuseMatSidenavHelperService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        core_1.Injectable(),
         __metadata("design:paramtypes", [])
     ], FuseMatSidenavHelperService);
     return FuseMatSidenavHelperService;
 }());
-
+exports.FuseMatSidenavHelperService = FuseMatSidenavHelperService;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FusePerfectScrollbarDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_platform__ = __webpack_require__("../../../cdk/esm5/platform.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_perfect_scrollbar__ = __webpack_require__("../../../../perfect-scrollbar/dist/perfect-scrollbar.esm.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2814,10 +2710,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var platform_1 = __webpack_require__("../../../cdk/esm5/platform.es5.js");
+var perfect_scrollbar_1 = __webpack_require__("../../../../perfect-scrollbar/dist/perfect-scrollbar.esm.js");
 var FusePerfectScrollbarDirective = (function () {
     function FusePerfectScrollbarDirective(element, fuseConfig, platform) {
         var _this = this;
@@ -2842,7 +2739,7 @@ var FusePerfectScrollbarDirective = (function () {
             return;
         }
         // Initialize the perfect-scrollbar
-        this.ps = new __WEBPACK_IMPORTED_MODULE_3_perfect_scrollbar__["a" /* default */](this.element.nativeElement, {
+        this.ps = new perfect_scrollbar_1.default(this.element.nativeElement, {
             wheelPropagation: true
         });
     };
@@ -2930,31 +2827,32 @@ var FusePerfectScrollbarDirective = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('document:click', ['$event']),
+        core_1.HostListener('document:click', ['$event']),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Event]),
         __metadata("design:returntype", void 0)
     ], FusePerfectScrollbarDirective.prototype, "documentClick", null);
     FusePerfectScrollbarDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        core_1.Directive({
             selector: '[fusePerfectScrollbar]'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"],
-            __WEBPACK_IMPORTED_MODULE_1__services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_cdk_platform__["a" /* Platform */]])
+        __metadata("design:paramtypes", [core_1.ElementRef,
+            config_service_1.FuseConfigService,
+            platform_1.Platform])
     ], FusePerfectScrollbarDirective);
     return FusePerfectScrollbarDirective;
 }());
-
+exports.FusePerfectScrollbarDirective = FusePerfectScrollbarDirective;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/fuseUtils.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseUtils; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var FuseUtils = (function () {
     function FuseUtils() {
     }
@@ -3035,16 +2933,17 @@ var FuseUtils = (function () {
     };
     return FuseUtils;
 }());
-
+exports.FuseUtils = FuseUtils;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/matColors.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MatColors; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var black87 = 'rgba(black, 0.87)';
 var white87 = 'rgba(white, 0.87)';
 var black12 = 'rgba(black, 0.12)';
@@ -3730,245 +3629,220 @@ var MatColors = (function () {
     MatColors.presets = matPresetColors;
     return MatColors;
 }());
-
+exports.MatColors = MatColors;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/modules/material.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaterialModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_table__ = __webpack_require__("../../../cdk/esm5/table.es5.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var table_1 = __webpack_require__("../../../cdk/esm5/table.es5.js");
 var MaterialModule = (function () {
     function MaterialModule() {
     }
     MaterialModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["f" /* MatAutocompleteModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["h" /* MatButtonToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["i" /* MatCardModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["j" /* MatCheckboxModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["k" /* MatChipsModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["l" /* MatDatepickerModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["n" /* MatDialogModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["p" /* MatExpansionModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["q" /* MatFormFieldModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["r" /* MatGridListModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MatIconModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MatInputModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["v" /* MatListModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["w" /* MatMenuModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["y" /* MatNativeDateModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["A" /* MatPaginatorModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["B" /* MatProgressBarModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["C" /* MatProgressSpinnerModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["D" /* MatRadioModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["E" /* MatRippleModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["F" /* MatSelectModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["H" /* MatSidenavModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["J" /* MatSliderModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["I" /* MatSlideToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["L" /* MatSnackBarModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["O" /* MatStepperModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["N" /* MatSortModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["Q" /* MatTableModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["R" /* MatTabsModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["S" /* MatToolbarModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["T" /* MatTooltipModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_cdk_table__["m" /* CdkTableModule */]
+                material_1.MatAutocompleteModule,
+                material_1.MatButtonModule,
+                material_1.MatButtonToggleModule,
+                material_1.MatCardModule,
+                material_1.MatCheckboxModule,
+                material_1.MatChipsModule,
+                material_1.MatDatepickerModule,
+                material_1.MatDialogModule,
+                material_1.MatExpansionModule,
+                material_1.MatFormFieldModule,
+                material_1.MatGridListModule,
+                material_1.MatIconModule,
+                material_1.MatInputModule,
+                material_1.MatListModule,
+                material_1.MatMenuModule,
+                material_1.MatNativeDateModule,
+                material_1.MatPaginatorModule,
+                material_1.MatProgressBarModule,
+                material_1.MatProgressSpinnerModule,
+                material_1.MatRadioModule,
+                material_1.MatRippleModule,
+                material_1.MatSelectModule,
+                material_1.MatSidenavModule,
+                material_1.MatSliderModule,
+                material_1.MatSlideToggleModule,
+                material_1.MatSnackBarModule,
+                material_1.MatStepperModule,
+                material_1.MatSortModule,
+                material_1.MatTableModule,
+                material_1.MatTabsModule,
+                material_1.MatToolbarModule,
+                material_1.MatTooltipModule,
+                table_1.CdkTableModule
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["f" /* MatAutocompleteModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["g" /* MatButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["h" /* MatButtonToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["i" /* MatCardModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["j" /* MatCheckboxModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["k" /* MatChipsModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["l" /* MatDatepickerModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["n" /* MatDialogModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["p" /* MatExpansionModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["r" /* MatGridListModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MatIconModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MatInputModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["v" /* MatListModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["w" /* MatMenuModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["y" /* MatNativeDateModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["A" /* MatPaginatorModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["B" /* MatProgressBarModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["C" /* MatProgressSpinnerModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["D" /* MatRadioModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["E" /* MatRippleModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["F" /* MatSelectModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["H" /* MatSidenavModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["J" /* MatSliderModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["I" /* MatSlideToggleModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["L" /* MatSnackBarModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["O" /* MatStepperModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["N" /* MatSortModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["Q" /* MatTableModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["R" /* MatTabsModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["S" /* MatToolbarModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_material__["T" /* MatTooltipModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_cdk_table__["m" /* CdkTableModule */]
+                material_1.MatAutocompleteModule,
+                material_1.MatButtonModule,
+                material_1.MatButtonToggleModule,
+                material_1.MatCardModule,
+                material_1.MatCheckboxModule,
+                material_1.MatChipsModule,
+                material_1.MatDatepickerModule,
+                material_1.MatDialogModule,
+                material_1.MatExpansionModule,
+                material_1.MatGridListModule,
+                material_1.MatIconModule,
+                material_1.MatInputModule,
+                material_1.MatListModule,
+                material_1.MatMenuModule,
+                material_1.MatNativeDateModule,
+                material_1.MatPaginatorModule,
+                material_1.MatProgressBarModule,
+                material_1.MatProgressSpinnerModule,
+                material_1.MatRadioModule,
+                material_1.MatRippleModule,
+                material_1.MatSelectModule,
+                material_1.MatSidenavModule,
+                material_1.MatSliderModule,
+                material_1.MatSlideToggleModule,
+                material_1.MatSnackBarModule,
+                material_1.MatStepperModule,
+                material_1.MatSortModule,
+                material_1.MatTableModule,
+                material_1.MatTabsModule,
+                material_1.MatToolbarModule,
+                material_1.MatTooltipModule,
+                table_1.CdkTableModule
             ]
         })
     ], MaterialModule);
     return MaterialModule;
 }());
-
+exports.MaterialModule = MaterialModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/modules/shared.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__material_module__ = __webpack_require__("../../../../../src/app/core/modules/material.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_flex_layout__ = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_color_picker__ = __webpack_require__("../../../../ngx-color-picker/dist/ngx-color-picker.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__swimlane_ngx_dnd__ = __webpack_require__("../../../../@swimlane/ngx-dnd/release/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__swimlane_ngx_dnd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__swimlane_ngx_dnd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable__ = __webpack_require__("../../../../@swimlane/ngx-datatable/release/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_directive__ = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_service__ = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pipes_pipes_module__ = __webpack_require__("../../../../../src/app/core/pipes/pipes.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_countdown_countdown_component__ = __webpack_require__("../../../../../src/app/core/components/countdown/countdown.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_match_media_service__ = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__main_navbar_vertical_navbar_vertical_service__ = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_highlight_highlight_component__ = __webpack_require__("../../../../../src/app/core/components/highlight/highlight.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__ = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__directives_fuse_if_on_dom_fuse_if_on_dom_directive__ = __webpack_require__("../../../../../src/app/core/directives/fuse-if-on-dom/fuse-if-on-dom.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_material_color_picker_material_color_picker_component__ = __webpack_require__("../../../../../src/app/core/components/material-color-picker/material-color-picker.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_translation_loader_service__ = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_ngx_cookie_service__ = __webpack_require__("../../../../ngx-cookie-service/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ngx_translate_core__ = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
+var material_module_1 = __webpack_require__("../../../../../src/app/core/modules/material.module.ts");
+var flex_layout_1 = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
+var ngx_color_picker_1 = __webpack_require__("../../../../ngx-color-picker/dist/ngx-color-picker.es5.js");
+var ngx_dnd_1 = __webpack_require__("../../../../@swimlane/ngx-dnd/release/index.js");
+var ngx_datatable_1 = __webpack_require__("../../../../@swimlane/ngx-datatable/release/index.js");
+var fuse_mat_sidenav_helper_directive_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.directive.ts");
+var fuse_mat_sidenav_helper_service_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-mat-sidenav-helper/fuse-mat-sidenav-helper.service.ts");
+var pipes_module_1 = __webpack_require__("../../../../../src/app/core/pipes/pipes.module.ts");
+var confirm_dialog_component_1 = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
+var countdown_component_1 = __webpack_require__("../../../../../src/app/core/components/countdown/countdown.component.ts");
+var match_media_service_1 = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
+var navbar_vertical_service_1 = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.service.ts");
+var highlight_component_1 = __webpack_require__("../../../../../src/app/core/components/highlight/highlight.component.ts");
+var fuse_perfect_scrollbar_directive_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
+var fuse_if_on_dom_directive_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-if-on-dom/fuse-if-on-dom.directive.ts");
+var material_color_picker_component_1 = __webpack_require__("../../../../../src/app/core/components/material-color-picker/material-color-picker.component.ts");
+var translation_loader_service_1 = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
+var ngx_cookie_service_1 = __webpack_require__("../../../../ngx-cookie-service/index.js");
+var core_2 = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
 var SharedModule = (function () {
     function SharedModule() {
     }
     SharedModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_8__directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_directive__["a" /* FuseMatSidenavHelperDirective */],
-                __WEBPACK_IMPORTED_MODULE_8__directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_directive__["b" /* FuseMatSidenavTogglerDirective */],
-                __WEBPACK_IMPORTED_MODULE_11__components_confirm_dialog_confirm_dialog_component__["a" /* FuseConfirmDialogComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__components_countdown_countdown_component__["a" /* FuseCountdownComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__components_highlight_highlight_component__["a" /* FuseHighlightComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__directives_fuse_if_on_dom_fuse_if_on_dom_directive__["a" /* FuseIfOnDomDirective */],
-                __WEBPACK_IMPORTED_MODULE_16__directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__["a" /* FusePerfectScrollbarDirective */],
-                __WEBPACK_IMPORTED_MODULE_18__components_material_color_picker_material_color_picker_component__["a" /* FuseMaterialColorPickerComponent */]
+                fuse_mat_sidenav_helper_directive_1.FuseMatSidenavHelperDirective,
+                fuse_mat_sidenav_helper_directive_1.FuseMatSidenavTogglerDirective,
+                confirm_dialog_component_1.FuseConfirmDialogComponent,
+                countdown_component_1.FuseCountdownComponent,
+                highlight_component_1.FuseHighlightComponent,
+                fuse_if_on_dom_directive_1.FuseIfOnDomDirective,
+                fuse_perfect_scrollbar_directive_1.FusePerfectScrollbarDirective,
+                material_color_picker_component_1.FuseMaterialColorPickerComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_4__angular_flex_layout__["a" /* FlexLayoutModule */],
-                __WEBPACK_IMPORTED_MODULE_3__material_module__["a" /* MaterialModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_common__["CommonModule"],
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_10__pipes_pipes_module__["a" /* FusePipesModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["k" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_5_ngx_color_picker__["a" /* ColorPickerModule */],
-                __WEBPACK_IMPORTED_MODULE_6__swimlane_ngx_dnd__["NgxDnDModule"],
-                __WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable__["NgxDatatableModule"]
+                flex_layout_1.FlexLayoutModule,
+                material_module_1.MaterialModule,
+                common_1.CommonModule,
+                forms_1.FormsModule,
+                pipes_module_1.FusePipesModule,
+                forms_1.ReactiveFormsModule,
+                ngx_color_picker_1.ColorPickerModule,
+                ngx_dnd_1.NgxDnDModule,
+                ngx_datatable_1.NgxDatatableModule
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_4__angular_flex_layout__["a" /* FlexLayoutModule */],
-                __WEBPACK_IMPORTED_MODULE_3__material_module__["a" /* MaterialModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_common__["CommonModule"],
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_8__directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_directive__["a" /* FuseMatSidenavHelperDirective */],
-                __WEBPACK_IMPORTED_MODULE_8__directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_directive__["b" /* FuseMatSidenavTogglerDirective */],
-                __WEBPACK_IMPORTED_MODULE_10__pipes_pipes_module__["a" /* FusePipesModule */],
-                __WEBPACK_IMPORTED_MODULE_12__components_countdown_countdown_component__["a" /* FuseCountdownComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__components_highlight_highlight_component__["a" /* FuseHighlightComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__["a" /* FusePerfectScrollbarDirective */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_forms__["k" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_5_ngx_color_picker__["a" /* ColorPickerModule */],
-                __WEBPACK_IMPORTED_MODULE_6__swimlane_ngx_dnd__["NgxDnDModule"],
-                __WEBPACK_IMPORTED_MODULE_7__swimlane_ngx_datatable__["NgxDatatableModule"],
-                __WEBPACK_IMPORTED_MODULE_17__directives_fuse_if_on_dom_fuse_if_on_dom_directive__["a" /* FuseIfOnDomDirective */],
-                __WEBPACK_IMPORTED_MODULE_18__components_material_color_picker_material_color_picker_component__["a" /* FuseMaterialColorPickerComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__ngx_translate_core__["a" /* TranslateModule */]
+                flex_layout_1.FlexLayoutModule,
+                material_module_1.MaterialModule,
+                common_1.CommonModule,
+                forms_1.FormsModule,
+                fuse_mat_sidenav_helper_directive_1.FuseMatSidenavHelperDirective,
+                fuse_mat_sidenav_helper_directive_1.FuseMatSidenavTogglerDirective,
+                pipes_module_1.FusePipesModule,
+                countdown_component_1.FuseCountdownComponent,
+                highlight_component_1.FuseHighlightComponent,
+                fuse_perfect_scrollbar_directive_1.FusePerfectScrollbarDirective,
+                forms_1.ReactiveFormsModule,
+                ngx_color_picker_1.ColorPickerModule,
+                ngx_dnd_1.NgxDnDModule,
+                ngx_datatable_1.NgxDatatableModule,
+                fuse_if_on_dom_directive_1.FuseIfOnDomDirective,
+                material_color_picker_component_1.FuseMaterialColorPickerComponent,
+                core_2.TranslateModule
             ],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_11__components_confirm_dialog_confirm_dialog_component__["a" /* FuseConfirmDialogComponent */]
+                confirm_dialog_component_1.FuseConfirmDialogComponent
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_20_ngx_cookie_service__["a" /* CookieService */],
-                __WEBPACK_IMPORTED_MODULE_13__services_match_media_service__["a" /* FuseMatchMedia */],
-                __WEBPACK_IMPORTED_MODULE_14__main_navbar_vertical_navbar_vertical_service__["a" /* FuseNavbarVerticalService */],
-                __WEBPACK_IMPORTED_MODULE_9__directives_fuse_mat_sidenav_helper_fuse_mat_sidenav_helper_service__["a" /* FuseMatSidenavHelperService */],
-                __WEBPACK_IMPORTED_MODULE_19__services_translation_loader_service__["a" /* FuseTranslationLoaderService */]
+                ngx_cookie_service_1.CookieService,
+                match_media_service_1.FuseMatchMedia,
+                navbar_vertical_service_1.FuseNavbarVerticalService,
+                fuse_mat_sidenav_helper_service_1.FuseMatSidenavHelperService,
+                translation_loader_service_1.FuseTranslationLoaderService
             ]
         })
     ], SharedModule);
     return SharedModule;
 }());
-
+exports.SharedModule = SharedModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/pipes/camelCaseToDash.pipe.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CamelCaseToDashPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var CamelCaseToDashPipe = (function () {
     function CamelCaseToDashPipe() {
     }
@@ -3977,59 +3851,58 @@ var CamelCaseToDashPipe = (function () {
         return value ? String(value).replace(/([A-Z])/g, function (g) { return "-" + g[0].toLowerCase(); }) : '';
     };
     CamelCaseToDashPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'camelCaseToDash' })
+        core_1.Pipe({ name: 'camelCaseToDash' })
     ], CamelCaseToDashPipe);
     return CamelCaseToDashPipe;
 }());
-
+exports.CamelCaseToDashPipe = CamelCaseToDashPipe;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/pipes/filter.pipe.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilterPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var FilterPipe = (function () {
     function FilterPipe() {
     }
     FilterPipe.prototype.transform = function (mainArr, searchText, property) {
-        return __WEBPACK_IMPORTED_MODULE_1__fuseUtils__["a" /* FuseUtils */].filterArrayByString(mainArr, searchText);
+        return fuseUtils_1.FuseUtils.filterArrayByString(mainArr, searchText);
     };
     FilterPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'filter' })
+        core_1.Pipe({ name: 'filter' })
     ], FilterPipe);
     return FilterPipe;
 }());
-
+exports.FilterPipe = FilterPipe;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/pipes/getById.pipe.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GetByIdPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var GetByIdPipe = (function () {
     function GetByIdPipe() {
     }
@@ -4045,31 +3918,31 @@ var GetByIdPipe = (function () {
         }
     };
     GetByIdPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({
+        core_1.Pipe({
             name: 'getById',
             pure: false
         })
     ], GetByIdPipe);
     return GetByIdPipe;
 }());
-
+exports.GetByIdPipe = GetByIdPipe;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/pipes/htmlToPlaintext.pipe.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HtmlToPlaintextPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var HtmlToPlaintextPipe = (function () {
     function HtmlToPlaintextPipe() {
     }
@@ -4078,28 +3951,28 @@ var HtmlToPlaintextPipe = (function () {
         return value ? String(value).replace(/<[^>]+>/gm, '') : '';
     };
     HtmlToPlaintextPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'htmlToPlaintext' })
+        core_1.Pipe({ name: 'htmlToPlaintext' })
     ], HtmlToPlaintextPipe);
     return HtmlToPlaintextPipe;
 }());
-
+exports.HtmlToPlaintextPipe = HtmlToPlaintextPipe;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/pipes/keys.pipe.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KeysPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var KeysPipe = (function () {
     function KeysPipe() {
     }
@@ -4116,76 +3989,67 @@ var KeysPipe = (function () {
         return keys;
     };
     KeysPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'keys' })
+        core_1.Pipe({ name: 'keys' })
     ], KeysPipe);
     return KeysPipe;
 }());
-
+exports.KeysPipe = KeysPipe;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/pipes/pipes.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FusePipesModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__keys_pipe__ = __webpack_require__("../../../../../src/app/core/pipes/keys.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__getById_pipe__ = __webpack_require__("../../../../../src/app/core/pipes/getById.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__htmlToPlaintext_pipe__ = __webpack_require__("../../../../../src/app/core/pipes/htmlToPlaintext.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter_pipe__ = __webpack_require__("../../../../../src/app/core/pipes/filter.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__camelCaseToDash_pipe__ = __webpack_require__("../../../../../src/app/core/pipes/camelCaseToDash.pipe.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var keys_pipe_1 = __webpack_require__("../../../../../src/app/core/pipes/keys.pipe.ts");
+var getById_pipe_1 = __webpack_require__("../../../../../src/app/core/pipes/getById.pipe.ts");
+var htmlToPlaintext_pipe_1 = __webpack_require__("../../../../../src/app/core/pipes/htmlToPlaintext.pipe.ts");
+var filter_pipe_1 = __webpack_require__("../../../../../src/app/core/pipes/filter.pipe.ts");
+var camelCaseToDash_pipe_1 = __webpack_require__("../../../../../src/app/core/pipes/camelCaseToDash.pipe.ts");
 var FusePipesModule = (function () {
     function FusePipesModule() {
     }
     FusePipesModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_1__keys_pipe__["a" /* KeysPipe */],
-                __WEBPACK_IMPORTED_MODULE_2__getById_pipe__["a" /* GetByIdPipe */],
-                __WEBPACK_IMPORTED_MODULE_3__htmlToPlaintext_pipe__["a" /* HtmlToPlaintextPipe */],
-                __WEBPACK_IMPORTED_MODULE_4__filter_pipe__["a" /* FilterPipe */],
-                __WEBPACK_IMPORTED_MODULE_5__camelCaseToDash_pipe__["a" /* CamelCaseToDashPipe */]
+                keys_pipe_1.KeysPipe,
+                getById_pipe_1.GetByIdPipe,
+                htmlToPlaintext_pipe_1.HtmlToPlaintextPipe,
+                filter_pipe_1.FilterPipe,
+                camelCaseToDash_pipe_1.CamelCaseToDashPipe
             ],
             imports: [],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_1__keys_pipe__["a" /* KeysPipe */],
-                __WEBPACK_IMPORTED_MODULE_2__getById_pipe__["a" /* GetByIdPipe */],
-                __WEBPACK_IMPORTED_MODULE_3__htmlToPlaintext_pipe__["a" /* HtmlToPlaintextPipe */],
-                __WEBPACK_IMPORTED_MODULE_4__filter_pipe__["a" /* FilterPipe */],
-                __WEBPACK_IMPORTED_MODULE_5__camelCaseToDash_pipe__["a" /* CamelCaseToDashPipe */]
+                keys_pipe_1.KeysPipe,
+                getById_pipe_1.GetByIdPipe,
+                htmlToPlaintext_pipe_1.HtmlToPlaintextPipe,
+                filter_pipe_1.FilterPipe,
+                camelCaseToDash_pipe_1.CamelCaseToDashPipe
             ]
         })
     ], FusePipesModule);
     return FusePipesModule;
 }());
-
+exports.FusePipesModule = FusePipesModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/services/config.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseConfigService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_cdk_platform__ = __webpack_require__("../../../cdk/esm5/platform.es5.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4195,10 +4059,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var platform_1 = __webpack_require__("../../../cdk/esm5/platform.es5.js");
 var FuseConfigService = (function () {
     /**
      * @param router
@@ -4235,12 +4100,12 @@ var FuseConfigService = (function () {
         this.settings = Object.assign({}, this.defaultSettings);
         // Reload the default settings on every navigation start
         router.events.subscribe(function (event) {
-            if (event instanceof __WEBPACK_IMPORTED_MODULE_2__angular_router__["e" /* NavigationStart */]) {
+            if (event instanceof router_1.NavigationStart) {
                 _this.setSettings({ layout: _this.defaultSettings.layout });
             }
         });
         // Create the behavior subject
-        this.onSettingsChanged = new __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__["BehaviorSubject"](this.settings);
+        this.onSettingsChanged = new BehaviorSubject_1.BehaviorSubject(this.settings);
     }
     /**
      * Sets settings
@@ -4253,24 +4118,22 @@ var FuseConfigService = (function () {
         this.onSettingsChanged.next(this.settings);
     };
     FuseConfigService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["f" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_cdk_platform__["a" /* Platform */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [router_1.Router,
+            platform_1.Platform])
     ], FuseConfigService);
     return FuseConfigService;
 }());
-
+exports.FuseConfigService = FuseConfigService;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/services/match-media.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMatchMedia; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_flex_layout__ = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4280,13 +4143,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var flex_layout_1 = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseMatchMedia = (function () {
     function FuseMatchMedia(observableMedia) {
         var _this = this;
         this.observableMedia = observableMedia;
-        this.onMediaChange = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["EventEmitter"]();
+        this.onMediaChange = new core_1.EventEmitter();
         this.activeMediaQuery = '';
         this.observableMedia.subscribe(function (change) {
             if (_this.activeMediaQuery !== change.mqAlias) {
@@ -4296,25 +4160,21 @@ var FuseMatchMedia = (function () {
         });
     }
     FuseMatchMedia = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_flex_layout__["b" /* ObservableMedia */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [flex_layout_1.ObservableMedia])
     ], FuseMatchMedia);
     return FuseMatchMedia;
 }());
-
+exports.FuseMatchMedia = FuseMatchMedia;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/services/splash-screen.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSplashScreenService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__("../../../animations/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4327,10 +4187,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
+var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
 var FuseSplashScreenService = (function () {
     function FuseSplashScreenService(animationBuilder, document, router) {
         var _this = this;
@@ -4339,7 +4200,7 @@ var FuseSplashScreenService = (function () {
         this.router = router;
         this.splashScreenEl = this.document.body.querySelector('#fuse-splash-screen');
         var hideOnLoad = this.router.events.subscribe(function (event) {
-            if (event instanceof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* NavigationEnd */]) {
+            if (event instanceof router_1.NavigationEnd) {
                 setTimeout(function () {
                     _this.hide();
                     hideOnLoad.unsubscribe();
@@ -4352,11 +4213,11 @@ var FuseSplashScreenService = (function () {
         this.player =
             this.animationBuilder
                 .build([
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["style"])({
+                animations_1.style({
                     opacity: '0',
                     zIndex: '99999'
                 }),
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["animate"])('400ms ease', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["style"])({ opacity: '1' }))
+                animations_1.animate('400ms ease', animations_1.style({ opacity: '1' }))
             ]).create(this.splashScreenEl);
         setTimeout(function () {
             _this.player.play();
@@ -4367,8 +4228,8 @@ var FuseSplashScreenService = (function () {
         this.player =
             this.animationBuilder
                 .build([
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["style"])({ opacity: '1' }),
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["animate"])('400ms ease', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["style"])({
+                animations_1.style({ opacity: '1' }),
+                animations_1.animate('400ms ease', animations_1.style({
                     opacity: '0',
                     zIndex: '-10'
                 }))
@@ -4378,24 +4239,22 @@ var FuseSplashScreenService = (function () {
         }, 0);
     };
     FuseSplashScreenService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_common__["DOCUMENT"])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_animations__["AnimationBuilder"], Object, __WEBPACK_IMPORTED_MODULE_3__angular_router__["f" /* Router */]])
+        core_1.Injectable(),
+        __param(1, core_1.Inject(common_1.DOCUMENT)),
+        __metadata("design:paramtypes", [animations_1.AnimationBuilder, Object, router_1.Router])
     ], FuseSplashScreenService);
     return FuseSplashScreenService;
 }());
-
+exports.FuseSplashScreenService = FuseSplashScreenService;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/core/services/translation-loader.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseTranslationLoaderService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__ = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4405,8 +4264,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var core_2 = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
 var FuseTranslationLoaderService = (function () {
     function FuseTranslationLoaderService(translate) {
         this.translate = translate;
@@ -4425,21 +4285,22 @@ var FuseTranslationLoaderService = (function () {
         });
     };
     FuseTranslationLoaderService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ngx_translate_core__["b" /* TranslateService */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [core_2.TranslateService])
     ], FuseTranslationLoaderService);
     return FuseTranslationLoaderService;
 }());
-
+exports.FuseTranslationLoaderService = FuseTranslationLoaderService;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/academy.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AcademyFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var AcademyFakeDb = (function () {
     function AcademyFakeDb() {
     }
@@ -5211,19 +5072,18 @@ var AcademyFakeDb = (function () {
     ];
     return AcademyFakeDb;
 }());
-
+exports.AcademyFakeDb = AcademyFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/calendar.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarFakeDb; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns__ = __webpack_require__("../../../../date-fns/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_date_fns___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_date_fns__);
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var date_fns_1 = __webpack_require__("../../../../date-fns/index.js");
 var CalendarFakeDb = (function () {
     function CalendarFakeDb() {
     }
@@ -5232,8 +5092,8 @@ var CalendarFakeDb = (function () {
             id: 'events',
             data: [
                 {
-                    start: Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["subDays"])(Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["startOfDay"])(new Date()), 1),
-                    end: Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["addDays"])(new Date(), 1),
+                    start: date_fns_1.subDays(date_fns_1.startOfDay(new Date()), 1),
+                    end: date_fns_1.addDays(new Date(), 1),
                     title: 'A 3 day event',
                     allDay: false,
                     color: {
@@ -5251,7 +5111,7 @@ var CalendarFakeDb = (function () {
                     }
                 },
                 {
-                    start: Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["startOfDay"])(new Date()),
+                    start: date_fns_1.startOfDay(new Date()),
                     title: 'An event with no end date',
                     allDay: false,
                     color: {
@@ -5269,8 +5129,8 @@ var CalendarFakeDb = (function () {
                     }
                 },
                 {
-                    start: Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["subDays"])(Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["endOfMonth"])(new Date()), 3),
-                    end: Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["addDays"])(Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["endOfMonth"])(new Date()), 3),
+                    start: date_fns_1.subDays(date_fns_1.endOfMonth(new Date()), 3),
+                    end: date_fns_1.addDays(date_fns_1.endOfMonth(new Date()), 3),
                     title: 'A long event that spans 2 months',
                     allDay: false,
                     color: {
@@ -5288,7 +5148,7 @@ var CalendarFakeDb = (function () {
                     }
                 },
                 {
-                    start: Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["addHours"])(Object(__WEBPACK_IMPORTED_MODULE_0_date_fns__["startOfDay"])(new Date()), 2),
+                    start: date_fns_1.addHours(date_fns_1.startOfDay(new Date()), 2),
                     end: new Date(),
                     title: 'A draggable and resizable event',
                     allDay: false,
@@ -5311,16 +5171,17 @@ var CalendarFakeDb = (function () {
     ];
     return CalendarFakeDb;
 }());
-
+exports.CalendarFakeDb = CalendarFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/chat.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChatFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var ChatFakeDb = (function () {
     function ChatFakeDb() {
     }
@@ -5645,16 +5506,17 @@ var ChatFakeDb = (function () {
     ];
     return ChatFakeDb;
 }());
-
+exports.ChatFakeDb = ChatFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/contacts.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var ContactsFakeDb = (function () {
     function ContactsFakeDb() {
     }
@@ -6067,16 +5929,17 @@ var ContactsFakeDb = (function () {
     ];
     return ContactsFakeDb;
 }());
-
+exports.ContactsFakeDb = ContactsFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/e-commerce.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ECommerceFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var ECommerceFakeDb = (function () {
     function ECommerceFakeDb() {
     }
@@ -9839,16 +9702,17 @@ var ECommerceFakeDb = (function () {
     ];
     return ECommerceFakeDb;
 }());
-
+exports.ECommerceFakeDb = ECommerceFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/faq.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FaqFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var FaqFakeDb = (function () {
     function FaqFakeDb() {
     }
@@ -9912,16 +9776,17 @@ var FaqFakeDb = (function () {
     ];
     return FaqFakeDb;
 }());
-
+exports.FaqFakeDb = FaqFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/file-manager.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileManagerFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var FileManagerFakeDb = (function () {
     function FileManagerFakeDb() {
     }
@@ -10069,103 +9934,88 @@ var FileManagerFakeDb = (function () {
     ];
     return FileManagerFakeDb;
 }());
-
+exports.FileManagerFakeDb = FileManagerFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/fuse-fake-db.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFakeDbService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mail__ = __webpack_require__("../../../../../src/app/fuse-fake-db/mail.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__chat__ = __webpack_require__("../../../../../src/app/fuse-fake-db/chat.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calendar__ = __webpack_require__("../../../../../src/app/fuse-fake-db/calendar.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__todo__ = __webpack_require__("../../../../../src/app/fuse-fake-db/todo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__profile__ = __webpack_require__("../../../../../src/app/fuse-fake-db/profile.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contacts__ = __webpack_require__("../../../../../src/app/fuse-fake-db/contacts.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__invoice__ = __webpack_require__("../../../../../src/app/fuse-fake-db/invoice.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__file_manager__ = __webpack_require__("../../../../../src/app/fuse-fake-db/file-manager.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__search__ = __webpack_require__("../../../../../src/app/fuse-fake-db/search.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__quick_panel__ = __webpack_require__("../../../../../src/app/fuse-fake-db/quick-panel.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__icons__ = __webpack_require__("../../../../../src/app/fuse-fake-db/icons.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__projects_dashboard__ = __webpack_require__("../../../../../src/app/fuse-fake-db/projects-dashboard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__scrumboard__ = __webpack_require__("../../../../../src/app/fuse-fake-db/scrumboard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__faq__ = __webpack_require__("../../../../../src/app/fuse-fake-db/faq.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__knowledge_base__ = __webpack_require__("../../../../../src/app/fuse-fake-db/knowledge-base.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__e_commerce__ = __webpack_require__("../../../../../src/app/fuse-fake-db/e-commerce.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__academy__ = __webpack_require__("../../../../../src/app/fuse-fake-db/academy.ts");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var mail_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/mail.ts");
+var chat_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/chat.ts");
+var calendar_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/calendar.ts");
+var todo_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/todo.ts");
+var profile_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/profile.ts");
+var contacts_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/contacts.ts");
+var invoice_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/invoice.ts");
+var file_manager_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/file-manager.ts");
+var search_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/search.ts");
+var quick_panel_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/quick-panel.ts");
+var icons_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/icons.ts");
+var projects_dashboard_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/projects-dashboard.ts");
+var scrumboard_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/scrumboard.ts");
+var faq_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/faq.ts");
+var knowledge_base_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/knowledge-base.ts");
+var e_commerce_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/e-commerce.ts");
+var academy_1 = __webpack_require__("../../../../../src/app/fuse-fake-db/academy.ts");
 var FuseFakeDbService = (function () {
     function FuseFakeDbService() {
     }
     FuseFakeDbService.prototype.createDb = function () {
         return {
-            'mail-mails': __WEBPACK_IMPORTED_MODULE_0__mail__["a" /* MailFakeDb */].mails,
-            'mail-folders': __WEBPACK_IMPORTED_MODULE_0__mail__["a" /* MailFakeDb */].folders,
-            'mail-filters': __WEBPACK_IMPORTED_MODULE_0__mail__["a" /* MailFakeDb */].filters,
-            'mail-labels': __WEBPACK_IMPORTED_MODULE_0__mail__["a" /* MailFakeDb */].labels,
-            'chat-contacts': __WEBPACK_IMPORTED_MODULE_1__chat__["a" /* ChatFakeDb */].contacts,
-            'chat-chats': __WEBPACK_IMPORTED_MODULE_1__chat__["a" /* ChatFakeDb */].chats,
-            'chat-user': __WEBPACK_IMPORTED_MODULE_1__chat__["a" /* ChatFakeDb */].user,
-            'calendar': __WEBPACK_IMPORTED_MODULE_2__calendar__["a" /* CalendarFakeDb */].data,
-            'todo-todos': __WEBPACK_IMPORTED_MODULE_3__todo__["a" /* TodoFakeDb */].todos,
-            'todo-filters': __WEBPACK_IMPORTED_MODULE_3__todo__["a" /* TodoFakeDb */].filters,
-            'todo-tags': __WEBPACK_IMPORTED_MODULE_3__todo__["a" /* TodoFakeDb */].tags,
-            'profile-timeline': __WEBPACK_IMPORTED_MODULE_4__profile__["a" /* ProfileFakeDb */].timeline,
-            'profile-photos-videos': __WEBPACK_IMPORTED_MODULE_4__profile__["a" /* ProfileFakeDb */].photosVideos,
-            'profile-about': __WEBPACK_IMPORTED_MODULE_4__profile__["a" /* ProfileFakeDb */].about,
-            'contacts-contacts': __WEBPACK_IMPORTED_MODULE_5__contacts__["a" /* ContactsFakeDb */].contacts,
-            'contacts-user': __WEBPACK_IMPORTED_MODULE_5__contacts__["a" /* ContactsFakeDb */].user,
-            'invoice': __WEBPACK_IMPORTED_MODULE_6__invoice__["a" /* InvoiceFakeDb */].invoice,
-            'file-manager': __WEBPACK_IMPORTED_MODULE_7__file_manager__["a" /* FileManagerFakeDb */].files,
-            'search-classic': __WEBPACK_IMPORTED_MODULE_8__search__["a" /* SearchFakeDb */].classic,
-            'search-table': __WEBPACK_IMPORTED_MODULE_8__search__["a" /* SearchFakeDb */].table,
-            'quick-panel-notes': __WEBPACK_IMPORTED_MODULE_9__quick_panel__["a" /* QuickPanelFakeDb */].notes,
-            'quick-panel-events': __WEBPACK_IMPORTED_MODULE_9__quick_panel__["a" /* QuickPanelFakeDb */].events,
-            'icons': __WEBPACK_IMPORTED_MODULE_10__icons__["a" /* IconsFakeDb */].icons,
-            'projects-dashboard-projects': __WEBPACK_IMPORTED_MODULE_11__projects_dashboard__["a" /* ProjectsDashboardDb */].projects,
-            'projects-dashboard-widgets': __WEBPACK_IMPORTED_MODULE_11__projects_dashboard__["a" /* ProjectsDashboardDb */].widgets,
-            'scrumboard-boards': __WEBPACK_IMPORTED_MODULE_12__scrumboard__["a" /* ScrumboardFakeDb */].boards,
-            'faq': __WEBPACK_IMPORTED_MODULE_13__faq__["a" /* FaqFakeDb */].data,
-            'knowledge-base': __WEBPACK_IMPORTED_MODULE_14__knowledge_base__["a" /* KnowledgeBaseFakeDb */].data,
-            'e-commerce-dashboard': __WEBPACK_IMPORTED_MODULE_15__e_commerce__["a" /* ECommerceFakeDb */].dashboard,
-            'e-commerce-products': __WEBPACK_IMPORTED_MODULE_15__e_commerce__["a" /* ECommerceFakeDb */].products,
-            'e-commerce-orders': __WEBPACK_IMPORTED_MODULE_15__e_commerce__["a" /* ECommerceFakeDb */].orders,
-            'academy-categories': __WEBPACK_IMPORTED_MODULE_16__academy__["a" /* AcademyFakeDb */].categories,
-            'academy-courses': __WEBPACK_IMPORTED_MODULE_16__academy__["a" /* AcademyFakeDb */].courses,
-            'academy-course': __WEBPACK_IMPORTED_MODULE_16__academy__["a" /* AcademyFakeDb */].course
+            'mail-mails': mail_1.MailFakeDb.mails,
+            'mail-folders': mail_1.MailFakeDb.folders,
+            'mail-filters': mail_1.MailFakeDb.filters,
+            'mail-labels': mail_1.MailFakeDb.labels,
+            'chat-contacts': chat_1.ChatFakeDb.contacts,
+            'chat-chats': chat_1.ChatFakeDb.chats,
+            'chat-user': chat_1.ChatFakeDb.user,
+            'calendar': calendar_1.CalendarFakeDb.data,
+            'todo-todos': todo_1.TodoFakeDb.todos,
+            'todo-filters': todo_1.TodoFakeDb.filters,
+            'todo-tags': todo_1.TodoFakeDb.tags,
+            'profile-timeline': profile_1.ProfileFakeDb.timeline,
+            'profile-photos-videos': profile_1.ProfileFakeDb.photosVideos,
+            'profile-about': profile_1.ProfileFakeDb.about,
+            'contacts-contacts': contacts_1.ContactsFakeDb.contacts,
+            'contacts-user': contacts_1.ContactsFakeDb.user,
+            'invoice': invoice_1.InvoiceFakeDb.invoice,
+            'file-manager': file_manager_1.FileManagerFakeDb.files,
+            'search-classic': search_1.SearchFakeDb.classic,
+            'search-table': search_1.SearchFakeDb.table,
+            'quick-panel-notes': quick_panel_1.QuickPanelFakeDb.notes,
+            'quick-panel-events': quick_panel_1.QuickPanelFakeDb.events,
+            'icons': icons_1.IconsFakeDb.icons,
+            'projects-dashboard-projects': projects_dashboard_1.ProjectsDashboardDb.projects,
+            //        'projects-dashboard-widgets' : ProjectsDashboardDb.widgets,
+            'scrumboard-boards': scrumboard_1.ScrumboardFakeDb.boards,
+            'faq': faq_1.FaqFakeDb.data,
+            'knowledge-base': knowledge_base_1.KnowledgeBaseFakeDb.data,
+            'e-commerce-dashboard': e_commerce_1.ECommerceFakeDb.dashboard,
+            'e-commerce-products': e_commerce_1.ECommerceFakeDb.products,
+            'e-commerce-orders': e_commerce_1.ECommerceFakeDb.orders,
+            'academy-categories': academy_1.AcademyFakeDb.categories,
+            'academy-courses': academy_1.AcademyFakeDb.courses,
+            'academy-course': academy_1.AcademyFakeDb.course
         };
     };
     return FuseFakeDbService;
 }());
-
+exports.FuseFakeDbService = FuseFakeDbService;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/icons.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IconsFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var IconsFakeDb = (function () {
     function IconsFakeDb() {
     }
@@ -11105,16 +10955,17 @@ var IconsFakeDb = (function () {
     ];
     return IconsFakeDb;
 }());
-
+exports.IconsFakeDb = IconsFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/invoice.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InvoiceFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var InvoiceFakeDb = (function () {
     function InvoiceFakeDb() {
     }
@@ -11176,16 +11027,17 @@ var InvoiceFakeDb = (function () {
     };
     return InvoiceFakeDb;
 }());
-
+exports.InvoiceFakeDb = InvoiceFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/knowledge-base.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KnowledgeBaseFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var KnowledgeBaseFakeDb = (function () {
     function KnowledgeBaseFakeDb() {
     }
@@ -11301,16 +11153,17 @@ var KnowledgeBaseFakeDb = (function () {
     ];
     return KnowledgeBaseFakeDb;
 }());
-
+exports.KnowledgeBaseFakeDb = KnowledgeBaseFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/mail.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MailFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var MailFakeDb = (function () {
     function MailFakeDb() {
     }
@@ -11791,16 +11644,17 @@ var MailFakeDb = (function () {
     ];
     return MailFakeDb;
 }());
-
+exports.MailFakeDb = MailFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/profile.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var ProfileFakeDb = (function () {
     function ProfileFakeDb() {
     }
@@ -12161,16 +12015,17 @@ var ProfileFakeDb = (function () {
     };
     return ProfileFakeDb;
 }());
-
+exports.ProfileFakeDb = ProfileFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/projects-dashboard.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProjectsDashboardDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var ProjectsDashboardDb = (function () {
     function ProjectsDashboardDb() {
     }
@@ -14168,16 +14023,17 @@ var ProjectsDashboardDb = (function () {
     };
     return ProjectsDashboardDb;
 }());
-
+exports.ProjectsDashboardDb = ProjectsDashboardDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/quick-panel.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return QuickPanelFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var QuickPanelFakeDb = (function () {
     function QuickPanelFakeDb() {
     }
@@ -14211,16 +14067,17 @@ var QuickPanelFakeDb = (function () {
     ];
     return QuickPanelFakeDb;
 }());
-
+exports.QuickPanelFakeDb = QuickPanelFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/scrumboard.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ScrumboardFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var ScrumboardFakeDb = (function () {
     function ScrumboardFakeDb() {
     }
@@ -15010,16 +14867,17 @@ var ScrumboardFakeDb = (function () {
     ];
     return ScrumboardFakeDb;
 }());
-
+exports.ScrumboardFakeDb = ScrumboardFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/search.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var SearchFakeDb = (function () {
     function SearchFakeDb() {
     }
@@ -15159,16 +15017,17 @@ var SearchFakeDb = (function () {
     ];
     return SearchFakeDb;
 }());
-
+exports.SearchFakeDb = SearchFakeDb;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/fuse-fake-db/todo.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoFakeDb; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var TodoFakeDb = (function () {
     function TodoFakeDb() {
     }
@@ -15493,7 +15352,7 @@ var TodoFakeDb = (function () {
     ];
     return TodoFakeDb;
 }());
-
+exports.TodoFakeDb = TodoFakeDb;
 
 
 /***/ }),
@@ -15524,16 +15383,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/content.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseContentComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_filter__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/filter.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15543,12 +15396,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/filter.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
 var FuseContentComponent = (function () {
     function FuseContentComponent(router, activatedRoute, fuseConfig) {
         var _this = this;
@@ -15561,7 +15415,7 @@ var FuseContentComponent = (function () {
         this.routeAnimationLeft = false;
         this.routeAnimationFade = false;
         this.router.events
-            .filter(function (event) { return event instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* NavigationEnd */]; })
+            .filter(function (event) { return event instanceof router_1.NavigationEnd; })
             .map(function () { return _this.activatedRoute; })
             .subscribe(function (event) {
             switch (_this.fuseSettings.routerAnimation) {
@@ -15594,39 +15448,39 @@ var FuseContentComponent = (function () {
         this.onSettingsChanged.unsubscribe();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('@routerTransitionUp'),
+        core_1.HostBinding('@routerTransitionUp'),
         __metadata("design:type", Object)
     ], FuseContentComponent.prototype, "routeAnimationUp", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('@routerTransitionDown'),
+        core_1.HostBinding('@routerTransitionDown'),
         __metadata("design:type", Object)
     ], FuseContentComponent.prototype, "routeAnimationDown", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('@routerTransitionRight'),
+        core_1.HostBinding('@routerTransitionRight'),
         __metadata("design:type", Object)
     ], FuseContentComponent.prototype, "routeAnimationRight", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('@routerTransitionLeft'),
+        core_1.HostBinding('@routerTransitionLeft'),
         __metadata("design:type", Object)
     ], FuseContentComponent.prototype, "routeAnimationLeft", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('@routerTransitionFade'),
+        core_1.HostBinding('@routerTransitionFade'),
         __metadata("design:type", Object)
     ], FuseContentComponent.prototype, "routeAnimationFade", void 0);
     FuseContentComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-content',
             template: __webpack_require__("../../../../../src/app/main/content/content.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/content.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["f" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
-            __WEBPACK_IMPORTED_MODULE_3__core_services_config_service__["a" /* FuseConfigService */]])
+        __metadata("design:paramtypes", [router_1.Router,
+            router_1.ActivatedRoute,
+            config_service_1.FuseConfigService])
     ], FuseContentComponent);
     return FuseContentComponent;
 }());
-
+exports.FuseContentComponent = FuseContentComponent;
 
 
 /***/ }),
@@ -15634,7 +15488,7 @@ var FuseContentComponent = (function () {
 /***/ "../../../../../src/app/main/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar>\n\n    <div fxLayout=\"row\" fxLayoutAlign=\"center center\" fxLayoutAlign.gt-xs=\"space-between center\" fxFlex>\n\n        <a href=\"http://themeforest.net/item/fuse-angularjs-material-design-admin-template/12931855?ref=srcn\"\n           target=\"_blank\" mat-button class=\"mat-pink-bg\" fxFlex=\"0 0 auto\" fxLayout=\"row\"\n           fxLayoutAlign=\"start center\">\n            <mat-icon class=\"s-16 mr-sm-4\">shopping_cart</mat-icon>\n            <span>Purchase FUSE (Angular5+)</span>\n        </a>\n\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxHide fxShow.gt-xs>\n            <a mat-button href=\"http://fusetheme.com/angular/docs\" target=\"_blank\">Documentation</a>\n            <span>&bull;</span>\n            <a mat-button href=\"http://fusetheme.com/angular/changelog\" target=\"_blank\">Changelog</a>\n        </div>\n\n    </div>\n\n</mat-toolbar>\n"
+module.exports = "<!-- RDANNER REMOVE\n<mat-toolbar>\n\n    <div fxLayout=\"row\" fxLayoutAlign=\"center center\" fxLayoutAlign.gt-xs=\"space-between center\" fxFlex>\n        <a href=\"http://themeforest.net/item/fuse-angularjs-material-design-admin-template/12931855?ref=srcn\"\n           target=\"_blank\" mat-button class=\"mat-pink-bg\" fxFlex=\"0 0 auto\" fxLayout=\"row\"\n           fxLayoutAlign=\"start center\">\n            <mat-icon class=\"s-16 mr-sm-4\">shopping_cart</mat-icon>\n            <span>Purchase FUSE (Angular5+)</span>\n        </a>\n\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\" fxHide fxShow.gt-xs>\n            <a mat-button href=\"http://fusetheme.com/angular/docs\" target=\"_blank\">Documentation</a>\n            <span>&bull;</span>\n            <a mat-button href=\"http://fusetheme.com/angular/changelog\" target=\"_blank\">Changelog</a>\n        </div>\n\n    </div>\n</mat-toolbar>\n-->\n"
 
 /***/ }),
 
@@ -15657,11 +15511,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/footer/footer.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFooterComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15671,14 +15524,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseFooterComponent = (function () {
     function FuseFooterComponent() {
     }
     FuseFooterComponent.prototype.ngOnInit = function () {
     };
     FuseFooterComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-footer',
             template: __webpack_require__("../../../../../src/app/main/footer/footer.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/footer/footer.component.scss")]
@@ -15687,7 +15541,7 @@ var FuseFooterComponent = (function () {
     ], FuseFooterComponent);
     return FuseFooterComponent;
 }());
-
+exports.FuseFooterComponent = FuseFooterComponent;
 
 
 /***/ }),
@@ -15718,14 +15572,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/main.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMainComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_platform__ = __webpack_require__("../../../cdk/esm5/platform.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15738,10 +15588,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var platform_1 = __webpack_require__("../../../cdk/esm5/platform.es5.js");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
 var FuseMainComponent = (function () {
     function FuseMainComponent(_renderer, _elementRef, fuseConfig, platform, document) {
         var _this = this;
@@ -15772,101 +15623,87 @@ var FuseMainComponent = (function () {
         this._renderer.removeClass(this._elementRef.nativeElement, className);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('attr.fuse-layout-mode'),
+        core_1.HostBinding('attr.fuse-layout-mode'),
         __metadata("design:type", Object)
     ], FuseMainComponent.prototype, "layoutMode", void 0);
     FuseMainComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-main',
             template: __webpack_require__("../../../../../src/app/main/main.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/main.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __param(4, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__angular_common__["DOCUMENT"])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"],
-            __WEBPACK_IMPORTED_MODULE_1__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_cdk_platform__["a" /* Platform */], Object])
+        __param(4, core_1.Inject(common_1.DOCUMENT)),
+        __metadata("design:paramtypes", [core_1.Renderer2,
+            core_1.ElementRef,
+            config_service_1.FuseConfigService,
+            platform_1.Platform, Object])
     ], FuseMainComponent);
     return FuseMainComponent;
 }());
-
+exports.FuseMainComponent = FuseMainComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/main.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMainModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__main_component__ = __webpack_require__("../../../../../src/app/main/main.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__content_content_component__ = __webpack_require__("../../../../../src/app/main/content/content.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__footer_footer_component__ = __webpack_require__("../../../../../src/app/main/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar_vertical_navbar_vertical_component__ = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__toolbar_toolbar_component__ = __webpack_require__("../../../../../src/app/main/toolbar/toolbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__core_components_navigation_navigation_module__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__navbar_vertical_navbar_vertical_toggle_directive__ = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical-toggle.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__navbar_horizontal_navbar_horizontal_component__ = __webpack_require__("../../../../../src/app/main/navbar/horizontal/navbar-horizontal.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__quick_panel_quick_panel_component__ = __webpack_require__("../../../../../src/app/main/quick-panel/quick-panel.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__core_components_theme_options_theme_options_component__ = __webpack_require__("../../../../../src/app/core/components/theme-options/theme-options.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__core_components_shortcuts_shortcuts_module__ = __webpack_require__("../../../../../src/app/core/components/shortcuts/shortcuts.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__core_components_search_bar_search_bar_module__ = __webpack_require__("../../../../../src/app/core/components/search-bar/search-bar.module.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var main_component_1 = __webpack_require__("../../../../../src/app/main/main.component.ts");
+var content_component_1 = __webpack_require__("../../../../../src/app/main/content/content.component.ts");
+var footer_component_1 = __webpack_require__("../../../../../src/app/main/footer/footer.component.ts");
+var navbar_vertical_component_1 = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.component.ts");
+var toolbar_component_1 = __webpack_require__("../../../../../src/app/main/toolbar/toolbar.component.ts");
+var navigation_module_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.module.ts");
+var navbar_vertical_toggle_directive_1 = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical-toggle.directive.ts");
+var navbar_horizontal_component_1 = __webpack_require__("../../../../../src/app/main/navbar/horizontal/navbar-horizontal.component.ts");
+var quick_panel_component_1 = __webpack_require__("../../../../../src/app/main/quick-panel/quick-panel.component.ts");
+var theme_options_component_1 = __webpack_require__("../../../../../src/app/core/components/theme-options/theme-options.component.ts");
+var shortcuts_module_1 = __webpack_require__("../../../../../src/app/core/components/shortcuts/shortcuts.module.ts");
+var search_bar_module_1 = __webpack_require__("../../../../../src/app/core/components/search-bar/search-bar.module.ts");
 var FuseMainModule = (function () {
     function FuseMainModule() {
     }
     FuseMainModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__content_content_component__["a" /* FuseContentComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__footer_footer_component__["a" /* FuseFooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__main_component__["a" /* FuseMainComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__navbar_vertical_navbar_vertical_component__["a" /* FuseNavbarVerticalComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__navbar_horizontal_navbar_horizontal_component__["a" /* FuseNavbarHorizontalComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__toolbar_toolbar_component__["a" /* FuseToolbarComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__navbar_vertical_navbar_vertical_toggle_directive__["a" /* FuseNavbarVerticalToggleDirective */],
-                __WEBPACK_IMPORTED_MODULE_12__core_components_theme_options_theme_options_component__["a" /* FuseThemeOptionsComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__quick_panel_quick_panel_component__["a" /* FuseQuickPanelComponent */]
+                content_component_1.FuseContentComponent,
+                footer_component_1.FuseFooterComponent,
+                main_component_1.FuseMainComponent,
+                navbar_vertical_component_1.FuseNavbarVerticalComponent,
+                navbar_horizontal_component_1.FuseNavbarHorizontalComponent,
+                toolbar_component_1.FuseToolbarComponent,
+                navbar_vertical_toggle_directive_1.FuseNavbarVerticalToggleDirective,
+                theme_options_component_1.FuseThemeOptionsComponent,
+                quick_panel_component_1.FuseQuickPanelComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["g" /* RouterModule */],
-                __WEBPACK_IMPORTED_MODULE_8__core_components_navigation_navigation_module__["a" /* FuseNavigationModule */],
-                __WEBPACK_IMPORTED_MODULE_13__core_components_shortcuts_shortcuts_module__["a" /* FuseShortcutsModule */],
-                __WEBPACK_IMPORTED_MODULE_14__core_components_search_bar_search_bar_module__["a" /* FuseSearchBarModule */]
+                shared_module_1.SharedModule,
+                router_1.RouterModule,
+                navigation_module_1.FuseNavigationModule,
+                shortcuts_module_1.FuseShortcutsModule,
+                search_bar_module_1.FuseSearchBarModule
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__main_component__["a" /* FuseMainComponent */]
+                main_component_1.FuseMainComponent
             ]
         })
     ], FuseMainModule);
     return FuseMainModule;
 }());
-
+exports.FuseMainModule = FuseMainModule;
 
 
 /***/ }),
@@ -15897,12 +15734,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/navbar/horizontal/navbar-horizontal.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavbarHorizontalComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__main_component__ = __webpack_require__("../../../../../src/app/main/main.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15912,8 +15747,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var main_component_1 = __webpack_require__("../../../../../src/app/main/main.component.ts");
 var FuseNavbarHorizontalComponent = (function () {
     function FuseNavbarHorizontalComponent(fuseMainComponent) {
         this.fuseMainComponent = fuseMainComponent;
@@ -15925,28 +15761,26 @@ var FuseNavbarHorizontalComponent = (function () {
         this.fuseMainComponent.removeClass('fuse-nav-bar-horizontal');
     };
     FuseNavbarHorizontalComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-navbar-horizontal',
             template: __webpack_require__("../../../../../src/app/main/navbar/horizontal/navbar-horizontal.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/navbar/horizontal/navbar-horizontal.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__main_component__["a" /* FuseMainComponent */]])
+        __metadata("design:paramtypes", [main_component_1.FuseMainComponent])
     ], FuseNavbarHorizontalComponent);
     return FuseNavbarHorizontalComponent;
 }());
-
+exports.FuseNavbarHorizontalComponent = FuseNavbarHorizontalComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/navbar/vertical/navbar-vertical-toggle.directive.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavbarVerticalToggleDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_vertical_service__ = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -15956,8 +15790,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var navbar_vertical_service_1 = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.service.ts");
 var FuseNavbarVerticalToggleDirective = (function () {
     function FuseNavbarVerticalToggleDirective(navbarService) {
         this.navbarService = navbarService;
@@ -15970,24 +15805,24 @@ var FuseNavbarVerticalToggleDirective = (function () {
         this.navbar[this.fuseNavbarVertical]();
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", String)
     ], FuseNavbarVerticalToggleDirective.prototype, "fuseNavbarVertical", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('click'),
+        core_1.HostListener('click'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], FuseNavbarVerticalToggleDirective.prototype, "onClick", null);
     FuseNavbarVerticalToggleDirective = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        core_1.Directive({
             selector: '[fuseNavbarVertical]'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__navbar_vertical_service__["a" /* FuseNavbarVerticalService */]])
+        __metadata("design:paramtypes", [navbar_vertical_service_1.FuseNavbarVerticalService])
     ], FuseNavbarVerticalToggleDirective);
     return FuseNavbarVerticalToggleDirective;
 }());
-
+exports.FuseNavbarVerticalToggleDirective = FuseNavbarVerticalToggleDirective;
 
 
 /***/ }),
@@ -16018,19 +15853,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/navbar/vertical/navbar-vertical.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavbarVerticalComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_match_media_service__ = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_vertical_service__ = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_flex_layout__ = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__main_component__ = __webpack_require__("../../../../../src/app/main/main.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_components_navigation_navigation_service__ = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__ = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_animations__ = __webpack_require__("../../../animations/esm5/animations.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16040,15 +15866,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var match_media_service_1 = __webpack_require__("../../../../../src/app/core/services/match-media.service.ts");
+var navbar_vertical_service_1 = __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.service.ts");
+var flex_layout_1 = __webpack_require__("../../../flex-layout/esm5/flex-layout.es5.js");
+var main_component_1 = __webpack_require__("../../../../../src/app/main/main.component.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var navigation_service_1 = __webpack_require__("../../../../../src/app/core/components/navigation/navigation.service.ts");
+var fuse_perfect_scrollbar_directive_1 = __webpack_require__("../../../../../src/app/core/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive.ts");
+var animations_1 = __webpack_require__("../../../animations/esm5/animations.js");
 var FuseNavbarVerticalComponent = (function () {
     function FuseNavbarVerticalComponent(fuseMainComponent, fuseMatchMedia, fuseNavigationService, navBarService, router, _renderer, _elementRef, animationBuilder, media) {
         var _this = this;
@@ -16085,7 +15912,7 @@ var FuseNavbarVerticalComponent = (function () {
                 });
             });
         router.events.subscribe(function (event) {
-            if (event instanceof __WEBPACK_IMPORTED_MODULE_5__angular_router__["c" /* NavigationEnd */]) {
+            if (event instanceof router_1.NavigationEnd) {
                 if (_this.media.isActive('lt-lg')) {
                     setTimeout(function () {
                         _this.closeBar();
@@ -16206,7 +16033,7 @@ var FuseNavbarVerticalComponent = (function () {
         this.player =
             this.animationBuilder
                 .build([
-                Object(__WEBPACK_IMPORTED_MODULE_8__angular_animations__["animate"])('400ms ease', Object(__WEBPACK_IMPORTED_MODULE_8__angular_animations__["style"])({ opacity: 1 }))
+                animations_1.animate('400ms ease', animations_1.style({ opacity: 1 }))
             ]).create(this._backdropElement);
         this.player.play();
         this._backdropElement.addEventListener('click', function () {
@@ -16219,7 +16046,7 @@ var FuseNavbarVerticalComponent = (function () {
             this.player =
                 this.animationBuilder
                     .build([
-                    Object(__WEBPACK_IMPORTED_MODULE_8__angular_animations__["animate"])('400ms cubic-bezier(.25,.8,.25,1)', Object(__WEBPACK_IMPORTED_MODULE_8__angular_animations__["style"])({ opacity: 0 }))
+                    animations_1.animate('400ms cubic-bezier(.25,.8,.25,1)', animations_1.style({ opacity: 0 }))
                 ]).create(this._backdropElement);
             this.player.play();
             this.player.onDone(function () {
@@ -16231,72 +16058,71 @@ var FuseNavbarVerticalComponent = (function () {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.close'),
+        core_1.HostBinding('class.close'),
         __metadata("design:type", Boolean)
     ], FuseNavbarVerticalComponent.prototype, "isClosed", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.folded'),
+        core_1.HostBinding('class.folded'),
         __metadata("design:type", Boolean)
     ], FuseNavbarVerticalComponent.prototype, "isFoldedActive", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.folded-open'),
+        core_1.HostBinding('class.folded-open'),
         __metadata("design:type", Boolean)
     ], FuseNavbarVerticalComponent.prototype, "isFoldedOpen", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.initialized'),
+        core_1.HostBinding('class.initialized'),
         __metadata("design:type", Boolean)
     ], FuseNavbarVerticalComponent.prototype, "initialized", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])(__WEBPACK_IMPORTED_MODULE_7__core_directives_fuse_perfect_scrollbar_fuse_perfect_scrollbar_directive__["a" /* FusePerfectScrollbarDirective */]),
+        core_1.ViewChild(fuse_perfect_scrollbar_directive_1.FusePerfectScrollbarDirective),
         __metadata("design:type", Object)
     ], FuseNavbarVerticalComponent.prototype, "fusePerfectScrollbarDirective", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        core_1.Input(),
         __metadata("design:type", Boolean),
         __metadata("design:paramtypes", [Boolean])
     ], FuseNavbarVerticalComponent.prototype, "folded", null);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseenter'),
+        core_1.HostListener('mouseenter'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], FuseNavbarVerticalComponent.prototype, "onMouseEnter", null);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('mouseleave'),
+        core_1.HostListener('mouseleave'),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], FuseNavbarVerticalComponent.prototype, "onMouseLeave", null);
     FuseNavbarVerticalComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-navbar-vertical',
             template: __webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/navbar/vertical/navbar-vertical.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__main_component__["a" /* FuseMainComponent */],
-            __WEBPACK_IMPORTED_MODULE_1__core_services_match_media_service__["a" /* FuseMatchMedia */],
-            __WEBPACK_IMPORTED_MODULE_6__core_components_navigation_navigation_service__["a" /* FuseNavigationService */],
-            __WEBPACK_IMPORTED_MODULE_2__navbar_vertical_service__["a" /* FuseNavbarVerticalService */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_router__["f" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"],
-            __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"],
-            __WEBPACK_IMPORTED_MODULE_8__angular_animations__["AnimationBuilder"],
-            __WEBPACK_IMPORTED_MODULE_3__angular_flex_layout__["b" /* ObservableMedia */]])
+        __metadata("design:paramtypes", [main_component_1.FuseMainComponent,
+            match_media_service_1.FuseMatchMedia,
+            navigation_service_1.FuseNavigationService,
+            navbar_vertical_service_1.FuseNavbarVerticalService,
+            router_1.Router,
+            core_1.Renderer2,
+            core_1.ElementRef,
+            animations_1.AnimationBuilder,
+            flex_layout_1.ObservableMedia])
     ], FuseNavbarVerticalComponent);
     return FuseNavbarVerticalComponent;
 }());
-
+exports.FuseNavbarVerticalComponent = FuseNavbarVerticalComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/navbar/vertical/navbar-vertical.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavbarVerticalService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16306,7 +16132,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseNavbarVerticalService = (function () {
     function FuseNavbarVerticalService() {
     }
@@ -16317,12 +16144,12 @@ var FuseNavbarVerticalService = (function () {
         return this.navBarRef;
     };
     FuseNavbarVerticalService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        core_1.Injectable(),
         __metadata("design:paramtypes", [])
     ], FuseNavbarVerticalService);
     return FuseNavbarVerticalService;
 }());
-
+exports.FuseNavbarVerticalService = FuseNavbarVerticalService;
 
 
 /***/ }),
@@ -16353,12 +16180,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/quick-panel/quick-panel.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseQuickPanelComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16368,8 +16193,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
 var FuseQuickPanelComponent = (function () {
     function FuseQuickPanelComponent(http) {
         this.http = http;
@@ -16392,17 +16218,17 @@ var FuseQuickPanelComponent = (function () {
         });
     };
     FuseQuickPanelComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-quick-panel',
             template: __webpack_require__("../../../../../src/app/main/quick-panel/quick-panel.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/quick-panel/quick-panel.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], FuseQuickPanelComponent);
     return FuseQuickPanelComponent;
 }());
-
+exports.FuseQuickPanelComponent = FuseQuickPanelComponent;
 
 
 /***/ }),
@@ -16410,7 +16236,7 @@ var FuseQuickPanelComponent = (function () {
 /***/ "../../../../../src/app/main/toolbar/toolbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar class=\"p-0 mat-elevation-z1\">\n\n    <mat-progress-bar *ngIf=\"showLoadingBar\" class=\"loading-bar\" color=\"accent\" mode=\"indeterminate\"></mat-progress-bar>\n\n    <div fxFlex fxFill fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\n        <div fxFlex=\"1 0 auto\" fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\n            <button mat-button class=\"toggle-button-navbar mat-icon-button\"\n                    fuseNavbarVertical=\"toggleBar\" fxHide.gt-md>\n                <mat-icon>menu</mat-icon>\n            </button>\n\n            <div class=\"toolbar-separator\" fxHide.gt-md></div>\n\n            <div fxLayout=\"row\" fxLayoutAlign=\"start center\" *ngIf=\"horizontalNav\">\n                <div class=\"logo ml-16\">\n                    <img class=\"logo-icon\" src=\"assets/images/logos/fuse.svg\">\n                </div>\n            </div>\n\n            <div class=\"px-8 px-mat-16\">\n                <fuse-shortcuts></fuse-shortcuts>\n            </div>\n\n        </div>\n\n        <div class=\"\" fxFlex=\"0 1 auto\" fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\n            <button mat-button [matMenuTriggerFor]=\"userMenu\"\n                    class=\"user-button\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"center center\">\n                    <img class=\"avatar\" src=\"assets/images/avatars/profile.jpg\">\n                    <span class=\"username mr-12\" fxHide fxShow.gt-sm>John Doe</span>\n                    <mat-icon class=\"s-16\" fxHide.xs>keyboard_arrow_down</mat-icon>\n                </div>\n            </button>\n\n            <mat-menu #userMenu=\"matMenu\" [overlapTrigger]=\"false\">\n\n                <button mat-menu-item>\n                    <mat-icon>account_circle</mat-icon>\n                    <span>My Profile</span>\n                </button>\n\n                <button mat-menu-item class=\"\">\n                    <mat-icon>mail</mat-icon>\n                    <span>Inbox</span>\n                </button>\n\n                <button mat-menu-item class=\"\">\n                    <mat-icon>exit_to_app</mat-icon>\n                    <span>Logout</span>\n                </button>\n\n            </mat-menu>\n\n            <div class=\"toolbar-separator\"></div>\n\n            <fuse-search-bar (onInput)=\"search($event)\"></fuse-search-bar>\n\n            <div class=\"toolbar-separator\"></div>\n\n            <button mat-button fxHide fxShow.gt-xs\n                    class=\"language-button\"\n                    [matMenuTriggerFor]=\"languageMenu\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"center center\">\n                    <img class=\"flag mr-8\" [src]=\"'assets/images/flags/'+selectedLanguage.flag+'.png'\">\n                    <span class=\"iso text-uppercase\">{{selectedLanguage.id}}</span>\n                </div>\n            </button>\n\n            <mat-menu #languageMenu=\"matMenu\" [overlapTrigger]=\"false\">\n\n                <button mat-menu-item *ngFor=\"let lang of languages\" (click)=\"setLanguage(lang)\">\n                    <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n                        <img class=\"flag mr-16\" [src]=\"'assets/images/flags/'+lang.flag+'.png'\">\n                        <span class=\"iso\">{{lang.title}}</span>\n                    </div>\n                </button>\n\n                <button mat-menu-item [routerLink]=\"'/components/multi-language'\">\n                    <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n                        <span>Learn more</span>\n                    </div>\n                </button>\n\n            </mat-menu>\n\n            <div class=\"toolbar-separator\" fxHide fxShow.gt-xs></div>\n\n            <button mat-icon-button\n                    class=\"mat-icon-button quick-panel-toggle-button\"\n                    fuseMatSidenavToggler=\"quick-panel\"\n                    aria-label=\"Toggle quick panel\">\n                <mat-icon class=\"icon\">format_list_bulleted</mat-icon>\n            </button>\n\n        </div>\n    </div>\n</mat-toolbar>\n"
+module.exports = "<mat-toolbar class=\"p-0 mat-elevation-z1\">\n\n    <mat-progress-bar *ngIf=\"showLoadingBar\" class=\"loading-bar\" color=\"accent\" mode=\"indeterminate\"></mat-progress-bar>\n\n    <div fxFlex fxFill fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\n        <div fxFlex=\"1 0 auto\" fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\n            <button mat-button class=\"toggle-button-navbar mat-icon-button\"\n                    fuseNavbarVertical=\"toggleBar\" fxHide.gt-md>\n                <mat-icon>menu</mat-icon>\n            </button>\n\n            <div class=\"toolbar-separator\" fxHide.gt-md></div>\n\n            <div fxLayout=\"row\" fxLayoutAlign=\"start center\" *ngIf=\"horizontalNav\">\n                <div class=\"logo ml-16\">\n                    <img class=\"logo-icon\" src=\"assets/images/logos/fuse.svg\">\n                </div>\n            </div>\n\n            <!--div class=\"px-8 px-mat-16\">\n                <fuse-shortcuts></fuse-shortcuts>\n            </div-->\n\n        </div>\n\n        <div class=\"\" fxFlex=\"0 1 auto\" fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\n            <button mat-button [matMenuTriggerFor]=\"userMenu\"\n                    class=\"user-button\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"center center\">\n                    <img class=\"avatar\" src=\"assets/images/avatars/profile.jpg\">\n                    <span class=\"username mr-12\" fxHide fxShow.gt-sm>John Doe</span>\n                    <mat-icon class=\"s-16\" fxHide.xs>keyboard_arrow_down</mat-icon>\n                </div>\n            </button>\n\n            <mat-menu #userMenu=\"matMenu\" [overlapTrigger]=\"false\">\n\n                <button mat-menu-item>\n                    <mat-icon>account_circle</mat-icon>\n                    <span>My Profile</span>\n                </button>\n\n                <button mat-menu-item class=\"\">\n                    <mat-icon>mail</mat-icon>\n                    <span>Inbox</span>\n                </button>\n\n                <button mat-menu-item class=\"\">\n                    <mat-icon>exit_to_app</mat-icon>\n                    <span>Logout</span>\n                </button>\n\n            </mat-menu>\n\n            <div class=\"toolbar-separator\"></div>\n\n            <fuse-search-bar (onInput)=\"search($event)\"></fuse-search-bar>\n\n            <div class=\"toolbar-separator\"></div>\n\n            <button mat-button fxHide fxShow.gt-xs\n                    class=\"language-button\"\n                    [matMenuTriggerFor]=\"languageMenu\">\n                <div fxLayout=\"row\" fxLayoutAlign=\"center center\">\n                    <img class=\"flag mr-8\" [src]=\"'assets/images/flags/'+selectedLanguage.flag+'.png'\">\n                    <span class=\"iso text-uppercase\">{{selectedLanguage.id}}</span>\n                </div>\n            </button>\n\n            <mat-menu #languageMenu=\"matMenu\" [overlapTrigger]=\"false\">\n\n                <button mat-menu-item *ngFor=\"let lang of languages\" (click)=\"setLanguage(lang)\">\n                    <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n                        <img class=\"flag mr-16\" [src]=\"'assets/images/flags/'+lang.flag+'.png'\">\n                        <span class=\"iso\">{{lang.title}}</span>\n                    </div>\n                </button>\n\n                <button mat-menu-item [routerLink]=\"'/components/multi-language'\">\n                    <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n                        <span>Learn more</span>\n                    </div>\n                </button>\n\n            </mat-menu>\n\n            <div class=\"toolbar-separator\" fxHide fxShow.gt-xs></div>\n\n            <button mat-icon-button\n                    class=\"mat-icon-button quick-panel-toggle-button\"\n                    fuseMatSidenavToggler=\"quick-panel\"\n                    aria-label=\"Toggle quick panel\">\n                <mat-icon class=\"icon\">format_list_bulleted</mat-icon>\n            </button>\n\n        </div>\n    </div>\n</mat-toolbar>\n"
 
 /***/ }),
 
@@ -16433,14 +16259,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/toolbar/toolbar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseToolbarComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16450,10 +16272,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var core_2 = __webpack_require__("../../../../@ngx-translate/core/@ngx-translate/core.es5.js");
 var FuseToolbarComponent = (function () {
     function FuseToolbarComponent(router, fuseConfig, translate) {
         var _this = this;
@@ -16501,10 +16324,10 @@ var FuseToolbarComponent = (function () {
         ];
         this.selectedLanguage = this.languages[0];
         router.events.subscribe(function (event) {
-            if (event instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* NavigationStart */]) {
+            if (event instanceof router_1.NavigationStart) {
                 _this.showLoadingBar = true;
             }
-            if (event instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* NavigationEnd */]) {
+            if (event instanceof router_1.NavigationEnd) {
                 _this.showLoadingBar = false;
             }
         });
@@ -16523,28 +16346,29 @@ var FuseToolbarComponent = (function () {
         this.translate.use(lang.id);
     };
     FuseToolbarComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-toolbar',
             template: __webpack_require__("../../../../../src/app/main/toolbar/toolbar.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/toolbar/toolbar.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["f" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateService */]])
+        __metadata("design:paramtypes", [router_1.Router,
+            config_service_1.FuseConfigService,
+            core_2.TranslateService])
     ], FuseToolbarComponent);
     return FuseToolbarComponent;
 }());
-
+exports.FuseToolbarComponent = FuseToolbarComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/navigation/i18n/en.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return locale; });
-var locale = {
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.locale = {
     lang: 'en',
     data: {
         'NAV': {
@@ -16574,11 +16398,12 @@ var locale = {
 /***/ }),
 
 /***/ "../../../../../src/app/navigation/i18n/tr.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return locale; });
-var locale = {
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.locale = {
     lang: 'tr',
     data: {
         'NAV': {
@@ -16608,10 +16433,11 @@ var locale = {
 /***/ }),
 
 /***/ "../../../../../src/app/navigation/navigation.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseNavigationModel; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var FuseNavigationModel = (function () {
     function FuseNavigationModel() {
         this.model = [
@@ -17514,86 +17340,81 @@ var FuseNavigationModel = (function () {
     }
     return FuseNavigationModel;
 }());
-
+exports.FuseNavigationModel = FuseNavigationModel;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/store/actions/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__router_action__ = __webpack_require__("../../../../../src/app/store/actions/router.action.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__router_action__["d"]; });
 
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__("../../../../../src/app/store/actions/router.action.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/store/actions/router.action.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return GO; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BACK; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FORWARD; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Go; });
-/* unused harmony export Back */
-/* unused harmony export Forward */
-var GO = '[Router] Go';
-var BACK = '[Router] Back';
-var FORWARD = '[Router] Forward';
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GO = '[Router] Go';
+exports.BACK = '[Router] Back';
+exports.FORWARD = '[Router] Forward';
 var Go = (function () {
     function Go(payload) {
         this.payload = payload;
-        this.type = GO;
+        this.type = exports.GO;
     }
     return Go;
 }());
-
+exports.Go = Go;
 var Back = (function () {
     function Back() {
-        this.type = BACK;
+        this.type = exports.BACK;
     }
     return Back;
 }());
-
+exports.Back = Back;
 var Forward = (function () {
     function Forward() {
-        this.type = FORWARD;
+        this.type = exports.FORWARD;
     }
     return Forward;
 }());
-
+exports.Forward = Forward;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/store/effects/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effects; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__router_effect__ = __webpack_require__("../../../../../src/app/store/effects/router.effect.ts");
-/* unused harmony namespace reexport */
 
-var effects = [__WEBPACK_IMPORTED_MODULE_0__router_effect__["a" /* RouterEffects */]];
-
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_effect_1 = __webpack_require__("../../../../../src/app/store/effects/router.effect.ts");
+exports.effects = [router_effect_1.RouterEffects];
+__export(__webpack_require__("../../../../../src/app/store/effects/router.effect.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/store/effects/router.effect.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RouterEffects; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngrx_effects__ = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions_router_action__ = __webpack_require__("../../../../../src/app/store/actions/router.action.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operators__ = __webpack_require__("../../../../rxjs/_esm5/operators.js");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -17611,87 +17432,83 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
+var effects_1 = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
+var RouterActions = __webpack_require__("../../../../../src/app/store/actions/router.action.ts");
+var operators_1 = __webpack_require__("../../../../rxjs/_esm5/operators.js");
 var RouterEffects = (function () {
     function RouterEffects(actions$, router, location) {
         var _this = this;
         this.actions$ = actions$;
         this.router = router;
         this.location = location;
-        this.navigate$ = this.actions$.ofType(__WEBPACK_IMPORTED_MODULE_4__actions_router_action__["c" /* GO */]).pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["map"])(function (action) { return action.payload; }), Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["tap"])(function (_a) {
+        this.navigate$ = this.actions$.ofType(RouterActions.GO).pipe(operators_1.map(function (action) { return action.payload; }), operators_1.tap(function (_a) {
             var path = _a.path, queryParams = _a.query, extras = _a.extras;
             _this.router.navigate(path, __assign({ queryParams: queryParams }, extras));
         }));
         this.navigateBack$ = this.actions$
-            .ofType(__WEBPACK_IMPORTED_MODULE_4__actions_router_action__["a" /* BACK */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["tap"])(function () { return _this.location.back(); }));
+            .ofType(RouterActions.BACK)
+            .pipe(operators_1.tap(function () { return _this.location.back(); }));
         this.navigateForward$ = this.actions$
-            .ofType(__WEBPACK_IMPORTED_MODULE_4__actions_router_action__["b" /* FORWARD */])
-            .pipe(Object(__WEBPACK_IMPORTED_MODULE_5_rxjs_operators__["tap"])(function () { return _this.location.forward(); }));
+            .ofType(RouterActions.FORWARD)
+            .pipe(operators_1.tap(function () { return _this.location.forward(); }));
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__ngrx_effects__["b" /* Effect */])({ dispatch: false }),
+        effects_1.Effect({ dispatch: false }),
         __metadata("design:type", Object)
     ], RouterEffects.prototype, "navigate$", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__ngrx_effects__["b" /* Effect */])({ dispatch: false }),
+        effects_1.Effect({ dispatch: false }),
         __metadata("design:type", Object)
     ], RouterEffects.prototype, "navigateBack$", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__ngrx_effects__["b" /* Effect */])({ dispatch: false }),
+        effects_1.Effect({ dispatch: false }),
         __metadata("design:type", Object)
     ], RouterEffects.prototype, "navigateForward$", void 0);
     RouterEffects = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__ngrx_effects__["a" /* Actions */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["f" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_common__["Location"]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [effects_1.Actions,
+            router_1.Router,
+            common_1.Location])
     ], RouterEffects);
     return RouterEffects;
 }());
-
+exports.RouterEffects = RouterEffects;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/store/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__reducers__ = __webpack_require__("../../../../../src/app/store/reducers/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__reducers__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__reducers__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions__ = __webpack_require__("../../../../../src/app/store/actions/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__actions__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__effects__ = __webpack_require__("../../../../../src/app/store/effects/index.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__effects__["a"]; });
 
-
-
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", { value: true });
+__export(__webpack_require__("../../../../../src/app/store/reducers/index.ts"));
+__export(__webpack_require__("../../../../../src/app/store/actions/index.ts"));
+__export(__webpack_require__("../../../../../src/app/store/effects/index.ts"));
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/store/reducers/index.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return reducers; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRouterState; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomSerializer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_router_store__ = __webpack_require__("../../../../@ngrx/router-store/@ngrx/router-store.es5.js");
 
-
-var reducers = {
-    routerReducer: __WEBPACK_IMPORTED_MODULE_1__ngrx_router_store__["c" /* routerReducer */],
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var fromRouter = __webpack_require__("../../../../@ngrx/router-store/@ngrx/router-store.es5.js");
+exports.reducers = {
+    routerReducer: fromRouter.routerReducer,
 };
-var getRouterState = Object(__WEBPACK_IMPORTED_MODULE_0__ngrx_store__["l" /* createFeatureSelector */])('routerReducer');
+exports.getRouterState = store_1.createFeatureSelector('routerReducer');
 var CustomSerializer = (function () {
     function CustomSerializer() {
     }
@@ -17707,79 +17524,71 @@ var CustomSerializer = (function () {
     };
     return CustomSerializer;
 }());
-
+exports.CustomSerializer = CustomSerializer;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/store/store.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export metaReducers */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppStoreModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ngrx_store_devtools__ = __webpack_require__("../../../../@ngrx/store-devtools/@ngrx/store-devtools.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ngrx_effects__ = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngrx_store__ = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngrx_store_freeze__ = __webpack_require__("../../../../ngrx-store-freeze/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngrx_store_freeze___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_ngrx_store_freeze__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngrx_router_store__ = __webpack_require__("../../../../@ngrx/router-store/@ngrx/router-store.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__index__ = __webpack_require__("../../../../../src/app/store/index.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-var metaReducers = !__WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].production
-    ? [__WEBPACK_IMPORTED_MODULE_4_ngrx_store_freeze__["storeFreeze"]]
+Object.defineProperty(exports, "__esModule", { value: true });
+var store_devtools_1 = __webpack_require__("../../../../@ngrx/store-devtools/@ngrx/store-devtools.es5.js");
+var effects_1 = __webpack_require__("../../../../@ngrx/effects/@ngrx/effects.es5.js");
+var store_1 = __webpack_require__("../../../../@ngrx/store/@ngrx/store.es5.js");
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var ngrx_store_freeze_1 = __webpack_require__("../../../../ngrx-store-freeze/index.js");
+var environment_1 = __webpack_require__("../../../../../src/environments/environment.ts");
+var router_store_1 = __webpack_require__("../../../../@ngrx/router-store/@ngrx/router-store.es5.js");
+var index_1 = __webpack_require__("../../../../../src/app/store/index.ts");
+exports.metaReducers = !environment_1.environment.production
+    ? [ngrx_store_freeze_1.storeFreeze]
     : [];
 var AppStoreModule = (function () {
     function AppStoreModule() {
     }
     AppStoreModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2__ngrx_store__["i" /* StoreModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__index__["d" /* reducers */], { metaReducers: metaReducers }),
-                __WEBPACK_IMPORTED_MODULE_1__ngrx_effects__["c" /* EffectsModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__index__["c" /* effects */]),
-                !__WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].production ? __WEBPACK_IMPORTED_MODULE_0__ngrx_store_devtools__["a" /* StoreDevtoolsModule */].instrument() : [],
-                __WEBPACK_IMPORTED_MODULE_6__ngrx_router_store__["b" /* StoreRouterConnectingModule */]
+                store_1.StoreModule.forRoot(index_1.reducers, { metaReducers: exports.metaReducers }),
+                effects_1.EffectsModule.forRoot(index_1.effects),
+                !environment_1.environment.production ? store_devtools_1.StoreDevtoolsModule.instrument() : [],
+                router_store_1.StoreRouterConnectingModule
             ],
             providers: [
                 {
-                    provide: __WEBPACK_IMPORTED_MODULE_6__ngrx_router_store__["a" /* RouterStateSerializer */],
-                    useClass: __WEBPACK_IMPORTED_MODULE_7__index__["a" /* CustomSerializer */]
+                    provide: router_store_1.RouterStateSerializer,
+                    useClass: index_1.CustomSerializer
                 }
             ]
         })
     ], AppStoreModule);
     return AppStoreModule;
 }());
-
+exports.AppStoreModule = AppStoreModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/environments/environment.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+
 // The file contents for the current environment will overwrite these during build.
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
-var environment = {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.environment = {
     production: false,
     hmr: false
 };
@@ -17788,23 +17597,21 @@ var environment = {
 /***/ }),
 
 /***/ "../../../../../src/hmr.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export hmrBootstrap */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angularclass_hmr__ = __webpack_require__("../../../../@angularclass/hmr/dist/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angularclass_hmr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__angularclass_hmr__);
 
-
-var hmrBootstrap = function (module, bootstrap) {
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var hmr_1 = __webpack_require__("../../../../@angularclass/hmr/dist/index.js");
+exports.hmrBootstrap = function (module, bootstrap) {
     var ngModule;
     module.hot.accept();
     bootstrap().then(function (mod) { return ngModule = mod; });
     module.hot.dispose(function () {
-        var appRef = ngModule.injector.get(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ApplicationRef"]);
+        var appRef = ngModule.injector.get(core_1.ApplicationRef);
         var elements = appRef.components.map(function (c) { return c.location.nativeElement; });
-        var makeVisible = Object(__WEBPACK_IMPORTED_MODULE_1__angularclass_hmr__["createNewHosts"])(elements);
+        var makeVisible = hmr_1.createNewHosts(elements);
         ngModule.destroy();
         makeVisible();
     });
@@ -17814,27 +17621,23 @@ var hmrBootstrap = function (module, bootstrap) {
 /***/ }),
 
 /***/ "../../../../../src/main.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hmr__ = __webpack_require__("../../../../../src/hmr.ts");
 
-
-
-
-
-if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var platform_browser_dynamic_1 = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
+var app_module_1 = __webpack_require__("../../../../../src/app/app.module.ts");
+var environment_1 = __webpack_require__("../../../../../src/environments/environment.ts");
+var hmr_1 = __webpack_require__("../../../../../src/hmr.ts");
+if (environment_1.environment.production) {
+    core_1.enableProdMode();
 }
-var bootstrap = function () { return Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]); };
-if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].hmr) {
+var bootstrap = function () { return platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule); };
+if (environment_1.environment.hmr) {
     if (false) {
-        hmrBootstrap(module, bootstrap);
+        hmr_1.hmrBootstrap(module, bootstrap);
     }
     else {
         console.error('HMR is not enabled for webpack-dev-server!');

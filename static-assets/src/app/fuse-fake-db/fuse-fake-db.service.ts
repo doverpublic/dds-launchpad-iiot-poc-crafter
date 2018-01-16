@@ -47,7 +47,7 @@ export class FuseFakeDbService implements InMemoryDbService
             'quick-panel-events'         : QuickPanelFakeDb.events,
             'icons'                      : IconsFakeDb.icons,
             'projects-dashboard-projects': ProjectsDashboardDb.projects,
-            'projects-dashboard-widgets' : ProjectsDashboardDb.widgets,
+    //        'projects-dashboard-widgets' : ProjectsDashboardDb.widgets,
             'scrumboard-boards'          : ScrumboardFakeDb.boards,
             'faq'                        : FaqFakeDb.data,
             'knowledge-base'             : KnowledgeBaseFakeDb.data,

@@ -26,15 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/file-manager/file-list/file-list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFileManagerFileListComponent; });
-/* unused harmony export FilesDataSource */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__file_manager_service__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__ = __webpack_require__("../../../cdk/esm5/collections.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -54,10 +49,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var file_manager_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
+var collections_1 = __webpack_require__("../../../cdk/esm5/collections.es5.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseFileManagerFileListComponent = (function () {
     function FuseFileManagerFileListComponent(fileManagerService) {
         var _this = this;
@@ -77,17 +73,17 @@ var FuseFileManagerFileListComponent = (function () {
         this.fileManagerService.onFileSelected.next(selected);
     };
     FuseFileManagerFileListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-file-list',
             template: __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-list/file-list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-list/file-list.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__file_manager_service__["a" /* FileManagerService */]])
+        __metadata("design:paramtypes", [file_manager_service_1.FileManagerService])
     ], FuseFileManagerFileListComponent);
     return FuseFileManagerFileListComponent;
 }());
-
+exports.FuseFileManagerFileListComponent = FuseFileManagerFileListComponent;
 var FilesDataSource = (function (_super) {
     __extends(FilesDataSource, _super);
     function FilesDataSource(fileManagerService) {
@@ -102,8 +98,8 @@ var FilesDataSource = (function (_super) {
     FilesDataSource.prototype.disconnect = function () {
     };
     return FilesDataSource;
-}(__WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__["a" /* DataSource */]));
-
+}(collections_1.DataSource));
+exports.FilesDataSource = FilesDataSource;
 
 
 /***/ }),
@@ -134,13 +130,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/file-manager/file-manager.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFileManagerComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__file_manager_service__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -150,9 +143,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var file_manager_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseFileManagerComponent = (function () {
     function FuseFileManagerComponent(fileManagerService) {
         this.fileManagerService = fileManagerService;
@@ -165,57 +159,49 @@ var FuseFileManagerComponent = (function () {
         });
     };
     FuseFileManagerComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-file-manager',
             template: __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__file_manager_service__["a" /* FileManagerService */]])
+        __metadata("design:paramtypes", [file_manager_service_1.FileManagerService])
     ], FuseFileManagerComponent);
     return FuseFileManagerComponent;
 }());
-
+exports.FuseFileManagerComponent = FuseFileManagerComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/file-manager/file-manager.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseFileManagerModule", function() { return FuseFileManagerModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__file_manager_component__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__file_manager_service__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__file_list_file_list_component__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-list/file-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sidenavs_main_main_component__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/main/main.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__sidenavs_details_details_component__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/details/details.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var file_manager_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.component.ts");
+var file_manager_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
+var file_list_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-list/file-list.component.ts");
+var main_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/main/main.component.ts");
+var details_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/details/details.component.ts");
 var routes = [
     {
         path: '**',
-        component: __WEBPACK_IMPORTED_MODULE_3__file_manager_component__["a" /* FuseFileManagerComponent */],
+        component: file_manager_component_1.FuseFileManagerComponent,
         children: [],
         resolve: {
-            files: __WEBPACK_IMPORTED_MODULE_4__file_manager_service__["a" /* FileManagerService */]
+            files: file_manager_service_1.FileManagerService
         }
     }
 ];
@@ -223,37 +209,34 @@ var FuseFileManagerModule = (function () {
     function FuseFileManagerModule() {
     }
     FuseFileManagerModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__file_manager_component__["a" /* FuseFileManagerComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__file_list_file_list_component__["a" /* FuseFileManagerFileListComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__sidenavs_main_main_component__["a" /* FuseFileManagerMainSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__sidenavs_details_details_component__["a" /* FuseFileManagerDetailsSidenavComponent */]
+                file_manager_component_1.FuseFileManagerComponent,
+                file_list_component_1.FuseFileManagerFileListComponent,
+                main_component_1.FuseFileManagerMainSidenavComponent,
+                details_component_1.FuseFileManagerDetailsSidenavComponent
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__file_manager_service__["a" /* FileManagerService */]
+                file_manager_service_1.FileManagerService
             ]
         })
     ], FuseFileManagerModule);
     return FuseFileManagerModule;
 }());
-
+exports.FuseFileManagerModule = FuseFileManagerModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileManagerService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -263,14 +246,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var FileManagerService = (function () {
     function FileManagerService(http) {
         this.http = http;
-        this.onFilesChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
-        this.onFileSelected = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onFilesChanged = new BehaviorSubject_1.BehaviorSubject({});
+        this.onFileSelected = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * The File Manager App Main Resolver
@@ -301,12 +285,12 @@ var FileManagerService = (function () {
         });
     };
     FileManagerService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], FileManagerService);
     return FileManagerService;
 }());
-
+exports.FileManagerService = FileManagerService;
 
 
 /***/ }),
@@ -337,13 +321,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/file-manager/sidenavs/details/details.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFileManagerDetailsSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__file_manager_service__ = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -353,9 +334,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var file_manager_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/file-manager/file-manager.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseFileManagerDetailsSidenavComponent = (function () {
     function FuseFileManagerDetailsSidenavComponent(fileManagerService) {
         this.fileManagerService = fileManagerService;
@@ -367,17 +349,17 @@ var FuseFileManagerDetailsSidenavComponent = (function () {
         });
     };
     FuseFileManagerDetailsSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-file-manager-details-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/details/details.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/details/details.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__file_manager_service__["a" /* FileManagerService */]])
+        __metadata("design:paramtypes", [file_manager_service_1.FileManagerService])
     ], FuseFileManagerDetailsSidenavComponent);
     return FuseFileManagerDetailsSidenavComponent;
 }());
-
+exports.FuseFileManagerDetailsSidenavComponent = FuseFileManagerDetailsSidenavComponent;
 
 
 /***/ }),
@@ -408,11 +390,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/file-manager/sidenavs/main/main.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFileManagerMainSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -422,14 +403,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseFileManagerMainSidenavComponent = (function () {
     function FuseFileManagerMainSidenavComponent() {
     }
     FuseFileManagerMainSidenavComponent.prototype.ngOnInit = function () {
     };
     FuseFileManagerMainSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-file-manager-main-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/main/main.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/file-manager/sidenavs/main/main.component.scss")]
@@ -438,7 +420,7 @@ var FuseFileManagerMainSidenavComponent = (function () {
     ], FuseFileManagerMainSidenavComponent);
     return FuseFileManagerMainSidenavComponent;
 }());
-
+exports.FuseFileManagerMainSidenavComponent = FuseFileManagerMainSidenavComponent;
 
 
 /***/ })

@@ -26,14 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseForgotPassword2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -43,10 +39,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseForgotPassword2Component = (function () {
     function FuseForgotPassword2Component(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -65,7 +62,7 @@ var FuseForgotPassword2Component = (function () {
     FuseForgotPassword2Component.prototype.ngOnInit = function () {
         var _this = this;
         this.forgotPasswordForm = this.formBuilder.group({
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]]
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]]
         });
         this.forgotPasswordForm.valueChanges.subscribe(function () {
             _this.onForgotPasswordFormValuesChanged();
@@ -86,64 +83,61 @@ var FuseForgotPassword2Component = (function () {
         }
     };
     FuseForgotPassword2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-forgot-password-2',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseForgotPassword2Component);
     return FuseForgotPassword2Component;
 }());
-
+exports.FuseForgotPassword2Component = FuseForgotPassword2Component;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForgotPassword2Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forgot_password_2_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var forgot_password_2_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.component.ts");
 var routes = [
     {
         path: 'auth/forgot-password-2',
-        component: __WEBPACK_IMPORTED_MODULE_3__forgot_password_2_component__["a" /* FuseForgotPassword2Component */]
+        component: forgot_password_2_component_1.FuseForgotPassword2Component
     }
 ];
 var ForgotPassword2Module = (function () {
     function ForgotPassword2Module() {
     }
     ForgotPassword2Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__forgot_password_2_component__["a" /* FuseForgotPassword2Component */]
+                forgot_password_2_component_1.FuseForgotPassword2Component
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], ForgotPassword2Module);
     return ForgotPassword2Module;
 }());
-
+exports.ForgotPassword2Module = ForgotPassword2Module;
 
 
 /***/ }),
@@ -174,14 +168,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseForgotPasswordComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -191,10 +181,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseForgotPasswordComponent = (function () {
     function FuseForgotPasswordComponent(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -213,7 +204,7 @@ var FuseForgotPasswordComponent = (function () {
     FuseForgotPasswordComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.forgotPasswordForm = this.formBuilder.group({
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]]
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]]
         });
         this.forgotPasswordForm.valueChanges.subscribe(function () {
             _this.onForgotPasswordFormValuesChanged();
@@ -234,64 +225,61 @@ var FuseForgotPasswordComponent = (function () {
         }
     };
     FuseForgotPasswordComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-forgot-password',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseForgotPasswordComponent);
     return FuseForgotPasswordComponent;
 }());
-
+exports.FuseForgotPasswordComponent = FuseForgotPasswordComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ForgotPasswordModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forgot_password_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var forgot_password_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.component.ts");
 var routes = [
     {
         path: 'auth/forgot-password',
-        component: __WEBPACK_IMPORTED_MODULE_3__forgot_password_component__["a" /* FuseForgotPasswordComponent */]
+        component: forgot_password_component_1.FuseForgotPasswordComponent
     }
 ];
 var ForgotPasswordModule = (function () {
     function ForgotPasswordModule() {
     }
     ForgotPasswordModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__forgot_password_component__["a" /* FuseForgotPasswordComponent */]
+                forgot_password_component_1.FuseForgotPasswordComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], ForgotPasswordModule);
     return ForgotPasswordModule;
 }());
-
+exports.ForgotPasswordModule = ForgotPasswordModule;
 
 
 /***/ }),
@@ -322,14 +310,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/lock/lock.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseLockComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -339,10 +323,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseLockComponent = (function () {
     function FuseLockComponent(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -366,9 +351,9 @@ var FuseLockComponent = (function () {
                 {
                     value: 'Katherine',
                     disabled: true
-                }, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required
+                }, forms_1.Validators.required
             ],
-            password: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            password: ['', forms_1.Validators.required]
         });
         this.lockForm.valueChanges.subscribe(function () {
             _this.onLockFormValuesChanged();
@@ -389,64 +374,61 @@ var FuseLockComponent = (function () {
         }
     };
     FuseLockComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-lock',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/lock/lock.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/lock/lock.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseLockComponent);
     return FuseLockComponent;
 }());
-
+exports.FuseLockComponent = FuseLockComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/lock/lock.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LockModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lock_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/lock/lock.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var lock_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/lock/lock.component.ts");
 var routes = [
     {
         path: 'auth/lock',
-        component: __WEBPACK_IMPORTED_MODULE_3__lock_component__["a" /* FuseLockComponent */]
+        component: lock_component_1.FuseLockComponent
     }
 ];
 var LockModule = (function () {
     function LockModule() {
     }
     LockModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__lock_component__["a" /* FuseLockComponent */]
+                lock_component_1.FuseLockComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], LockModule);
     return LockModule;
 }());
-
+exports.LockModule = LockModule;
 
 
 /***/ }),
@@ -477,14 +459,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/login-2/login-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseLogin2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -494,10 +472,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseLogin2Component = (function () {
     function FuseLogin2Component(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -517,8 +496,8 @@ var FuseLogin2Component = (function () {
     FuseLogin2Component.prototype.ngOnInit = function () {
         var _this = this;
         this.loginForm = this.formBuilder.group({
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]],
-            password: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]],
+            password: ['', forms_1.Validators.required]
         });
         this.loginForm.valueChanges.subscribe(function () {
             _this.onLoginFormValuesChanged();
@@ -539,64 +518,61 @@ var FuseLogin2Component = (function () {
         }
     };
     FuseLogin2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-login-2',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/login-2/login-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/login-2/login-2.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseLogin2Component);
     return FuseLogin2Component;
 }());
-
+exports.FuseLogin2Component = FuseLogin2Component;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/login-2/login-2.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login2Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_2_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login-2/login-2.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var login_2_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login-2/login-2.component.ts");
 var routes = [
     {
         path: 'auth/login-2',
-        component: __WEBPACK_IMPORTED_MODULE_3__login_2_component__["a" /* FuseLogin2Component */]
+        component: login_2_component_1.FuseLogin2Component
     }
 ];
 var Login2Module = (function () {
     function Login2Module() {
     }
     Login2Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__login_2_component__["a" /* FuseLogin2Component */]
+                login_2_component_1.FuseLogin2Component
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], Login2Module);
     return Login2Module;
 }());
-
+exports.Login2Module = Login2Module;
 
 
 /***/ }),
@@ -627,14 +603,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/login/login.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseLoginComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -644,10 +616,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseLoginComponent = (function () {
     function FuseLoginComponent(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -667,8 +640,8 @@ var FuseLoginComponent = (function () {
     FuseLoginComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.loginForm = this.formBuilder.group({
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]],
-            password: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required]
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]],
+            password: ['', forms_1.Validators.required]
         });
         this.loginForm.valueChanges.subscribe(function () {
             _this.onLoginFormValuesChanged();
@@ -689,64 +662,61 @@ var FuseLoginComponent = (function () {
         }
     };
     FuseLoginComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-login',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/login/login.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/login/login.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseLoginComponent);
     return FuseLoginComponent;
 }());
-
+exports.FuseLoginComponent = FuseLoginComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/login/login.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login/login.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var login_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login/login.component.ts");
 var routes = [
     {
         path: 'auth/login',
-        component: __WEBPACK_IMPORTED_MODULE_3__login_component__["a" /* FuseLoginComponent */]
+        component: login_component_1.FuseLoginComponent
     }
 ];
 var LoginModule = (function () {
     function LoginModule() {
     }
     LoginModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__login_component__["a" /* FuseLoginComponent */]
+                login_component_1.FuseLoginComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], LoginModule);
     return LoginModule;
 }());
-
+exports.LoginModule = LoginModule;
 
 
 /***/ }),
@@ -777,13 +747,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailConfirmComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -793,9 +760,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseMailConfirmComponent = (function () {
     function FuseMailConfirmComponent(fuseConfig) {
         this.fuseConfig = fuseConfig;
@@ -808,63 +776,60 @@ var FuseMailConfirmComponent = (function () {
         });
     }
     FuseMailConfirmComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-confirm',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_config_service__["a" /* FuseConfigService */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService])
     ], FuseMailConfirmComponent);
     return FuseMailConfirmComponent;
 }());
-
+exports.FuseMailConfirmComponent = FuseMailConfirmComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MailConfirmModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mail_confirm_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var mail_confirm_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.component.ts");
 var routes = [
     {
         path: 'auth/mail-confirm',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_confirm_component__["a" /* FuseMailConfirmComponent */]
+        component: mail_confirm_component_1.FuseMailConfirmComponent
     }
 ];
 var MailConfirmModule = (function () {
     function MailConfirmModule() {
     }
     MailConfirmModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__mail_confirm_component__["a" /* FuseMailConfirmComponent */]
+                mail_confirm_component_1.FuseMailConfirmComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], MailConfirmModule);
     return MailConfirmModule;
 }());
-
+exports.MailConfirmModule = MailConfirmModule;
 
 
 /***/ }),
@@ -895,14 +860,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/register-2/register-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseRegister2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -912,10 +873,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseRegister2Component = (function () {
     function FuseRegister2Component(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -937,10 +899,10 @@ var FuseRegister2Component = (function () {
     FuseRegister2Component.prototype.ngOnInit = function () {
         var _this = this;
         this.registerForm = this.formBuilder.group({
-            name: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]],
-            password: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            passwordConfirm: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, confirmPassword]]
+            name: ['', forms_1.Validators.required],
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]],
+            password: ['', forms_1.Validators.required],
+            passwordConfirm: ['', [forms_1.Validators.required, confirmPassword]]
         });
         this.registerForm.valueChanges.subscribe(function () {
             _this.onRegisterFormValuesChanged();
@@ -961,18 +923,18 @@ var FuseRegister2Component = (function () {
         }
     };
     FuseRegister2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-register-2',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/register-2/register-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/register-2/register-2.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseRegister2Component);
     return FuseRegister2Component;
 }());
-
+exports.FuseRegister2Component = FuseRegister2Component;
 function confirmPassword(control) {
     if (!control.parent || !control) {
         return;
@@ -996,47 +958,44 @@ function confirmPassword(control) {
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/register-2/register-2.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Register2Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_app_core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_2_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register-2/register-2.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var register_2_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register-2/register-2.component.ts");
 var routes = [
     {
         path: 'auth/register-2',
-        component: __WEBPACK_IMPORTED_MODULE_3__register_2_component__["a" /* FuseRegister2Component */]
+        component: register_2_component_1.FuseRegister2Component
     }
 ];
 var Register2Module = (function () {
     function Register2Module() {
     }
     Register2Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__register_2_component__["a" /* FuseRegister2Component */]
+                register_2_component_1.FuseRegister2Component
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_app_core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], Register2Module);
     return Register2Module;
 }());
-
+exports.Register2Module = Register2Module;
 
 
 /***/ }),
@@ -1067,14 +1026,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/register/register.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseRegisterComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1084,10 +1039,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseRegisterComponent = (function () {
     function FuseRegisterComponent(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -1109,10 +1065,10 @@ var FuseRegisterComponent = (function () {
     FuseRegisterComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.registerForm = this.formBuilder.group({
-            name: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]],
-            password: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            passwordConfirm: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, confirmPassword]]
+            name: ['', forms_1.Validators.required],
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]],
+            password: ['', forms_1.Validators.required],
+            passwordConfirm: ['', [forms_1.Validators.required, confirmPassword]]
         });
         this.registerForm.valueChanges.subscribe(function () {
             _this.onRegisterFormValuesChanged();
@@ -1133,18 +1089,18 @@ var FuseRegisterComponent = (function () {
         }
     };
     FuseRegisterComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-register',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/register/register.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/register/register.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseRegisterComponent);
     return FuseRegisterComponent;
 }());
-
+exports.FuseRegisterComponent = FuseRegisterComponent;
 function confirmPassword(control) {
     if (!control.parent || !control) {
         return;
@@ -1168,47 +1124,44 @@ function confirmPassword(control) {
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/register/register.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register/register.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var register_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register/register.component.ts");
 var routes = [
     {
         path: 'auth/register',
-        component: __WEBPACK_IMPORTED_MODULE_3__register_component__["a" /* FuseRegisterComponent */]
+        component: register_component_1.FuseRegisterComponent
     }
 ];
 var RegisterModule = (function () {
     function RegisterModule() {
     }
     RegisterModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__register_component__["a" /* FuseRegisterComponent */]
+                register_component_1.FuseRegisterComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], RegisterModule);
     return RegisterModule;
 }());
-
+exports.RegisterModule = RegisterModule;
 
 
 /***/ }),
@@ -1239,14 +1192,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseResetPassword2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1256,10 +1205,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseResetPassword2Component = (function () {
     function FuseResetPassword2Component(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -1280,9 +1230,9 @@ var FuseResetPassword2Component = (function () {
     FuseResetPassword2Component.prototype.ngOnInit = function () {
         var _this = this;
         this.resetPasswordForm = this.formBuilder.group({
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]],
-            password: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            passwordConfirm: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, confirmPassword]]
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]],
+            password: ['', forms_1.Validators.required],
+            passwordConfirm: ['', [forms_1.Validators.required, confirmPassword]]
         });
         this.resetPasswordForm.valueChanges.subscribe(function () {
             _this.onResetPasswordFormValuesChanged();
@@ -1303,18 +1253,18 @@ var FuseResetPassword2Component = (function () {
         }
     };
     FuseResetPassword2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-reset-password-2',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseResetPassword2Component);
     return FuseResetPassword2Component;
 }());
-
+exports.FuseResetPassword2Component = FuseResetPassword2Component;
 function confirmPassword(control) {
     if (!control.parent || !control) {
         return;
@@ -1338,47 +1288,44 @@ function confirmPassword(control) {
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetPassword2Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reset_password_2_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var reset_password_2_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.component.ts");
 var routes = [
     {
         path: 'auth/reset-password-2',
-        component: __WEBPACK_IMPORTED_MODULE_3__reset_password_2_component__["a" /* FuseResetPassword2Component */]
+        component: reset_password_2_component_1.FuseResetPassword2Component
     }
 ];
 var ResetPassword2Module = (function () {
     function ResetPassword2Module() {
     }
     ResetPassword2Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__reset_password_2_component__["a" /* FuseResetPassword2Component */]
+                reset_password_2_component_1.FuseResetPassword2Component
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], ResetPassword2Module);
     return ResetPassword2Module;
 }());
-
+exports.ResetPassword2Module = ResetPassword2Module;
 
 
 /***/ }),
@@ -1409,14 +1356,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseResetPasswordComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1426,10 +1369,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseResetPasswordComponent = (function () {
     function FuseResetPasswordComponent(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -1450,9 +1394,9 @@ var FuseResetPasswordComponent = (function () {
     FuseResetPasswordComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.resetPasswordForm = this.formBuilder.group({
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]],
-            password: ['', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required],
-            passwordConfirm: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, confirmPassword]]
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]],
+            password: ['', forms_1.Validators.required],
+            passwordConfirm: ['', [forms_1.Validators.required, confirmPassword]]
         });
         this.resetPasswordForm.valueChanges.subscribe(function () {
             _this.onResetPasswordFormValuesChanged();
@@ -1473,18 +1417,18 @@ var FuseResetPasswordComponent = (function () {
         }
     };
     FuseResetPasswordComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-reset-password',
             template: __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseResetPasswordComponent);
     return FuseResetPasswordComponent;
 }());
-
+exports.FuseResetPasswordComponent = FuseResetPasswordComponent;
 function confirmPassword(control) {
     if (!control.parent || !control) {
         return;
@@ -1508,47 +1452,44 @@ function confirmPassword(control) {
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResetPasswordModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reset_password_component__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var reset_password_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.component.ts");
 var routes = [
     {
         path: 'auth/reset-password',
-        component: __WEBPACK_IMPORTED_MODULE_3__reset_password_component__["a" /* FuseResetPasswordComponent */]
+        component: reset_password_component_1.FuseResetPasswordComponent
     }
 ];
 var ResetPasswordModule = (function () {
     function ResetPasswordModule() {
     }
     ResetPasswordModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__reset_password_component__["a" /* FuseResetPasswordComponent */]
+                reset_password_component_1.FuseResetPasswordComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], ResetPasswordModule);
     return ResetPasswordModule;
 }());
-
+exports.ResetPasswordModule = ResetPasswordModule;
 
 
 /***/ }),
@@ -1579,14 +1520,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/coming-soon/coming-soon.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseComingSoonComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1596,10 +1533,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseComingSoonComponent = (function () {
     function FuseComingSoonComponent(fuseConfig, formBuilder) {
         this.fuseConfig = fuseConfig;
@@ -1618,7 +1556,7 @@ var FuseComingSoonComponent = (function () {
     FuseComingSoonComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.comingSoonForm = this.formBuilder.group({
-            email: ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["l" /* Validators */].email]]
+            email: ['', [forms_1.Validators.required, forms_1.Validators.email]]
         });
         this.comingSoonForm.valueChanges.subscribe(function () {
             _this.onRegisterFormValuesChanged();
@@ -1639,64 +1577,61 @@ var FuseComingSoonComponent = (function () {
         }
     };
     FuseComingSoonComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-coming-soon',
             template: __webpack_require__("../../../../../src/app/main/content/pages/coming-soon/coming-soon.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/coming-soon/coming-soon.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_3__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__core_services_config_service__["a" /* FuseConfigService */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService,
+            forms_1.FormBuilder])
     ], FuseComingSoonComponent);
     return FuseComingSoonComponent;
 }());
-
+exports.FuseComingSoonComponent = FuseComingSoonComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/coming-soon/coming-soon.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComingSoonModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__coming_soon_component__ = __webpack_require__("../../../../../src/app/main/content/pages/coming-soon/coming-soon.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var coming_soon_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/coming-soon/coming-soon.component.ts");
 var routes = [
     {
         path: 'coming-soon',
-        component: __WEBPACK_IMPORTED_MODULE_3__coming_soon_component__["a" /* FuseComingSoonComponent */]
+        component: coming_soon_component_1.FuseComingSoonComponent
     }
 ];
 var ComingSoonModule = (function () {
     function ComingSoonModule() {
     }
     ComingSoonModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__coming_soon_component__["a" /* FuseComingSoonComponent */]
+                coming_soon_component_1.FuseComingSoonComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], ComingSoonModule);
     return ComingSoonModule;
 }());
-
+exports.ComingSoonModule = ComingSoonModule;
 
 
 /***/ }),
@@ -1727,12 +1662,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/errors/404/error-404.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseError404Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1742,8 +1675,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
 var FuseError404Component = (function () {
     function FuseError404Component(fuseConfig) {
         this.fuseConfig = fuseConfig;
@@ -1758,62 +1692,59 @@ var FuseError404Component = (function () {
     FuseError404Component.prototype.ngOnInit = function () {
     };
     FuseError404Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-error-404',
             template: __webpack_require__("../../../../../src/app/main/content/pages/errors/404/error-404.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/errors/404/error-404.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_config_service__["a" /* FuseConfigService */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService])
     ], FuseError404Component);
     return FuseError404Component;
 }());
-
+exports.FuseError404Component = FuseError404Component;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/errors/404/error-404.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Error404Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__error_404_component__ = __webpack_require__("../../../../../src/app/main/content/pages/errors/404/error-404.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var error_404_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/errors/404/error-404.component.ts");
 var routes = [
     {
         path: 'errors/error-404',
-        component: __WEBPACK_IMPORTED_MODULE_3__error_404_component__["a" /* FuseError404Component */]
+        component: error_404_component_1.FuseError404Component
     }
 ];
 var Error404Module = (function () {
     function Error404Module() {
     }
     Error404Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__error_404_component__["a" /* FuseError404Component */]
+                error_404_component_1.FuseError404Component
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], Error404Module);
     return Error404Module;
 }());
-
+exports.Error404Module = Error404Module;
 
 
 /***/ }),
@@ -1844,12 +1775,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/errors/500/error-500.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseError500Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1859,8 +1788,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
 var FuseError500Component = (function () {
     function FuseError500Component(fuseConfig) {
         this.fuseConfig = fuseConfig;
@@ -1875,62 +1805,59 @@ var FuseError500Component = (function () {
     FuseError500Component.prototype.ngOnInit = function () {
     };
     FuseError500Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-error-500',
             template: __webpack_require__("../../../../../src/app/main/content/pages/errors/500/error-500.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/errors/500/error-500.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_config_service__["a" /* FuseConfigService */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService])
     ], FuseError500Component);
     return FuseError500Component;
 }());
-
+exports.FuseError500Component = FuseError500Component;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/errors/500/error-500.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Error500Module; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__error_500_component__ = __webpack_require__("../../../../../src/app/main/content/pages/errors/500/error-500.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var error_500_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/errors/500/error-500.component.ts");
 var routes = [
     {
         path: 'errors/error-500',
-        component: __WEBPACK_IMPORTED_MODULE_3__error_500_component__["a" /* FuseError500Component */]
+        component: error_500_component_1.FuseError500Component
     }
 ];
 var Error500Module = (function () {
     function Error500Module() {
     }
     Error500Module = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__error_500_component__["a" /* FuseError500Component */]
+                error_500_component_1.FuseError500Component
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], Error500Module);
     return Error500Module;
 }());
-
+exports.Error500Module = Error500Module;
 
 
 /***/ }),
@@ -1961,15 +1888,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/faq/faq.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseFaqComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__faq_service__ = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1979,16 +1901,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var faq_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.service.ts");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
 var FuseFaqComponent = (function () {
     function FuseFaqComponent(faqService) {
         this.faqService = faqService;
         this.step = 0;
-        this.searchInput = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormControl */]('');
+        this.searchInput = new forms_1.FormControl('');
     }
     FuseFaqComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -2002,7 +1925,7 @@ var FuseFaqComponent = (function () {
             .debounceTime(300)
             .distinctUntilChanged()
             .subscribe(function (searchText) {
-            _this.faqsFiltered = __WEBPACK_IMPORTED_MODULE_3__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.faqs, searchText);
+            _this.faqsFiltered = fuseUtils_1.FuseUtils.filterArrayByString(_this.faqs, searchText);
         });
     };
     FuseFaqComponent.prototype.setStep = function (index) {
@@ -2018,47 +1941,43 @@ var FuseFaqComponent = (function () {
         this.onFaqsChanged.unsubscribe();
     };
     FuseFaqComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-faq',
             template: __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/faq/faq.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__faq_service__["a" /* FaqService */]])
+        __metadata("design:paramtypes", [faq_service_1.FaqService])
     ], FuseFaqComponent);
     return FuseFaqComponent;
 }());
-
+exports.FuseFaqComponent = FuseFaqComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/faq/faq.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FaqModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__faq_component__ = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__faq_service__ = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var faq_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.component.ts");
+var faq_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.service.ts");
 var routes = [
     {
         path: 'faq',
-        component: __WEBPACK_IMPORTED_MODULE_3__faq_component__["a" /* FuseFaqComponent */],
+        component: faq_component_1.FuseFaqComponent,
         resolve: {
-            faq: __WEBPACK_IMPORTED_MODULE_4__faq_service__["a" /* FaqService */]
+            faq: faq_service_1.FaqService
         }
     }
 ];
@@ -2066,34 +1985,31 @@ var FaqModule = (function () {
     function FaqModule() {
     }
     FaqModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__faq_component__["a" /* FuseFaqComponent */]
+                faq_component_1.FuseFaqComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__faq_service__["a" /* FaqService */]
+                faq_service_1.FaqService
             ]
         })
     ], FaqModule);
     return FaqModule;
 }());
-
+exports.FaqModule = FaqModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/faq/faq.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FaqService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2103,13 +2019,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var FaqService = (function () {
     function FaqService(http) {
         this.http = http;
-        this.onFaqsChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onFaqsChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -2142,12 +2059,12 @@ var FaqService = (function () {
         });
     };
     FaqService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], FaqService);
     return FaqService;
 }());
-
+exports.FaqService = FaqService;
 
 
 /***/ }),
@@ -2178,12 +2095,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/invoices/compact/compact.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseInvoiceCompactComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__invoice_service__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2193,8 +2108,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var invoice_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
 var FuseInvoiceCompactComponent = (function () {
     function FuseInvoiceCompactComponent(invoiceService) {
         var _this = this;
@@ -2205,47 +2121,43 @@ var FuseInvoiceCompactComponent = (function () {
         });
     }
     FuseInvoiceCompactComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-invoice-compact',
             template: __webpack_require__("../../../../../src/app/main/content/pages/invoices/compact/compact.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/invoices/compact/compact.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__invoice_service__["a" /* InvoiceService */]])
+        __metadata("design:paramtypes", [invoice_service_1.InvoiceService])
     ], FuseInvoiceCompactComponent);
     return FuseInvoiceCompactComponent;
 }());
-
+exports.FuseInvoiceCompactComponent = FuseInvoiceCompactComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/invoices/compact/compact.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InvoiceCompactModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compact_component__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/compact/compact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__invoice_service__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var compact_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/compact/compact.component.ts");
+var invoice_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
 var routes = [
     {
         path: 'invoices/compact',
-        component: __WEBPACK_IMPORTED_MODULE_3__compact_component__["a" /* FuseInvoiceCompactComponent */],
+        component: compact_component_1.FuseInvoiceCompactComponent,
         resolve: {
-            search: __WEBPACK_IMPORTED_MODULE_4__invoice_service__["a" /* InvoiceService */]
+            search: invoice_service_1.InvoiceService
         }
     }
 ];
@@ -2253,34 +2165,31 @@ var InvoiceCompactModule = (function () {
     function InvoiceCompactModule() {
     }
     InvoiceCompactModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__compact_component__["a" /* FuseInvoiceCompactComponent */]
+                compact_component_1.FuseInvoiceCompactComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__invoice_service__["a" /* InvoiceService */]
+                invoice_service_1.InvoiceService
             ]
         })
     ], InvoiceCompactModule);
     return InvoiceCompactModule;
 }());
-
+exports.InvoiceCompactModule = InvoiceCompactModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/invoices/invoice.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InvoiceService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2290,13 +2199,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var InvoiceService = (function () {
     function InvoiceService(http) {
         this.http = http;
-        this.invoiceOnChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.invoiceOnChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -2329,12 +2239,12 @@ var InvoiceService = (function () {
         });
     };
     InvoiceService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], InvoiceService);
     return InvoiceService;
 }());
-
+exports.InvoiceService = InvoiceService;
 
 
 /***/ }),
@@ -2365,12 +2275,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/invoices/modern/modern.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseInvoiceModernComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__invoice_service__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2380,8 +2288,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var invoice_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
 var FuseInvoiceModernComponent = (function () {
     function FuseInvoiceModernComponent(invoiceService) {
         var _this = this;
@@ -2392,47 +2301,43 @@ var FuseInvoiceModernComponent = (function () {
         });
     }
     FuseInvoiceModernComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-invoice-modern',
             template: __webpack_require__("../../../../../src/app/main/content/pages/invoices/modern/modern.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/invoices/modern/modern.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__invoice_service__["a" /* InvoiceService */]])
+        __metadata("design:paramtypes", [invoice_service_1.InvoiceService])
     ], FuseInvoiceModernComponent);
     return FuseInvoiceModernComponent;
 }());
-
+exports.FuseInvoiceModernComponent = FuseInvoiceModernComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/invoices/modern/modern.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InvoiceModernModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modern_component__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/modern/modern.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__invoice_service__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var modern_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/modern/modern.component.ts");
+var invoice_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/invoice.service.ts");
 var routes = [
     {
         path: 'invoices/modern',
-        component: __WEBPACK_IMPORTED_MODULE_3__modern_component__["a" /* FuseInvoiceModernComponent */],
+        component: modern_component_1.FuseInvoiceModernComponent,
         resolve: {
-            search: __WEBPACK_IMPORTED_MODULE_4__invoice_service__["a" /* InvoiceService */]
+            search: invoice_service_1.InvoiceService
         }
     }
 ];
@@ -2440,22 +2345,22 @@ var InvoiceModernModule = (function () {
     function InvoiceModernModule() {
     }
     InvoiceModernModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__modern_component__["a" /* FuseInvoiceModernComponent */]
+                modern_component_1.FuseInvoiceModernComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_4__invoice_service__["a" /* InvoiceService */]
+                invoice_service_1.InvoiceService
             ]
         })
     ], InvoiceModernModule);
     return InvoiceModernModule;
 }());
-
+exports.InvoiceModernModule = InvoiceModernModule;
 
 
 /***/ }),
@@ -2486,12 +2391,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/knowledge-base/dialogs/article/article.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseKnowledgeBaseArticleComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2504,26 +2407,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
 var FuseKnowledgeBaseArticleComponent = (function () {
     function FuseKnowledgeBaseArticleComponent(dialogRef, data) {
         this.dialogRef = dialogRef;
         this.data = data;
     }
     FuseKnowledgeBaseArticleComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-knowledge-base-article',
             template: __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/dialogs/article/article.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/dialogs/article/article.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MAT_DIALOG_DATA */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_material__["o" /* MatDialogRef */], Object])
+        __param(1, core_1.Inject(material_1.MAT_DIALOG_DATA)),
+        __metadata("design:paramtypes", [material_1.MatDialogRef, Object])
     ], FuseKnowledgeBaseArticleComponent);
     return FuseKnowledgeBaseArticleComponent;
 }());
-
+exports.FuseKnowledgeBaseArticleComponent = FuseKnowledgeBaseArticleComponent;
 
 
 /***/ }),
@@ -2554,14 +2458,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseKnowledgeBaseComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__knowledge_base_service__ = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dialogs_article_article_component__ = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/dialogs/article/article.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2571,10 +2471,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var knowledge_base_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.service.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var article_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/dialogs/article/article.component.ts");
 var FuseKnowledgeBaseComponent = (function () {
     function FuseKnowledgeBaseComponent(knowledgeBaseService, matDialog) {
         this.knowledgeBaseService = knowledgeBaseService;
@@ -2592,57 +2493,52 @@ var FuseKnowledgeBaseComponent = (function () {
         this.onKnowledgeBaseChanged.unsubscribe();
     };
     FuseKnowledgeBaseComponent.prototype.readArticle = function (article) {
-        this.matDialog.open(__WEBPACK_IMPORTED_MODULE_3__dialogs_article_article_component__["a" /* FuseKnowledgeBaseArticleComponent */], {
+        this.matDialog.open(article_component_1.FuseKnowledgeBaseArticleComponent, {
             panelClass: 'knowledgebase-article-dialog',
             data: { article: article }
         });
     };
     FuseKnowledgeBaseComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-knowledge-base',
             template: __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__knowledge_base_service__["a" /* KnowledgeBaseService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_material__["m" /* MatDialog */]])
+        __metadata("design:paramtypes", [knowledge_base_service_1.KnowledgeBaseService,
+            material_1.MatDialog])
     ], FuseKnowledgeBaseComponent);
     return FuseKnowledgeBaseComponent;
 }());
-
+exports.FuseKnowledgeBaseComponent = FuseKnowledgeBaseComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KnowledgeBaseModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__knowledge_base_service__ = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__knowledge_base_component__ = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dialogs_article_article_component__ = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/dialogs/article/article.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var knowledge_base_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.service.ts");
+var knowledge_base_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.component.ts");
+var article_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/dialogs/article/article.component.ts");
 var routes = [
     {
         path: 'knowledge-base',
-        component: __WEBPACK_IMPORTED_MODULE_4__knowledge_base_component__["a" /* FuseKnowledgeBaseComponent */],
+        component: knowledge_base_component_1.FuseKnowledgeBaseComponent,
         resolve: {
-            knowledgeBase: __WEBPACK_IMPORTED_MODULE_3__knowledge_base_service__["a" /* KnowledgeBaseService */]
+            knowledgeBase: knowledge_base_service_1.KnowledgeBaseService
         }
     }
 ];
@@ -2650,38 +2546,35 @@ var KnowledgeBaseModule = (function () {
     function KnowledgeBaseModule() {
     }
     KnowledgeBaseModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__knowledge_base_component__["a" /* FuseKnowledgeBaseComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__dialogs_article_article_component__["a" /* FuseKnowledgeBaseArticleComponent */]
+                knowledge_base_component_1.FuseKnowledgeBaseComponent,
+                article_component_1.FuseKnowledgeBaseArticleComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_3__knowledge_base_service__["a" /* KnowledgeBaseService */]
+                knowledge_base_service_1.KnowledgeBaseService
             ],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_5__dialogs_article_article_component__["a" /* FuseKnowledgeBaseArticleComponent */]
+                article_component_1.FuseKnowledgeBaseArticleComponent
             ]
         })
     ], KnowledgeBaseModule);
     return KnowledgeBaseModule;
 }());
-
+exports.KnowledgeBaseModule = KnowledgeBaseModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return KnowledgeBaseService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2691,13 +2584,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var KnowledgeBaseService = (function () {
     function KnowledgeBaseService(http) {
         this.http = http;
-        this.onKnowledgeBaseChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.onKnowledgeBaseChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -2730,12 +2624,12 @@ var KnowledgeBaseService = (function () {
         });
     };
     KnowledgeBaseService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], KnowledgeBaseService);
     return KnowledgeBaseService;
 }());
-
+exports.KnowledgeBaseService = KnowledgeBaseService;
 
 
 /***/ }),
@@ -2766,13 +2660,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/maintenance/maintenance.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMaintenanceComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_services_config_service__ = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2782,9 +2673,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var config_service_1 = __webpack_require__("../../../../../src/app/core/services/config.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseMaintenanceComponent = (function () {
     function FuseMaintenanceComponent(fuseConfig) {
         this.fuseConfig = fuseConfig;
@@ -2799,226 +2691,196 @@ var FuseMaintenanceComponent = (function () {
     FuseMaintenanceComponent.prototype.ngOnInit = function () {
     };
     FuseMaintenanceComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-maintenance',
             template: __webpack_require__("../../../../../src/app/main/content/pages/maintenance/maintenance.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/maintenance/maintenance.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_services_config_service__["a" /* FuseConfigService */]])
+        __metadata("design:paramtypes", [config_service_1.FuseConfigService])
     ], FuseMaintenanceComponent);
     return FuseMaintenanceComponent;
 }());
-
+exports.FuseMaintenanceComponent = FuseMaintenanceComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/maintenance/maintenence.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MaintenanceModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maintenance_component__ = __webpack_require__("../../../../../src/app/main/content/pages/maintenance/maintenance.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var maintenance_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/maintenance/maintenance.component.ts");
 var routes = [
     {
         path: 'maintenance',
-        component: __WEBPACK_IMPORTED_MODULE_3__maintenance_component__["a" /* FuseMaintenanceComponent */]
+        component: maintenance_component_1.FuseMaintenanceComponent
     }
 ];
 var MaintenanceModule = (function () {
     function MaintenanceModule() {
     }
     MaintenanceModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__maintenance_component__["a" /* FuseMaintenanceComponent */]
+                maintenance_component_1.FuseMaintenanceComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], MaintenanceModule);
     return MaintenanceModule;
 }());
-
+exports.MaintenanceModule = MaintenanceModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/pages.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FusePagesModule", function() { return FusePagesModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__authentication_login_login_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login/login.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__authentication_login_2_login_2_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login-2/login-2.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication_register_register_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register/register.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__authentication_register_2_register_2_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register-2/register-2.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__authentication_forgot_password_forgot_password_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__authentication_forgot_password_2_forgot_password_2_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__authentication_reset_password_reset_password_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__authentication_reset_password_2_reset_password_2_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__authentication_lock_lock_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/lock/lock.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__authentication_mail_confirm_mail_confirm_module__ = __webpack_require__("../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__coming_soon_coming_soon_module__ = __webpack_require__("../../../../../src/app/main/content/pages/coming-soon/coming-soon.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__errors_404_error_404_module__ = __webpack_require__("../../../../../src/app/main/content/pages/errors/404/error-404.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__errors_500_error_500_module__ = __webpack_require__("../../../../../src/app/main/content/pages/errors/500/error-500.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__invoices_compact_compact_module__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/compact/compact.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__invoices_modern_modern_module__ = __webpack_require__("../../../../../src/app/main/content/pages/invoices/modern/modern.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__maintenance_maintenence_module__ = __webpack_require__("../../../../../src/app/main/content/pages/maintenance/maintenence.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pricing_pricing_module__ = __webpack_require__("../../../../../src/app/main/content/pages/pricing/pricing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__profile_profile_module__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__search_search_module__ = __webpack_require__("../../../../../src/app/main/content/pages/search/search.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__faq_faq_module__ = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__knowledge_base_knowledge_base_module__ = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.module.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var login_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login/login.module.ts");
+var login_2_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/login-2/login-2.module.ts");
+var register_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register/register.module.ts");
+var register_2_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/register-2/register-2.module.ts");
+var forgot_password_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password/forgot-password.module.ts");
+var forgot_password_2_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/forgot-password-2/forgot-password-2.module.ts");
+var reset_password_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password/reset-password.module.ts");
+var reset_password_2_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/reset-password-2/reset-password-2.module.ts");
+var lock_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/lock/lock.module.ts");
+var mail_confirm_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/authentication/mail-confirm/mail-confirm.module.ts");
+var coming_soon_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/coming-soon/coming-soon.module.ts");
+var error_404_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/errors/404/error-404.module.ts");
+var error_500_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/errors/500/error-500.module.ts");
+var compact_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/compact/compact.module.ts");
+var modern_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/invoices/modern/modern.module.ts");
+var maintenence_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/maintenance/maintenence.module.ts");
+var pricing_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/pricing/pricing.module.ts");
+var profile_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.module.ts");
+var search_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/search/search.module.ts");
+var faq_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/faq/faq.module.ts");
+var knowledge_base_module_1 = __webpack_require__("../../../../../src/app/main/content/pages/knowledge-base/knowledge-base.module.ts");
 var FusePagesModule = (function () {
     function FusePagesModule() {
     }
     FusePagesModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
                 // Auth
-                __WEBPACK_IMPORTED_MODULE_1__authentication_login_login_module__["a" /* LoginModule */],
-                __WEBPACK_IMPORTED_MODULE_2__authentication_login_2_login_2_module__["a" /* Login2Module */],
-                __WEBPACK_IMPORTED_MODULE_3__authentication_register_register_module__["a" /* RegisterModule */],
-                __WEBPACK_IMPORTED_MODULE_4__authentication_register_2_register_2_module__["a" /* Register2Module */],
-                __WEBPACK_IMPORTED_MODULE_5__authentication_forgot_password_forgot_password_module__["a" /* ForgotPasswordModule */],
-                __WEBPACK_IMPORTED_MODULE_6__authentication_forgot_password_2_forgot_password_2_module__["a" /* ForgotPassword2Module */],
-                __WEBPACK_IMPORTED_MODULE_7__authentication_reset_password_reset_password_module__["a" /* ResetPasswordModule */],
-                __WEBPACK_IMPORTED_MODULE_8__authentication_reset_password_2_reset_password_2_module__["a" /* ResetPassword2Module */],
-                __WEBPACK_IMPORTED_MODULE_9__authentication_lock_lock_module__["a" /* LockModule */],
-                __WEBPACK_IMPORTED_MODULE_10__authentication_mail_confirm_mail_confirm_module__["a" /* MailConfirmModule */],
+                login_module_1.LoginModule,
+                login_2_module_1.Login2Module,
+                register_module_1.RegisterModule,
+                register_2_module_1.Register2Module,
+                forgot_password_module_1.ForgotPasswordModule,
+                forgot_password_2_module_1.ForgotPassword2Module,
+                reset_password_module_1.ResetPasswordModule,
+                reset_password_2_module_1.ResetPassword2Module,
+                lock_module_1.LockModule,
+                mail_confirm_module_1.MailConfirmModule,
                 // Coming-soon
-                __WEBPACK_IMPORTED_MODULE_11__coming_soon_coming_soon_module__["a" /* ComingSoonModule */],
+                coming_soon_module_1.ComingSoonModule,
                 // Errors
-                __WEBPACK_IMPORTED_MODULE_12__errors_404_error_404_module__["a" /* Error404Module */],
-                __WEBPACK_IMPORTED_MODULE_13__errors_500_error_500_module__["a" /* Error500Module */],
+                error_404_module_1.Error404Module,
+                error_500_module_1.Error500Module,
                 // Invoices
-                __WEBPACK_IMPORTED_MODULE_15__invoices_modern_modern_module__["a" /* InvoiceModernModule */],
-                __WEBPACK_IMPORTED_MODULE_14__invoices_compact_compact_module__["a" /* InvoiceCompactModule */],
+                modern_module_1.InvoiceModernModule,
+                compact_module_1.InvoiceCompactModule,
                 // Maintenance
-                __WEBPACK_IMPORTED_MODULE_16__maintenance_maintenence_module__["a" /* MaintenanceModule */],
+                maintenence_module_1.MaintenanceModule,
                 // Pricing
-                __WEBPACK_IMPORTED_MODULE_17__pricing_pricing_module__["a" /* PricingModule */],
+                pricing_module_1.PricingModule,
                 // Profile
-                __WEBPACK_IMPORTED_MODULE_18__profile_profile_module__["a" /* ProfileModule */],
+                profile_module_1.ProfileModule,
                 // Search
-                __WEBPACK_IMPORTED_MODULE_19__search_search_module__["a" /* SearchModule */],
+                search_module_1.SearchModule,
                 // Faq
-                __WEBPACK_IMPORTED_MODULE_20__faq_faq_module__["a" /* FaqModule */],
+                faq_module_1.FaqModule,
                 // Knowledge base
-                __WEBPACK_IMPORTED_MODULE_21__knowledge_base_knowledge_base_module__["a" /* KnowledgeBaseModule */]
+                knowledge_base_module_1.KnowledgeBaseModule
             ]
         })
     ], FusePagesModule);
     return FusePagesModule;
 }());
-
+exports.FusePagesModule = FusePagesModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/pricing/pricing.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PricingModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style_1_style_1_component__ = __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-1/style-1.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_2_style_2_component__ = __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-2/style-2.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__style_3_style_3_component__ = __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-3/style-3.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var style_1_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-1/style-1.component.ts");
+var style_2_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-2/style-2.component.ts");
+var style_3_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-3/style-3.component.ts");
 var routes = [
     {
         path: 'pricing/style-1',
-        component: __WEBPACK_IMPORTED_MODULE_3__style_1_style_1_component__["a" /* FusePricingStyle1Component */]
+        component: style_1_component_1.FusePricingStyle1Component
     },
     {
         path: 'pricing/style-2',
-        component: __WEBPACK_IMPORTED_MODULE_4__style_2_style_2_component__["a" /* FusePricingStyle2Component */]
+        component: style_2_component_1.FusePricingStyle2Component
     },
     {
         path: 'pricing/style-3',
-        component: __WEBPACK_IMPORTED_MODULE_5__style_3_style_3_component__["a" /* FusePricingStyle3Component */]
+        component: style_3_component_1.FusePricingStyle3Component
     }
 ];
 var PricingModule = (function () {
     function PricingModule() {
     }
     PricingModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__style_1_style_1_component__["a" /* FusePricingStyle1Component */],
-                __WEBPACK_IMPORTED_MODULE_4__style_2_style_2_component__["a" /* FusePricingStyle2Component */],
-                __WEBPACK_IMPORTED_MODULE_5__style_3_style_3_component__["a" /* FusePricingStyle3Component */]
+                style_1_component_1.FusePricingStyle1Component,
+                style_2_component_1.FusePricingStyle2Component,
+                style_3_component_1.FusePricingStyle3Component
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_2__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_1__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ]
         })
     ], PricingModule);
     return PricingModule;
 }());
-
+exports.PricingModule = PricingModule;
 
 
 /***/ }),
@@ -3049,11 +2911,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/pricing/style-1/style-1.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FusePricingStyle1Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3063,12 +2924,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FusePricingStyle1Component = (function () {
     function FusePricingStyle1Component() {
     }
     FusePricingStyle1Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-pricing-style-1',
             template: __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-1/style-1.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/pricing/style-1/style-1.component.scss")]
@@ -3077,7 +2939,7 @@ var FusePricingStyle1Component = (function () {
     ], FusePricingStyle1Component);
     return FusePricingStyle1Component;
 }());
-
+exports.FusePricingStyle1Component = FusePricingStyle1Component;
 
 
 /***/ }),
@@ -3108,11 +2970,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/pricing/style-2/style-2.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FusePricingStyle2Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3122,12 +2983,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FusePricingStyle2Component = (function () {
     function FusePricingStyle2Component() {
     }
     FusePricingStyle2Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-pricing-style-2',
             template: __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-2/style-2.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/pricing/style-2/style-2.component.scss")]
@@ -3136,7 +2998,7 @@ var FusePricingStyle2Component = (function () {
     ], FusePricingStyle2Component);
     return FusePricingStyle2Component;
 }());
-
+exports.FusePricingStyle2Component = FusePricingStyle2Component;
 
 
 /***/ }),
@@ -3167,11 +3029,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/pricing/style-3/style-3.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FusePricingStyle3Component; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3181,12 +3042,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FusePricingStyle3Component = (function () {
     function FusePricingStyle3Component() {
     }
     FusePricingStyle3Component = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-pricing-style-3',
             template: __webpack_require__("../../../../../src/app/main/content/pages/pricing/style-3/style-3.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/pricing/style-3/style-3.component.scss")]
@@ -3195,7 +3057,7 @@ var FusePricingStyle3Component = (function () {
     ], FusePricingStyle3Component);
     return FusePricingStyle3Component;
 }());
-
+exports.FusePricingStyle3Component = FusePricingStyle3Component;
 
 
 /***/ }),
@@ -3226,12 +3088,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/profile/profile.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseProfileComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3241,63 +3101,57 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseProfileComponent = (function () {
     function FuseProfileComponent() {
     }
     FuseProfileComponent.prototype.ngOnInit = function () {
     };
     FuseProfileComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-profile',
             template: __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/profile/profile.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_1__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
         __metadata("design:paramtypes", [])
     ], FuseProfileComponent);
     return FuseProfileComponent;
 }());
-
+exports.FuseProfileComponent = FuseProfileComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/profile/profile.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__profile_component__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_timeline_timeline_component__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/timeline/timeline.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_about_about_component__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__tabs_photos_videos_photos_videos_component__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/photos-videos/photos-videos.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__profile_service__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var profile_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.component.ts");
+var timeline_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/timeline/timeline.component.ts");
+var about_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/about/about.component.ts");
+var photos_videos_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/photos-videos/photos-videos.component.ts");
+var profile_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
 var routes = [
     {
         path: 'profile',
-        component: __WEBPACK_IMPORTED_MODULE_3__profile_component__["a" /* FuseProfileComponent */],
+        component: profile_component_1.FuseProfileComponent,
         resolve: {
-            profile: __WEBPACK_IMPORTED_MODULE_7__profile_service__["a" /* ProfileService */]
+            profile: profile_service_1.ProfileService
         }
     }
 ];
@@ -3305,37 +3159,34 @@ var ProfileModule = (function () {
     function ProfileModule() {
     }
     ProfileModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__profile_component__["a" /* FuseProfileComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__tabs_timeline_timeline_component__["a" /* FuseProfileTimelineComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__tabs_about_about_component__["a" /* FuseProfileAboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__tabs_photos_videos_photos_videos_component__["a" /* FuseProfilePhotosVideosComponent */]
+                profile_component_1.FuseProfileComponent,
+                timeline_component_1.FuseProfileTimelineComponent,
+                about_component_1.FuseProfileAboutComponent,
+                photos_videos_component_1.FuseProfilePhotosVideosComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_7__profile_service__["a" /* ProfileService */]
+                profile_service_1.ProfileService
             ]
         })
     ], ProfileModule);
     return ProfileModule;
 }());
-
+exports.ProfileModule = ProfileModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/profile/profile.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3345,15 +3196,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var ProfileService = (function () {
     function ProfileService(http) {
         this.http = http;
-        this.timelineOnChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
-        this.aboutOnChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
-        this.photosVideosOnChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.timelineOnChanged = new BehaviorSubject_1.BehaviorSubject({});
+        this.aboutOnChanged = new BehaviorSubject_1.BehaviorSubject({});
+        this.photosVideosOnChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -3416,12 +3268,12 @@ var ProfileService = (function () {
         });
     };
     ProfileService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], ProfileService);
     return ProfileService;
 }());
-
+exports.ProfileService = ProfileService;
 
 
 /***/ }),
@@ -3452,13 +3304,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/profile/tabs/about/about.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseProfileAboutComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__profile_service__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3468,9 +3317,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var profile_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseProfileAboutComponent = (function () {
     function FuseProfileAboutComponent(profileService) {
         var _this = this;
@@ -3482,17 +3332,17 @@ var FuseProfileAboutComponent = (function () {
     FuseProfileAboutComponent.prototype.ngOnInit = function () {
     };
     FuseProfileAboutComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-profile-about',
             template: __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/about/about.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/about/about.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__profile_service__["a" /* ProfileService */]])
+        __metadata("design:paramtypes", [profile_service_1.ProfileService])
     ], FuseProfileAboutComponent);
     return FuseProfileAboutComponent;
 }());
-
+exports.FuseProfileAboutComponent = FuseProfileAboutComponent;
 
 
 /***/ }),
@@ -3523,13 +3373,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/profile/tabs/photos-videos/photos-videos.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseProfilePhotosVideosComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__profile_service__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3539,9 +3386,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var profile_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseProfilePhotosVideosComponent = (function () {
     function FuseProfilePhotosVideosComponent(profileService) {
         var _this = this;
@@ -3553,17 +3401,17 @@ var FuseProfilePhotosVideosComponent = (function () {
     FuseProfilePhotosVideosComponent.prototype.ngOnInit = function () {
     };
     FuseProfilePhotosVideosComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-profile-photos-videos',
             template: __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/photos-videos/photos-videos.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/photos-videos/photos-videos.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__profile_service__["a" /* ProfileService */]])
+        __metadata("design:paramtypes", [profile_service_1.ProfileService])
     ], FuseProfilePhotosVideosComponent);
     return FuseProfilePhotosVideosComponent;
 }());
-
+exports.FuseProfilePhotosVideosComponent = FuseProfilePhotosVideosComponent;
 
 
 /***/ }),
@@ -3594,13 +3442,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/profile/tabs/timeline/timeline.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseProfileTimelineComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__profile_service__ = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3610,9 +3455,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var profile_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/profile/profile.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseProfileTimelineComponent = (function () {
     function FuseProfileTimelineComponent(profileService) {
         var _this = this;
@@ -3624,17 +3470,17 @@ var FuseProfileTimelineComponent = (function () {
     FuseProfileTimelineComponent.prototype.ngOnInit = function () {
     };
     FuseProfileTimelineComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-profile-timeline',
             template: __webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/timeline/timeline.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/profile/tabs/timeline/timeline.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__profile_service__["a" /* ProfileService */]])
+        __metadata("design:paramtypes", [profile_service_1.ProfileService])
     ], FuseProfileTimelineComponent);
     return FuseProfileTimelineComponent;
 }());
-
+exports.FuseProfileTimelineComponent = FuseProfileTimelineComponent;
 
 
 /***/ }),
@@ -3665,11 +3511,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/search/search.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSearchComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3679,14 +3524,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
 var FuseSearchComponent = (function () {
     function FuseSearchComponent() {
     }
     FuseSearchComponent.prototype.ngOnInit = function () {
     };
     FuseSearchComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-search',
             template: __webpack_require__("../../../../../src/app/main/content/pages/search/search.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/search/search.component.scss")]
@@ -3695,42 +3541,36 @@ var FuseSearchComponent = (function () {
     ], FuseSearchComponent);
     return FuseSearchComponent;
 }());
-
+exports.FuseSearchComponent = FuseSearchComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/search/search.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_classic_classic_component__ = __webpack_require__("../../../../../src/app/main/content/pages/search/tabs/classic/classic.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_table_table_component__ = __webpack_require__("../../../../../src/app/main/content/pages/search/tabs/table/table.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__search_component__ = __webpack_require__("../../../../../src/app/main/content/pages/search/search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__search_service__ = __webpack_require__("../../../../../src/app/main/content/pages/search/search.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var classic_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/search/tabs/classic/classic.component.ts");
+var table_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/search/tabs/table/table.component.ts");
+var search_component_1 = __webpack_require__("../../../../../src/app/main/content/pages/search/search.component.ts");
+var search_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/search/search.service.ts");
 var routes = [
     {
         path: 'search',
-        component: __WEBPACK_IMPORTED_MODULE_5__search_component__["a" /* FuseSearchComponent */],
+        component: search_component_1.FuseSearchComponent,
         resolve: {
-            search: __WEBPACK_IMPORTED_MODULE_6__search_service__["a" /* SearchService */]
+            search: search_service_1.SearchService
         }
     }
 ];
@@ -3738,36 +3578,33 @@ var SearchModule = (function () {
     function SearchModule() {
     }
     SearchModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__search_component__["a" /* FuseSearchComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__tabs_classic_classic_component__["a" /* FuseSearchClassicComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__tabs_table_table_component__["a" /* FuseSearchTableComponent */]
+                search_component_1.FuseSearchComponent,
+                classic_component_1.FuseSearchClassicComponent,
+                table_component_1.FuseSearchTableComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_6__search_service__["a" /* SearchService */]
+                search_service_1.SearchService
             ]
         })
     ], SearchModule);
     return SearchModule;
 }());
-
+exports.SearchModule = SearchModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/search/search.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3777,14 +3614,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
 var SearchService = (function () {
     function SearchService(http) {
         this.http = http;
-        this.classicOnChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
-        this.tableOnChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+        this.classicOnChanged = new BehaviorSubject_1.BehaviorSubject({});
+        this.tableOnChanged = new BehaviorSubject_1.BehaviorSubject({});
     }
     /**
      * Resolve
@@ -3832,12 +3670,12 @@ var SearchService = (function () {
         });
     };
     SearchService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], SearchService);
     return SearchService;
 }());
-
+exports.SearchService = SearchService;
 
 
 /***/ }),
@@ -3868,12 +3706,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/search/tabs/classic/classic.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSearchClassicComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search_service__ = __webpack_require__("../../../../../src/app/main/content/pages/search/search.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3883,8 +3719,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var search_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/search/search.service.ts");
 var FuseSearchClassicComponent = (function () {
     function FuseSearchClassicComponent(searchService) {
         var _this = this;
@@ -3896,16 +3733,16 @@ var FuseSearchClassicComponent = (function () {
     FuseSearchClassicComponent.prototype.ngOnInit = function () {
     };
     FuseSearchClassicComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-search-classic',
             template: __webpack_require__("../../../../../src/app/main/content/pages/search/tabs/classic/classic.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/search/tabs/classic/classic.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__search_service__["a" /* SearchService */]])
+        __metadata("design:paramtypes", [search_service_1.SearchService])
     ], FuseSearchClassicComponent);
     return FuseSearchClassicComponent;
 }());
-
+exports.FuseSearchClassicComponent = FuseSearchClassicComponent;
 
 
 /***/ }),
@@ -3936,14 +3773,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/pages/search/tabs/table/table.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseSearchTableComponent; });
-/* unused harmony export SearchTableDataSource */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search_service__ = __webpack_require__("../../../../../src/app/main/content/pages/search/search.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__ = __webpack_require__("../../../cdk/esm5/collections.es5.js");
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -3963,9 +3796,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var search_service_1 = __webpack_require__("../../../../../src/app/main/content/pages/search/search.service.ts");
+var collections_1 = __webpack_require__("../../../cdk/esm5/collections.es5.js");
 var FuseSearchTableComponent = (function () {
     function FuseSearchTableComponent(searchService) {
         var _this = this;
@@ -3980,16 +3814,16 @@ var FuseSearchTableComponent = (function () {
         this.dataSource = new SearchTableDataSource(this.searchService);
     };
     FuseSearchTableComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-search-table',
             template: __webpack_require__("../../../../../src/app/main/content/pages/search/tabs/table/table.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/pages/search/tabs/table/table.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__search_service__["a" /* SearchService */]])
+        __metadata("design:paramtypes", [search_service_1.SearchService])
     ], FuseSearchTableComponent);
     return FuseSearchTableComponent;
 }());
-
+exports.FuseSearchTableComponent = FuseSearchTableComponent;
 var SearchTableDataSource = (function (_super) {
     __extends(SearchTableDataSource, _super);
     function SearchTableDataSource(searchService) {
@@ -4003,8 +3837,8 @@ var SearchTableDataSource = (function (_super) {
     SearchTableDataSource.prototype.disconnect = function () {
     };
     return SearchTableDataSource;
-}(__WEBPACK_IMPORTED_MODULE_2__angular_cdk_collections__["a" /* DataSource */]));
-
+}(collections_1.DataSource));
+exports.SearchTableDataSource = SearchTableDataSource;
 
 
 /***/ })

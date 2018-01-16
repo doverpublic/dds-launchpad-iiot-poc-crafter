@@ -26,14 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseContactsContactFormDialogComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_model__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact.model.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -46,10 +42,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var contact_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact.model.ts");
 var FuseContactsContactFormDialogComponent = (function () {
     function FuseContactsContactFormDialogComponent(dialogRef, data, formBuilder) {
         this.dialogRef = dialogRef;
@@ -62,7 +59,7 @@ var FuseContactsContactFormDialogComponent = (function () {
         }
         else {
             this.dialogTitle = 'New Contact';
-            this.contact = new __WEBPACK_IMPORTED_MODULE_3__contact_model__["a" /* Contact */]({});
+            this.contact = new contact_model_1.Contact({});
         }
         this.contactForm = this.createContactForm();
     }
@@ -85,18 +82,18 @@ var FuseContactsContactFormDialogComponent = (function () {
         });
     };
     FuseContactsContactFormDialogComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-contacts-contact-form-dialog',
             template: __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MAT_DIALOG_DATA */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_material__["o" /* MatDialogRef */], Object, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */]])
+        __param(1, core_1.Inject(material_1.MAT_DIALOG_DATA)),
+        __metadata("design:paramtypes", [material_1.MatDialogRef, Object, forms_1.FormBuilder])
     ], FuseContactsContactFormDialogComponent);
     return FuseContactsContactFormDialogComponent;
 }());
-
+exports.FuseContactsContactFormDialogComponent = FuseContactsContactFormDialogComponent;
 
 
 /***/ }),
@@ -127,18 +124,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/contact-list/contact-list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseContactsContactListComponent; });
-/* unused harmony export FilesDataSource */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contacts_service__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_form_contact_form_component__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_cdk_collections__ = __webpack_require__("../../../cdk/esm5/collections.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -158,13 +147,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var contacts_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
+var contact_form_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var confirm_dialog_component_1 = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
+var collections_1 = __webpack_require__("../../../cdk/esm5/collections.es5.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseContactsContactListComponent = (function () {
     function FuseContactsContactListComponent(contactsService, dialog) {
         var _this = this;
@@ -204,7 +194,7 @@ var FuseContactsContactListComponent = (function () {
     };
     FuseContactsContactListComponent.prototype.editContact = function (contact) {
         var _this = this;
-        this.dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_2__contact_form_contact_form_component__["a" /* FuseContactsContactFormDialogComponent */], {
+        this.dialogRef = this.dialog.open(contact_form_component_1.FuseContactsContactFormDialogComponent, {
             panelClass: 'contact-form-dialog',
             data: {
                 contact: contact,
@@ -239,7 +229,7 @@ var FuseContactsContactListComponent = (function () {
      */
     FuseContactsContactListComponent.prototype.deleteContact = function (contact) {
         var _this = this;
-        this.confirmDialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__core_components_confirm_dialog_confirm_dialog_component__["a" /* FuseConfirmDialogComponent */], {
+        this.confirmDialogRef = this.dialog.open(confirm_dialog_component_1.FuseConfirmDialogComponent, {
             disableClose: false
         });
         this.confirmDialogRef.componentInstance.confirmMessage = 'Are you sure you want to delete?';
@@ -263,23 +253,23 @@ var FuseContactsContactListComponent = (function () {
         this.contactsService.updateUserData(this.user);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('dialogContent'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"])
+        core_1.ViewChild('dialogContent'),
+        __metadata("design:type", core_1.TemplateRef)
     ], FuseContactsContactListComponent.prototype, "dialogContent", void 0);
     FuseContactsContactListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-contacts-contact-list',
             template: __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-list/contact-list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-list/contact-list.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_6__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_material__["m" /* MatDialog */]])
+        __metadata("design:paramtypes", [contacts_service_1.ContactsService,
+            material_1.MatDialog])
     ], FuseContactsContactListComponent);
     return FuseContactsContactListComponent;
 }());
-
+exports.FuseContactsContactListComponent = FuseContactsContactListComponent;
 var FilesDataSource = (function (_super) {
     __extends(FilesDataSource, _super);
     function FilesDataSource(contactsService) {
@@ -294,23 +284,23 @@ var FilesDataSource = (function (_super) {
     FilesDataSource.prototype.disconnect = function () {
     };
     return FilesDataSource;
-}(__WEBPACK_IMPORTED_MODULE_5__angular_cdk_collections__["a" /* DataSource */]));
-
+}(collections_1.DataSource));
+exports.FilesDataSource = FilesDataSource;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/contact.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Contact; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var Contact = (function () {
     function Contact(contact) {
         {
-            this.id = contact.id || __WEBPACK_IMPORTED_MODULE_0__core_fuseUtils__["a" /* FuseUtils */].generateGUID();
+            this.id = contact.id || fuseUtils_1.FuseUtils.generateGUID();
             this.name = contact.name || '';
             this.lastName = contact.lastName || '';
             this.avatar = contact.avatar || 'assets/images/avatars/profile.jpg';
@@ -326,7 +316,7 @@ var Contact = (function () {
     }
     return Contact;
 }());
-
+exports.Contact = Contact;
 
 
 /***/ }),
@@ -357,17 +347,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/contacts.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseContactsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contacts_service__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_form_contact_form_component__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -377,22 +360,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var contacts_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var contact_form_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
 var FuseContactsComponent = (function () {
     function FuseContactsComponent(contactsService, dialog) {
         this.contactsService = contactsService;
         this.dialog = dialog;
-        this.searchInput = new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* FormControl */]('');
+        this.searchInput = new forms_1.FormControl('');
     }
     FuseContactsComponent.prototype.newContact = function () {
         var _this = this;
-        this.dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_4__contact_form_contact_form_component__["a" /* FuseContactsContactFormDialogComponent */], {
+        this.dialogRef = this.dialog.open(contact_form_component_1.FuseContactsContactFormDialogComponent, {
             panelClass: 'contact-form-dialog',
             data: {
                 action: 'new'
@@ -424,59 +408,50 @@ var FuseContactsComponent = (function () {
         this.onSelectedContactsChangedSubscription.unsubscribe();
     };
     FuseContactsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-contacts',
             template: __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            encapsulation: core_1.ViewEncapsulation.None,
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_material__["m" /* MatDialog */]])
+        __metadata("design:paramtypes", [contacts_service_1.ContactsService,
+            material_1.MatDialog])
     ], FuseContactsComponent);
     return FuseContactsComponent;
 }());
-
+exports.FuseContactsComponent = FuseContactsComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/contacts.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseContactsModule", function() { return FuseContactsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sidenavs_main_main_component__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/sidenavs/main/main.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contacts_component__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contacts_service__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__contact_list_contact_list_component__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-list/contact-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__selected_bar_selected_bar_component__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/selected-bar/selected-bar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__contact_form_contact_form_component__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var main_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/sidenavs/main/main.component.ts");
+var contacts_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.component.ts");
+var contacts_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
+var contact_list_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-list/contact-list.component.ts");
+var selected_bar_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/selected-bar/selected-bar.component.ts");
+var contact_form_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact-form/contact-form.component.ts");
 var routes = [
     {
         path: '**',
-        component: __WEBPACK_IMPORTED_MODULE_4__contacts_component__["a" /* FuseContactsComponent */],
+        component: contacts_component_1.FuseContactsComponent,
         resolve: {
-            contacts: __WEBPACK_IMPORTED_MODULE_5__contacts_service__["a" /* ContactsService */]
+            contacts: contacts_service_1.ContactsService
         }
     }
 ];
@@ -484,42 +459,36 @@ var FuseContactsModule = (function () {
     function FuseContactsModule() {
     }
     FuseContactsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__contacts_component__["a" /* FuseContactsComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__contact_list_contact_list_component__["a" /* FuseContactsContactListComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__selected_bar_selected_bar_component__["a" /* FuseContactsSelectedBarComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__sidenavs_main_main_component__["a" /* FuseContactsMainSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__contact_form_contact_form_component__["a" /* FuseContactsContactFormDialogComponent */]
+                contacts_component_1.FuseContactsComponent,
+                contact_list_component_1.FuseContactsContactListComponent,
+                selected_bar_component_1.FuseContactsSelectedBarComponent,
+                main_component_1.FuseContactsMainSidenavComponent,
+                contact_form_component_1.FuseContactsContactFormDialogComponent
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_5__contacts_service__["a" /* ContactsService */]
+                contacts_service_1.ContactsService
             ],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_8__contact_form_contact_form_component__["a" /* FuseContactsContactFormDialogComponent */]]
+            entryComponents: [contact_form_component_1.FuseContactsContactFormDialogComponent]
         })
     ], FuseContactsModule);
     return FuseContactsModule;
 }());
-
+exports.FuseContactsModule = FuseContactsModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/contacts.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactsService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_model__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -537,20 +506,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+var contact_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contact.model.ts");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+var Subject_1 = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
 var ContactsService = (function () {
     function ContactsService(http) {
         this.http = http;
-        this.onContactsChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onSelectedContactsChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onUserDataChanged = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onSearchTextChanged = new __WEBPACK_IMPORTED_MODULE_5_rxjs_Subject__["a" /* Subject */]();
-        this.onFilterChanged = new __WEBPACK_IMPORTED_MODULE_5_rxjs_Subject__["a" /* Subject */]();
+        this.onContactsChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onSelectedContactsChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onUserDataChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onSearchTextChanged = new Subject_1.Subject();
+        this.onFilterChanged = new Subject_1.Subject();
         this.selectedContacts = [];
     }
     /**
@@ -596,10 +566,10 @@ var ContactsService = (function () {
                     });
                 }
                 if (_this.searchText && _this.searchText !== '') {
-                    _this.contacts = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.contacts, _this.searchText);
+                    _this.contacts = fuseUtils_1.FuseUtils.filterArrayByString(_this.contacts, _this.searchText);
                 }
                 _this.contacts = _this.contacts.map(function (contact) {
-                    return new __WEBPACK_IMPORTED_MODULE_3__contact_model__["a" /* Contact */](contact);
+                    return new contact_model_1.Contact(contact);
                 });
                 _this.onContactsChanged.next(_this.contacts);
                 resolve(_this.contacts);
@@ -717,12 +687,12 @@ var ContactsService = (function () {
         this.deselectContacts();
     };
     ContactsService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], ContactsService);
     return ContactsService;
 }());
-
+exports.ContactsService = ContactsService;
 
 
 /***/ }),
@@ -753,14 +723,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/selected-bar/selected-bar.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseContactsSelectedBarComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contacts_service__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_components_confirm_dialog_confirm_dialog_component__ = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -770,10 +736,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var contacts_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var confirm_dialog_component_1 = __webpack_require__("../../../../../src/app/core/components/confirm-dialog/confirm-dialog.component.ts");
 var FuseContactsSelectedBarComponent = (function () {
     function FuseContactsSelectedBarComponent(contactsService, dialog) {
         var _this = this;
@@ -798,7 +765,7 @@ var FuseContactsSelectedBarComponent = (function () {
     };
     FuseContactsSelectedBarComponent.prototype.deleteSelectedContacts = function () {
         var _this = this;
-        this.confirmDialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_3__core_components_confirm_dialog_confirm_dialog_component__["a" /* FuseConfirmDialogComponent */], {
+        this.confirmDialogRef = this.dialog.open(confirm_dialog_component_1.FuseConfirmDialogComponent, {
             disableClose: false
         });
         this.confirmDialogRef.componentInstance.confirmMessage = 'Are you sure you want to delete all selected contacts?';
@@ -810,17 +777,17 @@ var FuseContactsSelectedBarComponent = (function () {
         });
     };
     FuseContactsSelectedBarComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-selected-bar',
             template: __webpack_require__("../../../../../src/app/main/content/apps/contacts/selected-bar/selected-bar.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/contacts/selected-bar/selected-bar.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_material__["m" /* MatDialog */]])
+        __metadata("design:paramtypes", [contacts_service_1.ContactsService,
+            material_1.MatDialog])
     ], FuseContactsSelectedBarComponent);
     return FuseContactsSelectedBarComponent;
 }());
-
+exports.FuseContactsSelectedBarComponent = FuseContactsSelectedBarComponent;
 
 
 /***/ }),
@@ -851,12 +818,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/contacts/sidenavs/main/main.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseContactsMainSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contacts_service__ = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -866,8 +831,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var contacts_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/contacts/contacts.service.ts");
 var FuseContactsMainSidenavComponent = (function () {
     function FuseContactsMainSidenavComponent(contactsService) {
         var _this = this;
@@ -886,16 +852,16 @@ var FuseContactsMainSidenavComponent = (function () {
         this.onUserDataChangedSubscription.unsubscribe();
     };
     FuseContactsMainSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-contacts-main-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/contacts/sidenavs/main/main.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/contacts/sidenavs/main/main.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__contacts_service__["a" /* ContactsService */]])
+        __metadata("design:paramtypes", [contacts_service_1.ContactsService])
     ], FuseContactsMainSidenavComponent);
     return FuseContactsMainSidenavComponent;
 }());
-
+exports.FuseContactsMainSidenavComponent = FuseContactsMainSidenavComponent;
 
 
 /***/ })

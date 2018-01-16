@@ -26,13 +26,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/dialogs/compose/compose.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailComposeDialogComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -45,9 +42,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
 var FuseMailComposeDialogComponent = (function () {
     function FuseMailComposeDialogComponent(dialogRef, data) {
         this.dialogRef = dialogRef;
@@ -58,44 +56,45 @@ var FuseMailComposeDialogComponent = (function () {
     FuseMailComposeDialogComponent.prototype.ngOnInit = function () {
     };
     FuseMailComposeDialogComponent.prototype.createComposeForm = function () {
-        return new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* FormGroup */]({
-            from: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */]({
+        return new forms_1.FormGroup({
+            from: new forms_1.FormControl({
                 value: 'johndoe@creapond.com',
                 disabled: true
             }),
-            to: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](''),
-            cc: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](''),
-            bcc: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](''),
-            subject: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */](''),
-            message: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */]('')
+            to: new forms_1.FormControl(''),
+            cc: new forms_1.FormControl(''),
+            bcc: new forms_1.FormControl(''),
+            subject: new forms_1.FormControl(''),
+            message: new forms_1.FormControl('')
         });
     };
     FuseMailComposeDialogComponent.prototype.toggleExtraToFields = function () {
         this.showExtraToFields = !this.showExtraToFields;
     };
     FuseMailComposeDialogComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-compose',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail/dialogs/compose/compose.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail/dialogs/compose/compose.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+            encapsulation: core_1.ViewEncapsulation.None
         }),
-        __param(1, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["e" /* MAT_DIALOG_DATA */])),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_material__["o" /* MatDialogRef */], Object])
+        __param(1, core_1.Inject(material_1.MAT_DIALOG_DATA)),
+        __metadata("design:paramtypes", [material_1.MatDialogRef, Object])
     ], FuseMailComposeDialogComponent);
     return FuseMailComposeDialogComponent;
 }());
-
+exports.FuseMailComposeDialogComponent = FuseMailComposeDialogComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/i18n/en.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return locale; });
-var locale = {
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.locale = {
     lang: 'en',
     data: {
         'MAIL': {
@@ -114,11 +113,12 @@ var locale = {
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/i18n/tr.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return locale; });
-var locale = {
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.locale = {
     lang: 'tr',
     data: {
         'MAIL': {
@@ -162,13 +162,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/mail-details/mail-details.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailDetailsComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -178,9 +175,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseMailDetailsComponent = (function () {
     function FuseMailDetailsComponent(mailService) {
         this.mailService = mailService;
@@ -215,17 +213,17 @@ var FuseMailDetailsComponent = (function () {
         this.mailService.updateMail(this.mail);
     };
     FuseMailDetailsComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-details',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-details/mail-details.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail/mail-details/mail-details.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_2__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__mail_service__["a" /* MailService */]])
+        __metadata("design:paramtypes", [mail_service_1.MailService])
     ], FuseMailDetailsComponent);
     return FuseMailDetailsComponent;
 }());
-
+exports.FuseMailDetailsComponent = FuseMailDetailsComponent;
 
 
 /***/ }),
@@ -256,13 +254,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/mail-list/mail-list-item/mail-list-item.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailListItemComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mail_model__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -272,9 +267,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var mail_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.model.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
 var FuseMailListItemComponent = (function () {
     function FuseMailListItemComponent(mailService) {
         this.mailService = mailService;
@@ -282,7 +278,7 @@ var FuseMailListItemComponent = (function () {
     FuseMailListItemComponent.prototype.ngOnInit = function () {
         var _this = this;
         // Set the initial values
-        this.mail = new __WEBPACK_IMPORTED_MODULE_1__mail_model__["a" /* Mail */](this.mail);
+        this.mail = new mail_model_1.Mail(this.mail);
         // Subscribe to update on selected mail change
         this.onSelectedMailsChanged =
             this.mailService.onSelectedMailsChanged
@@ -330,24 +326,24 @@ var FuseMailListItemComponent = (function () {
         this.mailService.updateMail(this.mail);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__mail_model__["a" /* Mail */])
+        core_1.Input(),
+        __metadata("design:type", mail_model_1.Mail)
     ], FuseMailListItemComponent.prototype, "mail", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.selected'),
+        core_1.HostBinding('class.selected'),
         __metadata("design:type", Boolean)
     ], FuseMailListItemComponent.prototype, "selected", void 0);
     FuseMailListItemComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-list-item',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list-item/mail-list-item.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list-item/mail-list-item.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__mail_service__["a" /* MailService */]])
+        __metadata("design:paramtypes", [mail_service_1.MailService])
     ], FuseMailListItemComponent);
     return FuseMailListItemComponent;
 }());
-
+exports.FuseMailListItemComponent = FuseMailListItemComponent;
 
 
 /***/ }),
@@ -378,15 +374,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/mail-list/mail-list.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailListComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -396,11 +387,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
+var common_1 = __webpack_require__("../../../common/esm5/common.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseMailListComponent = (function () {
     function FuseMailListComponent(route, mailService, location) {
         this.route = route;
@@ -462,19 +454,19 @@ var FuseMailListComponent = (function () {
         this.mailService.setCurrentMail(mailId);
     };
     FuseMailListComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-list',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_4__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
-            __WEBPACK_IMPORTED_MODULE_2__mail_service__["a" /* MailService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_common__["Location"]])
+        __metadata("design:paramtypes", [router_1.ActivatedRoute,
+            mail_service_1.MailService,
+            common_1.Location])
     ], FuseMailListComponent);
     return FuseMailListComponent;
 }());
-
+exports.FuseMailListComponent = FuseMailListComponent;
 
 
 /***/ }),
@@ -505,18 +497,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/mail.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_services_translation_loader_service__ = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__i18n_en__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/i18n/en.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__i18n_tr__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/i18n/tr.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -526,20 +510,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
+var forms_1 = __webpack_require__("../../../forms/esm5/forms.js");
+var translation_loader_service_1 = __webpack_require__("../../../../../src/app/core/services/translation-loader.service.ts");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/debounceTime.js");
+__webpack_require__("../../../../rxjs/_esm5/add/operator/distinctUntilChanged.js");
+var en_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/i18n/en.ts");
+var tr_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/i18n/tr.ts");
 var FuseMailComponent = (function () {
     function FuseMailComponent(mailService, translationLoader) {
         this.mailService = mailService;
         this.translationLoader = translationLoader;
-        this.searchInput = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormControl */]('');
-        this.translationLoader.loadTranslations(__WEBPACK_IMPORTED_MODULE_6__i18n_en__["a" /* locale */], __WEBPACK_IMPORTED_MODULE_7__i18n_tr__["a" /* locale */]);
+        this.searchInput = new forms_1.FormControl('');
+        this.translationLoader.loadTranslations(en_1.locale, tr_1.locale);
     }
     FuseMailComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -609,26 +594,27 @@ var FuseMailComponent = (function () {
         this.mailService.setFolderOnSelectedMails(folderId);
     };
     FuseMailComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail/mail.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__mail_service__["a" /* MailService */],
-            __WEBPACK_IMPORTED_MODULE_3__core_services_translation_loader_service__["a" /* FuseTranslationLoaderService */]])
+        __metadata("design:paramtypes", [mail_service_1.MailService,
+            translation_loader_service_1.FuseTranslationLoaderService])
     ], FuseMailComponent);
     return FuseMailComponent;
 }());
-
+exports.FuseMailComponent = FuseMailComponent;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/mail.model.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Mail; });
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var Mail = (function () {
     function Mail(mail) {
         this.id = mail.id;
@@ -653,84 +639,74 @@ var Mail = (function () {
     };
     return Mail;
 }());
-
+exports.Mail = Mail;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/mail.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FuseMailModule", function() { return FuseMailModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__ = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mail_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sidenavs_main_main_sidenav_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/sidenavs/main/main-sidenav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mail_list_mail_list_item_mail_list_item_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list-item/mail-list-item.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mail_list_mail_list_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mail_details_mail_details_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-details/mail-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dialogs_compose_compose_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/dialogs/compose/compose.component.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var shared_module_1 = __webpack_require__("../../../../../src/app/core/modules/shared.module.ts");
+var router_1 = __webpack_require__("../../../router/esm5/router.js");
+var mail_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.component.ts");
+var main_sidenav_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/sidenavs/main/main-sidenav.component.ts");
+var mail_list_item_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list-item/mail-list-item.component.ts");
+var mail_list_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-list/mail-list.component.ts");
+var mail_details_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail-details/mail-details.component.ts");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
+var compose_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/dialogs/compose/compose.component.ts");
 var routes = [
     {
         path: 'label/:labelHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailComponent */],
+        component: mail_component_1.FuseMailComponent,
         resolve: {
-            mail: __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailService */]
+            mail: mail_service_1.MailService
         }
     },
     {
         path: 'label/:labelHandle/:mailId',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailComponent */],
+        component: mail_component_1.FuseMailComponent,
         resolve: {
-            mail: __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailService */]
+            mail: mail_service_1.MailService
         }
     },
     {
         path: 'filter/:filterHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailComponent */],
+        component: mail_component_1.FuseMailComponent,
         resolve: {
-            mail: __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailService */]
+            mail: mail_service_1.MailService
         }
     },
     {
         path: 'filter/:filterHandle/:mailId',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailComponent */],
+        component: mail_component_1.FuseMailComponent,
         resolve: {
-            mail: __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailService */]
+            mail: mail_service_1.MailService
         }
     },
     {
         path: ':folderHandle',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailComponent */],
+        component: mail_component_1.FuseMailComponent,
         resolve: {
-            mail: __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailService */]
+            mail: mail_service_1.MailService
         }
     },
     {
         path: ':folderHandle/:mailId',
-        component: __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailComponent */],
+        component: mail_component_1.FuseMailComponent,
         resolve: {
-            mail: __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailService */]
+            mail: mail_service_1.MailService
         }
     },
     {
@@ -742,42 +718,37 @@ var FuseMailModule = (function () {
     function FuseMailModule() {
     }
     FuseMailModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        core_1.NgModule({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__mail_component__["a" /* FuseMailComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__mail_list_mail_list_component__["a" /* FuseMailListComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__mail_list_mail_list_item_mail_list_item_component__["a" /* FuseMailListItemComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__mail_details_mail_details_component__["a" /* FuseMailDetailsComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__sidenavs_main_main_sidenav_component__["a" /* FuseMailMainSidenavComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__dialogs_compose_compose_component__["a" /* FuseMailComposeDialogComponent */]
+                mail_component_1.FuseMailComponent,
+                mail_list_component_1.FuseMailListComponent,
+                mail_list_item_component_1.FuseMailListItemComponent,
+                mail_details_component_1.FuseMailDetailsComponent,
+                main_sidenav_component_1.FuseMailMainSidenavComponent,
+                compose_component_1.FuseMailComposeDialogComponent
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__core_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["g" /* RouterModule */].forChild(routes)
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(routes)
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_8__mail_service__["a" /* MailService */]
+                mail_service_1.MailService
             ],
-            entryComponents: [__WEBPACK_IMPORTED_MODULE_9__dialogs_compose_compose_component__["a" /* FuseMailComposeDialogComponent */]]
+            entryComponents: [compose_component_1.FuseMailComposeDialogComponent]
         })
     ], FuseMailModule);
     return FuseMailModule;
 }());
-
+exports.FuseMailModule = FuseMailModule;
 
 
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/mail.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MailService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mail_model__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.model.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__ = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
+
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -795,22 +766,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var http_1 = __webpack_require__("../../../common/esm5/http.js");
+var mail_model_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.model.ts");
+var BehaviorSubject_1 = __webpack_require__("../../../../rxjs/_esm5/BehaviorSubject.js");
+var fuseUtils_1 = __webpack_require__("../../../../../src/app/core/fuseUtils.ts");
 var MailService = (function () {
     function MailService(http) {
         this.http = http;
         this.searchText = '';
-        this.onMailsChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onSelectedMailsChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onCurrentMailChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onFoldersChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onFiltersChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onLabelsChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([]);
-        this.onSearchTextChanged = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]('');
+        this.onMailsChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onSelectedMailsChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onCurrentMailChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onFoldersChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onFiltersChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onLabelsChanged = new BehaviorSubject_1.BehaviorSubject([]);
+        this.onSearchTextChanged = new BehaviorSubject_1.BehaviorSubject('');
         this.selectedMails = [];
     }
     /**
@@ -921,9 +893,9 @@ var MailService = (function () {
                 _this.http.get('api/mail-mails?folder=' + folderId)
                     .subscribe(function (mails) {
                     _this.mails = mails.map(function (mail) {
-                        return new __WEBPACK_IMPORTED_MODULE_2__mail_model__["a" /* Mail */](mail);
+                        return new mail_model_1.Mail(mail);
                     });
-                    _this.mails = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.mails, _this.searchText);
+                    _this.mails = fuseUtils_1.FuseUtils.filterArrayByString(_this.mails, _this.searchText);
                     _this.onMailsChanged.next(_this.mails);
                     resolve(_this.mails);
                 }, reject);
@@ -941,9 +913,9 @@ var MailService = (function () {
             _this.http.get('api/mail-mails?' + handle + '=true')
                 .subscribe(function (mails) {
                 _this.mails = mails.map(function (mail) {
-                    return new __WEBPACK_IMPORTED_MODULE_2__mail_model__["a" /* Mail */](mail);
+                    return new mail_model_1.Mail(mail);
                 });
-                _this.mails = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.mails, _this.searchText);
+                _this.mails = fuseUtils_1.FuseUtils.filterArrayByString(_this.mails, _this.searchText);
                 _this.onMailsChanged.next(_this.mails);
                 resolve(_this.mails);
             }, reject);
@@ -963,9 +935,9 @@ var MailService = (function () {
                 _this.http.get('api/mail-mails?labels=' + labelId)
                     .subscribe(function (mails) {
                     _this.mails = mails.map(function (mail) {
-                        return new __WEBPACK_IMPORTED_MODULE_2__mail_model__["a" /* Mail */](mail);
+                        return new mail_model_1.Mail(mail);
                     });
-                    _this.mails = __WEBPACK_IMPORTED_MODULE_4__core_fuseUtils__["a" /* FuseUtils */].filterArrayByString(_this.mails, _this.searchText);
+                    _this.mails = fuseUtils_1.FuseUtils.filterArrayByString(_this.mails, _this.searchText);
                     _this.onMailsChanged.next(_this.mails);
                     resolve(_this.mails);
                 }, reject);
@@ -1091,12 +1063,12 @@ var MailService = (function () {
         });
     };
     MailService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]])
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
     ], MailService);
     return MailService;
 }());
-
+exports.MailService = MailService;
 
 
 /***/ }),
@@ -1127,15 +1099,10 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ "../../../../../src/app/main/content/apps/mail/sidenavs/main/main-sidenav.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FuseMailMainSidenavComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mail_service__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dialogs_compose_compose_component__ = __webpack_require__("../../../../../src/app/main/content/apps/mail/dialogs/compose/compose.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_animations__ = __webpack_require__("../../../../../src/app/core/animations.ts");
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1145,11 +1112,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("../../../core/esm5/core.js");
+var mail_service_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/mail.service.ts");
+var compose_component_1 = __webpack_require__("../../../../../src/app/main/content/apps/mail/dialogs/compose/compose.component.ts");
+var material_1 = __webpack_require__("../../../material/esm5/material.es5.js");
+var animations_1 = __webpack_require__("../../../../../src/app/core/animations.ts");
 var FuseMailMainSidenavComponent = (function () {
     function FuseMailMainSidenavComponent(mailService, dialog) {
         this.mailService = mailService;
@@ -1180,7 +1148,7 @@ var FuseMailMainSidenavComponent = (function () {
             });
     };
     FuseMailMainSidenavComponent.prototype.composeDialog = function () {
-        this.dialogRef = this.dialog.open(__WEBPACK_IMPORTED_MODULE_2__dialogs_compose_compose_component__["a" /* FuseMailComposeDialogComponent */], {
+        this.dialogRef = this.dialog.open(compose_component_1.FuseMailComposeDialogComponent, {
             panelClass: 'mail-compose-dialog'
         });
         this.dialogRef.afterClosed()
@@ -1212,18 +1180,18 @@ var FuseMailMainSidenavComponent = (function () {
         this.onLabelsChanged.unsubscribe();
     };
     FuseMailMainSidenavComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        core_1.Component({
             selector: 'fuse-mail-main-sidenav',
             template: __webpack_require__("../../../../../src/app/main/content/apps/mail/sidenavs/main/main-sidenav.component.html"),
             styles: [__webpack_require__("../../../../../src/app/main/content/apps/mail/sidenavs/main/main-sidenav.component.scss")],
-            animations: __WEBPACK_IMPORTED_MODULE_4__core_animations__["a" /* fuseAnimations */]
+            animations: animations_1.fuseAnimations
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__mail_service__["a" /* MailService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_material__["m" /* MatDialog */]])
+        __metadata("design:paramtypes", [mail_service_1.MailService,
+            material_1.MatDialog])
     ], FuseMailMainSidenavComponent);
     return FuseMailMainSidenavComponent;
 }());
-
+exports.FuseMailMainSidenavComponent = FuseMailMainSidenavComponent;
 
 
 /***/ })
