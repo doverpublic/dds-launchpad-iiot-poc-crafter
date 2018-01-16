@@ -2,58 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91172133-6924-4dd1-b0a4-435cbda9b162" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-projects.get.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/rest/site-map.get.groovy" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/academy.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/academy.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/academy.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/academy.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/apps.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/apps.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/apps.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/apps.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/calendar.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/calendar.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/calendar.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/calendar.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/chat.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/chat.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/chat.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/chat.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/common.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/common.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/common.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/common.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/components-third-party.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/components-third-party.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/components-third-party.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/components-third-party.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/components.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/components.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/components.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/components.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/contacts.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/contacts.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/contacts.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/contacts.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/e-commerce.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/e-commerce.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/e-commerce.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/e-commerce.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/file-manager.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/file-manager.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/file-manager.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/file-manager.module.chunk.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy" afterPath="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/inline.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/mail.module.0.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/mail.module.0.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/mail.module.0.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/mail.module.0.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/mail.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/mail.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/mail.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/mail.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/main.bundle.js" afterPath="$PROJECT_DIR$/static-assets/dist/main.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/pages.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/pages.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/pages.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/pages.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/polyfills.bundle.js" afterPath="$PROJECT_DIR$/static-assets/dist/polyfills.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/polyfills.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/scrumboard.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/scrumboard.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/scrumboard.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/scrumboard.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/services.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/services.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/services.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/services.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/todo.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/todo.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/todo.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/todo.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/ui.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/ui.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/ui.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/ui.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/vendor.bundle.js" afterPath="$PROJECT_DIR$/static-assets/dist/vendor.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/vendor.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/src/app/fuse-fake-db/fuse-fake-db.service.ts" afterPath="$PROJECT_DIR$/static-assets/src/app/fuse-fake-db/fuse-fake-db.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html" afterPath="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/projects.service.ts" afterPath="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/projects.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/src/app/main/footer/footer.component.html" afterPath="$PROJECT_DIR$/static-assets/src/app/main/footer/footer.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/src/app/main/toolbar/toolbar.component.html" afterPath="$PROJECT_DIR$/static-assets/src/app/main/toolbar/toolbar.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +22,8 @@
       <file leaf-file-name="project.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="818" column="11" lean-forward="false" selection-start-line="818" selection-start-column="11" selection-end-line="818" selection-end-column="11" />
+            <state relative-caret-position="108">
+              <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -79,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/static-assets/src/app/main/footer/footer.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.model.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.model.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static-assets/src/app/navigation/navigation.model.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-231">
@@ -135,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projects-dashboard-widgets.get.groovy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="projects-dashboard-widgets.get.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="196" lean-forward="false" selection-start-line="17" selection-start-column="196" selection-end-line="17" selection-end-column="196" />
               <folding />
             </state>
           </provider>
@@ -149,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-projects.get.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -200,11 +154,11 @@
         <option value="$PROJECT_DIR$/static-assets/src/app/fuse-fake-db/fuse-fake-db.service.ts" />
         <option value="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/projects.service.ts" />
         <option value="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-projects.get.groovy" />
-        <option value="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy" />
-        <option value="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html" />
         <option value="$PROJECT_DIR$/static-assets/src/app/main/footer/footer.component.html" />
         <option value="$PROJECT_DIR$/static-assets/src/app/main/navbar/horizontal/navbar-horizontal.component.html" />
         <option value="$PROJECT_DIR$/static-assets/src/app/main/toolbar/toolbar.component.html" />
+        <option value="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html" />
+        <option value="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy" />
       </list>
     </option>
   </component>
@@ -483,7 +437,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23885794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.321727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -740,34 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-projects.get.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static-assets/src/tsconfig.app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="818" column="11" lean-forward="false" selection-start-line="818" selection-start-column="11" selection-end-line="818" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -783,7 +713,7 @@
     <entry file="file://$PROJECT_DIR$/static-assets/src/app/main/footer/footer.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -816,6 +746,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-231">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-projects.get.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="196" lean-forward="false" selection-start-line="17" selection-start-column="196" selection-end-line="17" selection-end-column="196" />
           <folding />
         </state>
       </provider>
