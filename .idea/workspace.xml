@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91172133-6924-4dd1-b0a4-435cbda9b162" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy" afterPath="$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/inline.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js" afterPath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js.map" afterPath="$PROJECT_DIR$/static-assets/dist/project.module.chunk.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html" afterPath="$PROJECT_DIR$/static-assets/src/app/main/content/apps/dashboards/project/project.component.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,9 +87,11 @@
       <file leaf-file-name="projects-dashboard-widgets.get.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="196" lean-forward="false" selection-start-line="17" selection-start-column="196" selection-end-line="17" selection-end-column="196" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -768,9 +765,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/rest/app/projects-dashboard-widgets.get.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="196" lean-forward="false" selection-start-line="17" selection-start-column="196" selection-end-line="17" selection-end-column="196" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
