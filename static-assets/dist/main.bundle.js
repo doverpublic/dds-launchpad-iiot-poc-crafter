@@ -15830,7 +15830,7 @@ exports.FuseNavbarVerticalToggleDirective = FuseNavbarVerticalToggleDirective;
 /***/ "../../../../../src/app/main/navbar/vertical/navbar-vertical.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"navbar-header\">\n\n    <div class=\"logo\">\n        <img class=\"logo-icon\" src=\"assets/images/logos/fuse.svg\">\n        <span class=\"logo-text\">FUSE</span>\n    </div>\n\n    <button mat-button class=\"toggle-button-navbar mat-icon-button\" fuseNavbarVertical=\"toggleFold\" fxHide.lt-lg>\n        <mat-icon>menu</mat-icon>\n    </button>\n\n    <button mat-button class=\"toggle-button-navbar mat-icon-button\" fuseNavbarVertical=\"closeBar\" fxHide.gt-md>\n        <mat-icon>arrow_back</mat-icon>\n    </button>\n\n</div>\n\n<div class=\"navbar-content\" fusePerfectScrollbar>\n    <fuse-navigation layout=\"vertical\"></fuse-navigation>\n</div>\n"
+module.exports = "\n<div class=\"navbar-header\">\n\n    <div class=\"logo\">\n        <img class=\"logo-icon\" src=\"assets/images/logos/fuse.svg\">\n        <span class=\"logo-text\">IOT Analytics</span>\n    </div>\n\n    <button mat-button class=\"toggle-button-navbar mat-icon-button\" fuseNavbarVertical=\"toggleFold\" fxHide.lt-lg>\n        <mat-icon>menu</mat-icon>\n    </button>\n\n    <button mat-button class=\"toggle-button-navbar mat-icon-button\" fuseNavbarVertical=\"closeBar\" fxHide.gt-md>\n        <mat-icon>arrow_back</mat-icon>\n    </button>\n\n</div>\n\n<!--\n<div class=\"navbar-content\" fusePerfectScrollbar>\n    <fuse-navigation layout=\"vertical\"></fuse-navigation>\n</div>\n-->\n"
 
 /***/ }),
 

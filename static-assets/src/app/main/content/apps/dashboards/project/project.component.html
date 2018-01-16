@@ -396,15 +396,14 @@
 
                     </mat-tab>
 
+
+                    <!-- RDANNER REMOVE
                     <mat-tab label="Budget Summary">
 
-                        <!-- WIDGET GROUP -->
                         <div class="widget-group" fxLayout="row" fxFlex="100" fxLayoutWrap *fuseIfOnDom [@animateStagger]="{value:'50'}">
 
-                            <!-- WIDGET 8 -->
                             <fuse-widget [@animate]="{value:'*',params:{y:'100%'}}" class="widget" fxLayout="column" fxFlex="100" fxFlex.gt-sm="50">
 
-                                <!-- Front -->
                                 <div class="fuse-widget-front mat-white-bg mat-elevation-z2">
                                     <div class="h3 p-16">
                                         {{widgets.widget8.title}}
@@ -427,15 +426,11 @@
                                     </div>
 
                                 </div>
-                                <!-- / Front -->
 
                             </fuse-widget>
-                            <!-- / WIDGET 8 -->
 
-                            <!-- WIDGET 9 -->
                             <fuse-widget [@animate]="{value:'*',params:{y:'100%'}}" class="widget" fxLayout="column" fxFlex="100" fxFlex.gt-sm="50">
 
-                                <!-- Front -->
                                 <div class="fuse-widget-front mat-white-bg mat-elevation-z2">
                                     <div class="px-16 border-bottom" fxLayout="row" fxLayoutAlign="space-between center">
                                         <div class="h3">{{widgets.widget9.title}}</div>
@@ -539,15 +534,11 @@
                                     </div>
 
                                 </div>
-                                <!-- / Front -->
 
                             </fuse-widget>
-                            <!-- / WIDGET 9 -->
 
-                            <!-- WIDGET 10 -->
                             <fuse-widget [@animate]="{value:'*',params:{y:'100%'}}" class="widget" fxLayout="row" fxFlex="100">
 
-                                <!-- Front -->
                                 <div class="fuse-widget-front mat-white-bg mat-elevation-z2">
 
                                     <div class="simple-table-container" ms-responsive-table>
@@ -579,25 +570,21 @@
                                     </div>
 
                                 </div>
-                                <!-- / Front -->
 
                             </fuse-widget>
-                            <!-- / WIDGET 10 -->
 
                         </div>
-                        <!-- / WIDGET GROUP -->
 
                     </mat-tab>
+                    -->
 
+                    <!-- RDANNER REMOVE
                     <mat-tab label="Team Members">
 
-                        <!-- WIDGET GROUP -->
                         <div class="widget-group" fxLayout="row" fxFlex="100" fxLayoutWrap *fuseIfOnDom [@animateStagger]="{value:'50'}">
 
-                            <!-- WIDGET 11 -->
                             <fuse-widget [@animate]="{value:'*',params:{y:'100%'}}" class="widget" fxLayout="row" fxFlex="100">
 
-                                <!-- Front -->
                                 <div class="fuse-widget-front mat-white-bg mat-elevation-z2">
 
                                     <div class="p-24 mb-8 border-bottom" fxLayout="row" fxLayoutAlign="space-between center">
@@ -609,7 +596,6 @@
 
                                     <mat-table #table [dataSource]="widget11.dataSource">
 
-                                        <!-- Avatar Column -->
                                         <ng-container cdkColumnDef="avatar">
                                             <mat-header-cell fxFlex="64px" *cdkHeaderCellDef></mat-header-cell>
                                             <mat-cell fxFlex="64px" *cdkCellDef="let contact">
@@ -618,7 +604,6 @@
                                             </mat-cell>
                                         </ng-container>
 
-                                        <!-- Name Column -->
                                         <ng-container cdkColumnDef="name">
                                             <mat-header-cell *cdkHeaderCellDef>Name</mat-header-cell>
                                             <mat-cell *cdkCellDef="let contact">
@@ -626,7 +611,6 @@
                                             </mat-cell>
                                         </ng-container>
 
-                                        <!-- Position Column -->
                                         <ng-container cdkColumnDef="position">
                                             <mat-header-cell *cdkHeaderCellDef fxHide fxShow.gt-sm>Position</mat-header-cell>
                                             <mat-cell *cdkCellDef="let contact" fxHide fxShow.gt-sm>
@@ -636,7 +620,6 @@
                                             </mat-cell>
                                         </ng-container>
 
-                                        <!-- Office Column -->
                                         <ng-container cdkColumnDef="office">
                                             <mat-header-cell *cdkHeaderCellDef fxHide fxShow.gt-md>Office</mat-header-cell>
                                             <mat-cell *cdkCellDef="let contact" fxHide fxShow.gt-md>
@@ -647,7 +630,6 @@
                                         </ng-container>
 
 
-                                        <!-- Email Column -->
                                         <ng-container cdkColumnDef="email">
                                             <mat-header-cell *cdkHeaderCellDef fxHide fxShow.gt-sm>Email</mat-header-cell>
                                             <mat-cell *cdkCellDef="let contact" fxHide fxShow.gt-sm>
@@ -657,7 +639,6 @@
                                             </mat-cell>
                                         </ng-container>
 
-                                        <!-- Phone Column -->
                                         <ng-container cdkColumnDef="phone">
                                             <mat-header-cell *cdkHeaderCellDef fxHide fxShow.gt-md>Phone</mat-header-cell>
                                             <mat-cell *cdkCellDef="let contact" fxHide fxShow.gt-md>
@@ -672,15 +653,14 @@
                                         </mat-row>
                                     </mat-table>
                                 </div>
-                                <!-- / Front -->
 
                             </fuse-widget>
-                            <!-- / WIDGET 11 -->
 
                         </div>
-                        <!-- / WIDGET GROUP -->
 
                     </mat-tab>
+                    -->
+
                 </mat-tab-group>
 
             </div>
