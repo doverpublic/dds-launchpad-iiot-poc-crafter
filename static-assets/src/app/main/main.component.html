@@ -3,9 +3,9 @@
     <div id="fuse-main-content">
 
         <!-- TOOLBAR: Above -->
-        <!--ng-container *ngIf="fuseSettings.layout.toolbar === 'above'">
+        <ng-container *ngIf="fuseSettings.layout.toolbar === 'above'">
             <fuse-toolbar class="above" [ngClass]="fuseSettings.colorClasses.toolbar"></fuse-toolbar>
-        </ng-container-->
+        </ng-container>
         <!-- / TOOLBAR: Above -->
 
         <!-- NAVBAR: Top -->
@@ -18,11 +18,11 @@
         <div id="wrapper">
 
             <!-- NAVBAR: Left -->
-            <!--fuse-navbar-vertical [folded]="fuseSettings.layout.navigationFolded"
+            <fuse-navbar-vertical [folded]="fuseSettings.layout.navigationFolded"
                                   class="left-navbar"
                                   [ngClass]="fuseSettings.colorClasses.navbar"
                                   *ngIf="fuseSettings.layout.navigation === 'left' || fuseSettings.layout.navigation === 'top'">
-            </fuse-navbar-vertical-->
+            </fuse-navbar-vertical>
             <!-- / NAVBAR: Left -->
 
             <div class="content-wrapper">
