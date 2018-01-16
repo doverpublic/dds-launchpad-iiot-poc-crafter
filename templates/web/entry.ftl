@@ -6,7 +6,7 @@
     <head>
 
         <title>Fuse2 - Angular 5+ Material Design Admin Template</title>
-        <base href="/">
+        <base href="/static-assets/dist/">
 
         <meta charset="utf-8">
         <meta name="description" content="Material design admin template with pre-built apps and pages">
