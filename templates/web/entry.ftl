@@ -6,7 +6,7 @@
     <head>
 
         <title>Fuse2 - Angular 5+ Material Design Admin Template</title>
-        <base href="/static-assets/dist/">
+        <base href="/">
 
         <meta charset="utf-8">
         <meta name="description" content="Material design admin template with pre-built apps and pages">
@@ -217,11 +217,11 @@
 
         <fuse-root></fuse-root>
 
-		<script type="text/javascript" src="inline.bundle.js"></script>
-        <script type="text/javascript" src="polyfills.bundle.js"></script>
-        <script type="text/javascript" src="styles.bundle.js"></script>
-        <script type="text/javascript" src="vendor.bundle.js"></script>
-        <script type="text/javascript" src="main.bundle.js"></script>
+		<script type="text/javascript" src="/static-assets/dist/inline.bundle.js"></script>
+        <script type="text/javascript" src="/static-assets/dist/polyfills.bundle.js"></script>
+        <script type="text/javascript" src="/static-assets/dist/styles.bundle.js"></script>
+        <script type="text/javascript" src="/static-assets/dist/vendor.bundle.js"></script>
+        <script type="text/javascript" src="/static-assets/dist/main.bundle.js"></script>
         
 		<@studio.toolSupport/>	
 	</body>
