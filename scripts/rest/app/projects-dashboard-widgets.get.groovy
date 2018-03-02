@@ -2,7 +2,7 @@ import groovy.json.JsonSlurper
 import java.util.Random
 
 Random rand = new Random()
-def due = rand.nextInt(1000)
+def due = 15 //rand.nextInt(1000)
 
 def jsonSlurper = new JsonSlurper()
 
